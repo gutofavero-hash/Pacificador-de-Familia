@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Declaração Universal do Pacificador</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Um conselho sem partido, com a mesma régua para todos, e um convite para voltar a conversar com quem pensa diferente.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="O Pacificador de Famílias">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Antes de escolher um lado, escolha os fatos.">
+<meta property="og:description" content="Um conselho sem partido, com a mesma régua para todos, e um convite para voltar a conversar com quem pensa diferente.">
+<meta property="og:url" content="https://gutofavero-hash.github.io/Pacificador-de-Familia/DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html">
+<meta property="og:image" content="https://gutofavero-hash.github.io/Pacificador-de-Familia/assets/og-pacificador.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: "a mesa e a régua" — um manifesto em artigos, medido por uma régua de marcações na margem.
+   Paleta deliberadamente fora das cores associadas a campos políticos brasileiros (vermelho; verde-amarelo):
+   violeta e petróleo representam "os dois lados" com o mesmo peso visual. */
+:root{
+  --paper:#F4F5F9; --paper-2:#E9EBF3; --ink:#1A1D38; --muted:#585D7A; --line:#CDD0E0;
+  --side-a:#5A45C8; --side-b:#0B7480; --side-a-soft:#E6E2FB; --side-b-soft:#DDF0F1;
+  --good:#1F7A4D; --warn:#A35A00; --bad:#B3261E; --bad-soft:#F9DEDC;
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body:"Literata", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --measure:64ch;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#11132A; --paper-2:#1A1D3A; --ink:#ECEDF7; --muted:#A3A7C4; --line:#33375C;
+  --side-a:#A796FF; --side-b:#4FC4CE; --side-a-soft:#2A2457; --side-b-soft:#123B42;
+  --good:#5FD39A; --warn:#F2B35C; --bad:#FF8A80; --bad-soft:#45191A; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#11132A; --paper-2:#1A1D3A; --ink:#ECEDF7; --muted:#A3A7C4; --line:#33375C;
+  --side-a:#A796FF; --side-b:#4FC4CE; --side-a-soft:#2A2457; --side-b-soft:#123B42;
+  --good:#5FD39A; --warn:#F2B35C; --bad:#FF8A80; --bad-soft:#45191A; color-scheme:dark }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));}
+h1,h2,h3{font-family:var(--display);line-height:1.08;text-wrap:balance;margin:0;letter-spacing:-.01em}
+p{margin:0}
+a{color:var(--side-a)}
+:focus-visible{outline:3px solid var(--side-a);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto}
+.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+section{padding-block:clamp(56px, 9vw, 112px);border-top:1px solid var(--line);position:relative}
+.sec-head{display:grid;gap:14px;max-width:var(--measure);margin-bottom:clamp(28px,4vw,48px)}
+.sec-head h2{font-size:clamp(1.9rem, 4.6vw, 3.1rem);font-weight:800}
+.lead{font-size:1.15rem;color:var(--muted)}
+.ruler{position:absolute;left:0;right:0;top:-1px;height:10px;pointer-events:none;
+  background:repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 24px);opacity:.9}
+
+/* HERO */
+.hero{padding-block:clamp(40px,7vw,88px) clamp(48px,7vw,96px);border-top:0;display:grid;gap:clamp(28px,4vw,56px);
+  grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center}
+.hero h1{font-size:clamp(2.6rem, 7.4vw, 5.6rem);font-weight:800}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--side-a),var(--side-b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .kicker{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.brand{font-family:var(--display);font-weight:700;font-size:1.05rem}
+.hero-copy{display:grid;gap:22px;min-width:0}
+.hero-copy p{font-size:1.2rem;max-width:46ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font-family:var(--display);font-weight:700;font-size:1rem;border-radius:999px;padding:12px 22px;text-decoration:none;
+  border:2px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer;transition:transform .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.scale-fig{width:100%;max-width:460px;justify-self:center}
+.scale-fig svg{width:100%;height:auto;display:block}
+#beam{transform-origin:200px 120px;animation:settle 2.6s cubic-bezier(.3,1.6,.5,1) .3s both}
+#panA,#panB{animation:none}
+@keyframes settle{0%{transform:rotate(-9deg)}35%{transform:rotate(6deg)}60%{transform:rotate(-2.5deg)}80%{transform:rotate(1deg)}100%{transform:rotate(0)}}
+@media (prefers-reduced-motion: reduce){#beam{animation:none}}
+.fig-cap{font-family:var(--mono);font-size:.78rem;color:var(--muted);text-align:center;margin-top:8px}
+
+/* TORCIDA vs PENSADOR */
+.contrast{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.contrast > div{padding:22px clamp(16px,3vw,28px);min-width:0}
+.contrast .col-h{font-family:var(--display);font-weight:800;font-size:1.3rem;display:flex;gap:10px;align-items:center}
+.contrast .t{background:var(--paper-2)}
+.contrast ul{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:12px}
+.contrast li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
+.contrast li svg{margin-top:4px}
+.story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.story-text{display:grid;gap:16px;max-width:var(--measure)}
+.pull{font-family:var(--display);font-weight:700;font-size:clamp(1.4rem,3vw,2rem);line-height:1.2;border-left:4px solid var(--side-a);padding-left:18px}
+
+/* MESA REDONDA */
+.table-wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,48px);align-items:center}
+.roundtable{width:100%;max-width:520px;justify-self:center}
+.roundtable svg{width:100%;height:auto;display:block;overflow:visible}
+.seat{cursor:pointer}
+.seat circle{fill:var(--paper);stroke:var(--ink);stroke-width:2;transition:fill .2s ease}
+.seat text{font-family:var(--mono);font-size:11px;fill:var(--ink)}
+.seat.mand circle{stroke:var(--side-b);stroke-width:3}
+.seat:hover circle,.seat.on circle,.seat:focus circle{fill:var(--side-a-soft)}
+.seat:focus{outline:none}
+.seat:focus-visible circle{stroke:var(--side-a);stroke-width:4}
+.seat-panel{border:1px solid var(--line);border-radius:18px;padding:24px;background:var(--paper-2);display:grid;gap:10px;min-height:220px}
+.seat-panel h3{font-size:1.5rem}
+.seat-panel .q{font-style:italic;color:var(--muted)}
+.legend-row{display:flex;flex-wrap:wrap;gap:16px;font-family:var(--mono);font-size:.78rem;color:var(--muted);margin-top:14px}
+.legend-row span{display:inline-flex;gap:8px;align-items:center}
+.dot{width:14px;height:14px;border-radius:50%;border:2px solid var(--ink);display:inline-block}
+.dot.m{border:3px solid var(--side-b)}
+.honest{margin-top:22px;font-size:.95rem;color:var(--muted);max-width:var(--measure)}
+
+/* ARTIGOS */
+.articles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.art{padding:28px clamp(4px,2vw,28px) 28px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:88px minmax(0,1fr);gap:16px}
+.articles .art:nth-child(odd){border-right:1px solid var(--line)}
+.articles .art:nth-child(even){padding-left:clamp(16px,2.4vw,28px)}
+.art .n{font-family:var(--display);font-weight:800;font-size:2.4rem;line-height:1;color:var(--side-a)}
+.art .n small{display:block;font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.14em;color:var(--muted);margin-bottom:6px}
+.art h3{font-size:1.25rem;margin-bottom:8px}
+.art p{color:var(--ink)}
+.art:nth-child(4n+2) .n,.art:nth-child(4n+3) .n{color:var(--side-b)}
+
+/* JORNADA */
+.journey{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:0;counter-reset:st;position:relative}
+.journey::before{content:"";position:absolute;left:0;right:0;top:26px;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 14px)}
+.journey li{position:relative;padding-right:14px;display:grid;gap:8px;align-content:start;min-width:0}
+.journey .bub{width:54px;height:54px;border-radius:50%;background:var(--paper);border:2px solid var(--ink);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:1.25rem;position:relative;z-index:1}
+.journey li:nth-child(4) .bub{background:var(--side-a);color:var(--paper);border-color:var(--side-a)}
+.journey h3{font-size:1.05rem}
+.journey p{font-size:.92rem;color:var(--muted)}
+
+/* CAMADAS */
+.layers{display:grid;gap:14px;max-width:880px}
+.layer{display:grid;grid-template-columns:120px minmax(0,1fr) minmax(0,220px);gap:18px;align-items:center;padding:20px 22px;border-radius:16px;border:1px solid var(--line)}
+.layer:nth-child(1){background:var(--side-b-soft)}
+.layer:nth-child(2){background:var(--paper-2);margin-inline:clamp(0px,3vw,36px)}
+.layer:nth-child(3){background:var(--side-a-soft);margin-inline:clamp(0px,6vw,72px)}
+.layer .tag{font-family:var(--display);font-weight:800;font-size:1.5rem}
+.layer .how{font-family:var(--mono);font-size:.8rem;color:var(--muted);border-left:1px solid var(--line);padding-left:14px}
+.layer p{min-width:0}
+
+/* TESTE */
+.test{border:2px solid var(--ink);border-radius:22px;padding:clamp(20px,4vw,40px);display:grid;gap:22px;max-width:880px;background:var(--paper)}
+.statement{font-family:var(--display);font-weight:700;font-size:clamp(1.25rem,3vw,1.75rem);line-height:1.3}
+.who{display:inline-block;padding:0 .3em;border-radius:6px;transition:background .25s ease,color .25s ease}
+.who.a{background:var(--side-a-soft);color:var(--side-a)}
+.who.b{background:var(--side-b-soft);color:var(--side-b)}
+.rate{display:grid;gap:10px}
+.rate .lbl{font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+.scale5{display:flex;flex-wrap:wrap;gap:8px}
+.scale5 button{font-family:var(--display);font-weight:700;min-width:48px;padding:10px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--paper-2);color:var(--ink);cursor:pointer}
+.scale5 button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.scale-ends{display:flex;justify-content:space-between;font-size:.82rem;color:var(--muted);max-width:340px}
+.test-step{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.verdict{border-radius:14px;padding:18px 20px;background:var(--paper-2);display:grid;gap:8px}
+.verdict strong{font-family:var(--display);font-size:1.2rem}
+
+/* SELOS */
+.seals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.seal{border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:8px;align-content:start;background:var(--paper)}
+.seal .ic{font-size:1.6rem;line-height:1}
+.seal h3{font-size:1.05rem}
+.seal p{font-size:.92rem;color:var(--muted)}
+
+/* NUNCA */
+.never{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.never div{padding:18px 18px 18px 52px;position:relative;border-radius:14px;background:var(--paper-2)}
+.never div::before{content:"";position:absolute;left:18px;top:22px;width:20px;height:20px;border-radius:50%;border:2px solid var(--bad);
+  background:linear-gradient(135deg,transparent 45%,var(--bad) 45% 55%,transparent 55%)}
+.never strong{font-family:var(--display)}
+
+/* COMPROMISSO */
+.pledge{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(24px,4vw,48px);align-items:start}
+.pledge-list{display:grid;gap:10px}
+.pl{display:grid;grid-template-columns:28px 1fr;gap:14px;padding:16px 18px;border:1.5px solid var(--line);border-radius:14px;cursor:pointer;transition:border-color .2s ease, background .2s ease}
+.pl input{width:22px;height:22px;accent-color:var(--side-a);margin:3px 0 0}
+.pl:has(input:checked){border-color:var(--side-a);background:var(--side-a-soft)}
+.pledge-meter{position:sticky;top:calc(env(safe-area-inset-top, 0px) + 20px);border-radius:20px;padding:24px;background:var(--ink);color:var(--paper);display:grid;gap:14px}
+.pledge-meter .bar{height:10px;border-radius:99px;background:color-mix(in srgb,var(--paper) 22%,transparent);overflow:hidden}
+.pledge-meter .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--side-a),var(--side-b));transition:width .4s ease}
+.pledge-meter h3{font-size:1.5rem}
+.pledge-meter p{opacity:.85}
+
+/* PARTICIPAR */
+.join{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px)}
+.rule{border-radius:22px;padding:clamp(22px,4vw,36px);background:linear-gradient(135deg,var(--side-a-soft),var(--side-b-soft));display:grid;gap:14px}
+.rule .big{font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.1}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:12px;counter-reset:j}
+.steps li{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start}
+.steps li::before{counter-increment:j;content:counter(j);font-family:var(--display);font-weight:800;width:32px;height:32px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center}
+.share{border:1.5px dashed var(--muted);border-radius:16px;padding:18px;display:grid;gap:12px}
+.share pre{white-space:pre-wrap;font-family:var(--body);font-size:.98rem;margin:0;background:var(--paper-2);padding:14px;border-radius:10px;user-select:all}
+.copied{font-family:var(--mono);font-size:.8rem;color:var(--good);min-height:1.2em}
+
+footer{border-top:1px solid var(--line);padding-block:56px 72px;display:grid;gap:14px;text-align:center}
+footer blockquote{margin:0 auto;font-family:var(--display);font-weight:700;font-size:clamp(1.4rem,3.4vw,2.2rem);max-width:28ch;line-height:1.2}
+footer small{font-family:var(--mono);color:var(--muted)}
+
+
+/* REGRAS DA MESA */
+.golden{position:relative;border-radius:26px;padding:clamp(24px,4.5vw,48px);background:var(--ink);color:var(--paper);display:grid;grid-template-columns:minmax(0,1fr);gap:18px;overflow:hidden}
+.golden::after{content:"";position:absolute;inset:auto -60px -60px auto;width:220px;height:220px;border-radius:50%;border:28px solid color-mix(in srgb,var(--side-b) 55%,transparent);opacity:.5}
+.golden .eyebrow{color:inherit;opacity:.75}
+.golden h3{font-size:clamp(1.8rem,4.6vw,3rem);font-weight:800;max-width:20ch}
+.golden p{max-width:60ch;font-size:1.1rem;opacity:.92;position:relative;z-index:1}
+.formula{font-family:var(--mono);font-size:clamp(.95rem,2.2vw,1.15rem);background:color-mix(in srgb,var(--paper) 12%,transparent);border:1px dashed color-mix(in srgb,var(--paper) 45%,transparent);border-radius:12px;padding:14px 16px;justify-self:start;max-width:100%;position:relative;z-index:1}
+.openers{margin-top:clamp(28px,4vw,44px);display:grid;gap:16px}
+.op-tabs{display:flex;flex-wrap:wrap;gap:8px}
+.op-tabs button{font-family:var(--display);font-weight:700;font-size:.95rem;padding:9px 16px;border-radius:99px;border:1.5px solid var(--line);background:var(--paper-2);color:var(--ink);cursor:pointer}
+.op-tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.op-pair{display:grid;grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr);gap:12px;align-items:stretch}
+.op-card{border-radius:18px;padding:20px;display:grid;gap:10px;align-content:start}
+.op-card.bad{background:var(--paper-2);border:1.5px solid var(--line)}
+.op-card.good{background:var(--side-b-soft);border:1.5px solid var(--side-b)}
+.op-card .lab{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase}
+.op-card.bad .lab{color:var(--bad)} .op-card.good .lab{color:var(--side-b)}
+.op-card q{font-family:var(--display);font-weight:700;font-size:clamp(1.1rem,2.6vw,1.35rem);line-height:1.3;quotes:"“" "”"}
+.op-card.bad q{text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--bad) 60%,transparent);text-decoration-thickness:2px}
+.op-card .why{font-size:.92rem;color:var(--muted)}
+.op-arrow{display:grid;place-items:center}
+.rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:clamp(32px,4vw,48px)}
+.rl{border:1px solid var(--line);border-radius:18px;padding:20px;display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;background:var(--paper)}
+.rl .rn{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-family:var(--display);font-weight:800;background:var(--side-a-soft);color:var(--side-a)}
+.rl:nth-child(4n+2) .rn,.rl:nth-child(4n+3) .rn{background:var(--side-b-soft);color:var(--side-b)}
+.rl h3{font-size:1.15rem;margin-bottom:6px}
+.rl p{font-size:.98rem}
+.rl .labels{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.rl .labels span{font-family:var(--mono);font-size:.74rem;padding:3px 8px;border-radius:6px;background:var(--bad-soft);color:var(--bad);text-decoration:line-through}
+.rl .note{margin-top:10px;font-size:.9rem;color:var(--muted)}
+.rl.key{border:2px solid var(--ink)}
+.exits{margin-top:clamp(28px,4vw,40px);display:grid;gap:14px}
+.exit-row{display:flex;flex-wrap:wrap;gap:10px}
+.exit-row span{font-family:var(--display);font-weight:700;padding:10px 16px;border-radius:99px;border:1.5px solid var(--good);color:var(--good);background:var(--paper)}
+.ladder{margin-top:20px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;align-items:end}
+.ladder div{border-radius:14px 14px 6px 6px;padding:14px 12px;display:grid;gap:4px;align-content:start;background:var(--paper-2);border:1px solid var(--line)}
+.ladder div:nth-child(1){min-height:96px} .ladder div:nth-child(2){min-height:118px} .ladder div:nth-child(3){min-height:140px} .ladder div:nth-child(4){min-height:162px}
+.ladder div:nth-child(5){min-height:184px;border-color:var(--bad)}
+.ladder b{font-family:var(--display);font-size:1rem}
+.ladder small{font-size:.85rem;color:var(--muted)}
+.entry{margin-top:clamp(28px,4vw,40px);border-radius:22px;padding:clamp(22px,4vw,36px);border:2px dashed var(--side-a);display:grid;gap:12px;background:var(--side-a-soft)}
+.entry h3{font-size:clamp(1.4rem,3.4vw,2rem)}
+/* MOTOR */
+.travas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.trava{border-radius:16px;padding:18px;border:1px solid var(--line);background:var(--paper);display:grid;gap:8px;align-content:start}
+.trava svg{display:block}
+.trava h3{font-size:1.08rem}
+.trava p{font-size:.94rem;color:var(--muted)}
+.motor-cta{margin-top:clamp(24px,3vw,36px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;border-radius:22px;padding:clamp(20px,4vw,32px);background:linear-gradient(135deg,var(--side-a-soft),var(--side-b-soft))}
+.motor-cta strong{font-family:var(--display);font-size:clamp(1.2rem,3vw,1.6rem);line-height:1.2;display:block;margin-bottom:6px}
+.motor-cta .sub{color:var(--muted);font-size:.95rem}
+/* convite em abas */
+.inv-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.inv-tabs button{font-family:var(--display);font-weight:700;font-size:.9rem;padding:7px 14px;border-radius:99px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+.inv-tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+@media (max-width: 900px){
+  .rules{grid-template-columns:1fr}
+  .travas{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ladder{grid-template-columns:1fr;align-items:stretch}
+  .ladder div:nth-child(n){min-height:0;border-radius:12px}
+  .motor-cta{grid-template-columns:1fr}
+}
+@media (max-width: 640px){
+  .op-pair{grid-template-columns:1fr}
+  .op-arrow{transform:rotate(90deg);height:36px}
+  .travas{grid-template-columns:1fr}
+}
+
+/* Responsivo */
+@media (max-width: 900px){
+  .hero,.story,.table-wrap,.pledge,.join{grid-template-columns:1fr}
+  .seals{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .never{grid-template-columns:1fr}
+  .journey{grid-template-columns:1fr;gap:18px}
+  .journey::before{left:26px;right:auto;top:0;bottom:0;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--line) 0 8px,transparent 8px 14px)}
+  .journey li{grid-template-columns:54px 1fr;column-gap:16px;padding:0}
+  .journey li .bub{grid-row:span 2}
+  .pledge-meter{position:static}
+  .scale-fig{max-width:360px}
+}
+@media (max-width: 640px){
+  .articles{grid-template-columns:1fr}
+  .articles .art:nth-child(odd){border-right:0}
+  .articles .art:nth-child(even){padding-left:0}
+  .art{grid-template-columns:64px minmax(0,1fr);padding-right:0}
+  .art .n{font-size:1.9rem}
+  .contrast{grid-template-columns:1fr}
+  .layer{grid-template-columns:1fr;gap:8px}
+  .layer:nth-child(n){margin-inline:0}
+  .layer .how{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:8px}
+  .seals{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero" id="topo">
+  <div class="hero-copy">
+    <div class="kicker"><span class="brand">O Pacificador de Famílias</span><span class="eyebrow">Declaração universal · v1.1</span></div>
+    <h1>Antes de escolher um lado, <em>escolha os fatos.</em></h1>
+    <p>Um conselho permanente, sem partido e sem torcida, que mede governos, leis e propostas com a mesma régua para todos. E um convite para você voltar a conversar com quem pensa diferente.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#regras">Conhecer as Regras da Mesa</a>
+      <a class="btn" href="#teste">Fazer o teste de 30 segundos</a>
+      <a class="btn" href="MOTOR_DO_CONSELHO.html">Ver o motor do Conselho</a>
+    </div>
+  </div>
+  <figure class="scale-fig" aria-labelledby="cap-balanca" style="margin:0">
+    <svg viewBox="0 0 400 300" role="img" aria-label="Uma balança que oscila e se equilibra. Cada prato tem uma cor diferente, com o mesmo peso.">
+      <defs>
+        <pattern id="ticks" width="12" height="10" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="1.5" height="10" fill="var(--muted)"/></pattern>
+      </defs>
+      <rect x="40" y="272" width="320" height="10" fill="url(#ticks)"/>
+      <path d="M200 120 L200 262" stroke="var(--ink)" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <path d="M150 264 L250 264" stroke="var(--ink)" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <g id="beam">
+        <rect x="52" y="114" width="296" height="12" rx="6" fill="var(--ink)"/>
+        <g fill="var(--paper)"><rect x="76" y="117" width="2" height="6"/><rect x="112" y="117" width="2" height="6"/><rect x="148" y="117" width="2" height="6"/><rect x="250" y="117" width="2" height="6"/><rect x="286" y="117" width="2" height="6"/><rect x="322" y="117" width="2" height="6"/></g>
+        <g id="panA">
+          <path d="M70 126 L40 200 M70 126 L100 200" stroke="var(--muted)" stroke-width="1.5" fill="none"/>
+          <path d="M28 200 Q70 238 112 200 Z" fill="var(--side-a)"/>
+        </g>
+        <g id="panB">
+          <path d="M330 126 L300 200 M330 126 L360 200" stroke="var(--muted)" stroke-width="1.5" fill="none"/>
+          <path d="M288 200 Q330 238 372 200 Z" fill="var(--side-b)"/>
+        </g>
+      </g>
+      <circle cx="200" cy="120" r="12" fill="var(--paper)" stroke="var(--ink)" stroke-width="4"/>
+      <path d="M200 70 L200 104" stroke="var(--ink)" stroke-width="3" fill="none"/>
+      <path d="M191 72 L200 58 L209 72 Z" fill="var(--ink)"/>
+    </svg>
+    <figcaption class="fig-cap" id="cap-balanca">mesmo peso · mesma régua · qualquer lado</figcaption>
+  </figure>
+</header>
+
+<section id="porque">
+  <div class="ruler"></div>
+  <div class="story">
+    <div class="sec-head" style="margin-bottom:0">
+      <span class="eyebrow">Por que existimos</span>
+      <h2>A mesa de jantar ficou em silêncio.</h2>
+    </div>
+    <div class="story-text">
+      <p>Em muitas famílias brasileiras, política virou assunto proibido. Irmãos saíram do grupo. Pais e filhos evitam o tema. Amizades de décadas terminaram por causa de um vídeo encaminhado.</p>
+      <p>Quase nunca a briga é sobre um dado. É sobre um lado. Cada um chega com a conclusão pronta e procura só o que a confirma. O outro vira inimigo, e a conversa vira placar.</p>
+      <p class="pull">O Pacificador nasceu para devolver a conversa às famílias, com os fatos na mesa e o respeito em volta dela.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:clamp(36px,5vw,64px)">
+    <div class="contrast" role="table" aria-label="Diferenças entre torcer e pensar">
+      <div class="t" role="rowgroup">
+        <div class="col-h" role="columnheader">
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M5 20 L13 5 L21 20 Z" fill="none" stroke="var(--muted)" stroke-width="2.4" stroke-linejoin="round"/></svg>
+          Quem torce
+        </div>
+        <ul>
+          <li role="cell"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 3 L11 11 M11 3 L3 11" stroke="var(--muted)" stroke-width="2"/></svg><span>Escolhe o lado e depois procura os fatos.</span></li>
+          <li role="cell"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 3 L11 11 M11 3 L3 11" stroke="var(--muted)" stroke-width="2"/></svg><span>Perdoa no seu time o que condena no outro.</span></li>
+          <li role="cell"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 3 L11 11 M11 3 L3 11" stroke="var(--muted)" stroke-width="2"/></svg><span>Responde a uma crítica com "e o seu candidato?".</span></li>
+          <li role="cell"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 3 L11 11 M11 3 L3 11" stroke="var(--muted)" stroke-width="2"/></svg><span>Mudar de ideia é perder.</span></li>
+        </ul>
+      </div>
+      <div role="rowgroup">
+        <div class="col-h" role="columnheader">
+          <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="9" fill="none" stroke="var(--side-a)" stroke-width="2.4"/><circle cx="13" cy="13" r="3" fill="var(--side-b)"/></svg>
+          Quem pensa
+        </div>
+        <ul>
+          <li role="cell"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7 L6 11 L12 3" fill="none" stroke="var(--good)" stroke-width="2.2"/></svg><span>Olha os fatos e depois decide.</span></li>
+          <li role="cell"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7 L6 11 L12 3" fill="none" stroke="var(--good)" stroke-width="2.2"/></svg><span>Aplica a mesma régua a todos, inclusive aos seus.</span></li>
+          <li role="cell"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7 L6 11 L12 3" fill="none" stroke="var(--good)" stroke-width="2.2"/></svg><span>Avalia as duas críticas com o mesmo rigor.</span></li>
+          <li role="cell"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7 L6 11 L12 3" fill="none" stroke="var(--good)" stroke-width="2.2"/></svg><span>Mudar de ideia diante de um fato novo é ganhar.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="regras">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">As Regras da Mesa</span>
+    <h2>Para conversar de verdade, combinamos algumas coisas antes.</h2>
+    <p class="lead">Não são regras para calar ninguém. São regras para que todos sejam ouvidos, inclusive quem pensa diferente de você. Elas valem igualmente para todos, e o Conselho cumpre as mesmas.</p>
+  </div>
+
+  <div class="golden">
+    <span class="eyebrow">A Regra de Ouro</span>
+    <h3>Comece pelo entendimento, nunca pela acusação.</h3>
+    <p>Toda conversa começa por uma proposta de entender algo concreto: um tema, uma política, uma lei, uma decisão, um fato, um resultado que gera polêmica. Ninguém abre uma conversa criticando o outro lado ou falando mal de quem pensa diferente.</p>
+    <span class="formula">"Quero entender [o assunto]. [A pergunta]."</span>
+  </div>
+
+  <div class="openers">
+    <span class="eyebrow">Como abrir uma conversa · veja os exemplos</span>
+    <div class="op-tabs" role="tablist" aria-label="Exemplos de abertura">
+      <button type="button" role="tab" aria-selected="true" data-op="0">Economia</button>
+      <button type="button" role="tab" aria-selected="false" data-op="1">Educação</button>
+      <button type="button" role="tab" aria-selected="false" data-op="2">Corrupção</button>
+      <button type="button" role="tab" aria-selected="false" data-op="3">Leis polêmicas</button>
+    </div>
+    <div class="op-pair" role="tabpanel" aria-live="polite">
+      <div class="op-card bad"><span class="lab">Assim, a conversa acaba antes de começar</span><q id="opBad">Esse governo destruiu a economia do país.</q><span class="why" id="opBadWhy">Começa pela conclusão e acusa um lado. Quem pensa diferente já entra na defensiva.</span></div>
+      <div class="op-arrow"><svg width="36" height="24" viewBox="0 0 36 24" aria-hidden="true"><path d="M2 12 H30 M22 4 L31 12 L22 20" fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="op-card good"><span class="lab">Assim, a conversa começa</span><q id="opGood">Quero entender o que aconteceu com o emprego e a renda desde 2023. O que os dados mostram?</q><span class="why" id="opGoodWhy">Começa por um objeto concreto e uma pergunta que os dois lados podem investigar juntos.</span></div>
+    </div>
+  </div>
+
+  <div class="rules">
+    <article class="rl key"><span class="rn">1</span><div><h3>Sem rótulos</h3><p>Nenhum adjetivo que desqualifica pode abrir, encurtar ou encerrar uma conversa, nem ser dirigido a pessoas ou grupos. De nenhum lado.</p>
+      <div class="labels" aria-label="Exemplos de rótulos proibidos"><span>genocida</span><span>fascista</span><span>nazista</span><span>comunista</span><span>gado</span><span>petralha</span><span>bolsominion</span><span>esquerdopata</span><span>isentão</span><span>golpista</span><span>ladrão</span></div>
+      <p class="note">Descrever um fato com o nome técnico e a fonte é permitido ("foi condenado em segunda instância no processo X"). Usar um rótulo como argumento não é.</p></div></article>
+    <article class="rl key"><span class="rn">2</span><div><h3>Sem fuga para o rótulo</h3><p>Quem fica sem argumento não troca a conversa por um julgamento sobre o outro lado. Existem saídas honrosas, e elas valem muito aqui (veja abaixo).</p></div></article>
+    <article class="rl key"><span class="rn">3</span><div><h3>Um erro não justifica o outro</h3><p>Se a conversa é sobre uma corrupção comprovada do governo A, responder "mas o governo B também roubou" não vale. O caso B pode ser legítimo e ganha a sua própria conversa, depois. Cada caso tem a sua vez, e todos são medidos com a mesma régua.</p></div></article>
+    <article class="rl"><span class="rn">4</span><div><h3>Uma conversa, um assunto</h3><p>Sem pular de tema no meio do caminho e sem despejar dez afirmações de uma vez.</p></div></article>
+    <article class="rl"><span class="rn">5</span><div><h3>Fato tem fonte e data</h3><p>Antes de afirmar ou encaminhar, pergunte: de onde veio e de quando é? Sem fonte, é opinião, e tudo bem, desde que seja apresentada como opinião.</p></div></article>
+    <article class="rl"><span class="rn">6</span><div><h3>Resuma antes de rebater</h3><p>Antes de discordar, explique a posição do outro até ele dizer: "é isso que eu penso".</p></div></article>
+    <article class="rl"><span class="rn">7</span><div><h3>Mudar de ideia é vitória</h3><p>Quem reconhece um acerto do outro lado, ou corrige a própria posição, é celebrado. Nunca ironizado.</p></div></article>
+    <article class="rl"><span class="rn">8</span><div><h3>Pausa é direito de todos</h3><p>Esquentou? Qualquer pessoa pode pedir "pausa". A conversa volta depois, com a cabeça fria.</p></div></article>
+    <article class="rl"><span class="rn">9</span><div><h3>A pessoa não é o seu voto</h3><p>Sem deboche, sem humilhação, sem figurinhas contra quem está na mesa e sem prints levados para fora do grupo.</p></div></article>
+    <article class="rl key"><span class="rn">10</span><div><h3>Abertura é condição de entrada</h3><p>Só participa quem está disposto a ouvir sem pré-julgamento, conhecer fatos e visões contrárias às suas crenças e reconhecer acertos do lado oposto quando os fatos mostrarem.</p></div></article>
+  </div>
+
+  <div class="exits">
+    <span class="eyebrow">Saídas honrosas · dizer isto é força, não derrota</span>
+    <div class="exit-row"><span>"Não sei."</span><span>"Preciso pensar."</span><span>"Você me trouxe um dado novo."</span><span>"Vou pesquisar e volto."</span><span>"Nisso você tem razão."</span></div>
+  </div>
+
+  <div style="margin-top:clamp(36px,5vw,56px)">
+    <span class="eyebrow">Quando uma regra é quebrada</span>
+    <p class="lead" style="margin-top:10px;max-width:var(--measure)">Sempre com explicação e com direito de voltar. A mesma régua vale para todos os participantes e todos os moderadores.</p>
+    <div class="ladder">
+      <div><b>1. Lembrete gentil</b><small>Com uma sugestão de como reformular.</small></div>
+      <div><b>2. Pausa</b><small>A conversa para e volta depois.</small></div>
+      <div><b>3. Conversa privada</b><small>Um moderador conversa em particular.</small></div>
+      <div><b>4. Afastamento temporário</b><small>Um tempo fora para respirar.</small></div>
+      <div><b>5. Saída do grupo</b><small>Só em reincidência, depois dos passos anteriores.</small></div>
+    </div>
+  </div>
+
+  <div class="entry">
+    <span class="eyebrow">A condição de entrada, com franqueza</span>
+    <h3>Se você ainda não está disposto a ouvir o outro lado, tudo bem. Mas ainda não é a sua hora de sentar à mesa.</h3>
+    <p>O Pacificador só funciona com quem aceita a possibilidade de descobrir que estava errado em algo e que o outro lado acertou em algo. Quem não aceita isso não participa. A porta fica aberta para quando você quiser voltar.</p>
+  </div>
+</section>
+
+<section id="conselho">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">O que é</span>
+    <h2>Um tribunal de evidências em volta de uma mesa redonda.</h2>
+    <p class="lead">Dez especialistas permanentes, um auditor de isonomia e um juiz. O juiz escolhe quem se senta à mesa em cada caso, e você também pode chamar alguém. Toque numa cadeira para conhecê-la.</p>
+  </div>
+  <div class="table-wrap">
+    <div class="roundtable">
+      <svg id="rt" viewBox="-40 -30 480 460" role="group" aria-label="Mesa redonda com as cadeiras do Conselho"></svg>
+      <div class="legend-row">
+        <span><i class="dot" aria-hidden="true"></i>cadeira convocada quando o caso pede</span>
+        <span><i class="dot m" aria-hidden="true"></i>presente em toda sessão</span>
+      </div>
+    </div>
+    <div class="seat-panel" id="seatPanel" aria-live="polite">
+      <span class="eyebrow" id="spEyebrow">No centro</span>
+      <h3 id="spTitle">O Juiz</h3>
+      <p id="spText">Enquadra a pergunta de um jeito que os dois lados aceitariam como justo, decide quais cadeiras convocar, pesa as evidências e escreve a Sentença. Pode contrariar a maioria quando o argumento minoritário é mais forte, e precisa explicar por quê.</p>
+      <p class="q" id="spQ">"Os dois lados aceitariam esta pergunta como justa?"</p>
+    </div>
+  </div>
+  <p class="honest"><strong>Transparência:</strong> as cadeiras são papéis executados por inteligência artificial, sob regras escritas e verificáveis. Justamente por isso, o próprio Conselho é tratado como uma fonte que pode ter viés e é auditado em toda rodada.</p>
+</section>
+
+<section id="declaracao">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">A Declaração</span>
+    <h2>Doze artigos. Valem para todos, sem exceção.</h2>
+    <p class="lead">Este é o compromisso do Conselho com você, e o que ele pede de você em troca.</p>
+  </div>
+  <div class="articles">
+    <article class="art"><div class="n"><small>ART.</small>1º</div><div><h3>Uma régua só</h3><p>O mesmo rigor, o mesmo vocabulário e a mesma exigência de prova valem para qualquer governo, partido, político, religião ou ideologia.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>2º</div><div><h3>O teste do sinal invertido</h3><p>Antes de concluir, o Conselho imagina o mesmo ato feito pelo lado oposto. Se o julgamento mudaria sem que os fatos mudassem, a análise é refeita.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>3º</div><div><h3>Fato, previsão e valor separados</h3><p>Fatos se resolvem com dados. Previsões, com experiências comparáveis. Valores não se resolvem: são mapeados com respeito, e a escolha é sua.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>4º</div><div><h3>Número com endereço</h3><p>Todo número traz fonte, período e unidade. O que não puder ser conferido aparece marcado como "a verificar". Nada é inventado.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>5º</div><div><h3>Depois não é "por causa de"</h3><p>Melhorar depois de uma política não prova que foi por causa dela. O Conselho sempre pergunta o que teria acontecido sem ela.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>6º</div><div><h3>Cada um responde pelo que é seu</h3><p>Prefeito, governador, presidente, Congresso e Justiça têm responsabilidades diferentes. Cobrar a pessoa errada também é erro de fato.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>7º</div><div><h3>Mérito tem dono, herança também</h3><p>Muitos resultados são plantados por um governo e colhidos por outro, ou vêm de fora do país. O Conselho diz quem plantou, quem colheu e o que foi sorte.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>8º</div><div><h3>O melhor de cada lado</h3><p>Toda tradição séria tem uma intuição verdadeira e um ponto cego. Antes de criticar uma posição, o Conselho a apresenta na sua melhor versão.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>9º</div><div><h3>Siga o dinheiro, o poder e a narrativa</h3><p>Quem ganha, quem perde e quem empurra cada decisão. Isso vale para todos os lados e todos os países, sempre com prova. Coincidência não é conspiração.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>10º</div><div><h3>Ninguém é poupado</h3><p>Nenhum governo, político, juiz, empresário, igreja, imprensa ou filósofo está acima da análise. Nem o próprio Conselho, nem quem o consulta.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>11º</div><div><h3>Julga atos, não pessoas</h3><p>Avalia votos, decisões, promessas e resultados. Sobre acusações, informa o estado exato do processo, sem antecipar condenação nem absolvição.</p></div></article>
+    <article class="art"><div class="n"><small>ART.</small>12º</div><div><h3>Discordar melhor</h3><p>O objetivo não é que todos pensem igual. É que todos concordem sobre os fatos e entendam, com precisão, por que ainda discordam.</p></div></article>
+  </div>
+</section>
+
+<section id="motor">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">O motor, às claras</span>
+    <h2>Você tem o direito de saber exatamente como o Conselho pensa.</h2>
+    <p class="lead">Um juiz que pede confiança sem mostrar as próprias regras não merece confiança. Por isso as instruções completas do Conselho, palavra por palavra, ficam abertas para todo participante. Estas são as travas que mantêm a isonomia:</p>
+  </div>
+  <div class="travas">
+    <div class="trava"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M6 12 H26 M20 6 L26 12 L20 18 M28 22 H8 M14 16 L8 22 L14 28" fill="none" stroke="var(--side-a)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Teste do sinal invertido</h3><p>Toda conclusão é testada trocando os lados. Se o julgamento mudaria sem os fatos mudarem, a análise é refeita.</p></div>
+    <div class="trava"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="4" y="8" width="11" height="18" rx="3" fill="none" stroke="var(--side-b)" stroke-width="2.6"/><rect x="19" y="8" width="11" height="18" rx="3" fill="none" stroke="var(--side-b)" stroke-width="2.6"/><path d="M15 17 H19" stroke="var(--muted)" stroke-width="2.6" stroke-dasharray="1 3"/></svg><h3>Pareceres às cegas</h3><p>Cada especialista escreve sozinho, sem ver os outros. Ninguém copia ninguém.</p></div>
+    <div class="trava"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><text x="3" y="23" font-family="var(--display)" font-weight="800" font-size="14" fill="var(--side-a)">A?</text><text x="18" y="23" font-family="var(--display)" font-weight="800" font-size="14" fill="var(--side-b)">B?</text></svg><h3>Confronto anônimo</h3><p>Os pareceres são embaralhados, e cada um precisa apontar erro e viés nos outros, sem saber de quem é.</p></div>
+    <div class="trava"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="15" cy="15" r="9" fill="none" stroke="var(--side-a)" stroke-width="2.6"/><path d="M22 22 L30 30" stroke="var(--side-a)" stroke-width="3" stroke-linecap="round"/></svg><h3>Auditor de Isonomia</h3><p>Não opina sobre o tema. Só procura dois pesos e duas medidas, palavras carregadas, datas escolhidas a dedo e omissões. Pode mandar reescrever.</p></div>
+    <div class="trava"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="11" cy="12" r="5" fill="none" stroke="var(--side-a)" stroke-width="2.4"/><circle cx="23" cy="12" r="5" fill="none" stroke="var(--side-b)" stroke-width="2.4"/><path d="M3 29 C3 22 19 22 19 29 M15 29 C15 22 31 22 31 29" fill="none" stroke="var(--ink)" stroke-width="2.2"/></svg><h3>Revisão humana</h3><p>Antes de publicar, pessoas de lados opostos conferem cada Sentença.</p></div>
+    <div class="trava"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M8 5 H22 L27 10 V29 H8 Z" fill="none" stroke="var(--side-b)" stroke-width="2.4" stroke-linejoin="round"/><path d="M12 15 H23 M12 20 H23 M12 25 H19" stroke="var(--side-b)" stroke-width="2.2"/></svg><h3>Jurisprudência</h3><p>Cada Sentença vira precedente. Casos parecidos de governos diferentes têm de ser julgados com a mesma régua.</p></div>
+  </div>
+  <div class="motor-cta">
+    <div><strong>Conheça o motor completo: mandatos, regras, escalas e o texto integral das instruções.</strong><span class="sub">Tudo o que o Conselho recebe como instrução está lá, sem cortes.</span></div>
+    <a class="btn primary" href="MOTOR_DO_CONSELHO.html">Abrir o Motor do Conselho</a>
+  </div>
+</section>
+
+<section id="como">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">Como funciona uma rodada</span>
+    <h2>Sete etapas, da pergunta à mesa de jantar.</h2>
+  </div>
+  <ol class="journey">
+    <li><span class="bub">1</span><h3>Pergunta justa</h3><p>O Juiz reescreve a questão até que os dois lados a aceitem e convoca as cadeiras certas.</p></li>
+    <li><span class="bub">2</span><h3>Dossiê de fatos</h3><p>Antes de qualquer opinião: dados oficiais, séries completas, fontes.</p></li>
+    <li><span class="bub">3</span><h3>Pareceres às cegas</h3><p>Cada especialista analisa sozinho, sem ver os outros.</p></li>
+    <li><span class="bub">4</span><h3>Confronto anônimo</h3><p>Os pareceres são embaralhados e cada um aponta erros e vieses nos outros.</p></li>
+    <li><span class="bub">5</span><h3>Auditoria de isonomia</h3><p>Um auditor procura dois pesos e duas medidas, palavras carregadas e omissões.</p></li>
+    <li><span class="bub">6</span><h3>Sentença</h3><p>Um resumo executivo e uma versão completa, ambos visuais.</p></li>
+    <li><span class="bub">7</span><h3>Para a família</h3><p>Uma ferramenta de pensamento e uma pergunta para levar à mesa.</p></li>
+  </ol>
+</section>
+
+<section id="camadas">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">O segredo da mediação</span>
+    <h2>Toda briga política tem três camadas. Só uma delas se resolve com dados.</h2>
+  </div>
+  <div class="layers">
+    <div class="layer"><span class="tag">Fato</span><p>"A taxa de homicídios caiu ou subiu no estado nos últimos dez anos?"</p><span class="how">Resolve-se com dados oficiais. Aqui alguém está certo.</span></div>
+    <div class="layer"><span class="tag">Previsão</span><p>"Se aprovarem essa lei, a criminalidade vai cair?"</p><span class="how">Resolve-se em parte, com experiências comparáveis e grau de confiança.</span></div>
+    <div class="layer"><span class="tag">Valor</span><p>"O que pesa mais: liberdade individual ou segurança coletiva?"</p><span class="how">Não se resolve com dados. Mapeia-se o custo de cada escolha, e pessoas decentes podem discordar.</span></div>
+  </div>
+  <p class="honest">Quando a família descobre em qual camada está a briga, metade dela acaba. A outra metade passa a ser uma conversa entre adultos.</p>
+</section>
+
+<section id="teste">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">Teste você mesmo · 30 segundos</span>
+    <h2>O teste do sinal invertido.</h2>
+    <p class="lead">É o mesmo teste que o Conselho aplica a si mesmo. Seja honesto: ninguém vê sua resposta, nada é enviado.</p>
+  </div>
+  <div class="test" id="testBox">
+    <span class="test-step" id="tStep">Situação 1 de 2</span>
+    <p class="statement">No ano da eleição, <span class="who a" id="tWho">um governo de esquerda</span> ampliou benefícios sociais e cortou impostos de combustível, aumentando o gasto público.</p>
+    <div class="rate">
+      <span class="lbl" id="tAsk">Quanto essa atitude é aceitável para você?</span>
+      <div class="scale5" role="group" aria-labelledby="tAsk" id="tScale">
+        <button type="button" data-v="1" aria-pressed="false">1</button>
+        <button type="button" data-v="2" aria-pressed="false">2</button>
+        <button type="button" data-v="3" aria-pressed="false">3</button>
+        <button type="button" data-v="4" aria-pressed="false">4</button>
+        <button type="button" data-v="5" aria-pressed="false">5</button>
+      </div>
+      <div class="scale-ends"><span>nada aceitável</span><span>totalmente aceitável</span></div>
+    </div>
+    <div class="verdict" id="tVerdict" hidden>
+      <strong id="tVTitle"></strong>
+      <p id="tVText"></p>
+      <div><button type="button" class="btn" id="tAgain">Refazer começando pelo outro lado</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="sentenca">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">O que você recebe</span>
+    <h2>Toda rodada termina em uma Sentença, com selos que qualquer um entende.</h2>
+    <p class="lead">Um resumo executivo para ler em dois minutos e uma versão completa para quem quer ir fundo. Os selos dizem o que de fato aconteceu com cada política.</p>
+  </div>
+  <div class="seals">
+    <div class="seal"><span class="ic" aria-hidden="true">✅</span><h3>Resultado comprovado</h3><p>Funcionou, e há evidência sólida de que foi por causa da política.</p></div>
+    <div class="seal"><span class="ic" aria-hidden="true">🔄</span><h3>Inversão de tendência</h3><p>Virou o jogo de uma piora ou de uma estagnação.</p></div>
+    <div class="seal"><span class="ic" aria-hidden="true">➕</span><h3>Contribuição provável</h3><p>Combina com a melhora, mas a causa ainda não foi isolada.</p></div>
+    <div class="seal"><span class="ic" aria-hidden="true">➖</span><h3>Sem efeito detectável</h3><p>Não mudou o que prometia mudar.</p></div>
+    <div class="seal"><span class="ic" aria-hidden="true">⚠️</span><h3>Efeito adverso</h3><p>Piorou o problema ou deixou uma conta escondida para depois.</p></div>
+    <div class="seal"><span class="ic" aria-hidden="true">🧾</span><h3>Herança</h3><p>Colhido por um governo, plantado por outro.</p></div>
+    <div class="seal"><span class="ic" aria-hidden="true">🌍</span><h3>Maré</h3><p>Veio de fora: preços mundiais, juros, pandemia, clima.</p></div>
+    <div class="seal"><span class="ic" aria-hidden="true">❓</span><h3>Indeterminado</h3><p>Ainda não há dados suficientes, e o Conselho diz quais faltam.</p></div>
+  </div>
+</section>
+
+<section id="nunca">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">Limites</span>
+    <h2>O que o Pacificador nunca vai fazer.</h2>
+  </div>
+  <div class="never">
+    <div><strong>Dizer em quem votar.</strong> Ele avalia atos e resultados. O voto é seu.</div>
+    <div><strong>Fazer propaganda.</strong> Pedidos de "argumentos para defender X" recebem os melhores argumentos a favor e contra, lado a lado.</div>
+    <div><strong>Inventar um número.</strong> Se não sabe, diz que não sabe e onde o dado pode ser encontrado.</div>
+    <div><strong>Fingir equilíbrio.</strong> Quando os fatos pesam mais para um lado, ele diz, seja qual for o lado.</div>
+    <div><strong>Atacar pessoas.</strong> Critica argumentos, votos e decisões. Nunca o caráter ou a família de alguém.</div>
+    <div><strong>Concordar com você para agradar.</strong> Inclusive com quem criou o Conselho.</div>
+  </div>
+</section>
+
+<section id="compromisso">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">Para entrar</span>
+    <h2>O compromisso de quem se senta à mesa.</h2>
+    <p class="lead">Não é preciso abrir mão das suas convicções. É preciso aceitar colocá-las à prova. Estes compromissos são as Regras da Mesa ditas na primeira pessoa.</p>
+  </div>
+  <div class="pledge">
+    <div class="pledge-list" id="pledge">
+      <label class="pl"><input type="checkbox" id="c1"><span>Vou começar toda conversa por uma pergunta de entendimento, nunca por uma crítica ao outro lado.</span></label>
+      <label class="pl"><input type="checkbox" id="c2"><span>Não vou usar rótulos para falar de pessoas ou grupos, nem quando ficar sem argumento.</span></label>
+      <label class="pl"><input type="checkbox" id="c3"><span>Não vou responder a um erro apontando o erro do outro lado. Cada caso terá a sua vez.</span></label>
+      <label class="pl"><input type="checkbox" id="c4"><span>Aceito que vou descobrir acertos no lado que critico e erros no lado que defendo, e vou reconhecer isso em voz alta.</span></label>
+      <label class="pl"><input type="checkbox" id="c5"><span>Vou checar a fonte e a data antes de afirmar ou encaminhar.</span></label>
+      <label class="pl"><input type="checkbox" id="c6"><span>Vou explicar a posição de quem discorda de mim até essa pessoa dizer: "é isso que eu penso".</span></label>
+      <label class="pl"><input type="checkbox" id="c7"><span>Vou lembrar que, do outro lado da conversa, está alguém que eu amo.</span></label>
+    </div>
+    <aside class="pledge-meter" aria-live="polite">
+      <span class="eyebrow" style="color:inherit;opacity:.75">Seu compromisso</span>
+      <h3 id="pmTitle">0 de 7</h3>
+      <div class="bar"><i id="pmBar"></i></div>
+      <p id="pmText">Marque os compromissos que você está disposto a assumir.</p>
+    </aside>
+  </div>
+</section>
+
+<section id="participar">
+  <div class="ruler"></div>
+  <div class="sec-head">
+    <span class="eyebrow">Como participar</span>
+    <h2>Como entrar: em dupla, e com a mente aberta.</h2>
+  </div>
+  <div class="join">
+    <div class="rule">
+      <span class="big">Traga alguém que pensa diferente de você.</span>
+      <p>O Pacificador não é um clube de quem já concorda. Cada pessoa que entra convida alguém do outro lado. A conversa só vale se houver duas visões à mesa.</p>
+      <ol class="steps">
+        <li><span>Leia as Regras da Mesa e marque os compromissos. Se todos couberem para você, seja bem-vindo.</span></li>
+        <li><span>Escolha um tema que divide a sua família e transforme-o numa pergunta de entendimento: "Quero entender...".</span></li>
+        <li><span>Leve a pergunta ao Conselho e leia a Sentença junto com quem discorda de você.</span></li>
+        <li><span>Comecem pelo que vocês dois já concordam. Quase sempre é mais do que imaginavam.</span></li>
+        <li><span>Terminem com a pergunta para a mesa de jantar e marquem a próxima conversa.</span></li>
+      </ol>
+    </div>
+    <div class="share">
+      <span class="eyebrow">Convite pronto para enviar</span>
+      <div class="inv-tabs" role="tablist" aria-label="Versão do convite">
+        <button type="button" role="tab" aria-selected="true" data-inv="curto">Para o grupo da família</button>
+        <button type="button" role="tab" aria-selected="false" data-inv="pessoal">Para uma pessoa</button>
+      </div>
+      <pre id="inviteText"></pre>
+      <div class="cta-row"><button type="button" class="btn primary" id="copyBtn">Copiar convite</button></div>
+      <span class="copied" id="copyMsg" aria-live="polite"></span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <blockquote>O objetivo não é que todos pensem igual. É que todos pensem, e com os mesmos fatos.</blockquote>
+  <small>O Pacificador de Famílias · Declaração Universal · versão 1.1 · outubro de 2026 · <a href="MOTOR_DO_CONSELHO.html">Motor do Conselho</a></small>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  /* ---------- Mesa redonda ---------- */
+  var seats = [
+    {t:"O Economista Empírico", e:"Cadeira 1", d:"Mede o que cada política fez com o bolso das pessoas e quanto custou, separando o efeito real do ciclo econômico, da sorte e da herança.", q:"\"O que teria acontecido sem essa política?\""},
+    {t:"O Analista Social", e:"Cadeira 2", d:"Saúde, educação, segurança, assistência. Verifica se a política mudou a vida de quem ela diz atender, e de quem ficou de fora.", q:"\"Mudou a aprendizagem, ou só o número de matrículas?\""},
+    {t:"O Jurista Constitucional", e:"Cadeira 3", d:"Lê o texto da lei, não o título. Verifica se é constitucional, se tem fonte de recursos e quem tem competência sobre o tema.", q:"\"O que o texto realmente muda?\""},
+    {t:"O Cientista Político", e:"Cadeira 4", d:"Explica por que a decisão foi tomada: incentivos, alianças, calendário eleitoral. Compara discurso e voto ao longo do tempo.", q:"\"Você aceitaria essa regra nas mãos do seu pior adversário?\""},
+    {t:"O Investigador de Forças", e:"Cadeira 5", d:"Segue o dinheiro, o poder e a narrativa, de todos os lados, sempre com prova. Indício não é condenação, coincidência não é conspiração.", q:"\"A quem interessa essa polarização?\""},
+    {t:"O Geoestrategista", e:"Cadeira 6", d:"Mostra como o mundo e o território brasileiro pesam na decisão: comércio, energia, tecnologia, diplomacia e interesses de todas as potências.", q:"\"Essa decisão aumenta ou reduz a nossa autonomia?\""},
+    {t:"O Guardião do Método", e:"Cadeira 7 · toda sessão", d:"Nenhum número passa sem ele. Confere fontes, séries, inflação, população e escalas de gráfico, e denuncia manipulação estatística venha de onde vier.", q:"\"Isso é real ou nominal? Qual é a série inteira?\"", m:1},
+    {t:"O Filósofo Pluralista", e:"Cadeira 8", d:"Separa o que os dados resolvem do que só os valores resolvem, e encontra o melhor de cada tradição: liberal, conservadora, social, religiosa.", q:"\"Por que pessoas decentes discordam aqui?\""},
+    {t:"O Cidadão", e:"Cadeira 9 · toda sessão", d:"A pessoa comum à mesa de jantar. Garante que a Sentença seja clara e útil para quem vai conversar com a própria família.", q:"\"O que isso muda na minha vida?\"", m:1},
+    {t:"O Formulador", e:"Cadeira 10", d:"Não para na crítica. Propõe o que já funcionou em algum lugar, de qualquer governo ou vertente, com custo, caminho e forma de medir.", q:"\"O que se faz na segunda-feira de manhã?\""},
+    {t:"O Auditor de Isonomia", e:"Toda sessão · não opina", d:"Não julga o mérito. Audita os outros: procura dois pesos e duas medidas, palavras carregadas, janelas escolhidas a dedo e omissões. Pode mandar reescrever.", q:"\"Esse parecer seria igual se o lado fosse o outro?\"", m:1}
+  ];
+  var judge = {t:"O Juiz", e:"No centro", d:"Enquadra a pergunta de um jeito que os dois lados aceitariam como justo, decide quais cadeiras convocar, pesa as evidências e escreve a Sentença. Pode contrariar a maioria quando o argumento minoritário é mais forte, e precisa explicar por quê.", q:"\"Os dois lados aceitariam esta pergunta como justa?\""};
+  var svg = document.getElementById('rt'), NS = "http://www.w3.org/2000/svg";
+  var cx=200, cy=200, R=165;
+  function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  svg.appendChild(el('circle',{cx:cx,cy:cy,r:112,fill:'var(--paper-2)',stroke:'var(--line)','stroke-width':2}));
+  svg.appendChild(el('circle',{cx:cx,cy:cy,r:96,fill:'none',stroke:'var(--line)','stroke-width':1,'stroke-dasharray':'2 7'}));
+  var panel = {e:document.getElementById('spEyebrow'),t:document.getElementById('spTitle'),d:document.getElementById('spText'),q:document.getElementById('spQ')};
+  var nodes=[];
+  function show(s,g){panel.e.textContent=s.e;panel.t.textContent=s.t;panel.d.textContent=s.d;panel.q.textContent=s.q;
+    nodes.forEach(function(n){n.classList.remove('on')}); if(g) g.classList.add('on');}
+  function short(t){return t.replace(/^O /,'').split(' ')[0];}
+  seats.forEach(function(s,i){
+    var a = -Math.PI/2 + i*(2*Math.PI/seats.length);
+    var x = cx + R*Math.cos(a), y = cy + R*Math.sin(a);
+    var g = el('g',{'class':'seat'+(s.m?' mand':''),tabindex:0,role:'button','aria-label':s.t});
+    g.appendChild(el('circle',{cx:x,cy:y,r:26}));
+    var tx = el('text',{x:x,y:y+4,'text-anchor':'middle'}); tx.textContent = String(i<10? i+1 : 'A');
+    tx.setAttribute('style','font-family:var(--display);font-weight:800;font-size:16px');
+    g.appendChild(tx);
+    var lx = cx + (R+44)*Math.cos(a), ly = cy + (R+44)*Math.sin(a);
+    var lb = el('text',{x:lx,y:ly+4,'text-anchor': Math.abs(Math.cos(a))<.3?'middle':(Math.cos(a)>0?'start':'end')});
+    lb.textContent = i<10 ? short(s.t) : 'Auditor';
+    g.appendChild(lb);
+    g.addEventListener('click',function(){show(s,g)});
+    g.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();show(s,g)}});
+    svg.appendChild(g); nodes.push(g);
+  });
+  var jg = el('g',{'class':'seat',tabindex:0,role:'button','aria-label':'O Juiz'});
+  jg.appendChild(el('circle',{cx:cx,cy:cy,r:40}));
+  var jt=el('text',{x:cx,y:cy+5,'text-anchor':'middle'}); jt.textContent='Juiz'; jt.setAttribute('style','font-family:var(--display);font-weight:800;font-size:16px');
+  jg.appendChild(jt);
+  jg.addEventListener('click',function(){show(judge,jg)});
+  jg.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();show(judge,jg)}});
+  svg.appendChild(jg); nodes.push(jg); jg.classList.add('on');
+
+  /* ---------- Teste do sinal invertido ---------- */
+  var labels = {a:'um governo de esquerda', b:'um governo de direita'};
+  var order = ['a','b'], step=0, answers={};
+  var who=document.getElementById('tWho'), stepEl=document.getElementById('tStep'), btns=[].slice.call(document.querySelectorAll('#tScale button'));
+  var vBox=document.getElementById('tVerdict'), vT=document.getElementById('tVTitle'), vX=document.getElementById('tVText');
+  function paint(){var k=order[step]; who.textContent=labels[k]; who.className='who '+k; stepEl.textContent='Situação '+(step+1)+' de 2';
+    btns.forEach(function(b){b.setAttribute('aria-pressed','false')});}
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    if(step>1) return;
+    btns.forEach(function(x){x.setAttribute('aria-pressed', x===b?'true':'false')});
+    answers[order[step]] = +b.dataset.v;
+    setTimeout(function(){
+      if(step===0){step=1;paint();}
+      else{step=2; finish();}
+    }, 380);
+  })});
+  function finish(){
+    var d = Math.abs(answers.a-answers.b);
+    stepEl.textContent='Resultado';
+    who.textContent='um governo'; who.className='who';
+    vBox.hidden=false;
+    if(d===0){vT.textContent='Mesma nota para os dois lados.';
+      vX.textContent='Você aplicou a mesma régua. É exatamente isso que o Conselho exige de si mesmo em toda análise, e é mais raro do que parece.';}
+    else{vT.textContent='Sua nota mudou '+d+(d>1?' pontos':' ponto')+', e os fatos não mudaram.';
+      vX.textContent='A situação era idêntica nas duas vezes. Só o rótulo mudou. Isso não faz de você uma pessoa ruim: é um viés humano, e todos nós o temos. O Pacificador existe para nos ajudar a percebê-lo.';}
+  }
+  document.getElementById('tAgain').addEventListener('click',function(){order=order.reverse();step=0;answers={};vBox.hidden=true;paint();});
+  paint();
+
+  /* ---------- Compromisso ---------- */
+  var boxes=[].slice.call(document.querySelectorAll('#pledge input'));
+  var pmT=document.getElementById('pmTitle'), pmB=document.getElementById('pmBar'), pmX=document.getElementById('pmText');
+  try{var saved=JSON.parse(localStorage.getItem('pacificador-compromisso-v2')||'[]');boxes.forEach(function(b){b.checked=saved.indexOf(b.id)>-1});}catch(e){}
+  function upd(){var n=boxes.filter(function(b){return b.checked}).length;
+    pmT.textContent = n===boxes.length ? 'Você está pronto para sentar à mesa.' : n+' de '+boxes.length;
+    pmB.style.width=(n/boxes.length*100)+'%';
+    pmX.textContent = n===boxes.length ? 'Agora vem a parte difícil, e a mais bonita: convide alguém que pensa diferente de você.' : (n===0?'Marque os compromissos que você está disposto a assumir.':'Se algum ainda não cabe para você, tudo bem: a porta fica aberta para quando couber.');
+    try{localStorage.setItem('pacificador-compromisso-v2',JSON.stringify(boxes.filter(function(b){return b.checked}).map(function(b){return b.id})))}catch(e){}
+  }
+  boxes.forEach(function(b){b.addEventListener('change',upd)}); upd();
+
+
+  /* ---------- Exemplos de abertura ---------- */
+  var OPS=[
+    {b:"Esse governo destruiu a economia do país.", bw:"Começa pela conclusão e acusa um lado. Quem pensa diferente já entra na defensiva.",
+     g:"Quero entender o que aconteceu com o emprego e a renda desde 2023. O que os dados mostram?", gw:"Começa por um objeto concreto e uma pergunta que os dois lados podem investigar juntos."},
+    {b:"Aquele governo só fez estrago na educação.", bw:"Generaliza e acusa. A conversa vira defesa de time, não análise.",
+     g:"Quero entender o que mudou na aprendizagem das crianças entre 2019 e 2023. O que os dados mostram?", gw:"Delimita o período e o resultado. Qualquer governo pode ser medido com a mesma pergunta."},
+    {b:"Mas o governo do seu partido roubou muito mais!", bw:"Responde a um caso com outro caso. Um erro não justifica o outro, e a conversa original morre.",
+     g:"Vamos terminar de entender este caso. Depois, quero abrir uma conversa só sobre o outro, com a mesma régua.", gw:"Cada caso tem a sua vez. O segundo vira uma nova mesa, sem apagar o primeiro."},
+    {b:"Quem defende essa lei é fascista. / Quem é contra essa lei é comunista.", bw:"Rótulo no lugar de argumento, de qualquer lado. Depois dele, ninguém escuta mais nada.",
+     g:"Quero entender o que essa lei muda na prática e o que se sabe sobre leis parecidas em outros lugares.", gw:"Troca o ataque à pessoa pela pergunta sobre o efeito real da lei."}
+  ];
+  var opTabs=[].slice.call(document.querySelectorAll('.op-tabs button'));
+  opTabs.forEach(function(b){b.addEventListener('click',function(){var o=OPS[+b.dataset.op];
+    opTabs.forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false')});
+    document.getElementById('opBad').textContent=o.b;document.getElementById('opBadWhy').textContent=o.bw;
+    document.getElementById('opGood').textContent=o.g;document.getElementById('opGoodWhy').textContent=o.gw;})});
+
+  /* ---------- Convites ---------- */
+  var INV={
+    curto:"Família, quero propor uma coisa diferente.\n\nEm vez de brigar por política no grupo, que tal colocarmos os fatos na mesa?\n\nConheci o \"Pacificador de Famílias\": um conselho sem partido que avalia governos, leis e propostas com a mesma régua para todos os lados, mostrando o que funcionou, o que não funcionou e quem responde por cada coisa. As regras e o funcionamento do Conselho são abertos para todos.\n\nA Regra de Ouro é simples: toda conversa começa por \"quero entender...\", nunca por uma crítica ao outro lado. Sem rótulos e sem \"mas o seu lado também fez\".\n\nNinguém precisa mudar de lado. Só precisa estar disposto a ouvir e a reconhecer quando o outro lado acertar.\n\nTopa tentar comigo? Cada um traz alguém que pensa diferente.",
+    pessoal:"Oi! Sei que a gente pensa diferente sobre política, e é justamente por isso que estou te chamando.\n\nEstou entrando num grupo chamado \"Pacificador de Famílias\". A ideia é conversar sobre governos, leis e propostas olhando para os fatos, com a mesma régua para todos os lados, e com regras claras: toda conversa começa por \"quero entender...\", ninguém usa rótulos e ninguém responde a um erro apontando o erro do outro lado.\n\nA única condição é estar aberto a ouvir e a reconhecer, quando for o caso, que o outro lado acertou. Vale para mim também.\n\nQuer entrar comigo? Seria importante ter você lá justamente porque você enxerga coisas que eu não enxergo."
+  };
+  var invPre=document.getElementById('inviteText'), invTabs=[].slice.call(document.querySelectorAll('.inv-tabs button'));
+  function setInv(k){invPre.textContent=INV[k];invTabs.forEach(function(x){x.setAttribute('aria-selected',x.dataset.inv===k?'true':'false')});var m=document.getElementById('copyMsg');if(m)m.textContent='';}
+  invTabs.forEach(function(b){b.addEventListener('click',function(){setInv(b.dataset.inv)})});
+  setInv('curto');
+
+  /* ---------- Copiar convite ---------- */
+  var pre=document.getElementById('inviteText'), msg=document.getElementById('copyMsg');
+  document.getElementById('copyBtn').addEventListener('click',function(){
+    var txt=pre.textContent;
+    function fallback(){var r=document.createRange();r.selectNodeContents(pre);var s=window.getSelection();s.removeAllRanges();s.addRange(r);msg.textContent='Texto selecionado. Use "Copiar" no seu aparelho.';}
+    try{navigator.clipboard.writeText(txt).then(function(){msg.textContent='Convite copiado. Agora é só colar no grupo.'},fallback);}catch(e){fallback();}
+  });
+})();
+</script>
+
+</body>
+</html>

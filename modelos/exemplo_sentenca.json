@@ -1,0 +1,168 @@
+{
+  "exemplo": true,
+  "id": "S-000",
+  "data": "2026-10-18",
+  "modo": "Completo",
+  "objeto": "Programa Alfabetiza Já, do Município de Vila Exemplo",
+  "objeto_curto": "alfabetiza-ja-vila-exemplo",
+  "pergunta": "O Programa Alfabetiza Já, implantado em 2021 pela prefeitura de Vila Exemplo, melhorou a alfabetização das crianças ao fim do 2º ano, e a que custo?",
+  "esferas": ["Municipal", "Estadual"],
+  "poderes": ["Executivo municipal", "Executivo estadual", "Câmara Municipal"],
+  "periodo": "2015 a 2025",
+  "data_corte": "Dados consultados até 15/10/2026",
+  "documento_executivo": "2026-10-18_S-000_alfabetiza-ja-vila-exemplo_EXECUTIVA.html",
+  "documento_completo": "2026-10-18_S-000_alfabetiza-ja-vila-exemplo_COMPLETA.html",
+
+  "resposta_curta": "Sim, com ressalvas. A alfabetização ao fim do 2º ano saiu de uma estagnação em torno de 52% e chegou a 71% em quatro anos, enquanto municípios parecidos subiram bem menos. Parte do mérito é do programa estadual de cooperação, criado antes. O custo por aluno é moderado, mas o programa depende de um repasse que vence em 2027.",
+
+  "veredicto": {
+    "tipo": "politica",
+    "rotulo": "EFICAZ COM RESSALVAS",
+    "explicacao": "Efeito positivo sustentado por comparação com municípios semelhantes (evidência B). Ressalvas: parte do resultado é herança do programa estadual, e a sustentabilidade financeira não está garantida."
+  },
+  "confianca": { "nivel": "Média", "motivo": "Um único estudo com grupo de comparação; a avaliação estadual de 2025 ainda não foi auditada de forma independente." },
+
+  "convocacao": [
+    { "cadeira": "Guardião do Método", "status": "Convocada", "origem": "Obrigatória", "justificativa": "Toda sessão." },
+    { "cadeira": "O Cidadão", "status": "Convocada", "origem": "Obrigatória", "justificativa": "Toda sessão." },
+    { "cadeira": "Analista de Políticas Sociais", "status": "Convocada", "origem": "Juiz", "justificativa": "Objeto central é aprendizagem." },
+    { "cadeira": "Economista Empírico", "status": "Convocada", "origem": "Juiz", "justificativa": "Custo por aluno e sustentabilidade fiscal." },
+    { "cadeira": "Jurista Constitucional e Federativo", "status": "Convocada", "origem": "Juiz", "justificativa": "Divisão de competências entre município e estado no ensino fundamental." },
+    { "cadeira": "Cientista Político Institucional", "status": "Convocada", "origem": "Usuário (sugestão aceita)", "justificativa": "Programa lançado em ano pré-eleitoral; verificar ciclo eleitoral." },
+    { "cadeira": "O Formulador", "status": "Convocada", "origem": "Juiz", "justificativa": "Propor caminho para sustentar o programa." },
+    { "cadeira": "Investigador de Forças e Interesses", "status": "Extraordinária", "origem": "Juiz", "justificativa": "Revisão cruzada levantou contrato de material didático; mandato limitado a esse ponto." },
+    { "cadeira": "Geoestrategista", "status": "Dispensada", "origem": "Juiz", "justificativa": "Sem dimensão internacional relevante." },
+    { "cadeira": "Filósofo Pluralista", "status": "Dispensada", "origem": "Usuário (dispensa)", "justificativa": "Dispensado a pedido; divergência de valor coberta pelo Juiz." }
+  ],
+
+  "achados": [
+    { "titulo": "A tendência virou", "texto": "De 2015 a 2020, a taxa ficou entre 50% e 54%. Depois de 2021, subiu todos os anos, até 71% em 2025.", "selo": "inversao" },
+    { "titulo": "Os vizinhos não subiram tanto", "texto": "Municípios de porte e renda parecidos foram de 53% para 59% no mesmo período. A diferença é atribuída ao programa.", "selo": "comprovado" },
+    { "titulo": "Parte do mérito é herança", "texto": "A formação de professores e as avaliações vieram do programa estadual de 2018. A prefeitura aderiu e ampliou.", "selo": "heranca" },
+    { "titulo": "A conta vence em 2027", "texto": "32% do custo vem de um repasse estadual temporário. Sem renovação, o programa perde o reforço no contraturno.", "selo": "adverso" }
+  ],
+
+  "grafico": {
+    "titulo": "Crianças alfabetizadas ao fim do 2º ano",
+    "unidade": "%",
+    "y_min": 40,
+    "y_max": 80,
+    "fonte": "Avaliação estadual de alfabetização (dados fictícios para este exemplo)",
+    "marco": { "ano": 2021, "rotulo": "Início do programa" },
+    "series": [
+      { "nome": "Vila Exemplo", "papel": "principal", "pontos": [[2015,51],[2016,52],[2017,50],[2018,53],[2019,54],[2020,52],[2021,57],[2022,62],[2023,66],[2024,69],[2025,71,"a_verificar"]] },
+      { "nome": "Municípios semelhantes (média)", "papel": "pares", "pontos": [[2015,50],[2016,51],[2017,51],[2018,52],[2019,53],[2020,53],[2021,54],[2022,56],[2023,57],[2024,58],[2025,59]] },
+      { "nome": "Tendência anterior projetada", "papel": "contrafactual", "pontos": [[2020,52],[2021,52.4],[2022,52.8],[2023,53.2],[2024,53.6],[2025,54]] }
+    ],
+    "nota": "O eixo vertical começa em 40% para tornar visível a diferença entre as séries. O dado de 2025 está marcado como a verificar."
+  },
+
+  "fatos_estabelecidos": [
+    { "texto": "A taxa de alfabetização ao fim do 2º ano foi de 52% em 2020 e de 69% em 2024.", "fonte": "Avaliação estadual de alfabetização, edições 2020 e 2024 (fictício)", "confianca": "Alta" },
+    { "texto": "O programa atendeu 2.140 alunos em 38 escolas municipais em 2024.", "fonte": "Censo Escolar e relatório da Secretaria Municipal (fictício)", "confianca": "Alta" },
+    { "texto": "O custo anual foi de R$ 1.180 por aluno atendido em 2024, em valores de 2024.", "fonte": "Portal da Transparência municipal (fictício)", "confianca": "Média" }
+  ],
+
+  "fatos_em_disputa": [
+    { "questao": "A melhora se deve ao programa ou à volta às aulas presenciais depois da pandemia?", "posicoes": ["Situação: o programa explica a alta.", "Oposição: foi só a recuperação pós-pandemia."], "resolveria": "Comparar com municípios que também voltaram às aulas e não adotaram o programa. Isso já foi feito: os pares subiram 6 pontos, Vila Exemplo subiu 19." },
+    { "questao": "O dado de 2025 é comparável aos anteriores?", "posicoes": ["A prova mudou de fornecedor em 2025."], "resolveria": "Nota técnica de equalização da secretaria estadual, ainda não publicada." }
+  ],
+
+  "resultados": [
+    { "acao": "Reforço de leitura no contraturno", "indicador": "Alfabetização ao fim do 2º ano", "efeito": "+13 pontos acima dos pares (2020 a 2025)", "selo": "comprovado", "evidencia": "B", "confianca": "Média" },
+    { "acao": "Formação continuada de professores", "indicador": "Alfabetização ao fim do 2º ano", "efeito": "Contribui, mas vem do programa estadual de 2018", "selo": "heranca", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Distribuição de material didático estruturado", "indicador": "Alfabetização ao fim do 2º ano", "efeito": "Efeito não separável das demais ações", "selo": "provavel", "evidencia": "C", "confianca": "Baixa" },
+    { "acao": "Bônus por resultado para escolas", "indicador": "Abandono no 1º ciclo", "efeito": "Sem mudança detectável", "selo": "sem_efeito", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Financiamento por repasse temporário", "indicador": "Sustentabilidade fiscal", "efeito": "32% do custo depende de repasse que vence em 2027", "selo": "adverso", "evidencia": "C", "confianca": "Alta" }
+  ],
+
+  "linha_do_tempo": [
+    { "data": "2018", "evento": "Estado cria programa de cooperação em alfabetização", "ator": "Governo estadual (gestão anterior)", "tipo": "desenho" },
+    { "data": "2020", "evento": "Escolas fechadas na pandemia", "ator": "Fator externo", "tipo": "externo" },
+    { "data": "2021", "evento": "Prefeitura adere e lança o Alfabetiza Já com reforço no contraturno", "ator": "Prefeitura (gestão atual)", "tipo": "implementacao" },
+    { "data": "2022", "evento": "Câmara aprova lei que torna o programa permanente", "ator": "Câmara Municipal", "tipo": "aprovacao" },
+    { "data": "2023–2025", "evento": "Alta contínua da alfabetização", "ator": "Efeito medido", "tipo": "efeito" },
+    { "data": "2027", "evento": "Fim previsto do repasse estadual", "ator": "Governo estadual", "tipo": "externo" }
+  ],
+  "atribuicao": "O desenho pedagógico é herança do programa estadual de 2018. O reforço no contraturno, que explica a maior parte da diferença para os pares, é mérito da prefeitura atual. A pandemia derrubou a base de 2020, mas os pares mostram que isso não explica a alta.",
+
+  "quem_responde": [
+    { "esfera": "União", "papel": "Define a base curricular e complementa o financiamento pelo Fundeb." },
+    { "esfera": "Estado", "papel": "Desenhou a cooperação, forma professores, aplica a avaliação e paga 32% do programa." },
+    { "esfera": "Município", "papel": "É o responsável direto pelos anos iniciais, executa o programa e paga 68%." }
+  ],
+  "matriz_federativa": [
+    { "dimensao": "Competência constitucional", "uniao": "Diretrizes e bases (CF art. 22, XXIV); função supletiva", "estado": "Atuação prioritária no fundamental e médio (CF art. 211 §3º)", "municipio": "Atuação prioritária no fundamental e infantil (CF art. 211 §2º)", "obs": "Regime de colaboração (CF art. 211)" },
+    { "dimensao": "Quem financia", "uniao": "Complementação do Fundeb", "estado": "32% do custo do programa", "municipio": "68% do custo do programa", "obs": "Valores de 2024 (fictícios)" },
+    { "dimensao": "Quem executa", "uniao": "—", "estado": "Formação e avaliação", "municipio": "Aulas, reforço e material", "obs": "" },
+    { "dimensao": "Quem reivindica o mérito", "uniao": "—", "estado": "Governo estadual atual", "municipio": "Prefeitura atual", "obs": "Ambos reivindicam; o desenho é de 2018" },
+    { "dimensao": "Quem de fato fez", "uniao": "—", "estado": "Gestão estadual de 2018 (desenho)", "municipio": "Gestão municipal de 2021 (ampliação)", "obs": "" }
+  ],
+
+  "forcas": [
+    { "ator": "Prefeitura (gestão atual)", "interesse_declarado": "Melhorar a alfabetização", "interesse_provavel": "Vitrine eleitoral para 2024", "ganha_perde": "Ganha capital político", "mecanismo": "Comunicação oficial", "evidencia": "I", "transparencia": "Alta" },
+    { "ator": "Oposição na Câmara", "interesse_declarado": "Fiscalizar gastos", "interesse_provavel": "Reduzir o capital político do prefeito", "ganha_perde": "Perde se o programa for bem avaliado", "mecanismo": "Requerimentos e discursos", "evidencia": "I", "transparencia": "Alta" },
+    { "ator": "Fornecedor do material didático", "interesse_declarado": "Venda de material", "interesse_provavel": "Renovação do contrato sem nova licitação", "ganha_perde": "Contrato de R$ 1,9 milhão por ano", "mecanismo": "Contratação por inexigibilidade", "evidencia": "III", "transparencia": "Média" },
+    { "ator": "Sindicato dos professores", "interesse_declarado": "Condições de trabalho e remuneração do contraturno", "interesse_provavel": "Incorporar a gratificação ao salário", "ganha_perde": "Ganha com a permanência", "mecanismo": "Negociação coletiva", "evidencia": "I", "transparencia": "Alta" }
+  ],
+  "hipoteses": [
+    { "texto": "A escolha do fornecedor por inexigibilidade pode ter restringido a concorrência.", "confirmaria": "Parecer do Tribunal de Contas sobre o processo de contratação." }
+  ],
+  "polarizacao": "Em ano eleitoral, a situação tem interesse em atribuir toda a melhora ao prefeito, e a oposição tem interesse em atribuí-la à pandemia. Os dados não sustentam nenhuma das duas versões puras.",
+
+  "vertentes": [
+    { "nome": "Quem defende o programa", "acerta": "A melhora é real e maior que a dos vizinhos.", "erra": "Atribui à prefeitura um desenho que é do estado e ignora o risco financeiro." },
+    { "nome": "Quem critica o programa", "acerta": "O financiamento é frágil e o contrato de material merece fiscalização.", "erra": "Atribui a alta à pandemia, o que a comparação com os pares não sustenta." },
+    { "nome": "Visão liberal", "acerta": "Cobra avaliação de custo-efetividade e transparência nas compras.", "erra": "Subestima o papel do Estado na alfabetização de crianças pobres, onde o mercado não chega." },
+    { "nome": "Visão social-democrata", "acerta": "Reconhece que a alfabetização na idade certa reduz desigualdade lá na frente.", "erra": "Tende a tratar a ampliação de gasto como resultado, sem medir aprendizagem." }
+  ],
+
+  "valores": [
+    { "polo_a": "Ampliar o programa agora", "polo_b": "Garantir a sustentabilidade antes de ampliar", "custo_a": "Risco de cortar no meio em 2027 se o repasse acabar", "custo_b": "Crianças de hoje ficam sem o reforço enquanto se planeja", "comentario": "Os dados não decidem isso. É uma escolha entre urgência e prudência." }
+  ],
+
+  "conflitos": [
+    { "tema": "Peso do bônus por resultado", "lado_1": "Economista: incentivo financeiro ajuda a sustentar o foco.", "lado_2": "Analista Social: sem efeito detectável e com risco de distorcer a avaliação.", "decidiria": "Avaliação separando escolas com e sem bônus.", "posicao_juiz": "Fica com o Analista Social: a evidência atual não mostra efeito, e a lei de Goodhart é um risco real." }
+  ],
+
+  "propostas": [
+    { "titulo": "Fundo municipal de alfabetização com receita própria", "origem": "Modelo de cooperação estado–municípios (exemplo ilustrativo)", "custo": "R$ 0,8 milhão por ano para cobrir o fim do repasse", "implementacao": "Lei municipal vinculando parte da receita de ISS ao fundo a partir de 2027", "metrica": "Alfabetização ao fim do 2º ano ≥ 70% em 2028", "criterio": "Revisar se a taxa cair por dois anos seguidos" },
+    { "titulo": "Avaliação independente com grupo de comparação", "origem": "Prática recomendada em avaliação de impacto", "custo": "Baixo, com uso de dados já coletados", "implementacao": "Convênio com universidade pública", "metrica": "Relatório publicado até 2027", "criterio": "—" }
+  ],
+
+  "pareceres": [
+    { "cadeira": "Analista de Políticas Sociais", "resumo": "O ganho de aprendizagem é real e concentrado nas escolas mais pobres, o que é raro e valioso. Problema: o bônus por resultado não mostrou efeito.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Economista Empírico", "resumo": "O custo por ponto de aprendizagem é razoável na comparação com programas semelhantes. O risco está em 2027.", "confianca": "Média", "sinal_invertido": "Feito. Ajustei o termo 'gasto eleitoreiro' para 'gasto em ano pré-eleitoral'." },
+    { "cadeira": "Jurista Constitucional e Federativo", "resumo": "A lei municipal de 2022 é constitucional, mas não prevê fonte permanente de recursos nem avaliação periódica.", "confianca": "Alta", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Cientista Político Institucional", "resumo": "O lançamento em 2021 antecede a eleição de 2024 e há ganho político, mas o programa continuou depois dela, o que reduz a hipótese de medida puramente eleitoral.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Guardião do Método", "resumo": "Série de 2015 a 2024 é comparável. O dado de 2025 mudou de fornecedor de prova e está marcado como a verificar.", "confianca": "Alta", "sinal_invertido": "Não se aplica: análise de método." },
+    { "cadeira": "O Cidadão", "resumo": "Em linguagem simples: mais crianças estão lendo na idade certa, e falta garantir o dinheiro para continuar.", "confianca": "—", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "O Formulador", "resumo": "Propõe fundo com receita própria e avaliação independente, para que o programa sobreviva a qualquer troca de governo.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Investigador de Forças e Interesses (extraordinária)", "resumo": "A contratação por inexigibilidade é legal em tese, mas o padrão de renovação merece análise do Tribunal de Contas. Nível de evidência III: indício, não prova.", "confianca": "Baixa", "sinal_invertido": "Feito. Nada mudou." }
+  ],
+
+  "isonomia": [
+    { "item": "Teste do sinal invertido", "status": "APROVADO", "nota": "Refeito pelo Auditor sobre a conclusão central." },
+    { "item": "Vocabulário carregado", "status": "AJUSTADO", "nota": "'Gasto eleitoreiro' substituído por 'gasto em ano pré-eleitoral'." },
+    { "item": "Rigor simétrico", "status": "APROVADO", "nota": "Mesma exigência para a tese da situação e para a da oposição." },
+    { "item": "Janela e base", "status": "APROVADO", "nota": "Série inteira desde 2015; o ano-base 2020 foi testado contra 2019." },
+    { "item": "Falso equilíbrio", "status": "APROVADO", "nota": "A Sentença conclui que a tese da pandemia não se sustenta." },
+    { "item": "Convocação isenta", "status": "APROVADO", "nota": "Dispensa do Filósofo a pedido não altera a conclusão; divergência de valor mapeada pelo Juiz." }
+  ],
+  "precedentes": [],
+
+  "ferramenta": {
+    "nome": "Post hoc: depois disso, logo por causa disso",
+    "como_reconhecer": "Quando alguém diz que algo melhorou porque um governo fez X, pergunte: o que aconteceu, no mesmo período, com quem não fez X?",
+    "exemplos": ["'Melhorou porque o prefeito criou o programa' ignora o desenho estadual.", "'Melhorou só porque a pandemia acabou' ignora que os vizinhos não melhoraram tanto."]
+  },
+  "pergunta_mesa": "Se o dinheiro do estado acabar em 2027, o que vocês acham que a cidade deveria cortar para manter o programa, ou deveria deixá-lo acabar?",
+  "proximo_passo": "Acompanhar a nota técnica estadual sobre a prova de 2025 e perguntar ao seu vereador como o programa será pago depois de 2027.",
+  "gatilho_revisao": "Publicação da nota técnica de equalização da prova de 2025 ou decisão sobre a renovação do repasse estadual.",
+
+  "fontes": [
+    { "nome": "Avaliação estadual de alfabetização (fictícia)", "detalhe": "Edições 2015 a 2025", "consulta": "15/10/2026" },
+    { "nome": "Portal da Transparência de Vila Exemplo (fictício)", "detalhe": "Despesas do programa, 2021 a 2025", "consulta": "15/10/2026" },
+    { "nome": "Censo Escolar (dados fictícios para o exemplo)", "detalhe": "Matrículas por escola, 2024", "consulta": "15/10/2026" }
+  ]
+}
