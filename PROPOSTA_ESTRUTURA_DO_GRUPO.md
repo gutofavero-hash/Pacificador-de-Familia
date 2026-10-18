@@ -69,7 +69,7 @@ Um site estático, gratuito para hospedar (GitHub Pages, Cloudflare Pages ou Net
 
 Cada Sentença ganha um link próprio. Quando colado no WhatsApp, o link mostra uma prévia com título, resumo e imagem: as páginas e o gerador de Sentenças já incluem esses metadados (Open Graph).
 
-**Decidido (18/10/2026):** o repositório `pacificador-de-familia` é público e o site sai dele pelo GitHub Pages, sem domínio próprio: https://gutofavero-hash.github.io/pacificador-de-familia/. A divulgação nos grupos aponta para a Declaração, o Motor e as Sentenças; os demais arquivos ficam acessíveis no repositório, mas não são divulgados ativamente.
+**Decidido (18/10/2026):** o repositório `pacificador-de-familia` é público e o site sai dele pelo GitHub Pages, sem domínio próprio: https://gutofavero-hash.github.io/Pacificador-de-Familia/. A divulgação nos grupos aponta para a Declaração, o Motor e as Sentenças; os demais arquivos ficam acessíveis no repositório, mas não são divulgados ativamente.
 
 ### 2.3 O Claude: onde o Conselho roda
 

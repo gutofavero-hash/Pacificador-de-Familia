@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 # Endereço do site no GitHub Pages; usado nas prévias de link (WhatsApp, redes sociais).
-SITE = "https://gutofavero-hash.github.io/pacificador-de-familia/"
+SITE = "https://gutofavero-hash.github.io/Pacificador-de-Familia/"
 
 AQUI = Path(__file__).resolve().parent
 MODELOS = {

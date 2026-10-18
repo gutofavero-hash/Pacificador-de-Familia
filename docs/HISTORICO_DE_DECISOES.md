@@ -72,7 +72,7 @@ Além disso: todo convidado deve conhecer a mecânica, a dinâmica e o prompt do
 **Decisão do fundador.** O repositório `pacificador-de-familia` fica público. A princípio, não haverá domínio próprio para o site.
 
 **Feito.**
-- Site preparado para o GitHub Pages, no endereço gratuito https://gutofavero-hash.github.io/pacificador-de-familia/: `index.html` (leva à Declaração) e `.nojekyll`.
+- Site preparado para o GitHub Pages, no endereço gratuito https://gutofavero-hash.github.io/Pacificador-de-Familia/: `index.html` (leva à Declaração) e `.nojekyll`.
 - Prévias de link para WhatsApp e redes sociais (Open Graph) na Declaração, no Motor e na página de entrada, com imagens próprias em `assets/`. O gerador de Sentenças passou a gravar título, resumo e imagem de prévia em cada Sentença.
 - `CLAUDE.md` §4 reescrito: tudo no repositório é público; nunca gravar dado pessoal de participantes, conversas privadas ou credenciais. README com o endereço do site e o passo a passo de ativação. Proposta de estrutura atualizada.
 

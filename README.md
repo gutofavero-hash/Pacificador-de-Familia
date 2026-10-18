@@ -6,7 +6,7 @@ Conselho Político Permanente: um tribunal de evidências para avaliar e confron
 
 Criado em 18/10/2026 por Augusto Silveira Fávero. Projeto independente e público: tudo o que diz respeito ao Pacificador é construído e consolidado neste repositório.
 
-**Site:** https://gutofavero-hash.github.io/pacificador-de-familia/
+**Site:** https://gutofavero-hash.github.io/Pacificador-de-Familia/
 
 ## Por onde começar
 
@@ -57,7 +57,7 @@ O site é publicado direto deste repositório, sem domínio próprio. Para ativa
 
 1. Levar o conteúdo para a branch `main`.
 2. Em **Settings → Pages**, escolher **Deploy from a branch**, branch `main`, pasta `/ (root)`, e salvar.
-3. Em alguns minutos o site fica no ar em https://gutofavero-hash.github.io/pacificador-de-familia/
+3. Em alguns minutos o site fica no ar em https://gutofavero-hash.github.io/Pacificador-de-Familia/
 
 | Endereço | Página |
 |---|---|
