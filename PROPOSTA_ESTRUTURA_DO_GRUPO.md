@@ -67,9 +67,9 @@ Um site estático, gratuito para hospedar (GitHub Pages, Cloudflare Pages ou Net
 3. **Envie sua pergunta**: um formulário simples (Google Forms ou Tally, no início).
 4. **Como funcionamos**: o `MOTOR_DO_CONSELHO.html`, com o método, os mandatos e o texto integral do prompt (decisão do fundador de 18/10/2026: todo convidado e participante conhece o motor), e as Regras da Mesa da Declaração.
 
-Cada Sentença ganha um link próprio. Quando colado no WhatsApp, esse link deve mostrar uma prévia bonita, com título, veredicto e imagem. Isso exige acrescentar metadados de prévia (Open Graph) aos modelos, o que é simples de fazer na fase 1.
+Cada Sentença ganha um link próprio. Quando colado no WhatsApp, o link mostra uma prévia com título, resumo e imagem: as páginas e o gerador de Sentenças já incluem esses metadados (Open Graph).
 
-**Atenção:** o site deve publicar só o material destinado a circular (Declaração, Motor do Conselho e Sentenças). Os documentos internos, como esta proposta, o registro e os modelos, ficam fora dele. Se o repositório `pacificador-de-familia` continuar privado, o site pode sair de uma pasta ou repositório público só com esse material.
+**Decidido (18/10/2026):** o repositório `pacificador-de-familia` é público e o site sai dele pelo GitHub Pages, sem domínio próprio: https://gutofavero-hash.github.io/pacificador-de-familia/. A divulgação nos grupos aponta para a Declaração, o Motor e as Sentenças; os demais arquivos ficam acessíveis no repositório, mas não são divulgados ativamente.
 
 ### 2.3 O Claude: onde o Conselho roda
 
@@ -118,15 +118,15 @@ Antes de publicar, toda Sentença passa por um **Comitê de Isonomia humano**: d
 | Quando | O quê | Custo |
 |---|---|---|
 | **Semana 1** | Criar o Projeto no claude.ai com o prompt; rodar 3 Sentenças-piloto de temas de esferas diferentes; recrutar 2 a 3 revisores de isonomia | Plano Claude que você já usa |
-| **Semana 2** | Criar a Comunidade no WhatsApp; publicar a Declaração e as 3 Sentenças num site estático (só com o material de circulação); convidar as primeiras 5 a 10 famílias | Domínio próprio, opcional (valor anual a verificar no Registro.br) |
+| **Semana 2** | Criar a Comunidade no WhatsApp; publicar a Declaração e as 3 Sentenças no site do GitHub Pages; convidar as primeiras 5 a 10 famílias | Sem custo (GitHub Pages, sem domínio próprio) |
 | **Semanas 3 a 6** | Domingo do Pacificador semanal; coletar o que funciona; medir quantas duplas se formaram e quantas pessoas relatam ter reconhecido um acerto do outro lado | — |
-| **Mês 2 em diante** | Se a cultura pegou: cartões para Status, prévias de link, automação no Claude Code, avaliação do número oficial do WhatsApp | Custos de API da Meta e do Claude, a orçar com uso real |
+| **Mês 2 em diante** | Se a cultura pegou: cartões para Status, automação no Claude Code, avaliação do número oficial do WhatsApp | Custos de API da Meta e do Claude, a orçar com uso real |
 
 **Indicador de sucesso principal:** pessoas que dizem "reconheci um acerto do lado que eu criticava". É a missão em forma de número, e deve ser coletado de forma anônima.
 
 ## 8. Decisões que são suas
 
 1. ~~Publicar ou não o prompt do Conselho~~ — decidido em 18/10/2026: o motor e o texto integral circulam entre todos os convidados e participantes. Falta decidir se também ficam abertos na internet.
-2. ~~Criar o repositório~~ — criado: `pacificador-de-familia`. Falta decidir se ele fica público e se haverá domínio próprio.
+2. ~~Criar o repositório, torná-lo público e decidir o domínio~~ — decidido: repositório público, site no GitHub Pages, sem domínio próprio por enquanto.
 3. Quem são as primeiras 5 a 10 famílias e os 2 a 3 revisores de isonomia.
 4. Começar agora ou depois do segundo turno eleitoral.

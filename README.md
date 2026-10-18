@@ -4,7 +4,9 @@ Conselho Político Permanente: um tribunal de evidências para avaliar e confron
 
 > Antes de escolher um lado, escolha os fatos.
 
-Criado em 18/10/2026 por Augusto Silveira Fávero. Projeto independente: tudo o que diz respeito ao Pacificador é construído e consolidado neste repositório.
+Criado em 18/10/2026 por Augusto Silveira Fávero. Projeto independente e público: tudo o que diz respeito ao Pacificador é construído e consolidado neste repositório.
+
+**Site:** https://gutofavero-hash.github.io/pacificador-de-familia/
 
 ## Por onde começar
 
@@ -16,17 +18,17 @@ Criado em 18/10/2026 por Augusto Silveira Fávero. Projeto independente: tudo o 
 
 ## Arquivos
 
-| Arquivo | Papel | Circula entre participantes? |
+| Arquivo | Papel | Feito para participantes? |
 |---|---|---|
 | `PROMPT_CONSELHO_POLITICO_PACIFICADOR_DE_FAMILIAS_v1_2.md` | Prompt vigente do Conselho: princípios, escalas, instrumentos, cadeiras e convocação, modos, protocolo, mediação, Regras da Mesa, estrutura da Sentença, entregáveis visuais, templates de subagentes. **Vence em qualquer divergência.** | Sim, pelo Motor |
 | `DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html` | Apresentação e convite: motivação, Regras da Mesa (com a Regra de Ouro), os 12 artigos, mesa redonda interativa, travas de isonomia, teste do sinal invertido, compromisso de entrada e convites prontos para o WhatsApp | Sim |
 | `MOTOR_DO_CONSELHO.html` | O motor às claras: engrenagem, convocação, 15 princípios, cadeiras e mandatos, auditoria de isonomia, escalas, instrumentos, conduta, falhas, comandos e texto integral do prompt | Sim |
 | `sentencas/` | Sentenças publicadas (Executiva e Completa), quando houver | Sim |
-| `PROPOSTA_ESTRUTURA_DO_GRUPO.md` | Como operar o grupo: WhatsApp, site, Claude, revisão humana, propagação, cuidados legais | Não (interno) |
-| `REGISTRO_SENTENCAS_PACIFICADOR.template.md` | Template da jurisprudência do Conselho (append-only, mantido por humano) | Não (interno) |
-| `modelos/` | Modelos visuais da Sentença Executiva e Completa, exemplo fictício (que serve de esquema) e scripts | Não (interno) |
-| `historico/` | Versões anteriores do prompt e da Declaração | Não (interno) |
-| `docs/HISTORICO_DE_DECISOES.md` | O que o fundador pediu e decidiu em cada rodada de construção, e por quê | Não (interno) |
+| `PROPOSTA_ESTRUTURA_DO_GRUPO.md` | Como operar o grupo: WhatsApp, site, Claude, revisão humana, propagação, cuidados legais | Não (material de trabalho) |
+| `REGISTRO_SENTENCAS_PACIFICADOR.template.md` | Template da jurisprudência do Conselho (append-only, mantido por humano) | Não (material de trabalho) |
+| `modelos/` | Modelos visuais da Sentença Executiva e Completa, exemplo fictício (que serve de esquema) e scripts | Não (material de trabalho) |
+| `historico/` | Versões anteriores do prompt e da Declaração | Não (material de trabalho) |
+| `docs/HISTORICO_DE_DECISOES.md` | O que o fundador pediu e decidiu em cada rodada de construção, e por quê | Não (material de trabalho) |
 
 ## Composição do Conselho
 
@@ -48,6 +50,23 @@ pacificador forças: [objeto]          mapa de interesses e influências
 pacificador media: [conversa]         mediação entre pessoas
 pacificador + [cadeira]: [objeto]     convocar uma cadeira
 ```
+
+## Site (GitHub Pages)
+
+O site é publicado direto deste repositório, sem domínio próprio. Para ativar (uma vez só):
+
+1. Levar o conteúdo para a branch `main`.
+2. Em **Settings → Pages**, escolher **Deploy from a branch**, branch `main`, pasta `/ (root)`, e salvar.
+3. Em alguns minutos o site fica no ar em https://gutofavero-hash.github.io/pacificador-de-familia/
+
+| Endereço | Página |
+|---|---|
+| `/` | Abre a Declaração Universal |
+| `/DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html` | Declaração Universal e Regras da Mesa |
+| `/MOTOR_DO_CONSELHO.html` | Motor do Conselho |
+| `/sentencas/…` | Cada Sentença, com resumo executivo e versão completa |
+
+Ao colar esses links no WhatsApp, aparece uma prévia com título, descrição e imagem (`assets/`).
 
 ## Scripts
 

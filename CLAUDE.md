@@ -21,11 +21,13 @@ Repositório próprio e independente do **Pacificador de Famílias**, Conselho P
 - **Checagem pós-alteração:** blocos de código balanceados, contagem de linhas antes e depois (queda inesperada indica perda de conteúdo), seções vizinhas intactas, scripts das páginas HTML sem erro de sintaxe.
 - Português do Brasil, linguagem direta.
 
-## 4 · Circulação
+## 4 · Publicação
 
-- **Circulam entre convidados e participantes** (decisão do fundador, 18/10/2026): a Declaração Universal, as Regras da Mesa, o Motor do Conselho (com o texto integral do prompt, sem o cabeçalho interno) e as Sentenças.
-- **Uso interno até decisão do fundador:** proposta de estrutura, registro de sentenças, modelos, histórico e documentação em `docs/`.
-- Publicação aberta na internet (site, repositório público) depende de decisão expressa do fundador.
+- **O repositório é público** (decisão do fundador, 18/10/2026). Todo arquivo aqui pode ser lido por qualquer pessoa: nunca grave dado pessoal de participantes, conversas privadas, credenciais ou qualquer coisa que não possa ser pública.
+- **Site:** GitHub Pages, sem domínio próprio, em `https://gutofavero-hash.github.io/pacificador-de-familia/`, publicado a partir da raiz da branch `main`. `index.html` leva à Declaração.
+- **Material feito para participantes:** a Declaração Universal, as Regras da Mesa, o Motor do Conselho (com o texto integral do prompt) e as Sentenças em `sentencas/`. É o que se divulga e se envia nos grupos.
+- **Material de trabalho** (também público, mas não divulgado ativamente): proposta de estrutura, registro de sentenças, modelos, histórico e `docs/`.
+- **Prévias de link:** as páginas para participantes têm metadados Open Graph apontando para as imagens em `assets/`. O endereço do site está fixado nessas páginas e em `modelos/gerar_sentenca.py` (`SITE`); se o endereço mudar, atualizar os dois.
 
 ## 5 · Princípios que nenhuma alteração pode violar
 

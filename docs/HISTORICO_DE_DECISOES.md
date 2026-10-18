@@ -64,3 +64,16 @@ Além disso: todo convidado deve conhecer a mecânica, a dinâmica e o prompt do
 **Pedido do fundador.** Mover todas as discussões, documentos, versões e README para o repositório `pacificador-de-familia`, para que o projeto seja construído e consolidado nele, isolado de outros projetos e de suas restrições.
 
 **Feito.** Todo o conteúdo migrado para este repositório: prompt vigente na raiz, versões anteriores em `historico/`, este histórico de decisões em `docs/`, `CLAUDE.md` próprio do projeto, README novo. Referências a outros repositórios e às regras de confidencialidade deles foram retiradas dos documentos; a política de circulação passou a ser a definida pelo fundador para este projeto (`CLAUDE.md` §4). A pasta foi retirada do repositório de origem, que passou a apontar para este.
+
+---
+
+## 18/10/2026 · Rodada 6 — Repositório público e site sem domínio próprio
+
+**Decisão do fundador.** O repositório `pacificador-de-familia` fica público. A princípio, não haverá domínio próprio para o site.
+
+**Feito.**
+- Site preparado para o GitHub Pages, no endereço gratuito https://gutofavero-hash.github.io/pacificador-de-familia/: `index.html` (leva à Declaração) e `.nojekyll`.
+- Prévias de link para WhatsApp e redes sociais (Open Graph) na Declaração, no Motor e na página de entrada, com imagens próprias em `assets/`. O gerador de Sentenças passou a gravar título, resumo e imagem de prévia em cada Sentença.
+- `CLAUDE.md` §4 reescrito: tudo no repositório é público; nunca gravar dado pessoal de participantes, conversas privadas ou credenciais. README com o endereço do site e o passo a passo de ativação. Proposta de estrutura atualizada.
+
+**Pendente (ação do fundador no GitHub):** tornar o repositório público (Settings → General → Danger Zone → Change visibility), levar o conteúdo para a `main` e ativar o Pages (Settings → Pages → Deploy from a branch → `main`, `/ (root)`).
