@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sentença Completa do Pacificador</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: dossiê navegável — sumário lateral fixo e as 18 seções do §9 em sequência, com tabelas e gráficos. Mesma identidade da Declaração Universal (violeta e petróleo = dois lados com o mesmo peso). */
+:root{
+  --paper:#F4F5F9; --paper-2:#E9EBF3; --card:#FFFFFF; --ink:#1A1D38; --muted:#585D7A; --line:#CDD0E0; --grid:#E1E3EE;
+  --side-a:#5A45C8; --side-b:#0B7480; --side-a-soft:#E6E2FB; --side-b-soft:#DDF0F1;
+  --good:#1F7A4D; --good-soft:#DDF1E6; --warn:#9A5600; --warn-soft:#FBEBD3; --bad:#B3261E; --bad-soft:#F9DEDC; --neutral-soft:#E6E7EF;
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body:"Literata", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#11132A; --paper-2:#1A1D3A; --card:#181B36; --ink:#ECEDF7; --muted:#A3A7C4; --line:#33375C; --grid:#262A4A;
+  --side-a:#A796FF; --side-b:#4FC4CE; --side-a-soft:#2A2457; --side-b-soft:#123B42;
+  --good:#5FD39A; --good-soft:#143826; --warn:#F2B35C; --warn-soft:#3D2A0E; --bad:#FF8A80; --bad-soft:#45191A; --neutral-soft:#262A4A; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#11132A; --paper-2:#1A1D3A; --card:#181B36; --ink:#ECEDF7; --muted:#A3A7C4; --line:#33375C; --grid:#262A4A;
+  --side-a:#A796FF; --side-b:#4FC4CE; --side-a-soft:#2A2457; --side-b-soft:#123B42;
+  --good:#5FD39A; --good-soft:#143826; --warn:#F2B35C; --warn-soft:#3D2A0E; --bad:#FF8A80; --bad-soft:#45191A; --neutral-soft:#262A4A; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.12;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:var(--side-a)}
+:focus-visible{outline:3px solid var(--side-a);outline-offset:3px;border-radius:4px}
+.page{max-width:880px;margin:0 auto;padding-block:24px 64px;display:grid;gap:clamp(28px,5vw,44px)}
+.eyebrow{font-family:var(--mono);font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.demo{background:repeating-linear-gradient(135deg,var(--warn-soft) 0 14px,var(--paper) 14px 28px);border:1.5px solid var(--warn);color:var(--ink);
+  border-radius:12px;padding:10px 14px;font-family:var(--mono);font-size:.82rem;text-align:center}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:14px}
+.brand{font-family:var(--display);font-weight:800;font-size:1.05rem}
+.meta{font-family:var(--mono);font-size:.78rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px}
+.title-block{display:grid;gap:12px}
+.title-block h1{font-size:clamp(1.9rem,5.5vw,3rem);font-weight:800;letter-spacing:-.01em}
+.question{font-size:1.1rem;color:var(--muted);font-style:italic;max-width:62ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--mono);font-size:.74rem;padding:4px 10px;border-radius:99px;background:var(--paper-2);border:1px solid var(--line)}
+
+.verdict{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.v-main{padding:22px 24px;display:grid;gap:10px;align-content:start}
+.v-label{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4.2vw,2.2rem);line-height:1.05}
+.v-main.good{background:var(--good-soft)} .v-main.good .v-label{color:var(--good)}
+.v-main.warn{background:var(--warn-soft)} .v-main.warn .v-label{color:var(--warn)}
+.v-main.bad{background:var(--bad-soft)} .v-main.bad .v-label{color:var(--bad)}
+.v-main.neutral{background:var(--neutral-soft)}
+.v-conf{padding:22px 24px;display:grid;gap:10px;align-content:start;border-left:1px solid var(--line)}
+.meter{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.meter i{height:10px;border-radius:3px;background:var(--grid)}
+.meter i.on{background:var(--ink)}
+.meter-l{display:grid;grid-template-columns:repeat(3,1fr);font-family:var(--mono);font-size:.7rem;color:var(--muted)}
+.conf-n{font-family:var(--display);font-weight:800;font-size:1.3rem}
+.small{font-size:.92rem;color:var(--muted)}
+
+.answer{font-size:clamp(1.15rem,2.6vw,1.35rem);line-height:1.55;border-left:4px solid var(--side-a);padding-left:18px;max-width:64ch}
+
+.sec{display:grid;gap:16px}
+.sec h2{font-size:clamp(1.3rem,3.2vw,1.65rem);font-weight:800}
+.findings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.finding{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:8px;align-content:start}
+.finding h3{font-size:1.12rem}
+.finding p{font-size:.98rem}
+.seal{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:.74rem;font-weight:500;padding:3px 9px;border-radius:99px;width:max-content;max-width:100%;border:1px solid transparent}
+.seal.good{background:var(--good-soft);color:var(--good);border-color:color-mix(in srgb,var(--good) 30%,transparent)}
+.seal.warn{background:var(--warn-soft);color:var(--warn)}
+.seal.bad{background:var(--bad-soft);color:var(--bad)}
+.seal.neutral{background:var(--neutral-soft);color:var(--ink)}
+.seal.a{background:var(--side-a-soft);color:var(--side-a)}
+.seal.b{background:var(--side-b-soft);color:var(--side-b)}
+
+.chart-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px clamp(12px,3vw,24px);display:grid;gap:12px;position:relative}
+.chart-card h3{font-size:1.15rem}
+.chart{position:relative;width:100%}
+.chart svg{width:100%;height:auto;display:block;overflow:visible}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--mono);font-size:.76rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{display:inline-block;width:22px;height:0;border-top:3px solid}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);border-radius:10px;padding:8px 10px;font-family:var(--mono);font-size:.74rem;line-height:1.45;white-space:nowrap;transform:translate(-50%,-110%);z-index:5}
+.chart-note{font-size:.84rem;color:var(--muted)}
+.verify{font-family:var(--mono);font-size:.72rem;font-weight:500;color:var(--warn);background:var(--warn-soft);padding:1px 6px;border-radius:5px;white-space:nowrap}
+
+.results{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.results li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 14px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center}
+.results .r-ef{grid-column:1/-1;font-size:.9rem;color:var(--muted)}
+.results strong{font-weight:600}
+
+.who{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.who div{border-radius:14px;padding:16px;background:var(--paper-2);display:grid;gap:6px;align-content:start}
+.who h3{font-size:1.02rem}
+.who p{font-size:.93rem}
+
+.sides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.side{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card);display:grid;gap:10px;align-content:start}
+.side h3{font-size:1.05rem}
+.side dl{margin:0;display:grid;gap:8px}
+.side dt{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.side dt.ok{color:var(--good)} .side dt.ko{color:var(--bad)}
+.side dd{margin:0;font-size:.95rem}
+
+.tension{border-radius:18px;padding:20px;background:var(--card);border:1px solid var(--line);display:grid;gap:14px}
+.t-poles{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center}
+.t-pole{font-family:var(--display);font-weight:700;font-size:1.05rem}
+.t-pole.r{text-align:right}
+.t-bar{width:clamp(60px,18vw,180px);height:8px;border-radius:99px;background:linear-gradient(90deg,var(--side-a),var(--neutral-soft) 50%,var(--side-b))}
+.t-costs{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:.92rem;color:var(--muted)}
+.t-costs div:last-child{text-align:right}
+
+.home{border-radius:22px;padding:clamp(20px,4vw,32px);background:linear-gradient(135deg,var(--side-a-soft),var(--side-b-soft));display:grid;gap:16px}
+.home .q{font-family:var(--display);font-weight:800;font-size:clamp(1.35rem,3.6vw,1.9rem);line-height:1.2}
+.tool{border-top:1px solid color-mix(in srgb,var(--ink) 18%,transparent);padding-top:14px;display:grid;gap:6px}
+.tool strong{font-family:var(--display)}
+
+.next{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;border:2px solid var(--ink);border-radius:18px;padding:18px 20px}
+.btn{font-family:var(--display);font-weight:700;border-radius:99px;padding:12px 20px;background:var(--ink);color:var(--paper);text-decoration:none;white-space:nowrap}
+.foot{font-family:var(--mono);font-size:.76rem;color:var(--muted);display:grid;gap:6px;border-top:1px solid var(--line);padding-top:16px}
+
+@media (max-width:680px){
+  .verdict,.findings,.who,.sides{grid-template-columns:1fr}
+  .v-conf{border-left:0;border-top:1px solid var(--line)}
+  .next{grid-template-columns:1fr}
+  .t-poles{grid-template-columns:1fr;text-align:left}
+  .t-pole.r{text-align:left}
+  .t-bar{width:100%}
+  .t-costs{grid-template-columns:1fr}
+  .t-costs div:last-child{text-align:left}
+}
+/* ---- Sentença Completa: sumário lateral + seções numeradas (a numeração é a do §9 do prompt) ---- */
+.page.full{max-width:1180px;grid-template-columns:240px minmax(0,1fr);column-gap:clamp(24px,4vw,56px);align-items:start}
+.page.full > .demo,.page.full > .top,.page.full > .title-block{grid-column:1/-1}
+.toc{position:sticky;top:calc(env(safe-area-inset-top, 0px) + 16px);display:grid;gap:4px;font-family:var(--mono);font-size:.78rem;max-height:calc(100vh - 32px);overflow:auto;padding-right:6px}
+.toc a{color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:8px;display:grid;grid-template-columns:24px 1fr;gap:4px}
+.toc a:hover,.toc a.on{background:var(--paper-2);color:var(--ink)}
+.toc .exec{margin-bottom:10px;border:1.5px solid var(--ink);color:var(--ink);grid-template-columns:1fr;text-align:center;font-weight:500}
+.content{display:grid;gap:clamp(36px,5vw,56px);min-width:0}
+.fsec{display:grid;gap:16px;scroll-margin-top:20px;min-width:0}
+.fsec > h2{font-size:clamp(1.35rem,3vw,1.8rem);font-weight:800;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline}
+.fsec > h2 .num{font-family:var(--mono);font-size:.85rem;font-weight:500;color:var(--side-a);border:1.5px solid var(--side-a);border-radius:8px;padding:2px 7px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.tbl table{border-collapse:collapse;width:100%;min-width:620px;font-size:.92rem}
+.tbl th{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--paper-2)}
+.tbl td{padding:10px 12px;border-bottom:1px solid var(--grid);vertical-align:top}
+.tbl tr:last-child td{border-bottom:0}
+.tbl td:first-child{font-weight:600}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.facts li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:6px}
+.facts .src{font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.tag{font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.06em;padding:2px 7px;border-radius:6px;background:var(--paper-2);border:1px solid var(--line);width:max-content}
+.tag.fato{color:var(--side-b);border-color:var(--side-b)}
+.dispute{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--card);display:grid;gap:10px}
+.dispute ul{margin:0;padding-left:18px}
+.resolve{font-size:.93rem;background:var(--paper-2);border-radius:10px;padding:10px 12px}
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;display:grid;gap:16px;border-left:2px solid var(--line)}
+.timeline li{position:relative;display:grid;gap:2px}
+.timeline li::before{content:"";position:absolute;left:-30px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--card);border:3px solid var(--muted)}
+.timeline li.desenho::before{border-color:var(--side-b)} .timeline li.implementacao::before{border-color:var(--side-a)}
+.timeline li.aprovacao::before{border-color:var(--ink)} .timeline li.efeito::before{background:var(--good);border-color:var(--good)}
+.timeline li.externo::before{border-style:dashed}
+.timeline .d{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.timeline .ev{font-weight:600}
+.attrib{border-left:4px solid var(--side-b);padding-left:16px}
+.ev-badge{font-family:var(--display);font-weight:800;display:inline-grid;place-items:center;min-width:30px;height:24px;padding:0 6px;border-radius:6px;font-size:.8rem}
+.ev-I{background:var(--good-soft);color:var(--good)} .ev-II{background:var(--good-soft);color:var(--good)}
+.ev-III{background:var(--warn-soft);color:var(--warn)} .ev-IV{background:var(--neutral-soft);color:var(--muted)}
+.callout{border-radius:14px;padding:16px;background:var(--paper-2);display:grid;gap:6px}
+.conflict{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+.conflict .cv{display:grid;grid-template-columns:1fr 1fr}
+.conflict .cv div{padding:14px 16px}
+.conflict .cv div:first-child{background:var(--side-a-soft)} .conflict .cv div:last-child{background:var(--side-b-soft)}
+.conflict .cj{padding:14px 16px;border-top:1px solid var(--line);display:grid;gap:6px}
+.props{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.prop{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card);display:grid;gap:8px;align-content:start}
+.prop dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 10px;font-size:.9rem}
+.prop dt{font-family:var(--mono);font-size:.72rem;color:var(--muted);padding-top:2px}
+.prop dd{margin:0}
+details.par{border:1px solid var(--line);border-radius:14px;background:var(--card)}
+details.par summary{cursor:pointer;padding:14px 16px;font-family:var(--display);font-weight:700;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+details.par .pb{padding:0 16px 16px;display:grid;gap:8px}
+.iso{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.iso li{display:grid;grid-template-columns:110px 1fr;gap:12px;align-items:start;padding:10px 0;border-bottom:1px solid var(--grid)}
+.st{font-family:var(--mono);font-size:.72rem;font-weight:500;padding:3px 8px;border-radius:6px;text-align:center}
+.st.ok{background:var(--good-soft);color:var(--good)} .st.adj{background:var(--warn-soft);color:var(--warn)} .st.ko{background:var(--bad-soft);color:var(--bad)}
+.mobile-toc{display:none}
+@media (max-width:900px){
+  .page.full{grid-template-columns:1fr}
+  .toc{display:none}
+  .mobile-toc{display:block;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+  .mobile-toc summary{padding:12px 16px;cursor:pointer;font-family:var(--display);font-weight:700}
+  .mobile-toc nav{display:grid;padding:0 8px 10px;font-family:var(--mono);font-size:.8rem}
+  .mobile-toc a{padding:6px 8px;color:var(--ink);text-decoration:none}
+  .props{grid-template-columns:1fr}
+  .conflict .cv{grid-template-columns:1fr}
+  .iso li{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<main class="page" id="app" aria-live="polite">
+  <noscript>Este documento precisa de JavaScript para exibir a Sentença.</noscript>
+</main>
+
+<script type="application/json" id="sentenca">{
+  "exemplo": true,
+  "id": "S-000",
+  "data": "2026-10-18",
+  "modo": "Completo",
+  "objeto": "Programa Alfabetiza Já, do Município de Vila Exemplo",
+  "objeto_curto": "alfabetiza-ja-vila-exemplo",
+  "pergunta": "O Programa Alfabetiza Já, implantado em 2021 pela prefeitura de Vila Exemplo, melhorou a alfabetização das crianças ao fim do 2º ano, e a que custo?",
+  "esferas": [
+    "Municipal",
+    "Estadual"
+  ],
+  "poderes": [
+    "Executivo municipal",
+    "Executivo estadual",
+    "Câmara Municipal"
+  ],
+  "periodo": "2015 a 2025",
+  "data_corte": "Dados consultados até 15/10/2026",
+  "documento_executivo": "2026-10-18_S-000_alfabetiza-ja-vila-exemplo_EXECUTIVA.html",
+  "documento_completo": "2026-10-18_S-000_alfabetiza-ja-vila-exemplo_COMPLETA.html",
+  "resposta_curta": "Sim, com ressalvas. A alfabetização ao fim do 2º ano saiu de uma estagnação em torno de 52% e chegou a 71% em quatro anos, enquanto municípios parecidos subiram bem menos. Parte do mérito é do programa estadual de cooperação, criado antes. O custo por aluno é moderado, mas o programa depende de um repasse que vence em 2027.",
+  "veredicto": {
+    "tipo": "politica",
+    "rotulo": "EFICAZ COM RESSALVAS",
+    "explicacao": "Efeito positivo sustentado por comparação com municípios semelhantes (evidência B). Ressalvas: parte do resultado é herança do programa estadual, e a sustentabilidade financeira não está garantida."
+  },
+  "confianca": {
+    "nivel": "Média",
+    "motivo": "Um único estudo com grupo de comparação; a avaliação estadual de 2025 ainda não foi auditada de forma independente."
+  },
+  "convocacao": [
+    {
+      "cadeira": "Guardião do Método",
+      "status": "Convocada",
+      "origem": "Obrigatória",
+      "justificativa": "Toda sessão."
+    },
+    {
+      "cadeira": "O Cidadão",
+      "status": "Convocada",
+      "origem": "Obrigatória",
+      "justificativa": "Toda sessão."
+    },
+    {
+      "cadeira": "Analista de Políticas Sociais",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Objeto central é aprendizagem."
+    },
+    {
+      "cadeira": "Economista Empírico",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Custo por aluno e sustentabilidade fiscal."
+    },
+    {
+      "cadeira": "Jurista Constitucional e Federativo",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Divisão de competências entre município e estado no ensino fundamental."
+    },
+    {
+      "cadeira": "Cientista Político Institucional",
+      "status": "Convocada",
+      "origem": "Usuário (sugestão aceita)",
+      "justificativa": "Programa lançado em ano pré-eleitoral; verificar ciclo eleitoral."
+    },
+    {
+      "cadeira": "O Formulador",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Propor caminho para sustentar o programa."
+    },
+    {
+      "cadeira": "Investigador de Forças e Interesses",
+      "status": "Extraordinária",
+      "origem": "Juiz",
+      "justificativa": "Revisão cruzada levantou contrato de material didático; mandato limitado a esse ponto."
+    },
+    {
+      "cadeira": "Geoestrategista",
+      "status": "Dispensada",
+      "origem": "Juiz",
+      "justificativa": "Sem dimensão internacional relevante."
+    },
+    {
+      "cadeira": "Filósofo Pluralista",
+      "status": "Dispensada",
+      "origem": "Usuário (dispensa)",
+      "justificativa": "Dispensado a pedido; divergência de valor coberta pelo Juiz."
+    }
+  ],
+  "achados": [
+    {
+      "titulo": "A tendência virou",
+      "texto": "De 2015 a 2020, a taxa ficou entre 50% e 54%. Depois de 2021, subiu todos os anos, até 71% em 2025.",
+      "selo": "inversao"
+    },
+    {
+      "titulo": "Os vizinhos não subiram tanto",
+      "texto": "Municípios de porte e renda parecidos foram de 53% para 59% no mesmo período. A diferença é atribuída ao programa.",
+      "selo": "comprovado"
+    },
+    {
+      "titulo": "Parte do mérito é herança",
+      "texto": "A formação de professores e as avaliações vieram do programa estadual de 2018. A prefeitura aderiu e ampliou.",
+      "selo": "heranca"
+    },
+    {
+      "titulo": "A conta vence em 2027",
+      "texto": "32% do custo vem de um repasse estadual temporário. Sem renovação, o programa perde o reforço no contraturno.",
+      "selo": "adverso"
+    }
+  ],
+  "grafico": {
+    "titulo": "Crianças alfabetizadas ao fim do 2º ano",
+    "unidade": "%",
+    "y_min": 40,
+    "y_max": 80,
+    "fonte": "Avaliação estadual de alfabetização (dados fictícios para este exemplo)",
+    "marco": {
+      "ano": 2021,
+      "rotulo": "Início do programa"
+    },
+    "series": [
+      {
+        "nome": "Vila Exemplo",
+        "papel": "principal",
+        "pontos": [
+          [
+            2015,
+            51
+          ],
+          [
+            2016,
+            52
+          ],
+          [
+            2017,
+            50
+          ],
+          [
+            2018,
+            53
+          ],
+          [
+            2019,
+            54
+          ],
+          [
+            2020,
+            52
+          ],
+          [
+            2021,
+            57
+          ],
+          [
+            2022,
+            62
+          ],
+          [
+            2023,
+            66
+          ],
+          [
+            2024,
+            69
+          ],
+          [
+            2025,
+            71,
+            "a_verificar"
+          ]
+        ]
+      },
+      {
+        "nome": "Municípios semelhantes (média)",
+        "papel": "pares",
+        "pontos": [
+          [
+            2015,
+            50
+          ],
+          [
+            2016,
+            51
+          ],
+          [
+            2017,
+            51
+          ],
+          [
+            2018,
+            52
+          ],
+          [
+            2019,
+            53
+          ],
+          [
+            2020,
+            53
+          ],
+          [
+            2021,
+            54
+          ],
+          [
+            2022,
+            56
+          ],
+          [
+            2023,
+            57
+          ],
+          [
+            2024,
+            58
+          ],
+          [
+            2025,
+            59
+          ]
+        ]
+      },
+      {
+        "nome": "Tendência anterior projetada",
+        "papel": "contrafactual",
+        "pontos": [
+          [
+            2020,
+            52
+          ],
+          [
+            2021,
+            52.4
+          ],
+          [
+            2022,
+            52.8
+          ],
+          [
+            2023,
+            53.2
+          ],
+          [
+            2024,
+            53.6
+          ],
+          [
+            2025,
+            54
+          ]
+        ]
+      }
+    ],
+    "nota": "O eixo vertical começa em 40% para tornar visível a diferença entre as séries. O dado de 2025 está marcado como a verificar."
+  },
+  "fatos_estabelecidos": [
+    {
+      "texto": "A taxa de alfabetização ao fim do 2º ano foi de 52% em 2020 e de 69% em 2024.",
+      "fonte": "Avaliação estadual de alfabetização, edições 2020 e 2024 (fictício)",
+      "confianca": "Alta"
+    },
+    {
+      "texto": "O programa atendeu 2.140 alunos em 38 escolas municipais em 2024.",
+      "fonte": "Censo Escolar e relatório da Secretaria Municipal (fictício)",
+      "confianca": "Alta"
+    },
+    {
+      "texto": "O custo anual foi de R$ 1.180 por aluno atendido em 2024, em valores de 2024.",
+      "fonte": "Portal da Transparência municipal (fictício)",
+      "confianca": "Média"
+    }
+  ],
+  "fatos_em_disputa": [
+    {
+      "questao": "A melhora se deve ao programa ou à volta às aulas presenciais depois da pandemia?",
+      "posicoes": [
+        "Situação: o programa explica a alta.",
+        "Oposição: foi só a recuperação pós-pandemia."
+      ],
+      "resolveria": "Comparar com municípios que também voltaram às aulas e não adotaram o programa. Isso já foi feito: os pares subiram 6 pontos, Vila Exemplo subiu 19."
+    },
+    {
+      "questao": "O dado de 2025 é comparável aos anteriores?",
+      "posicoes": [
+        "A prova mudou de fornecedor em 2025."
+      ],
+      "resolveria": "Nota técnica de equalização da secretaria estadual, ainda não publicada."
+    }
+  ],
+  "resultados": [
+    {
+      "acao": "Reforço de leitura no contraturno",
+      "indicador": "Alfabetização ao fim do 2º ano",
+      "efeito": "+13 pontos acima dos pares (2020 a 2025)",
+      "selo": "comprovado",
+      "evidencia": "B",
+      "confianca": "Média"
+    },
+    {
+      "acao": "Formação continuada de professores",
+      "indicador": "Alfabetização ao fim do 2º ano",
+      "efeito": "Contribui, mas vem do programa estadual de 2018",
+      "selo": "heranca",
+      "evidencia": "C",
+      "confianca": "Média"
+    },
+    {
+      "acao": "Distribuição de material didático estruturado",
+      "indicador": "Alfabetização ao fim do 2º ano",
+      "efeito": "Efeito não separável das demais ações",
+      "selo": "provavel",
+      "evidencia": "C",
+      "confianca": "Baixa"
+    },
+    {
+      "acao": "Bônus por resultado para escolas",
+      "indicador": "Abandono no 1º ciclo",
+      "efeito": "Sem mudança detectável",
+      "selo": "sem_efeito",
+      "evidencia": "C",
+      "confianca": "Média"
+    },
+    {
+      "acao": "Financiamento por repasse temporário",
+      "indicador": "Sustentabilidade fiscal",
+      "efeito": "32% do custo depende de repasse que vence em 2027",
+      "selo": "adverso",
+      "evidencia": "C",
+      "confianca": "Alta"
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "data": "2018",
+      "evento": "Estado cria programa de cooperação em alfabetização",
+      "ator": "Governo estadual (gestão anterior)",
+      "tipo": "desenho"
+    },
+    {
+      "data": "2020",
+      "evento": "Escolas fechadas na pandemia",
+      "ator": "Fator externo",
+      "tipo": "externo"
+    },
+    {
+      "data": "2021",
+      "evento": "Prefeitura adere e lança o Alfabetiza Já com reforço no contraturno",
+      "ator": "Prefeitura (gestão atual)",
+      "tipo": "implementacao"
+    },
+    {
+      "data": "2022",
+      "evento": "Câmara aprova lei que torna o programa permanente",
+      "ator": "Câmara Municipal",
+      "tipo": "aprovacao"
+    },
+    {
+      "data": "2023–2025",
+      "evento": "Alta contínua da alfabetização",
+      "ator": "Efeito medido",
+      "tipo": "efeito"
+    },
+    {
+      "data": "2027",
+      "evento": "Fim previsto do repasse estadual",
+      "ator": "Governo estadual",
+      "tipo": "externo"
+    }
+  ],
+  "atribuicao": "O desenho pedagógico é herança do programa estadual de 2018. O reforço no contraturno, que explica a maior parte da diferença para os pares, é mérito da prefeitura atual. A pandemia derrubou a base de 2020, mas os pares mostram que isso não explica a alta.",
+  "quem_responde": [
+    {
+      "esfera": "União",
+      "papel": "Define a base curricular e complementa o financiamento pelo Fundeb."
+    },
+    {
+      "esfera": "Estado",
+      "papel": "Desenhou a cooperação, forma professores, aplica a avaliação e paga 32% do programa."
+    },
+    {
+      "esfera": "Município",
+      "papel": "É o responsável direto pelos anos iniciais, executa o programa e paga 68%."
+    }
+  ],
+  "matriz_federativa": [
+    {
+      "dimensao": "Competência constitucional",
+      "uniao": "Diretrizes e bases (CF art. 22, XXIV); função supletiva",
+      "estado": "Atuação prioritária no fundamental e médio (CF art. 211 §3º)",
+      "municipio": "Atuação prioritária no fundamental e infantil (CF art. 211 §2º)",
+      "obs": "Regime de colaboração (CF art. 211)"
+    },
+    {
+      "dimensao": "Quem financia",
+      "uniao": "Complementação do Fundeb",
+      "estado": "32% do custo do programa",
+      "municipio": "68% do custo do programa",
+      "obs": "Valores de 2024 (fictícios)"
+    },
+    {
+      "dimensao": "Quem executa",
+      "uniao": "—",
+      "estado": "Formação e avaliação",
+      "municipio": "Aulas, reforço e material",
+      "obs": ""
+    },
+    {
+      "dimensao": "Quem reivindica o mérito",
+      "uniao": "—",
+      "estado": "Governo estadual atual",
+      "municipio": "Prefeitura atual",
+      "obs": "Ambos reivindicam; o desenho é de 2018"
+    },
+    {
+      "dimensao": "Quem de fato fez",
+      "uniao": "—",
+      "estado": "Gestão estadual de 2018 (desenho)",
+      "municipio": "Gestão municipal de 2021 (ampliação)",
+      "obs": ""
+    }
+  ],
+  "forcas": [
+    {
+      "ator": "Prefeitura (gestão atual)",
+      "interesse_declarado": "Melhorar a alfabetização",
+      "interesse_provavel": "Vitrine eleitoral para 2024",
+      "ganha_perde": "Ganha capital político",
+      "mecanismo": "Comunicação oficial",
+      "evidencia": "I",
+      "transparencia": "Alta"
+    },
+    {
+      "ator": "Oposição na Câmara",
+      "interesse_declarado": "Fiscalizar gastos",
+      "interesse_provavel": "Reduzir o capital político do prefeito",
+      "ganha_perde": "Perde se o programa for bem avaliado",
+      "mecanismo": "Requerimentos e discursos",
+      "evidencia": "I",
+      "transparencia": "Alta"
+    },
+    {
+      "ator": "Fornecedor do material didático",
+      "interesse_declarado": "Venda de material",
+      "interesse_provavel": "Renovação do contrato sem nova licitação",
+      "ganha_perde": "Contrato de R$ 1,9 milhão por ano",
+      "mecanismo": "Contratação por inexigibilidade",
+      "evidencia": "III",
+      "transparencia": "Média"
+    },
+    {
+      "ator": "Sindicato dos professores",
+      "interesse_declarado": "Condições de trabalho e remuneração do contraturno",
+      "interesse_provavel": "Incorporar a gratificação ao salário",
+      "ganha_perde": "Ganha com a permanência",
+      "mecanismo": "Negociação coletiva",
+      "evidencia": "I",
+      "transparencia": "Alta"
+    }
+  ],
+  "hipoteses": [
+    {
+      "texto": "A escolha do fornecedor por inexigibilidade pode ter restringido a concorrência.",
+      "confirmaria": "Parecer do Tribunal de Contas sobre o processo de contratação."
+    }
+  ],
+  "polarizacao": "Em ano eleitoral, a situação tem interesse em atribuir toda a melhora ao prefeito, e a oposição tem interesse em atribuí-la à pandemia. Os dados não sustentam nenhuma das duas versões puras.",
+  "vertentes": [
+    {
+      "nome": "Quem defende o programa",
+      "acerta": "A melhora é real e maior que a dos vizinhos.",
+      "erra": "Atribui à prefeitura um desenho que é do estado e ignora o risco financeiro."
+    },
+    {
+      "nome": "Quem critica o programa",
+      "acerta": "O financiamento é frágil e o contrato de material merece fiscalização.",
+      "erra": "Atribui a alta à pandemia, o que a comparação com os pares não sustenta."
+    },
+    {
+      "nome": "Visão liberal",
+      "acerta": "Cobra avaliação de custo-efetividade e transparência nas compras.",
+      "erra": "Subestima o papel do Estado na alfabetização de crianças pobres, onde o mercado não chega."
+    },
+    {
+      "nome": "Visão social-democrata",
+      "acerta": "Reconhece que a alfabetização na idade certa reduz desigualdade lá na frente.",
+      "erra": "Tende a tratar a ampliação de gasto como resultado, sem medir aprendizagem."
+    }
+  ],
+  "valores": [
+    {
+      "polo_a": "Ampliar o programa agora",
+      "polo_b": "Garantir a sustentabilidade antes de ampliar",
+      "custo_a": "Risco de cortar no meio em 2027 se o repasse acabar",
+      "custo_b": "Crianças de hoje ficam sem o reforço enquanto se planeja",
+      "comentario": "Os dados não decidem isso. É uma escolha entre urgência e prudência."
+    }
+  ],
+  "conflitos": [
+    {
+      "tema": "Peso do bônus por resultado",
+      "lado_1": "Economista: incentivo financeiro ajuda a sustentar o foco.",
+      "lado_2": "Analista Social: sem efeito detectável e com risco de distorcer a avaliação.",
+      "decidiria": "Avaliação separando escolas com e sem bônus.",
+      "posicao_juiz": "Fica com o Analista Social: a evidência atual não mostra efeito, e a lei de Goodhart é um risco real."
+    }
+  ],
+  "propostas": [
+    {
+      "titulo": "Fundo municipal de alfabetização com receita própria",
+      "origem": "Modelo de cooperação estado–municípios (exemplo ilustrativo)",
+      "custo": "R$ 0,8 milhão por ano para cobrir o fim do repasse",
+      "implementacao": "Lei municipal vinculando parte da receita de ISS ao fundo a partir de 2027",
+      "metrica": "Alfabetização ao fim do 2º ano ≥ 70% em 2028",
+      "criterio": "Revisar se a taxa cair por dois anos seguidos"
+    },
+    {
+      "titulo": "Avaliação independente com grupo de comparação",
+      "origem": "Prática recomendada em avaliação de impacto",
+      "custo": "Baixo, com uso de dados já coletados",
+      "implementacao": "Convênio com universidade pública",
+      "metrica": "Relatório publicado até 2027",
+      "criterio": "—"
+    }
+  ],
+  "pareceres": [
+    {
+      "cadeira": "Analista de Políticas Sociais",
+      "resumo": "O ganho de aprendizagem é real e concentrado nas escolas mais pobres, o que é raro e valioso. Problema: o bônus por resultado não mostrou efeito.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Economista Empírico",
+      "resumo": "O custo por ponto de aprendizagem é razoável na comparação com programas semelhantes. O risco está em 2027.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Ajustei o termo 'gasto eleitoreiro' para 'gasto em ano pré-eleitoral'."
+    },
+    {
+      "cadeira": "Jurista Constitucional e Federativo",
+      "resumo": "A lei municipal de 2022 é constitucional, mas não prevê fonte permanente de recursos nem avaliação periódica.",
+      "confianca": "Alta",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Cientista Político Institucional",
+      "resumo": "O lançamento em 2021 antecede a eleição de 2024 e há ganho político, mas o programa continuou depois dela, o que reduz a hipótese de medida puramente eleitoral.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Guardião do Método",
+      "resumo": "Série de 2015 a 2024 é comparável. O dado de 2025 mudou de fornecedor de prova e está marcado como a verificar.",
+      "confianca": "Alta",
+      "sinal_invertido": "Não se aplica: análise de método."
+    },
+    {
+      "cadeira": "O Cidadão",
+      "resumo": "Em linguagem simples: mais crianças estão lendo na idade certa, e falta garantir o dinheiro para continuar.",
+      "confianca": "—",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "O Formulador",
+      "resumo": "Propõe fundo com receita própria e avaliação independente, para que o programa sobreviva a qualquer troca de governo.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Investigador de Forças e Interesses (extraordinária)",
+      "resumo": "A contratação por inexigibilidade é legal em tese, mas o padrão de renovação merece análise do Tribunal de Contas. Nível de evidência III: indício, não prova.",
+      "confianca": "Baixa",
+      "sinal_invertido": "Feito. Nada mudou."
+    }
+  ],
+  "isonomia": [
+    {
+      "item": "Teste do sinal invertido",
+      "status": "APROVADO",
+      "nota": "Refeito pelo Auditor sobre a conclusão central."
+    },
+    {
+      "item": "Vocabulário carregado",
+      "status": "AJUSTADO",
+      "nota": "'Gasto eleitoreiro' substituído por 'gasto em ano pré-eleitoral'."
+    },
+    {
+      "item": "Rigor simétrico",
+      "status": "APROVADO",
+      "nota": "Mesma exigência para a tese da situação e para a da oposição."
+    },
+    {
+      "item": "Janela e base",
+      "status": "APROVADO",
+      "nota": "Série inteira desde 2015; o ano-base 2020 foi testado contra 2019."
+    },
+    {
+      "item": "Falso equilíbrio",
+      "status": "APROVADO",
+      "nota": "A Sentença conclui que a tese da pandemia não se sustenta."
+    },
+    {
+      "item": "Convocação isenta",
+      "status": "APROVADO",
+      "nota": "Dispensa do Filósofo a pedido não altera a conclusão; divergência de valor mapeada pelo Juiz."
+    }
+  ],
+  "precedentes": [],
+  "ferramenta": {
+    "nome": "Post hoc: depois disso, logo por causa disso",
+    "como_reconhecer": "Quando alguém diz que algo melhorou porque um governo fez X, pergunte: o que aconteceu, no mesmo período, com quem não fez X?",
+    "exemplos": [
+      "'Melhorou porque o prefeito criou o programa' ignora o desenho estadual.",
+      "'Melhorou só porque a pandemia acabou' ignora que os vizinhos não melhoraram tanto."
+    ]
+  },
+  "pergunta_mesa": "Se o dinheiro do estado acabar em 2027, o que vocês acham que a cidade deveria cortar para manter o programa, ou deveria deixá-lo acabar?",
+  "proximo_passo": "Acompanhar a nota técnica estadual sobre a prova de 2025 e perguntar ao seu vereador como o programa será pago depois de 2027.",
+  "gatilho_revisao": "Publicação da nota técnica de equalização da prova de 2025 ou decisão sobre a renovação do repasse estadual.",
+  "fontes": [
+    {
+      "nome": "Avaliação estadual de alfabetização (fictícia)",
+      "detalhe": "Edições 2015 a 2025",
+      "consulta": "15/10/2026"
+    },
+    {
+      "nome": "Portal da Transparência de Vila Exemplo (fictício)",
+      "detalhe": "Despesas do programa, 2021 a 2025",
+      "consulta": "15/10/2026"
+    },
+    {
+      "nome": "Censo Escolar (dados fictícios para o exemplo)",
+      "detalhe": "Matrículas por escola, 2024",
+      "consulta": "15/10/2026"
+    }
+  ]
+}</script>
+
+<script>
+(function(){
+  var S; try{ S = JSON.parse(document.getElementById('sentenca').textContent); }catch(e){ document.getElementById('app').textContent='Não foi possível ler os dados da Sentença.'; return; }
+  var SEALS = {
+    comprovado:{i:'✅',t:'Resultado comprovado',c:'good'}, inversao:{i:'🔄',t:'Inversão de tendência',c:'good'},
+    provavel:{i:'➕',t:'Contribuição provável',c:'a'}, sem_efeito:{i:'➖',t:'Sem efeito detectável',c:'neutral'},
+    adverso:{i:'⚠️',t:'Efeito adverso',c:'bad'}, indeterminado:{i:'❓',t:'Indeterminado',c:'neutral'},
+    heranca:{i:'🧾',t:'Herança',c:'b'}, mare:{i:'🌍',t:'Maré',c:'b'}
+  };
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function verif(s){return esc(s).replace(/\[A VERIFICAR[^\]]*\]/g,function(m){return '<span class="verify">'+m+'</span>'})}
+  function seal(k){var s=SEALS[k]||SEALS.indeterminado;return '<span class="seal '+s.c+'"><span aria-hidden="true">'+s.i+'</span>'+s.t+'</span>'}
+  function tone(r){r=(r||'').toUpperCase();
+    if(/INEFICAZ|CONTRAPRODUCENTE|CONTRÁRIA|FALSO|ENGANOSO/.test(r))return 'bad';
+    if(/RESSALVAS|LACUNAS|INCOMPLETO|EXAGERADO|CONTEXTO/.test(r))return 'warn';
+    if(/INCONCLUSIV|INDETERMIN|VERIFICÁVEL|CONTROVERSO|SEM BASE/.test(r))return 'neutral';
+    return 'good';}
+  function fmtDate(d){var p=(d||'').split('-');return p.length===3?p[2]+'/'+p[1]+'/'+p[0]:d}
+  var lvl={'Baixa':1,'Média':2,'Alta':3}[S.confianca&&S.confianca.nivel]||0;
+
+  var SECS=[["1","Enquadramento"],["2","Resposta curta"],["3","Fatos estabelecidos"],["4","Fatos em disputa"],["5","Resultados"],["6","Atribuição"],["7","Matriz federativa"],["8","Forças e interesses"],["9","O que cada vertente acerta"],["10","Divergências de valor"],["11","Conflitos no Conselho"],["12","Propostas"],["13","Veredicto"],["14","Relatório de Isonomia"],["15","Ferramenta de pensamento"],["16","Pergunta para a mesa"],["17","Próximo passo"],["18","Gatilho de revisão"],["P","Pareceres das cadeiras"],["F","Fontes"]];
+  function sec(n,body){var t=SECS.filter(function(s){return s[0]===n})[0][1];return '<section class="fsec" id="s'+n+'"><h2><span class="num">'+n+'</span><span>'+t+'</span></h2>'+body+'</section>';}
+  function table(cols,rows){return '<div class="tbl"><table><thead><tr>'+cols.map(function(c){return '<th>'+esc(c[1])+'</th>'}).join('')+'</tr></thead><tbody>'+rows.map(function(r){return '<tr>'+cols.map(function(c){var v=r[c[0]];return '<td>'+(c[2]?c[2](v,r):verif(v))+'</td>'}).join('')+'</tr>'}).join('')+'</tbody></table></div>';}
+  var t=tone(S.veredicto&&S.veredicto.rotulo);
+  var h='';
+  if(S.exemplo) h+='<div class="demo" role="note">EXEMPLO FICTÍCIO · município, programa e números inventados para demonstrar o modelo</div>';
+  h+='<header class="top"><span class="brand">O Pacificador de Famílias</span><span class="meta"><span>Sentença '+esc(S.id)+'</span><span>'+fmtDate(S.data)+'</span><span>Modo '+esc(S.modo)+'</span><span>Versão completa</span></span></header>';
+  h+='<section class="title-block"><span class="eyebrow">Objeto</span><h1>'+esc(S.objeto)+'</h1><p class="question">'+esc(S.pergunta)+'</p></section>';
+  var toc='<nav class="toc" aria-label="Sumário">'+(S.documento_executivo?'<a class="exec" href="'+esc(S.documento_executivo)+'">← Resumo executivo</a>':'')+SECS.map(function(s){return '<a href="#s'+s[0]+'"><span>'+s[0]+'</span><span>'+s[1]+'</span></a>'}).join('')+'</nav>';
+  var c='<details class="mobile-toc"><summary>Sumário</summary><nav>'+(S.documento_executivo?'<a href="'+esc(S.documento_executivo)+'">← Resumo executivo</a>':'')+SECS.map(function(s){return '<a href="#s'+s[0]+'">'+s[0]+' · '+s[1]+'</a>'}).join('')+'</nav></details>';
+
+  c+=sec('1','<div class="chips">'+(S.esferas||[]).map(function(e){return '<span class="chip">'+esc(e)+'</span>'}).join('')+(S.poderes||[]).map(function(e){return '<span class="chip">'+esc(e)+'</span>'}).join('')+'<span class="chip">'+esc(S.periodo)+'</span></div><p class="small">'+esc(S.data_corte)+'</p>'+
+    '<h3>Quadro de Convocação</h3>'+table([['cadeira','Cadeira'],['status','Status',function(v){return '<span class="tag">'+esc(v)+'</span>'}],['origem','Origem'],['justificativa','Justificativa']],S.convocacao||[]));
+  c+=sec('2','<p class="answer">'+verif(S.resposta_curta)+'</p>');
+  c+=sec('3','<ul class="facts">'+(S.fatos_estabelecidos||[]).map(function(f){return '<li><span class="tag fato">FATO · confiança '+esc(f.confianca).toLowerCase()+'</span><span>'+verif(f.texto)+'</span><span class="src">Fonte: '+esc(f.fonte)+'</span></li>'}).join('')+'</ul>');
+  c+=sec('4',(S.fatos_em_disputa||[]).map(function(d){return '<div class="dispute"><strong>'+esc(d.questao)+'</strong><ul>'+(d.posicoes||[]).map(function(p){return '<li>'+esc(p)+'</li>'}).join('')+'</ul><div class="resolve"><strong>O que resolve:</strong> '+verif(d.resolveria)+'</div></div>'}).join(''));
+  c+=sec('5',(S.grafico?'<div class="chart-card"><h3>'+esc(S.grafico.titulo)+' <span class="small">('+esc(S.grafico.unidade)+')</span></h3><div class="legend" id="lg"></div><div class="chart" id="ch"></div><p class="chart-note">Fonte: '+esc(S.grafico.fonte)+(S.grafico.nota?' · '+esc(S.grafico.nota):'')+'</p></div>':'')+
+    table([['acao','Ação'],['indicador','Indicador'],['efeito','Efeito'],['selo','Selo',function(v){return seal(v)}],['evidencia','Evidência',function(v){return '<span class="tag">'+esc(v)+'</span>'}],['confianca','Confiança']],S.resultados||[]));
+  c+=sec('6','<ol class="timeline">'+(S.linha_do_tempo||[]).map(function(e){return '<li class="'+esc(e.tipo)+'"><span class="d">'+esc(e.data)+' · '+esc(e.tipo)+'</span><span class="ev">'+esc(e.evento)+'</span><span class="small">'+esc(e.ator)+'</span></li>'}).join('')+'</ol><p class="attrib">'+verif(S.atribuicao)+'</p>');
+  c+=sec('7',table([['dimensao','Dimensão'],['uniao','União'],['estado','Estado'],['municipio','Município'],['obs','Observação']],S.matriz_federativa||[]));
+  c+=sec('8',table([['ator','Ator'],['interesse_declarado','Interesse declarado'],['interesse_provavel','Interesse provável'],['ganha_perde','Ganha / perde'],['mecanismo','Mecanismo'],['evidencia','Evidência',function(v){return '<span class="ev-badge ev-'+esc(v)+'">'+esc(v)+'</span>'}],['transparencia','Transparência']],S.forcas||[])+
+    '<p class="small">Escala de evidência: I documento público ou decisão definitiva · II investigação corroborada · III indício estrutural · IV hipótese.</p>'+
+    ((S.hipoteses||[]).length?'<div class="callout"><span class="eyebrow">Hipóteses a investigar (nível IV)</span>'+S.hipoteses.map(function(x){return '<p>'+esc(x.texto)+' <span class="small">O que confirmaria: '+esc(x.confirmaria)+'</span></p>'}).join('')+'</div>':'')+
+    (S.polarizacao?'<div class="callout"><span class="eyebrow">A quem interessa a polarização deste tema</span><p>'+esc(S.polarizacao)+'</p></div>':''));
+  c+=sec('9','<div class="sides">'+(S.vertentes||[]).map(function(v){return '<div class="side"><h3>'+esc(v.nome)+'</h3><dl><dt class="ok">Acerta</dt><dd>'+esc(v.acerta)+'</dd><dt class="ko">Erra</dt><dd>'+esc(v.erra)+'</dd></dl></div>'}).join('')+'</div>');
+  c+=sec('10',(S.valores||[]).map(function(v){return '<div class="tension"><div class="t-poles"><span class="t-pole">'+esc(v.polo_a)+'</span><span class="t-bar" aria-hidden="true"></span><span class="t-pole r">'+esc(v.polo_b)+'</span></div><div class="t-costs"><div><strong>Custo:</strong> '+esc(v.custo_a)+'</div><div><strong>Custo:</strong> '+esc(v.custo_b)+'</div></div><p class="small">'+esc(v.comentario)+'</p></div>'}).join(''));
+  c+=sec('11',(S.conflitos||[]).length?S.conflitos.map(function(k){return '<div class="conflict"><div class="cj" style="border-top:0"><strong>'+esc(k.tema)+'</strong></div><div class="cv"><div>'+esc(k.lado_1)+'</div><div>'+esc(k.lado_2)+'</div></div><div class="cj"><span class="small"><strong>O que decidiria:</strong> '+esc(k.decidiria)+'</span><span><strong>Posição do Juiz:</strong> '+esc(k.posicao_juiz)+'</span></div></div>'}).join(''):'<p class="small">Sem conflitos abertos entre as cadeiras.</p>');
+  c+=sec('12','<div class="props">'+(S.propostas||[]).map(function(p){return '<div class="prop"><h3>'+esc(p.titulo)+'</h3><dl><dt>Origem</dt><dd>'+esc(p.origem)+'</dd><dt>Custo</dt><dd>'+verif(p.custo)+'</dd><dt>Como</dt><dd>'+esc(p.implementacao)+'</dd><dt>Métrica</dt><dd>'+esc(p.metrica)+'</dd><dt>Revisar se</dt><dd>'+esc(p.criterio)+'</dd></dl></div>'}).join('')+'</div>');
+  var lvl={'Baixa':1,'Média':2,'Alta':3}[S.confianca&&S.confianca.nivel]||0;
+  c+=sec('13','<div class="verdict"><div class="v-main '+t+'"><span class="eyebrow">Veredicto</span><span class="v-label">'+esc(S.veredicto.rotulo)+'</span><p class="small" style="color:var(--ink)">'+esc(S.veredicto.explicacao)+'</p></div><div class="v-conf"><span class="eyebrow">Confiança geral</span><span class="conf-n">'+esc(S.confianca.nivel)+'</span><div class="meter" aria-hidden="true"><i class="'+(lvl>=1?'on':'')+'"></i><i class="'+(lvl>=2?'on':'')+'"></i><i class="'+(lvl>=3?'on':'')+'"></i></div><p class="small">'+esc(S.confianca.motivo)+'</p></div></div>');
+  c+=sec('14','<ul class="iso">'+(S.isonomia||[]).map(function(i){var cl=/APROV/.test(i.status)?'ok':(/AJUST/.test(i.status)?'adj':'ko');return '<li><span class="st '+cl+'">'+esc(i.status)+'</span><span><strong>'+esc(i.item)+'.</strong> '+esc(i.nota)+'</span></li>'}).join('')+'</ul>'+
+    '<p class="small">Precedentes aplicados: '+((S.precedentes||[]).length?S.precedentes.map(esc).join('; '):'nenhum caso análogo no registro.')+'</p>');
+  c+=sec('15','<div class="callout"><strong style="font-family:var(--display);font-size:1.15rem">'+esc(S.ferramenta.nome)+'</strong><p>'+esc(S.ferramenta.como_reconhecer)+'</p>'+((S.ferramenta.exemplos||[]).length?'<ul>'+S.ferramenta.exemplos.map(function(e){return '<li>'+esc(e)+'</li>'}).join('')+'</ul>':'')+'</div>');
+  c+=sec('16','<div class="home"><p class="q">'+esc(S.pergunta_mesa)+'</p></div>');
+  c+=sec('17','<p>'+esc(S.proximo_passo)+'</p>');
+  c+=sec('18','<p>'+esc(S.gatilho_revisao)+'</p>');
+  c+=sec('P',(S.pareceres||[]).map(function(p){return '<details class="par"><summary><span>'+esc(p.cadeira)+'</span><span class="small">confiança '+esc(p.confianca).toLowerCase()+'</span></summary><div class="pb"><p>'+verif(p.resumo)+'</p><p class="small">Teste do sinal invertido: '+esc(p.sinal_invertido)+'</p></div></details>'}).join(''));
+  c+=sec('F',table([['nome','Fonte'],['detalhe','Detalhe'],['consulta','Consulta']],S.fontes||[]));
+  c+='<footer class="foot"><span>Esta Sentença avalia atos e resultados. Não indica voto.</span><span>O Pacificador de Famílias · '+esc(S.id)+'</span></footer>';
+  document.getElementById('app').className='page full';
+  document.getElementById('app').innerHTML=h+toc+'<div class="content">'+c+'</div>';
+  var links=[].slice.call(document.querySelectorAll('.toc a[href^="#"]'));
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'0px 0px -70% 0px'});
+    [].slice.call(document.querySelectorAll('.fsec')).forEach(function(s){io.observe(s)});}
+
+  /* ---------- Gráfico ---------- */
+  function chart(G, host, legendHost){
+    if(!host) return;
+    var W=640,H=300,m={l:44,r:16,t:22,b:34};
+    var xs=[],ys=[];G.series.forEach(function(s){s.pontos.forEach(function(p){xs.push(p[0]);ys.push(p[1])})});
+    var x0=Math.min.apply(null,xs),x1=Math.max.apply(null,xs);
+    var y0=G.y_min!=null?G.y_min:0, y1=G.y_max!=null?G.y_max:Math.ceil(Math.max.apply(null,ys)*1.1);
+    function X(v){return m.l+(v-x0)/(x1-x0)*(W-m.l-m.r)} function Y(v){return H-m.b-(v-y0)/(y1-y0)*(H-m.t-m.b)}
+    var COL={principal:'var(--side-a)',pares:'var(--side-b)',contrafactual:'var(--muted)'};
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(G.titulo)+'">';
+    var step=(y1-y0)/4;
+    for(var i=0;i<=4;i++){var v=y0+step*i;s+='<line x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="var(--grid)" stroke-width="1"/><text x="'+(m.l-8)+'" y="'+(Y(v)+4)+'" text-anchor="end" font-family="var(--mono)" font-size="11" fill="var(--muted)">'+Math.round(v)+'</text>';}
+    var span=x1-x0, every=span>12?Math.ceil(span/8):(span>8?2:1);
+    for(var yr=x0;yr<=x1;yr++){ if((yr-x0)%every===0||yr===x1) s+='<text x="'+X(yr)+'" y="'+(H-m.b+20)+'" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--muted)">'+yr+'</text>'; }
+    if(G.marco){var mx=X(G.marco.ano);s+='<line x1="'+mx+'" x2="'+mx+'" y1="'+m.t+'" y2="'+(H-m.b)+'" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="4 4"/><text x="'+(mx+6)+'" y="'+(m.t+4)+'" font-family="var(--mono)" font-size="11" fill="var(--ink)">'+esc(G.marco.rotulo)+'</text>';}
+    G.series.forEach(function(se){var c=COL[se.papel]||'var(--ink)';var d=se.pontos.map(function(p,k){return (k?'L':'M')+X(p[0]).toFixed(1)+' '+Y(p[1]).toFixed(1)}).join(' ');
+      s+='<path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="'+(se.papel==='principal'?2.5:2)+'" stroke-linecap="round" stroke-linejoin="round"'+(se.papel==='contrafactual'?' stroke-dasharray="6 5"':'')+'/>';
+      if(se.papel!=='contrafactual'){var last=se.pontos[se.pontos.length-1];
+        se.pontos.forEach(function(p){if(p[2]==='a_verificar'){s+='<circle cx="'+X(p[0])+'" cy="'+Y(p[1])+'" r="5" fill="var(--card)" stroke="'+c+'" stroke-width="2"/>';}});
+        if(last[2]!=='a_verificar') s+='<circle cx="'+X(last[0])+'" cy="'+Y(last[1])+'" r="4.5" fill="'+c+'" stroke="var(--card)" stroke-width="2"/>';
+        s+='<text x="'+(X(last[0])-8)+'" y="'+(Y(last[1])-10)+'" text-anchor="end" font-family="var(--display)" font-weight="700" font-size="13" fill="var(--ink)">'+last[1]+(G.unidade==='%'?'%':'')+(last[2]==='a_verificar'?' *':'')+'</text>';}
+    });
+    s+='<line id="xh" x1="0" x2="0" y1="'+m.t+'" y2="'+(H-m.b)+'" stroke="var(--muted)" stroke-width="1" opacity="0"/>';
+    s+='<rect id="hit" x="'+m.l+'" y="'+m.t+'" width="'+(W-m.l-m.r)+'" height="'+(H-m.t-m.b)+'" fill="transparent"/></svg>';
+    host.innerHTML=s+'<div class="tip" hidden></div>';
+    if(legendHost) legendHost.innerHTML=G.series.map(function(se){return '<span><i style="border-top-color:'+(COL[se.papel]||'var(--ink)')+';'+(se.papel==='contrafactual'?'border-top-style:dashed':'')+'"></i>'+esc(se.nome)+'</span>'}).join('')+(G.series.some(function(se){return se.pontos.some(function(p){return p[2]==='a_verificar'})})?'<span>* <span class="verify">[A VERIFICAR]</span></span>':'');
+    var svgEl=host.querySelector('svg'),hit=host.querySelector('#hit'),xh=host.querySelector('#xh'),tip=host.querySelector('.tip');
+    function move(ev){var r=svgEl.getBoundingClientRect();var px=(ev.clientX-r.left)/r.width*W;var yr=Math.round(x0+(px-m.l)/(W-m.l-m.r)*(x1-x0));yr=Math.max(x0,Math.min(x1,yr));
+      xh.setAttribute('x1',X(yr));xh.setAttribute('x2',X(yr));xh.setAttribute('opacity','1');
+      var rows=G.series.map(function(se){var p=se.pontos.filter(function(q){return q[0]===yr})[0];return p?esc(se.nome)+': <b>'+p[1]+(G.unidade==='%'?'%':' '+esc(G.unidade))+'</b>'+(p[2]==='a_verificar'?' [A VERIFICAR]':''):null}).filter(Boolean);
+      tip.innerHTML='<b>'+yr+'</b><br>'+rows.join('<br>');tip.hidden=false;
+      var tx=X(yr)/W*r.width, cw=host.clientWidth; tip.style.left=Math.max(90,Math.min(cw-90,tx))+'px';tip.style.top=(m.t/H*r.height+10)+'px';}
+    hit.addEventListener('pointermove',move);hit.addEventListener('pointerdown',move);
+    hit.addEventListener('pointerleave',function(){tip.hidden=true;xh.setAttribute('opacity','0')});
+  }
+  if(S.grafico) chart(S.grafico, document.getElementById('ch'), document.getElementById('lg'));
+})();
+</script>
+
+</body>
+</html>
