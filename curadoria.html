@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Curadoria das Salas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+.head{display:grid;gap:10px;padding-top:clamp(20px,4vw,36px)}
+.head h1{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:800}
+.queue{display:grid;gap:12px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;gap:12px}
+.item h3{font-size:1.08rem}
+.item .meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--mono);font-size:.76rem;color:var(--muted)}
+.edit{display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:10px;align-items:end}
+.edit .full{grid-column:1/-1}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px}
+details.more summary{cursor:pointer;font-family:var(--display);font-weight:700;font-size:.92rem}
+details.more > div{display:grid;gap:10px;padding-top:10px}
+@media (max-width:700px){.edit{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="topo"></div>
+  <div id="aviso"></div>
+  <section class="head">
+    <span class="eyebrow">Curadoria</span>
+    <h1>Fila da curadoria</h1>
+    <p class="lead">Valide as perguntas, leve-as ao Conselho e devolva o resultado à sala. Os botões copiam o comando pronto para o Claude Code.</p>
+  </section>
+  <main id="conteudo"><div class="empty">Carregando…</div></main>
+  <footer class="foot">
+    <a href="salas.html">← Salas</a>
+    <a href="DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html#regras">Regras da Mesa</a>
+  </footer>
+</div>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="assets/salas-app.js"></script>
+<script>
+(function () {
+  var P = window.Pacificador, el = P.el;
+  document.getElementById("topo").replaceWith(P.cabecalho("curadoria.html"));
+  document.getElementById("aviso").replaceWith(P.avisoConfiguracao());
+  var main = document.getElementById("conteudo");
+  var ABAS = [
+    ["entrada", "Entrada", ["proposta", "em_validacao"]],
+    ["abertas", "Abertas", ["aberta"]],
+    ["conselho", "No Conselho e em revisão", ["no_conselho", "em_revisao"]],
+    ["publicadas", "Publicadas e em debate", ["publicada", "em_debate"]],
+    ["fechadas", "Arquivadas e recusadas", ["arquivada", "recusada"]]
+  ];
+  var aba = "entrada", salas = [], resumo = {}, admin = false;
+
+  function vazio(msg) { P.limpar(main).appendChild(el("div", { class: "empty", text: msg })); }
+
+  async function carregar() {
+    if (!P.configurado) { vazio("Configure o Supabase em config.js para usar a curadoria."); return; }
+    if (!P.estado.sessao) { P.limpar(main).appendChild(el("div", { class: "empty" }, ["Entre para acessar a curadoria. ", el("button", { type: "button", class: "btn small primary", text: "Entrar", onclick: P.entrar })])); return; }
+    if (!P.estado.curador) { vazio("Esta área é da curadoria. Para se candidatar, abra \"Minha conta\" no topo da página."); return; }
+    admin = P.estado.perfil.papel === "admin";
+    var a = await P.sb.from("salas").select("id, slug, pergunta, por_que, esfera, estado, nota_curadoria, sentenca_base, criado_em, atualizado_em").order("criado_em", { ascending: true });
+    salas = a.data || [];
+    var b = await P.sb.rpc("resumo_salas"); resumo = {}; (b.data || []).forEach(function (x) { resumo[x.sala_id] = x; });
+    desenhar();
+  }
+
+  function comandoValidar(s) { return "/pacificador-validar " + s.pergunta; }
+  function comandoRodada(s) { return "/pacificador-rodada completo: " + s.pergunta + " — sala: " + s.slug; }
+
+  async function salvar(s, campos) {
+    var r = await P.sb.from("salas").update(campos).eq("id", s.id);
+    if (r.error) { P.toast("Não foi possível salvar: " + r.error.message); return; }
+    P.toast("Sala atualizada."); carregar();
+  }
+
+  async function enviarAnexo(s, arquivo, titulo) {
+    if (!arquivo) { P.toast("Escolha um arquivo."); return; }
+    if (arquivo.size > 20 * 1024 * 1024) { P.toast("Arquivo acima de 20 MB."); return; }
+    var nome = arquivo.name.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^A-Za-z0-9._-]+/g, "-");
+    var caminho = s.id + "/" + Date.now() + "-" + nome;
+    var up = await P.sb.storage.from("anexos").upload(caminho, arquivo, { upsert: false, contentType: arquivo.type || undefined });
+    if (up.error) { P.toast("Falha no envio: " + up.error.message); return; }
+    var r = await P.sb.from("anexos").insert({ sala_id: s.id, titulo: titulo || arquivo.name, caminho: caminho, enviado_por: P.estado.sessao.user.id });
+    if (r.error) { P.toast(r.error.message); return; }
+    P.toast("Arquivo anexado à sala."); carregar();
+  }
+
+  function itemSala(s) {
+    var r = resumo[s.id] || {};
+    var est = el("select", { "aria-label": "Estado da sala" }, Object.keys(P.ESTADOS).map(function (k) {
+      return el("option", { value: k, selected: k === s.estado || null, text: P.ESTADOS[k] });
+    }));
+    var nota = el("textarea", { "aria-label": "Nota da curadoria", maxlength: "1500", placeholder: "Nota visível na sala (ex.: pergunta reformulada; motivo da recusa)" }); nota.value = s.nota_curadoria || "";
+    var base = el("input", { type: "text", "aria-label": "Sentença ligada", placeholder: "AAAA-MM-DD_S-001_slug (opcional)" }); base.value = s.sentenca_base || "";
+    var perg = el("textarea", { "aria-label": "Pergunta", maxlength: "400" }); perg.value = s.pergunta;
+    var arq = el("input", { type: "file", "aria-label": "Arquivo para anexar" });
+    var tit = el("input", { type: "text", placeholder: "Título do anexo" });
+    return el("article", { class: "item" }, [
+      el("div", { class: "btnrow" }, [P.chipEstado(s.estado), el("span", { class: "chip", text: P.ESFERAS[s.esfera] || "" })]),
+      el("h3", {}, [el("a", { href: "sala.html?s=" + encodeURIComponent(s.slug), text: s.pergunta })]),
+      s.por_que ? el("p", { class: "small", text: s.por_que }) : null,
+      el("div", { class: "meta" }, [el("span", { text: "Criada em " + P.dataBR(s.criado_em) }), el("span", { text: (r.inscritos || 0) + " inscritos" }), el("span", { text: (r.querem_conselho || 0) + " querem o Conselho" })]),
+      el("div", { class: "btnrow" }, [
+        el("button", { type: "button", class: "btn small", text: "Copiar comando de validação", onclick: function () { P.copiar(comandoValidar(s), "Comando copiado. Cole no Claude Code."); } }),
+        el("button", { type: "button", class: "btn small primary", text: "Copiar comando da rodada", onclick: function () { P.copiar(comandoRodada(s), "Comando copiado. Cole no Claude Code."); } })
+      ]),
+      el("div", { class: "edit" }, [
+        el("label", { class: "f" }, ["Estado", est]),
+        el("label", { class: "f" }, ["Sentença ligada", base]),
+        el("label", { class: "f full" }, ["Nota da curadoria", nota]),
+        el("div", { class: "full btnrow" }, [el("button", { type: "button", class: "btn small primary", text: "Salvar", onclick: function () {
+          salvar(s, { estado: est.value, nota_curadoria: nota.value.trim() || null, sentenca_base: base.value.trim() || null });
+        } })])
+      ]),
+      el("details", { class: "more" }, [el("summary", { text: "Reformular a pergunta ou anexar arquivo" }), el("div", {}, [
+        el("label", { class: "f" }, ["Pergunta (após validação)", perg]),
+        el("div", { class: "btnrow" }, [el("button", { type: "button", class: "btn small", text: "Salvar pergunta", onclick: function () {
+          var v = perg.value.trim();
+          if (!/^quero entender/i.test(v) || P.rotulosEm(v).length) { P.toast('A pergunta precisa começar com "Quero entender" e não ter rótulos.'); return; }
+          salvar(s, { pergunta: v });
+        } })]),
+        el("label", { class: "f" }, ["Anexar arquivo (até 20 MB)", arq]), tit,
+        el("div", { class: "btnrow" }, [el("button", { type: "button", class: "btn small", text: "Enviar anexo", onclick: function () { enviarAnexo(s, arq.files[0], tit.value.trim()); } })])
+      ])])
+    ]);
+  }
+
+  async function candidaturas(box) {
+    var r = await P.sb.rpc("listar_candidaturas");
+    var l = r.data || [];
+    P.limpar(box);
+    if (!l.length) { box.appendChild(el("p", { class: "small", text: "Nenhuma candidatura." })); return; }
+    l.forEach(function (c) {
+      box.appendChild(el("div", { class: "item" }, [
+        el("div", { class: "btnrow" }, [el("strong", { text: c.apelido }), el("span", { class: "chip", text: c.estado })]),
+        el("p", { text: c.motivacao }),
+        c.estado === "pendente" ? el("div", { class: "btnrow" }, [
+          el("button", { type: "button", class: "btn small primary", text: "Aprovar como curador", onclick: async function () {
+            var x = await P.sb.rpc("decidir_candidatura", { cand: c.id, aprovar: true }); P.toast(x.error ? x.error.message : "Aprovado."); candidaturas(box); } }),
+          el("button", { type: "button", class: "btn small", text: "Recusar", onclick: async function () {
+            var x = await P.sb.rpc("decidir_candidatura", { cand: c.id, aprovar: false }); P.toast(x.error ? x.error.message : "Recusado."); candidaturas(box); } })
+        ]) : null
+      ]));
+    });
+  }
+
+  function desenhar() {
+    P.limpar(main);
+    var abas = el("div", { class: "filters", role: "group", "aria-label": "Etapas" }, ABAS.map(function (a) {
+      var n = salas.filter(function (s) { return a[2].indexOf(s.estado) > -1; }).length;
+      return el("button", { type: "button", "aria-pressed": a[0] === aba ? "true" : "false", text: a[1] + " (" + n + ")", onclick: function () { aba = a[0]; desenhar(); } });
+    }));
+    main.appendChild(abas);
+    var grupo = ABAS.filter(function (a) { return a[0] === aba; })[0][2];
+    var vis = salas.filter(function (s) { return grupo.indexOf(s.estado) > -1; });
+    var q = el("div", { class: "queue", style: "margin-top:16px" });
+    if (!vis.length) q.appendChild(el("div", { class: "empty", text: "Nada nesta etapa." }));
+    vis.forEach(function (s) { q.appendChild(itemSala(s)); });
+    main.appendChild(q);
+    if (admin) {
+      var box = el("div", { class: "queue" });
+      main.appendChild(el("section", { class: "panel", style: "margin-top:28px" }, [el("h2", { style: "font-size:1.25rem", text: "Candidaturas a curador" }), box]));
+      candidaturas(box);
+    }
+  }
+
+  P.aoMudar(function () { carregar(); });
+  P.iniciar();
+})();
+</script>
+</body>
+</html>
