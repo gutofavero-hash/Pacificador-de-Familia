@@ -13,8 +13,9 @@ Criado em 18/10/2026 por Augusto Silveira Fávero. Projeto independente e públi
 | Se você é… | Abra |
 |---|---|
 | Convidado ou participante | `DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html` (o convite e as Regras da Mesa) e depois `MOTOR_DO_CONSELHO.html` (como o Conselho funciona, com o texto integral das instruções) |
-| Quem opera o Conselho | `PROMPT_CONSELHO_POLITICO_PACIFICADOR_DE_FAMILIAS_v1_2.md` e `modelos/` |
-| Quem organiza o grupo | `PROPOSTA_ESTRUTURA_DO_GRUPO.md` |
+| Quem leva temas ao Conselho | `CONVOCAR_O_CONSELHO.md` (três comandos e o cardápio por tipo de debate) |
+| Quem mantém o Conselho | `PROMPT_CONSELHO_POLITICO_PACIFICADOR_DE_FAMILIAS_v1_2.md` e `modelos/` |
+| Quem organiza o grupo | `PROPOSTA_ESTRUTURA_DO_GRUPO.md` e `docs/PROPOSTA_SALAS_DE_DEBATE.md` |
 
 ## Arquivos
 
@@ -24,6 +25,10 @@ Criado em 18/10/2026 por Augusto Silveira Fávero. Projeto independente e públi
 | `DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html` | Apresentação e convite: motivação, Regras da Mesa (com a Regra de Ouro), os 12 artigos, mesa redonda interativa, travas de isonomia, teste do sinal invertido, compromisso de entrada e convites prontos para o WhatsApp | Sim |
 | `MOTOR_DO_CONSELHO.html` | O motor às claras: engrenagem, convocação, 15 princípios, cadeiras e mandatos, auditoria de isonomia, escalas, instrumentos, conduta, falhas, comandos e texto integral do prompt | Sim |
 | `sentencas/` | Sentenças publicadas (Executiva e Completa), quando houver | Sim |
+| `CONVOCAR_O_CONSELHO.md` | Como levar um tema ao Conselho: comandos, fluxo, cardápio por tipo de debate, ajustes de convocação, publicação | Não (material de trabalho) |
+| `.claude/skills/` | Comandos do Claude Code: `/pacificador-validar`, `/pacificador-rodada`, `/pacificador-mediar` | Não (material de trabalho) |
+| `projeto-claude-ai/` | Kit para criar o Projeto "Pacificador" no app do Claude | Não (material de trabalho) |
+| `docs/PROPOSTA_SALAS_DE_DEBATE.md` | Proposta das salas de debate no site: ciclo da sala, arquitetura, reações, moderação, LGPD, fases | Não (material de trabalho) |
 | `PROPOSTA_ESTRUTURA_DO_GRUPO.md` | Como operar o grupo: WhatsApp, site, Claude, revisão humana, propagação, cuidados legais | Não (material de trabalho) |
 | `REGISTRO_SENTENCAS_PACIFICADOR.template.md` | Template da jurisprudência do Conselho (append-only, mantido por humano) | Não (material de trabalho) |
 | `modelos/` | Modelos visuais da Sentença Executiva e Completa, exemplo fictício (que serve de esquema) e scripts | Não (material de trabalho) |
@@ -36,7 +41,15 @@ Criado em 18/10/2026 por Augusto Silveira Fávero. Projeto independente e públi
 
 ## Uso rápido
 
-Cole o prompt como instrução de projeto no Claude (ou abra este repositório no Claude Code) e acione:
+No Claude Code, com este repositório aberto:
+
+```text
+/pacificador-validar [tema como chegou]      Ficha da Pergunta + comando pronto
+/pacificador-rodada [modo]: [pergunta]       rodada completa, gera a Sentença em sentencas/
+/pacificador-mediar [conversa colada]        mediação, sem gravar nada
+```
+
+Detalhes em `CONVOCAR_O_CONSELHO.md`. No app do Claude, use o Projeto descrito em `projeto-claude-ai/`, com os comandos:
 
 ```text
 pacificador: [objeto]                 sessão completa

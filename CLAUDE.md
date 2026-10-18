@@ -17,6 +17,7 @@ Repositório próprio e independente do **Pacificador de Famílias**, Conselho P
 - **Toda mudança no prompt** propaga na mesma sessão: rodar `python3 modelos/embutir_prompt.py` (texto integral no Motor), revisar as seções resumidas do Motor e da Declaração e registrar no changelog do prompt.
 - **Nova versão do prompt:** a versão vigente fica na raiz; a anterior vai para `historico/prompts/` sem alterações. Atualizar referências ao nome do arquivo (`README.md`, Motor, registro).
 - **Toda decisão do fundador** entra em `docs/HISTORICO_DE_DECISOES.md`, com data, o que foi pedido, o que foi feito e o que ficou pendente.
+- **Convocar o Conselho:** use as skills em `.claude/skills/` (`/pacificador-validar`, `/pacificador-rodada`, `/pacificador-mediar`); o guia é `CONVOCAR_O_CONSELHO.md`. Mudança de fluxo ou de comando atualiza as skills, o guia e `projeto-claude-ai/` juntos.
 - **Sentenças:** preencher um JSON no esquema de `modelos/exemplo_sentenca.json` e gerar os dois HTML com `python3 modelos/gerar_sentenca.py`. Nunca editar o layout à mão; nunca deixar dado do exemplo fictício numa Sentença real (`"exemplo": false`).
 - **Checagem pós-alteração:** blocos de código balanceados, contagem de linhas antes e depois (queda inesperada indica perda de conteúdo), seções vizinhas intactas, scripts das páginas HTML sem erro de sintaxe.
 - Português do Brasil, linguagem direta.
