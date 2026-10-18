@@ -2,6 +2,10 @@
 
 Guia rápido para quem leva um tema ao Conselho. Três comandos resolvem tudo.
 
+## De onde vêm os temas
+
+Das **salas de debate** do site (`salas.html`): os participantes propõem perguntas, e a curadoria as vê em `curadoria.html`, com botões que copiam os comandos abaixo prontos.
+
 ## Onde
 
 **Claude Code com este repositório aberto** (no navegador em claude.ai/code, no app do Claude ou no computador). É o caminho completo: valida, roda o Conselho, gera os dois documentos visuais e registra o precedente.
@@ -59,7 +63,7 @@ Acrescente ao fim do comando, quantos precisar:
 
 | Ajuste | Efeito |
 |---|---|
-| `— sala: [nome]` | Liga a Sentença à sala de debate correspondente |
+| `— sala: [slug]` | Liga a Sentença à sala de debate correspondente. O botão **Copiar comando da rodada** da Curadoria já traz esse ajuste |
 | `+ [cadeira]` | Convoca uma cadeira, obrigatoriamente |
 | `— sugiro [cadeira]` | Sugere; o Juiz decide e justifica |
 | `— sem [cadeira]` | Dispensa, salvo presença obrigatória |

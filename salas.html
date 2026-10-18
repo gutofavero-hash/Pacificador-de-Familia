@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Salas de Debate</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Proponha um tema, inscreva-se numa sala e acompanhe o que o Conselho do Pacificador de Famílias concluiu, com a mesma régua para todos.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="O Pacificador de Famílias">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Salas de Debate do Pacificador">
+<meta property="og:description" content="Proponha um tema, inscreva-se numa sala e acompanhe o que o Conselho concluiu, com a mesma régua para todos.">
+<meta property="og:url" content="https://gutofavero-hash.github.io/Pacificador-de-Familia/salas.html">
+<meta property="og:image" content="https://gutofavero-hash.github.io/Pacificador-de-Familia/assets/og-pacificador.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+.hero{display:grid;gap:14px;padding-top:clamp(20px,4vw,40px)}
+.hero h1{font-size:clamp(2.1rem,6vw,3.4rem);font-weight:800;letter-spacing:-.01em}
+.two{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(18px,3vw,28px);align-items:start}
+.mine{display:grid;gap:10px}
+.mine .item{border-top:1px solid var(--grid);padding-top:10px;display:grid;gap:6px}
+.counter{font-family:var(--mono);font-size:.76rem;color:var(--muted);text-align:right}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+  <div id="topo"></div>
+
+  <section class="hero">
+    <span class="eyebrow">Salas de debate</span>
+    <h1>Um tema por sala. Fatos na mesa.</h1>
+    <p class="lead">Proponha uma pergunta que divide a sua família, inscreva-se nas salas que interessam e acompanhe o que o Conselho concluiu. Cada sala começa por uma pergunta de entendimento, nunca por uma acusação.</p>
+  </section>
+
+  <div id="aviso"></div>
+
+  <div class="two">
+    <section class="panel" aria-labelledby="tSalas">
+      <h2 id="tSalas" style="font-size:1.35rem">Salas</h2>
+      <div class="filters" role="group" aria-label="Filtrar salas">
+        <button type="button" data-f="ativas" aria-pressed="true">Abertas e em andamento</button>
+        <button type="button" data-f="sentenca" aria-pressed="false">Com Sentença</button>
+        <button type="button" data-f="arquivadas" aria-pressed="false">Arquivadas</button>
+        <button type="button" data-f="todas" aria-pressed="false">Todas</button>
+      </div>
+      <div class="cards" id="lista"><div class="empty">Carregando salas…</div></div>
+    </section>
+
+    <aside style="display:grid;gap:clamp(18px,3vw,28px)">
+      <section class="panel" aria-labelledby="tPropor" id="propor">
+        <h2 id="tPropor" style="font-size:1.35rem">Propor um tema</h2>
+        <p class="rule-hint">Regra de Ouro: comece pelo entendimento, nunca pela acusação. Sem rótulos e sem "o outro lado também".</p>
+        <form class="form" id="formProposta" novalidate>
+          <label class="f" for="fPergunta">Sua pergunta
+            <span class="hint">Algo concreto: uma política, uma lei, um resultado, uma afirmação que circulou.</span>
+            <textarea id="fPergunta" maxlength="400" required>Quero entender </textarea>
+          </label>
+          <div class="counter" id="fConta">15 de 400</div>
+          <p class="warnline" id="fAviso" aria-live="polite"></p>
+          <label class="f" for="fPorQue">Por que isso importa?
+            <span class="hint">Opcional. Ex.: "na minha família, cada um atribui o resultado a um governo diferente".</span>
+            <textarea id="fPorQue" maxlength="800"></textarea>
+          </label>
+          <label class="f" for="fEsfera">Quem é responsável, se você souber
+            <select id="fEsfera">
+              <option value="nao_sei">Não sei</option>
+              <option value="municipal">Prefeitura / município</option>
+              <option value="estadual">Governo do estado</option>
+              <option value="federal">Governo federal / Congresso</option>
+              <option value="varias">Várias esferas</option>
+              <option value="internacional">Internacional</option>
+            </select>
+          </label>
+          <button type="submit" class="btn primary" id="fEnviar">Enviar proposta</button>
+          <p class="small">A curadoria valida a pergunta com o Conselho antes de abrir a sala. Até 5 propostas por dia.</p>
+        </form>
+      </section>
+
+      <section class="panel" aria-labelledby="tMinhas" id="minhas" hidden>
+        <h2 id="tMinhas" style="font-size:1.2rem">Minhas propostas</h2>
+        <div class="mine" id="listaMinhas"></div>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="foot">
+    <span>O Pacificador de Famílias</span>
+    <a href="DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html#regras">Regras da Mesa</a>
+    <a href="privacidade.html">Privacidade e termos</a>
+  </footer>
+</div>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="assets/salas-app.js"></script>
+<script>
+(function () {
+  var P = window.Pacificador, el = P.el;
+  document.getElementById("topo").replaceWith(P.cabecalho("salas.html"));
+  document.getElementById("aviso").replaceWith(P.avisoConfiguracao());
+
+  var GRUPOS = {
+    ativas: ["aberta", "no_conselho", "em_revisao", "publicada", "em_debate"],
+    sentenca: ["publicada", "em_debate", "arquivada"],
+    arquivadas: ["arquivada"],
+    todas: ["aberta", "no_conselho", "em_revisao", "publicada", "em_debate", "arquivada"]
+  };
+  var filtro = "ativas", salas = [], resumo = {}, indice = [];
+  var lista = document.getElementById("lista");
+
+  try { var f0 = localStorage.getItem("pac-filtro"); if (GRUPOS[f0]) filtro = f0; } catch (e) {}
+  [].forEach.call(document.querySelectorAll(".filters button"), function (b) {
+    b.setAttribute("aria-pressed", b.dataset.f === filtro ? "true" : "false");
+    b.addEventListener("click", function () {
+      filtro = b.dataset.f;
+      try { localStorage.setItem("pac-filtro", filtro); } catch (e) {}
+      [].forEach.call(document.querySelectorAll(".filters button"), function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      desenhar();
+    });
+  });
+
+  function desenhar() {
+    P.limpar(lista);
+    if (!P.configurado) { lista.appendChild(el("div", { class: "empty", text: "As salas aparecem aqui assim que estiverem configuradas." })); return; }
+    var vis = salas.filter(function (s) { return GRUPOS[filtro].indexOf(s.estado) > -1; });
+    if (!vis.length) { lista.appendChild(el("div", { class: "empty", text: "Nenhuma sala neste filtro ainda. Que tal propor o primeiro tema?" })); return; }
+    vis.forEach(function (s) {
+      var r = resumo[s.id] || {};
+      var sent = P.sentencaDaSala(indice, s);
+      lista.appendChild(el("a", { class: "room", href: "sala.html?s=" + encodeURIComponent(s.slug) }, [
+        P.chipEstado(s.estado),
+        el("h3", { text: s.pergunta }),
+        sent ? el("p", { class: "small", text: "Veredicto: " + (sent.veredicto || "—") }) : null,
+        el("div", { class: "meta" }, [
+          el("span", { text: P.ESFERAS[s.esfera] || "" }),
+          el("span", { text: (r.inscritos || 0) + " inscritos" }),
+          s.estado === "aberta" ? el("span", { text: (r.querem_conselho || 0) + " querem o Conselho" }) : null,
+          (r.reconheco > 0) ? el("span", { text: "🤝 " + r.reconheco }) : null
+        ])
+      ]));
+    });
+  }
+
+  async function carregar() {
+    if (!P.configurado) { desenhar(); return; }
+    var a = await P.sb.from("salas").select("id, slug, pergunta, esfera, estado, sentenca_base, criado_em, nota_curadoria").order("atualizado_em", { ascending: false });
+    salas = a.data || [];
+    var b = await P.sb.rpc("resumo_salas");
+    resumo = {}; (b.data || []).forEach(function (x) { resumo[x.sala_id] = x; });
+    indice = await P.indiceSentencas();
+    desenhar(); minhas();
+  }
+
+  async function minhas() {
+    var box = document.getElementById("minhas"), l = document.getElementById("listaMinhas");
+    var mine = [];
+    if (P.estado.sessao) { var r = await P.sb.rpc("minhas_salas"); mine = r.data || []; }
+    box.hidden = !mine.length; P.limpar(l);
+    mine.forEach(function (s) {
+      l.appendChild(el("div", { class: "item" }, [
+        P.chipEstado(s.estado),
+        el("a", { href: "sala.html?s=" + encodeURIComponent(s.slug), text: s.pergunta }),
+        s.nota_curadoria ? el("p", { class: "small", text: "Curadoria: " + s.nota_curadoria }) : null
+      ]));
+    });
+  }
+
+  /* proposta */
+  var fP = document.getElementById("fPergunta"), fAviso = document.getElementById("fAviso"), fConta = document.getElementById("fConta");
+  function checar() {
+    var v = fP.value, msgs = [];
+    fConta.textContent = v.length + " de 400";
+    if (!/^\s*quero entender/i.test(v)) msgs.push('Comece com "Quero entender…".');
+    var r = P.rotulosEm(v);
+    if (r.length) msgs.push("Regra 1 · sem rótulos: retire " + r.map(function (x) { return '"' + x + '"'; }).join(", ") + ".");
+    if (/\b(também|tambem)\b.*\b(roubou|fez|errou)\b/i.test(v)) msgs.push('Regra 3 · um erro não justifica o outro: cada caso tem a sua sala.');
+    fAviso.textContent = msgs.join(" ");
+    return msgs.length === 0;
+  }
+  fP.addEventListener("input", checar);
+  document.getElementById("formProposta").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    if (!P.configurado) { P.toast("As salas ainda estão sendo configuradas."); return; }
+    if (!P.estado.sessao) { P.entrar(); return; }
+    if (!P.estado.perfil) { P.pedirConsentimento(); return; }
+    if (!checar()) return;
+    var perg = fP.value.trim();
+    if (perg.length < 25) { fAviso.textContent = "Escreva a pergunta completa: o que, onde e desde quando."; return; }
+    var btn = document.getElementById("fEnviar"); btn.disabled = true;
+    var r = await P.sb.from("salas").insert({
+      pergunta: perg, por_que: document.getElementById("fPorQue").value.trim() || null,
+      esfera: document.getElementById("fEsfera").value, autor_id: P.estado.sessao.user.id
+    }).select("slug").single();
+    btn.disabled = false;
+    if (r.error) { P.toast("Não foi possível enviar: " + r.error.message); return; }
+    fP.value = "Quero entender "; document.getElementById("fPorQue").value = ""; checar();
+    P.toast("Proposta enviada. A curadoria vai validar a pergunta.");
+    carregar();
+  });
+
+  P.aoMudar(function () { carregar(); });
+  P.iniciar();
+})();
+</script>
+</body>
+</html>

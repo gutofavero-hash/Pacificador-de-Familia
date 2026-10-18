@@ -95,3 +95,17 @@ Além disso: todo convidado deve conhecer a mecânica, a dinâmica e o prompt do
 - `docs/PROPOSTA_SALAS_DE_DEBATE.md`: ciclo de vida da sala, arquitetura (site atual + Supabase recomendada), ligação automática Sentença–sala, reações alinhadas à missão no lugar de like e dislike, moderação prévia dos comentários com escada de degraus (3 a 5 só por humano), LGPD e plano em três fases.
 
 **Pendente (decisões do fundador):** opção de arquitetura, forma de login, tipo de reação, momento de abrir comentários em texto, curadores e moderadores. Criar o Projeto no app do Claude.
+
+---
+
+## 18/10/2026 · Rodada 8 — Salas de debate com Supabase (fase 2)
+
+**Decisões do fundador.** Supabase como serviço das salas; login por e-mail sem senha e por conta Google; reações da missão no lugar de like e dislike; comentários em texto só na fase 3; o fundador é o primeiro curador, com inscrições abertas para outros. Pediu todas as orientações e diretrizes para configurar o Supabase.
+
+**Feito.**
+- `supabase/schema.sql`: perfis com consentimento LGPD e aceite das Regras da Mesa; salas com ciclo de vida de 9 estados; inscrições com "quero o Conselho"; reações da missão; anexos da curadoria no Storage; candidaturas a curador; políticas de acesso que deixam cada pessoa ver só as próprias inscrições e reações, escondem o autor das salas, impedem autopromoção e só abrem reações após a Sentença; totais públicos anônimos; limite de 5 propostas por dia; apagar a própria conta. Testado em Postgres local com um ambiente que simula o Supabase.
+- Páginas `salas.html`, `sala.html`, `curadoria.html` e `privacidade.html`, com o código comum em `assets/` e a configuração pública em `config.js`. Sem configuração, as páginas mostram que as salas estão sendo preparadas.
+- Ligação automática entre Sentença e sala pelo `sentencas/indice.json`, mantido pelo gerador.
+- `supabase/GUIA_DE_CONFIGURACAO.md` com o passo a passo completo; links para as salas na Declaração; README, CLAUDE.md, guia de convocação e skill de rodada atualizados.
+
+**Pendente (fundador):** seguir o guia de configuração e enviar o Project URL e a chave pública; preencher o e-mail de contato da política de privacidade; revisão da política por profissional de proteção de dados antes da abertura ampla; e-mail próprio (SMTP) antes de convidar muita gente.

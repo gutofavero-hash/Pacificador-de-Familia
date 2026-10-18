@@ -28,6 +28,7 @@ Repositório próprio e independente do **Pacificador de Famílias**, Conselho P
 - **Site:** GitHub Pages, sem domínio próprio, em `https://gutofavero-hash.github.io/Pacificador-de-Familia/`, publicado a partir da raiz da branch `main`. `index.html` leva à Declaração.
 - **Material feito para participantes:** a Declaração Universal, as Regras da Mesa, o Motor do Conselho (com o texto integral do prompt) e as Sentenças em `sentencas/`. É o que se divulga e se envia nos grupos.
 - **Material de trabalho** (também público, mas não divulgado ativamente): proposta de estrutura, registro de sentenças, modelos, histórico e `docs/`.
+- **Salas de debate (Supabase):** o banco e suas regras de acesso estão em `supabase/schema.sql`; a configuração, em `supabase/GUIA_DE_CONFIGURACAO.md`. `config.js` guarda só valores públicos (Project URL e chave anon/publishable). **Nunca** grave a chave `service_role`/secret, a senha do banco ou a chave secreta do Google em arquivo algum. Toda mudança no banco vai para `schema.sql` (que deve continuar rodando de novo sem perder dados) e é testada antes, inclusive as políticas de acesso. Inscrições e reações são dado sensível (LGPD): o público só vê totais.
 - **Prévias de link:** as páginas para participantes têm metadados Open Graph apontando para as imagens em `assets/`. O endereço do site está fixado nessas páginas e em `modelos/gerar_sentenca.py` (`SITE`); se o endereço mudar, atualizar os dois.
 
 ## 5 · Princípios que nenhuma alteração pode violar

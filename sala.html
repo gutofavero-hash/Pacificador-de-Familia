@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sala de Debate</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Uma sala de debate do Pacificador de Famílias: a pergunta, a Sentença do Conselho e as reações de quem participa.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="O Pacificador de Famílias">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Sala de Debate do Pacificador">
+<meta property="og:description" content="Uma pergunta, os fatos na mesa e a Sentença do Conselho, com a mesma régua para todos.">
+<meta property="og:image" content="https://gutofavero-hash.github.io/Pacificador-de-Familia/assets/og-sentenca.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+.head{display:grid;gap:14px;padding-top:clamp(20px,4vw,36px)}
+.head h1{font-size:clamp(1.7rem,4.6vw,2.6rem);font-weight:800}
+.grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(18px,3vw,28px);align-items:start}
+.verdict{border-radius:16px;padding:18px;background:var(--side-b-soft);display:grid;gap:8px}
+.verdict .v{font-family:var(--display);font-weight:800;font-size:1.4rem;color:var(--side-b)}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px}
+.counts{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--mono);font-size:.82rem;color:var(--muted)}
+.anexos{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.anexos li{display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--grid);padding-top:8px}
+@media (max-width:860px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="topo"></div>
+  <div id="aviso"></div>
+  <main id="conteudo"><div class="empty">Carregando a sala…</div></main>
+  <footer class="foot">
+    <a href="salas.html">← Todas as salas</a>
+    <a href="DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html#regras">Regras da Mesa</a>
+    <a href="privacidade.html">Privacidade e termos</a>
+  </footer>
+</div>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="assets/salas-app.js"></script>
+<script>
+(function () {
+  var P = window.Pacificador, el = P.el;
+  document.getElementById("topo").replaceWith(P.cabecalho(""));
+  document.getElementById("aviso").replaceWith(P.avisoConfiguracao());
+  var main = document.getElementById("conteudo");
+  var slug = P.param("s");
+  var sala = null, resumo = {}, minha = null, minhasReacoes = [], anexos = [], sentenca = null;
+
+  function vazio(msg) { P.limpar(main).appendChild(el("div", { class: "empty", text: msg })); }
+
+  async function carregar() {
+    if (!P.configurado) { vazio("As salas aparecem aqui assim que estiverem configuradas."); return; }
+    if (!slug) { vazio("Sala não informada."); return; }
+    var a = await P.sb.from("salas").select("id, slug, pergunta, por_que, esfera, estado, nota_curadoria, sentenca_base, criado_em").eq("slug", slug).maybeSingle();
+    sala = a.data;
+    if (!sala) { vazio("Esta sala não existe ou ainda não foi aberta."); return; }
+    document.title = "Sala · " + sala.pergunta.replace(/^quero entender\s*/i, "").slice(0, 60);
+    var b = await P.sb.rpc("resumo_salas");
+    resumo = ((b.data || []).filter(function (x) { return x.sala_id === sala.id; })[0]) || {};
+    minha = null; minhasReacoes = [];
+    if (P.estado.sessao) {
+      var c = await P.sb.from("inscricoes").select("quer_conselho").eq("sala_id", sala.id).maybeSingle();
+      minha = c.data;
+      var d = await P.sb.from("reacoes").select("tipo").eq("sala_id", sala.id);
+      minhasReacoes = (d.data || []).map(function (x) { return x.tipo; });
+    }
+    var e = await P.sb.from("anexos").select("id, titulo, caminho, criado_em").eq("sala_id", sala.id).order("criado_em");
+    anexos = e.data || [];
+    sentenca = P.sentencaDaSala(await P.indiceSentencas(), sala);
+    desenhar();
+  }
+
+  function etapas() {
+    var i = P.ETAPAS.indexOf(sala.estado);
+    return el("ol", { class: "steps", "aria-label": "Etapas da sala" }, P.ETAPAS.map(function (k, j) {
+      return el("li", { class: j < i ? "done" : (j === i ? "now" : ""), "aria-current": j === i ? "step" : null }, [el("i"), P.ESTADOS[k]]);
+    }));
+  }
+
+  function precisaEntrar() {
+    if (!P.estado.sessao) { P.entrar(); return true; }
+    if (!P.estado.perfil) { P.pedirConsentimento(); return true; }
+    return false;
+  }
+
+  async function inscrever(querConselho) {
+    if (precisaEntrar()) return;
+    var r = minha
+      ? await P.sb.from("inscricoes").update({ quer_conselho: querConselho }).eq("sala_id", sala.id).eq("user_id", P.estado.sessao.user.id)
+      : await P.sb.from("inscricoes").insert({ sala_id: sala.id, user_id: P.estado.sessao.user.id, quer_conselho: querConselho });
+    if (r.error) P.toast(r.error.message); else P.toast(minha ? "Preferência atualizada." : "Você está inscrito nesta sala.");
+    carregar();
+  }
+  async function sair() {
+    var r = await P.sb.from("inscricoes").delete().eq("sala_id", sala.id).eq("user_id", P.estado.sessao.user.id);
+    if (r.error) P.toast(r.error.message); else P.toast("Você saiu da sala.");
+    carregar();
+  }
+  async function reagir(tipo) {
+    if (precisaEntrar()) return;
+    var tem = minhasReacoes.indexOf(tipo) > -1;
+    var r = tem
+      ? await P.sb.from("reacoes").delete().eq("sala_id", sala.id).eq("user_id", P.estado.sessao.user.id).eq("tipo", tipo)
+      : await P.sb.from("reacoes").insert({ sala_id: sala.id, user_id: P.estado.sessao.user.id, tipo: tipo });
+    if (r.error) P.toast(r.error.message);
+    carregar();
+  }
+
+  function desenhar() {
+    P.limpar(main);
+    var abertaParaInscricao = ["aberta", "no_conselho", "em_revisao", "publicada", "em_debate"].indexOf(sala.estado) > -1;
+    var reacoesAbertas = ["publicada", "em_debate"].indexOf(sala.estado) > -1;
+
+    var head = el("section", { class: "head" }, [
+      el("div", { class: "btnrow" }, [P.chipEstado(sala.estado), el("span", { class: "chip", text: P.ESFERAS[sala.esfera] || "" })]),
+      el("h1", { text: sala.pergunta }),
+      sala.por_que ? el("p", { class: "lead", text: sala.por_que }) : null,
+      P.ETAPAS.indexOf(sala.estado) > -1 ? etapas() : null,
+      sala.nota_curadoria ? el("p", { class: "rule-hint", text: "Curadoria: " + sala.nota_curadoria }) : null
+    ]);
+    main.appendChild(head);
+
+    var esquerda = el("div", { style: "display:grid;gap:clamp(18px,3vw,28px)" });
+    var direita = el("aside", { style: "display:grid;gap:clamp(18px,3vw,28px)" });
+
+    /* Sentença */
+    var sPanel = el("section", { class: "panel", "aria-labelledby": "tSent" }, [el("h2", { id: "tSent", style: "font-size:1.3rem", text: "Sentença do Conselho" })]);
+    if (sentenca) {
+      sPanel.appendChild(el("div", { class: "verdict" }, [
+        el("span", { class: "eyebrow", text: "Veredicto · confiança " + (sentenca.confianca || "—").toLowerCase() }),
+        el("span", { class: "v", text: sentenca.veredicto || "—" }),
+        sentenca.resposta_curta ? el("p", { text: sentenca.resposta_curta }) : null
+      ]));
+      sPanel.appendChild(el("div", { class: "btnrow" }, [
+        el("a", { class: "btn primary", href: "sentencas/" + sentenca.executiva, text: "Ler o resumo executivo" }),
+        el("a", { class: "btn", href: "sentencas/" + sentenca.completa, text: "Ler a Sentença completa" })
+      ]));
+    } else {
+      sPanel.appendChild(el("p", { class: "small", text: {
+        aberta: "A sala está aberta. Quando houver interesse suficiente, a curadoria leva a pergunta ao Conselho.",
+        no_conselho: "O Conselho está analisando esta pergunta.",
+        em_revisao: "A Sentença está passando pela revisão humana de isonomia.",
+        proposta: "Esta proposta aguarda a curadoria.", em_validacao: "A curadoria está validando a pergunta.",
+        recusada: "A curadoria concluiu que esta pergunta não cabe no Conselho. Veja a nota acima."
+      }[sala.estado] || "A Sentença aparece aqui quando for publicada." }));
+    }
+    esquerda.appendChild(sPanel);
+
+    /* Reações */
+    var rPanel = el("section", { class: "panel", "aria-labelledby": "tReac" }, [
+      el("h2", { id: "tReac", style: "font-size:1.3rem", text: "O que essa Sentença fez com você?" }),
+      el("p", { class: "small", text: reacoesAbertas ? "Marque quantas quiser. Só os totais aparecem; ninguém vê quem reagiu como." : "As reações abrem quando a Sentença for publicada." })
+    ]);
+    rPanel.appendChild(el("div", { class: "reactions" }, P.REACOES.map(function (r) {
+      return el("button", { type: "button", class: "react", "aria-pressed": minhasReacoes.indexOf(r.k) > -1 ? "true" : "false",
+        disabled: !reacoesAbertas, onclick: function () { reagir(r.k); } },
+        [el("span", { class: "e", "aria-hidden": "true", text: r.e }), el("span", { class: "t", text: r.t }), el("span", { class: "n", text: String(resumo[r.k] || 0) })]);
+    })));
+    esquerda.appendChild(rPanel);
+
+    esquerda.appendChild(el("section", { class: "panel" }, [
+      el("h2", { style: "font-size:1.15rem", text: "Comentários" }),
+      el("p", { class: "small", text: "Em breve. Os comentários vão passar pelas Regras da Mesa antes de aparecer: resumir a posição do outro antes de rebater, sem rótulos e sem \"o outro lado também\"." })
+    ]));
+
+    /* Participação */
+    var part = el("section", { class: "panel", "aria-labelledby": "tPart" }, [
+      el("h2", { id: "tPart", style: "font-size:1.15rem", text: "Participar" }),
+      el("div", { class: "counts" }, [el("span", { text: (resumo.inscritos || 0) + " inscritos" }), el("span", { text: (resumo.querem_conselho || 0) + " querem o Conselho" })])
+    ]);
+    if (!abertaParaInscricao) part.appendChild(el("p", { class: "small", text: "Inscrições fechadas nesta etapa." }));
+    else if (!minha) part.appendChild(el("div", { class: "btnrow" }, [
+      el("button", { type: "button", class: "btn primary", text: "Inscrever-me", onclick: function () { inscrever(false); } }),
+      sala.estado === "aberta" ? el("button", { type: "button", class: "btn", text: "Inscrever e pedir o Conselho", onclick: function () { inscrever(true); } }) : null
+    ]));
+    else {
+      var cb = el("input", { type: "checkbox", id: "querConselho", checked: minha.quer_conselho || null, disabled: sala.estado !== "aberta" || null });
+      cb.addEventListener("change", function () { inscrever(cb.checked); });
+      part.appendChild(el("p", { text: "Você está inscrito nesta sala." }));
+      part.appendChild(el("label", { class: "check" }, [cb, el("span", { text: "Quero que esta pergunta vá ao Conselho" })]));
+      part.appendChild(el("button", { type: "button", class: "btn small", text: "Sair da sala", onclick: sair }));
+    }
+    direita.appendChild(part);
+
+    /* Anexos */
+    if (anexos.length) direita.appendChild(el("section", { class: "panel" }, [
+      el("h2", { style: "font-size:1.15rem", text: "Materiais da sala" }),
+      el("ul", { class: "anexos" }, anexos.map(function (a) {
+        var url = P.sb.storage.from("anexos").getPublicUrl(a.caminho).data.publicUrl;
+        return el("li", {}, [el("a", { href: url, target: "_blank", rel: "noopener", text: a.titulo }), el("span", { class: "small", text: P.dataBR(a.criado_em) })]);
+      }))
+    ]));
+
+    /* Compartilhar */
+    var link = P.SITE + "sala.html?s=" + encodeURIComponent(sala.slug);
+    direita.appendChild(el("section", { class: "panel" }, [
+      el("h2", { style: "font-size:1.15rem", text: "Convidar para esta sala" }),
+      el("p", { class: "small", text: "Chame alguém que pensa diferente de você." }),
+      el("button", { type: "button", class: "btn small", text: "Copiar convite", onclick: function () {
+        P.copiar("Vamos entender isso juntos, com os fatos na mesa?\n\n" + sala.pergunta + "\n\n" + link, "Convite copiado. Agora é só colar no grupo.");
+      } })
+    ]));
+
+    main.appendChild(el("div", { class: "grid" }, [esquerda, direita]));
+  }
+
+  P.aoMudar(function () { carregar(); });
+  P.iniciar();
+})();
+</script>
+</body>
+</html>

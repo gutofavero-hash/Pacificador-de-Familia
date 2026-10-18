@@ -41,8 +41,8 @@ Argumento: `[modo]: [tema]`, opcionalmente com `— sala: [nome ou id]`, `— su
 Seja o Juiz (template §15.4). Escreva a Sentença na estrutura fixa do §9, integral e na ordem. Os nomes de arquivo usam `AAAA-MM-DD_S-nnn_[slug-curto]`:
 
 1. `sentencas/<base>.md` — o texto integral da Sentença.
-2. `sentencas/<base>.json` — os mesmos dados no esquema de `modelos/exemplo_sentenca.json`, com `"exemplo": false`, `documento_executivo: "<base>_EXECUTIVA.html"`, `documento_completo: "<base>_COMPLETA.html"` e, se informado, `"sala": "[nome ou id]"`.
-3. Gere os HTML: `python3 modelos/gerar_sentenca.py sentencas/<base>.json`.
+2. `sentencas/<base>.json` — os mesmos dados no esquema de `modelos/exemplo_sentenca.json`, com `"exemplo": false`, `documento_executivo: "<base>_EXECUTIVA.html"`, `documento_completo: "<base>_COMPLETA.html"` e, se informado, `"sala": "[slug da sala]"` (o identificador que aparece no endereço `sala.html?s=...` e no comando copiado da Curadoria).
+3. Gere os HTML: `python3 modelos/gerar_sentenca.py sentencas/<base>.json`. O script também atualiza `sentencas/indice.json`, que faz a Sentença aparecer dentro da sala no site.
 4. Confira: nenhum dado do exemplo fictício (Vila Exemplo, Alfabetiza Já) sobrou; todo número tem fonte ou `[A VERIFICAR]`; scripts dos HTML sem erro de sintaxe (`node -e` com `new Function` em cada `<script>`).
 
 ## 6 · Registro
@@ -62,6 +62,6 @@ Responda com:
   Completa: https://gutofavero-hash.github.io/Pacificador-de-Familia/sentencas/<base>_COMPLETA.html
   Pergunta para a mesa: [pergunta]
   ```
-- o lembrete de que a Sentença ainda precisa da **revisão humana de isonomia** antes de publicar.
+- o lembrete de que a Sentença ainda precisa da **revisão humana de isonomia** antes de publicar, e de que, depois de publicada, a curadoria muda a sala para "Sentença publicada" em `curadoria.html` (isso abre as reações).
 
 **Não publique sozinho.** Commit, push e levar à `main` só quando o usuário pedir. O repositório é público: nunca grave nome, telefone, conversa ou opinião de participante.

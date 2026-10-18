@@ -2,7 +2,7 @@
 documento: PROPOSTA_SALAS_DE_DEBATE
 versao: 1.0
 data: 2026-10-18
-status: Proposta para decisão do fundador
+status: Decidida em 18/10/2026; fase 2 construída, aguardando configuração do Supabase
 ---
 
 # Salas de debate no site
@@ -100,10 +100,22 @@ O site mostra os totais de forma agregada e anônima, nunca quem reagiu como.
 | **2 · Salas com login** | Conta no Supabase; login por e-mail sem senha ou Google; cadastro de temas, inscrição em salas, reações da missão, anexos de curadores, Sentença ligada à sala automaticamente; aviso por e-mail ou WhatsApp quando sai a Sentença | Conta gratuita no Supabase criada pelo fundador; política de privacidade e termos de uso |
 | **3 · Fórum moderado** | Comentários com "resumo antes de rebater", moderação prévia pelo Claude, escada de 5 degraus por pessoa, recurso, painel do moderador | Chave da API do Claude guardada no serviço (nunca no repositório); orçamento de uso |
 
-## 6 · Decisões que são do fundador
+## 6 · Decisões do fundador (18/10/2026)
 
-1. Seguir com a opção A (site + Supabase) ou contratar um fórum pronto.
-2. Forma de login: e-mail sem senha, conta Google, ou as duas.
-3. Trocar like e dislike pelas reações da missão (recomendado) ou manter os botões pedidos.
-4. Abrir comentários em texto já na fase 2 ou só na fase 3, com a moderação pronta.
-5. Quem são os curadores e moderadores humanos.
+1. **Arquitetura:** opção A, site atual com Supabase.
+2. **Login:** e-mail sem senha **e** conta Google.
+3. **Reações:** as cinco reações da missão, no lugar de like e dislike.
+4. **Comentários em texto:** só na fase 3, com a moderação pronta.
+5. **Curadoria:** o fundador é o primeiro curador (administrador); outros se candidatam pelo próprio site e são aprovados por um administrador.
+
+## 7 · O que foi construído na fase 2
+
+| Peça | Arquivo |
+|---|---|
+| Banco de dados, regras de acesso, totais anônimos, limite de propostas, apagar conta, candidaturas | `supabase/schema.sql` |
+| Guia de configuração | `supabase/GUIA_DE_CONFIGURACAO.md` |
+| Lista de salas, proposta de tema, minhas propostas | `salas.html` |
+| Sala: etapas, Sentença, reações, inscrição, anexos, convite | `sala.html` |
+| Curadoria: fila por etapa, estado, nota, comandos do Conselho, anexos, candidaturas | `curadoria.html` |
+| Política de Privacidade e Termos | `privacidade.html` |
+| Ligação automática Sentença–sala | `modelos/gerar_sentenca.py` grava `sentencas/indice.json` |

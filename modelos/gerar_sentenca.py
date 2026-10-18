@@ -7,6 +7,7 @@ Uso:
 A pasta de saída padrão é ../sentencas/. Os dois HTML recebem exatamente o mesmo
 JSON (PROMPT §9-A, regra 1), então as duas versões nunca se contradizem.
 Os nomes dos arquivos vêm de "documento_executivo" e "documento_completo".
+Sentenças reais (sem "exemplo": true) também entram em indice.json, com o campo "sala".
 """
 import html
 import json
@@ -69,6 +70,34 @@ def main() -> None:
         destino = saida / nome
         destino.write_text(preencher(modelo.read_text(encoding="utf-8"), dados, nome, tipo), encoding="utf-8")
         print(destino)
+    if not dados.get("exemplo"):
+        print(atualizar_indice(saida, dados))
+
+
+def atualizar_indice(pasta: Path, dados: dict) -> Path:
+    """Mantém sentencas/indice.json, que o site usa para mostrar cada Sentença na sua sala."""
+    arquivo = pasta / "indice.json"
+    try:
+        lista = json.loads(arquivo.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        lista = []
+    base = dados["documento_executivo"].rsplit("_EXECUTIVA.html", 1)[0]
+    item = {
+        "id": dados.get("id"),
+        "base": base,
+        "data": dados.get("data"),
+        "objeto": dados.get("objeto"),
+        "sala": dados.get("sala"),
+        "veredicto": (dados.get("veredicto") or {}).get("rotulo"),
+        "confianca": (dados.get("confianca") or {}).get("nivel"),
+        "resposta_curta": dados.get("resposta_curta"),
+        "executiva": dados.get("documento_executivo"),
+        "completa": dados.get("documento_completo"),
+    }
+    lista = [x for x in lista if x.get("base") != base] + [item]
+    lista.sort(key=lambda x: (x.get("data") or "", x.get("id") or ""), reverse=True)
+    arquivo.write_text(json.dumps(lista, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return arquivo
 
 
 if __name__ == "__main__":
