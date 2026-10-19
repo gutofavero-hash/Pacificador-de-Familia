@@ -15,7 +15,7 @@ Passo a passo para colocar as salas de debate no ar. Leva cerca de 40 minutos, u
 | 1. Criar o projeto | supabase.com | 5 min |
 | 2. Criar o banco de dados | Supabase → SQL Editor | 3 min |
 | 3. Configurar os endereços do site | Supabase → Authentication | 3 min |
-| 4. Ativar o login por e-mail | Supabase → Authentication | 2 min |
+| 4. Ativar o login por e-mail | Supabase → Authentication | 2 min (+ 15 min para o e-mail próprio, antes de abrir) |
 | 5. Ativar o login com Google | Google Cloud + Supabase | 15 min |
 | 6. Ligar o site ao Supabase | Supabase → API, e o arquivo `config.js` | 5 min |
 | 7. Tornar-se administrador | Supabase → SQL Editor | 2 min |
@@ -59,11 +59,34 @@ Isso garante que, depois do login, a pessoa volte para a página onde estava.
 
 1. Abra **Authentication → Sign In / Providers** (em algumas versões: **Providers**).
 2. Em **Email**, deixe **ativado**. O site usa o link mágico: a pessoa digita o e-mail e recebe um link de acesso, sem senha.
-3. Opcional, recomendado: em **Authentication → Emails** (ou **Email Templates**), abra o modelo **Magic Link** e troque o texto para português, por exemplo:
-   - **Assunto:** `Seu link de acesso ao Pacificador de Famílias`
-   - **Corpo:** `Olá! Toque no link abaixo para entrar nas salas de debate do Pacificador de Famílias. Se você não pediu este acesso, ignore esta mensagem.` Mantenha o trecho com `{{ .ConfirmationURL }}`, que é o link.
+3. **Por enquanto, deixe os modelos de e-mail como estão.** O Supabase só permite editar o texto dos e-mails (que vem em inglês: "Your sign-in link") depois que um servidor de e-mail próprio estiver configurado, no passo 4.1. Para os testes, o e-mail em inglês funciona normalmente.
 
-> **Limite de e-mails:** o serviço de e-mail embutido do Supabase envia poucas mensagens por hora e serve para testes. Antes de convidar muita gente, configure um serviço de e-mail próprio em **Authentication → Emails → SMTP Settings**. Resend e Brevo, por exemplo, têm planos gratuitos. Posso ajudar nisso quando chegar a hora.
+### 4.1 · E-mail próprio (SMTP), antes de convidar muita gente
+
+O serviço de e-mail embutido do Supabase envia **poucas mensagens por hora** e não deixa traduzir o texto. Ele serve para testes. Antes de abrir as salas, configure um servidor de e-mail próprio. Para começar sem domínio próprio, o caminho mais simples é uma **conta Gmail exclusiva do projeto**:
+
+1. **Crie uma conta Gmail só para o projeto**, por exemplo `pacificadordefamilias@gmail.com` (escolha um nome disponível). Não use a sua conta pessoal.
+2. Nessa conta, ative a **Verificação em duas etapas**: Conta Google → **Segurança** → Verificação em duas etapas.
+3. Crie uma **senha de app**: Conta Google → Segurança → **Senhas de app** (se não aparecer, procure "senhas de app" na busca da conta). Nome: `Supabase`. O Google mostra uma senha de 16 letras: copie e guarde só para o próximo passo.
+4. No Supabase, abra **Authentication → Emails → SMTP Settings** (ou o botão **Set up SMTP**), ative **Enable custom SMTP** e preencha:
+
+| Campo | Valor |
+|---|---|
+| Sender email | o Gmail do projeto |
+| Sender name | `O Pacificador de Famílias` |
+| Host | `smtp.gmail.com` |
+| Port number | `587` |
+| Username | o Gmail do projeto, completo |
+| Password | a senha de app de 16 letras (não a senha normal da conta) |
+
+5. Salve. Em **Authentication → Rate Limits**, aumente o limite de e-mails por hora (por exemplo, para 30), se o painel permitir.
+6. Agora sim, em **Authentication → Emails → Magic link or OTP**, troque o texto para português:
+   - **Subject:** `Seu link de acesso ao Pacificador de Famílias`
+   - **Body:** troque o texto em inglês por `Olá! Toque no link abaixo para entrar nas salas de debate do Pacificador de Famílias. O link vale por pouco tempo e só pode ser usado uma vez. Se você não pediu este acesso, ignore esta mensagem.` e o texto do link "Sign in" por `Entrar nas salas`. **Não apague** o trecho `{{ .ConfirmationURL }}`: é ele que vira o link.
+
+> **Limites do Gmail:** uma conta Gmail comum envia algumas centenas de e-mails por dia, o que basta para a fase inicial. Quando o grupo crescer, o caminho é registrar um domínio próprio e usar um serviço de envio (como Resend ou Brevo), que exige esse domínio para entregar bem os e-mails. A senha de app fica **só** no painel do Supabase: nunca no site, no repositório ou em mensagens.
+
+> **Atalho para quem tem conta Google:** o login com Google (passo 5) não usa e-mail nenhum. Recomendar "Entrar com Google" aos participantes reduz muito o volume de e-mails.
 
 ## 5 · Ativar o login com Google
 
@@ -147,6 +170,6 @@ Novos curadores se candidatam pelo próprio site, em **Minha conta → Quero ser
 
 - [ ] Preencher o e-mail de contato em `privacidade.html` (seção 1).
 - [ ] Revisão da política de privacidade por um profissional de proteção de dados.
-- [ ] E-mail próprio (SMTP) configurado no Supabase.
+- [ ] E-mail próprio (SMTP) configurado no Supabase e modelo do link traduzido (passo 4.1).
 - [ ] App do Google publicado, não em modo de teste.
 - [ ] Ao menos 2 curadores além de você.
