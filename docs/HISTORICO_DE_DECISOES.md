@@ -109,3 +109,17 @@ Além disso: todo convidado deve conhecer a mecânica, a dinâmica e o prompt do
 - `supabase/GUIA_DE_CONFIGURACAO.md` com o passo a passo completo; links para as salas na Declaração; README, CLAUDE.md, guia de convocação e skill de rodada atualizados.
 
 **Pendente (fundador):** seguir o guia de configuração e enviar o Project URL e a chave pública; preencher o e-mail de contato da política de privacidade; revisão da política por profissional de proteção de dados antes da abertura ampla; e-mail próprio (SMTP) antes de convidar muita gente.
+
+---
+
+## 19/10/2026 · Rodada 9 — Convite pelo WhatsApp a partir do site
+
+**Pedido do fundador.** Relembrar todos os meios de convite e inserir no site um botão para convidar novos membros, que já abra o WhatsApp com o convite pronto e o link de cadastro; o mesmo botão dentro de cada sala, para que um participante convide alguém para aquele tema.
+
+**Feito.**
+- Botão **Convidar** no topo de salas, sala e curadoria: janela com dois convites (grupo da família e uma pessoa), texto editável, **Enviar pelo WhatsApp** (link `wa.me` com o texto pronto), **Copiar** e, no celular, **Outras formas** (compartilhamento do aparelho).
+- Em cada sala, o painel **Convidar para esta sala**, com convite que cita a pergunta da sala e leva direto a ela.
+- Os convites levam a `salas.html?convite=1` (ou à sala com `&convite=1`), que mostra uma acolhida com as Regras da Mesa e o botão de entrar.
+- Na Declaração, os dois convites passaram a incluir o link de cadastro e ganharam o botão **Enviar pelo WhatsApp**.
+
+**Pendente:** cartões de imagem para o Status do WhatsApp e QR code para convite presencial (propostos, não construídos).
