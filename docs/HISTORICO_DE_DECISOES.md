@@ -122,4 +122,17 @@ Além disso: todo convidado deve conhecer a mecânica, a dinâmica e o prompt do
 - Os convites levam a `salas.html?convite=1` (ou à sala com `&convite=1`), que mostra uma acolhida com as Regras da Mesa e o botão de entrar.
 - Na Declaração, os dois convites passaram a incluir o link de cadastro e ganharam o botão **Enviar pelo WhatsApp**.
 
-**Pendente:** cartões de imagem para o Status do WhatsApp e QR code para convite presencial (propostos, não construídos).
+**Concluído no mesmo dia (rodada 10):** cartões para o Status e QR code.
+
+---
+
+## 19/10/2026 · Rodada 10 — Cartões para o Status, QR code e cartaz
+
+**Pedido do fundador.** Implementar tudo o que estava proposto para convites e atualizar toda a documentação.
+
+**Feito.**
+- `cartao.html`: gera no próprio navegador uma imagem vertical (1080 × 1920) para o Status do WhatsApp, em três versões: convite, sala (`?tipo=sala&s=...`) e Sentença (`?tipo=sentenca&b=...`), cada uma com QR code para o endereço certo. Botões para baixar, compartilhar a imagem (no celular) e copiar a legenda, com instruções de como publicar no Status.
+- `cartaz.html`: cartaz A4 com a frase do projeto, as Regras da Mesa em resumo e QR code, pronto para imprimir ou salvar em PDF.
+- Nos convites do site: botões **QR code** e **Cartão para o Status**. Na sala, cartão da sala e cartão da Sentença. Na Declaração, links para o cartão e o cartaz. O índice de Sentenças passou a guardar a pergunta para a mesa, usada no cartão.
+- Os QR codes foram conferidos decodificando as imagens geradas.
+- README, CLAUDE.md, proposta de estrutura e skill de rodada (texto dos Avisos com o link do cartão) atualizados.
