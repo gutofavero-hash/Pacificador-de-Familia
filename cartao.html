@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cartão para o Status</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Gere um cartão em imagem para o Status do WhatsApp: convite, sala de debate ou Sentença do Pacificador de Famílias.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+.lay{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:clamp(20px,4vw,40px);align-items:start;padding-top:clamp(20px,4vw,36px)}
+.prev{background:var(--paper-2);border-radius:20px;padding:14px;display:grid;place-items:center}
+.prev canvas{width:100%;max-width:380px;height:auto;border-radius:14px;box-shadow:0 6px 24px color-mix(in srgb,var(--ink) 18%,transparent)}
+.side{display:grid;gap:16px;min-width:0}
+.side h1{font-size:clamp(1.7rem,4.5vw,2.4rem);font-weight:800}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px}
+ol.how{margin:0;padding-left:20px;display:grid;gap:6px}
+@media (max-width:820px){.lay{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="topbar">
+    <a class="brand" href="salas.html">O Pacificador de Famílias</a>
+    <nav class="nav" aria-label="Navegação"><a href="salas.html">Salas</a><a href="DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html">Declaração</a><a href="cartaz.html">Cartaz para imprimir</a></nav>
+  </header>
+  <div class="lay">
+    <div class="prev"><canvas id="cv" width="1080" height="1920" role="img" aria-label="Cartão para o Status do WhatsApp"></canvas></div>
+    <div class="side">
+      <span class="eyebrow" id="tipoLbl">Cartão para o Status</span>
+      <h1 id="titulo">Leve o convite para o seu Status</h1>
+      <p class="lead" id="sub">Uma imagem vertical, no formato do Status do WhatsApp, com um QR code que leva direto ao site.</p>
+      <div class="btnrow">
+        <button type="button" class="btn primary" id="btShare" hidden>Compartilhar imagem</button>
+        <a class="btn primary" id="btBaixar" download="pacificador-status.png" href="#">Baixar imagem</a>
+        <button type="button" class="btn" id="btTexto">Copiar legenda</button>
+      </div>
+      <p class="small" id="msg" aria-live="polite"></p>
+      <div class="panel">
+        <strong style="font-family:var(--display)">Como publicar no Status</strong>
+        <ol class="how">
+          <li>Toque em <b>Baixar imagem</b> (ou <b>Compartilhar imagem</b>, no celular) e salve na galeria.</li>
+          <li>No WhatsApp, abra <b>Atualizações</b> e toque em <b>Adicionar status</b>.</li>
+          <li>Escolha a imagem salva. Se quiser, cole a legenda copiada.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <footer class="foot"><a href="salas.html">← Salas</a><a href="cartaz.html">Cartaz com QR code para imprimir</a></footer>
+</div>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="assets/salas-app.js"></script>
+<script>
+(function () {
+  var P = window.Pacificador;
+  var SITE = P.SITE;
+  var cv = document.getElementById("cv"), g = cv.getContext("2d");
+  var W = 1080, H = 1920, M = 96;
+  var C = { fundo: "#1A1D38", fundo2: "#23274A", papel: "#F4F5F9", suave: "#B9BCD6", a: "#A796FF", b: "#4FC4CE", bom: "#5FD39A", alerta: "#F2B35C", ruim: "#FF8A80" };
+  var F = { d: '"Bricolage Grotesque", "Avenir Next", system-ui, sans-serif', c: 'Literata, Georgia, serif', m: '"IBM Plex Mono", ui-monospace, monospace' };
+  var tipo = P.param("tipo") || (P.param("b") ? "sentenca" : (P.param("s") ? "sala" : "convite"));
+  var dados = null, legenda = "";
+
+  function linhas(txt, fonte, larg, max) {
+    g.font = fonte;
+    var pal = String(txt || "").split(/\s+/), out = [], l = "";
+    pal.forEach(function (p) { var t = l ? l + " " + p : p; if (g.measureText(t).width > larg && l) { out.push(l); l = p; } else l = t; });
+    if (l) out.push(l);
+    if (out.length > max) { out = out.slice(0, max); var u = out[max - 1]; while (g.measureText(u + "…").width > larg && u.length) u = u.slice(0, -1); out[max - 1] = u.replace(/[\s,.;:]+$/, "") + "…"; }
+    return out;
+  }
+  function texto(txt, fonte, cor, x, y, larg, max, lh) {
+    var ls = linhas(txt, fonte, larg, max); g.fillStyle = cor; g.font = fonte; g.textBaseline = "top";
+    ls.forEach(function (l, i) { g.fillText(l, x, y + i * lh); }); return y + ls.length * lh;
+  }
+  function caixa(x, y, w, h, r, cor) { g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); g.fillStyle = cor; g.fill(); }
+  function balanca(cx, cy, s) {
+    g.save(); g.translate(cx, cy); g.scale(s, s); g.strokeStyle = C.papel; g.lineCap = "round"; g.lineWidth = 7;
+    g.beginPath(); g.moveTo(0, 0); g.lineTo(0, 120); g.moveTo(-50, 122); g.lineTo(50, 122); g.stroke();
+    caixa(-150, -6, 300, 12, 6, C.papel);
+    g.fillStyle = C.a; g.beginPath(); g.moveTo(-190, 70); g.quadraticCurveTo(-130, 120, -70, 70); g.fill();
+    g.fillStyle = C.b; g.beginPath(); g.moveTo(70, 70); g.quadraticCurveTo(130, 120, 190, 70); g.fill();
+    g.strokeStyle = C.suave; g.lineWidth = 2; g.beginPath(); g.moveTo(-130, 6); g.lineTo(-180, 70); g.moveTo(-130, 6); g.lineTo(-80, 70); g.moveTo(130, 6); g.lineTo(80, 70); g.moveTo(130, 6); g.lineTo(180, 70); g.stroke();
+    g.fillStyle = C.fundo; g.strokeStyle = C.papel; g.lineWidth = 5; g.beginPath(); g.arc(0, 0, 13, 0, Math.PI * 2); g.fill(); g.stroke();
+    g.restore();
+  }
+  function qr(link, x, y, tam) {
+    if (!window.QRCode) return false;
+    var d = document.createElement("div");
+    new window.QRCode(d, { text: link, width: tam, height: tam, colorDark: "#1A1D38", colorLight: "#FFFFFF", correctLevel: window.QRCode.CorrectLevel.M });
+    var c = d.querySelector("canvas"); if (!c) return false;
+    caixa(x - 24, y - 24, tam + 48, tam + 48, 28, "#FFFFFF");
+    g.drawImage(c, x, y, tam, tam); return true;
+  }
+  function base() {
+    g.clearRect(0, 0, W, H);
+    var gr = g.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, C.fundo); gr.addColorStop(1, C.fundo2);
+    g.fillStyle = gr; g.fillRect(0, 0, W, H);
+    var gb = g.createLinearGradient(0, 0, W, 0); gb.addColorStop(0, C.a); gb.addColorStop(1, C.b);
+    g.fillStyle = gb; g.fillRect(0, 0, W, 14); g.fillRect(0, H - 14, W, 14);
+    g.fillStyle = "rgba(255,255,255,.18)"; for (var x = 0; x < W; x += 36) g.fillRect(x, H - 54, 3, 22);
+  }
+  function rodape(link, chamada) {
+    var tam = 300, y = H - 120 - tam - 70;
+    var ok = qr(link, M + 24, y, tam);
+    var tx = M + tam + 96;
+    texto(chamada, "700 46px " + F.d, C.papel, tx, y + 20, W - tx - M, 3, 56);
+    texto(ok ? "Aponte a câmera do celular para o código." : link, "400 30px " + F.c, C.suave, tx, y + 200, W - tx - M, 3, 40);
+    g.fillStyle = C.suave; g.font = "500 26px " + F.m; g.textBaseline = "top"; g.fillText("gutofavero-hash.github.io/Pacificador-de-Familia", M, H - 110);
+  }
+  function eyebrow(t, y) { g.fillStyle = C.suave; g.font = "500 30px " + F.m; g.textBaseline = "top"; g.fillText(t.toUpperCase().split("").join(String.fromCharCode(8202)), M, y); }
+
+  function desenhar() {
+    base();
+    eyebrow("O Pacificador de Famílias", 110);
+    if (tipo === "convite") {
+      var link = SITE + "salas.html?convite=1";
+      var y = texto("Antes de escolher um lado, escolha os fatos.", "800 112px " + F.d, C.papel, M, 220, W - 2 * M, 5, 118);
+      y = texto("Um conselho sem partido, com a mesma régua para todos os lados. Mostra o que funcionou, o que não funcionou e quem responde por cada coisa.", "400 40px " + F.c, C.suave, M, y + 40, W - 2 * M, 5, 56);
+      caixa(M, y + 50, W - 2 * M, 190, 26, "rgba(167,150,255,.16)");
+      eyebrow("A Regra de Ouro", y + 80);
+      texto("Toda conversa começa por \"Quero entender…\", nunca por uma acusação.", "700 44px " + F.d, C.papel, M + 34, y + 128, W - 2 * M - 68, 2, 54);
+      balanca(W / 2, y + 340, 1.15);
+      rodape(link, "Venha em dupla: traga alguém que pensa diferente de você.");
+      legenda = "Antes de escolher um lado, escolha os fatos. Conheça o Pacificador de Famílias: " + link;
+    } else if (tipo === "sala") {
+      var link2 = SITE + "sala.html?s=" + encodeURIComponent(P.param("s") || "") + "&convite=1";
+      eyebrow("Sala de debate", 170);
+      var pergunta = dados ? dados.pergunta : "Carregando a sala…";
+      var y2 = texto(pergunta, "800 92px " + F.d, C.papel, M, 240, W - 2 * M, 8, 100);
+      y2 = texto("Um conselho sem partido analisa a pergunta com a mesma régua para todos os lados. A conversa começa pelos fatos.", "400 40px " + F.c, C.suave, M, y2 + 44, W - 2 * M, 4, 56);
+      balanca(W / 2, Math.min(y2 + 160, H - 720), 1);
+      rodape(link2, "Entra nesta sala comigo?");
+      legenda = "Quero entender isso com você, com os fatos na mesa: " + pergunta + " " + link2;
+    } else {
+      var s = dados || {};
+      var link3 = SITE + "sentencas/" + (s.executiva || "");
+      eyebrow("Sentença " + (s.id || "") + (s.data ? " · " + s.data.split("-").reverse().join("/") : ""), 170);
+      var y3 = texto(s.objeto || "Carregando a Sentença…", "800 76px " + F.d, C.papel, M, 240, W - 2 * M, 4, 84);
+      var v = (s.veredicto || "").toUpperCase(), cor = /INEFICAZ|CONTRAPRODUCENTE|CONTRÁRIA|FALSO|ENGANOSO/.test(v) ? C.ruim : (/RESSALVAS|LACUNAS|INCOMPLETO|EXAGERADO|CONTEXTO/.test(v) ? C.alerta : (/INCONCLUSIV|INDETERMIN|VERIFICÁVEL|CONTROVERSO|SEM BASE/.test(v) ? C.suave : C.bom));
+      caixa(M, y3 + 44, W - 2 * M, 200, 28, "rgba(255,255,255,.07)");
+      eyebrow("Veredicto · confiança " + String(s.confianca || "—").toLowerCase(), y3 + 74);
+      texto(s.veredicto || "—", "800 64px " + F.d, cor, M + 34, y3 + 122, W - 2 * M - 68, 2, 70);
+      var y4 = texto(s.resposta_curta || "", "400 40px " + F.c, C.papel, M, y3 + 290, W - 2 * M, 8, 56);
+      if (s.pergunta_mesa) {
+        eyebrow("Pergunta para a mesa de jantar", y4 + 40);
+        texto(s.pergunta_mesa, "700 40px " + F.d, C.b, M, y4 + 88, W - 2 * M, 3, 50);
+      }
+      rodape(link3, "Leia a Sentença completa, com fontes e dados.");
+      legenda = "Sentença " + (s.id || "") + " do Pacificador de Famílias: " + (s.objeto || "") + ". " + link3;
+    }
+    atualizarDownload();
+  }
+
+  function atualizarDownload() {
+    try {
+      cv.toBlob(function (blob) {
+        if (!blob) return;
+        var a = document.getElementById("btBaixar");
+        if (a.dataset.url) URL.revokeObjectURL(a.dataset.url);
+        a.dataset.url = URL.createObjectURL(blob); a.href = a.dataset.url;
+        var arq = new File([blob], "pacificador-status.png", { type: "image/png" });
+        var bs = document.getElementById("btShare");
+        bs.hidden = !(navigator.canShare && navigator.canShare({ files: [arq] }));
+        bs.onclick = function () { navigator.share({ files: [arq], text: legenda }).catch(function () {}); };
+      }, "image/png");
+    } catch (e) { document.getElementById("msg").textContent = "Não foi possível gerar a imagem neste navegador."; }
+  }
+  document.getElementById("btTexto").addEventListener("click", function () { P.copiar(legenda, "Legenda copiada."); });
+
+  var TIT = {
+    convite: ["Cartão de convite", "Leve o convite para o seu Status", "Uma imagem vertical, no formato do Status do WhatsApp, com um QR code que leva direto ao site."],
+    sala: ["Cartão da sala", "Chame gente para esta sala", "A pergunta da sala em destaque, com um QR code que abre a sala."],
+    sentenca: ["Cartão da Sentença", "Compartilhe a Sentença", "O veredicto, a resposta curta e a pergunta para a mesa, com um QR code para a Sentença completa."]
+  };
+  function cabecalhoTexto() {
+    var t = TIT[tipo]; document.getElementById("tipoLbl").textContent = t[0];
+    document.getElementById("titulo").textContent = t[1]; document.getElementById("sub").textContent = t[2];
+  }
+
+  async function iniciar() {
+    cabecalhoTexto();
+    try { await Promise.all([document.fonts.load('800 80px "Bricolage Grotesque"'), document.fonts.load('400 40px Literata'), document.fonts.load('500 30px "IBM Plex Mono"')]); } catch (e) {}
+    if (tipo === "sentenca") {
+      var lista = await P.indiceSentencas();
+      dados = lista.filter(function (x) { return x.base === P.param("b"); })[0] || null;
+      if (!dados) document.getElementById("msg").textContent = "Sentença não encontrada no índice.";
+    } else if (tipo === "sala") {
+      if (P.configurado) {
+        var r = await P.sb.from("salas").select("slug, pergunta").eq("slug", P.param("s") || "").maybeSingle();
+        dados = r.data;
+      }
+      if (!dados) document.getElementById("msg").textContent = "Sala não encontrada.";
+    }
+    desenhar();
+  }
+  iniciar();
+})();
+</script>
+</body>
+</html>

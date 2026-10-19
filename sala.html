@@ -56,6 +56,11 @@
   var slug = P.param("s");
   var sala = null, resumo = {}, minha = null, minhasReacoes = [], anexos = [], sentenca = null;
 
+  function boasVindas() {
+    if (!P.param("convite") || (P.estado.sessao && P.estado.perfil)) return null;
+    return el("p", { class: "notice info" }, ["Você foi convidado para esta sala. Leia as ", el("a", { href: "DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html#regras", text: "Regras da Mesa" }), " e toque em \"Inscrever-me\" para participar."]);
+  }
+
   function vazio(msg) { P.limpar(main).appendChild(el("div", { class: "empty", text: msg })); }
 
   async function carregar() {
@@ -129,6 +134,7 @@
       sala.nota_curadoria ? el("p", { class: "rule-hint", text: "Curadoria: " + sala.nota_curadoria }) : null
     ]);
     main.appendChild(head);
+    var bv = boasVindas(); if (bv) main.appendChild(bv);
 
     var esquerda = el("div", { style: "display:grid;gap:clamp(18px,3vw,28px)" });
     var direita = el("aside", { style: "display:grid;gap:clamp(18px,3vw,28px)" });
@@ -143,7 +149,8 @@
       ]));
       sPanel.appendChild(el("div", { class: "btnrow" }, [
         el("a", { class: "btn primary", href: "sentencas/" + sentenca.executiva, text: "Ler o resumo executivo" }),
-        el("a", { class: "btn", href: "sentencas/" + sentenca.completa, text: "Ler a Sentença completa" })
+        el("a", { class: "btn", href: "sentencas/" + sentenca.completa, text: "Ler a Sentença completa" }),
+        el("a", { class: "btn", href: "cartao.html?tipo=sentenca&b=" + encodeURIComponent(sentenca.base), text: "Cartão para o Status" })
       ]));
     } else {
       sPanel.appendChild(el("p", { class: "small", text: {
@@ -201,14 +208,11 @@
       }))
     ]));
 
-    /* Compartilhar */
-    var link = P.SITE + "sala.html?s=" + encodeURIComponent(sala.slug);
-    direita.appendChild(el("section", { class: "panel" }, [
-      el("h2", { style: "font-size:1.15rem", text: "Convidar para esta sala" }),
-      el("p", { class: "small", text: "Chame alguém que pensa diferente de você." }),
-      el("button", { type: "button", class: "btn small", text: "Copiar convite", onclick: function () {
-        P.copiar("Vamos entender isso juntos, com os fatos na mesa?\n\n" + sala.pergunta + "\n\n" + link, "Convite copiado. Agora é só colar no grupo.");
-      } })
+    /* Convidar para esta sala */
+    direita.appendChild(el("section", { class: "panel", "aria-labelledby": "tConv" }, [
+      el("h2", { id: "tConv", style: "font-size:1.15rem", text: "Convidar para esta sala" }),
+      el("p", { class: "small", text: "Achou o tema importante? Chame alguém que pensa diferente de você." }),
+      P.caixaConvite(P.conviteSala(sala), null, "cartao.html?tipo=sala&s=" + encodeURIComponent(sala.slug))
     ]));
 
     main.appendChild(el("div", { class: "grid" }, [esquerda, direita]));
