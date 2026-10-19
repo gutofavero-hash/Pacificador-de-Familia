@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sentença S-001 · versão completa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="O Brasil registrou cerca de 716 mil mortes por Covid — perto de 1 em cada 280 brasileiros —, com excesso de mortes por volta de 1,7 vez a média mundial em 2020–2021, abaixo dos piores casos, como o Peru (a comparação…">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="O Pacificador de Famílias">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Sentença S-001 · Políticas de saúde na pandemia de Covid-19 e responsabilidades pelas mortes no Brasil (versão completa)">
+<meta property="og:description" content="O Brasil registrou cerca de 716 mil mortes por Covid — perto de 1 em cada 280 brasileiros —, com excesso de mortes por volta de 1,7 vez a média mundial em 2020–2021, abaixo dos piores casos, como o Peru (a comparação…">
+<meta property="og:url" content="https://gutofavero-hash.github.io/Pacificador-de-Familia/sentencas/2026-10-19_S-001_covid-politicas-e-responsabilidades_COMPLETA.html">
+<meta property="og:image" content="https://gutofavero-hash.github.io/Pacificador-de-Familia/assets/og-sentenca.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: dossiê navegável — sumário lateral fixo e as 18 seções do §9 em sequência, com tabelas e gráficos. Mesma identidade da Declaração Universal (violeta e petróleo = dois lados com o mesmo peso). */
+:root{
+  --paper:#F4F5F9; --paper-2:#E9EBF3; --card:#FFFFFF; --ink:#1A1D38; --muted:#585D7A; --line:#CDD0E0; --grid:#E1E3EE;
+  --side-a:#5A45C8; --side-b:#0B7480; --side-a-soft:#E6E2FB; --side-b-soft:#DDF0F1;
+  --good:#1F7A4D; --good-soft:#DDF1E6; --warn:#9A5600; --warn-soft:#FBEBD3; --bad:#B3261E; --bad-soft:#F9DEDC; --neutral-soft:#E6E7EF;
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body:"Literata", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#11132A; --paper-2:#1A1D3A; --card:#181B36; --ink:#ECEDF7; --muted:#A3A7C4; --line:#33375C; --grid:#262A4A;
+  --side-a:#A796FF; --side-b:#4FC4CE; --side-a-soft:#2A2457; --side-b-soft:#123B42;
+  --good:#5FD39A; --good-soft:#143826; --warn:#F2B35C; --warn-soft:#3D2A0E; --bad:#FF8A80; --bad-soft:#45191A; --neutral-soft:#262A4A; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#11132A; --paper-2:#1A1D3A; --card:#181B36; --ink:#ECEDF7; --muted:#A3A7C4; --line:#33375C; --grid:#262A4A;
+  --side-a:#A796FF; --side-b:#4FC4CE; --side-a-soft:#2A2457; --side-b-soft:#123B42;
+  --good:#5FD39A; --good-soft:#143826; --warn:#F2B35C; --warn-soft:#3D2A0E; --bad:#FF8A80; --bad-soft:#45191A; --neutral-soft:#262A4A; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.12;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:var(--side-a)}
+:focus-visible{outline:3px solid var(--side-a);outline-offset:3px;border-radius:4px}
+.page{max-width:880px;margin:0 auto;padding-block:24px 64px;display:grid;gap:clamp(28px,5vw,44px)}
+.eyebrow{font-family:var(--mono);font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.demo{background:repeating-linear-gradient(135deg,var(--warn-soft) 0 14px,var(--paper) 14px 28px);border:1.5px solid var(--warn);color:var(--ink);
+  border-radius:12px;padding:10px 14px;font-family:var(--mono);font-size:.82rem;text-align:center}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:14px}
+.brand{font-family:var(--display);font-weight:800;font-size:1.05rem}
+.meta{font-family:var(--mono);font-size:.78rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px}
+.title-block{display:grid;gap:12px}
+.title-block h1{font-size:clamp(1.9rem,5.5vw,3rem);font-weight:800;letter-spacing:-.01em}
+.question{font-size:1.1rem;color:var(--muted);font-style:italic;max-width:62ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--mono);font-size:.74rem;padding:4px 10px;border-radius:99px;background:var(--paper-2);border:1px solid var(--line)}
+
+.verdict{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.v-main{padding:22px 24px;display:grid;gap:10px;align-content:start}
+.v-label{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4.2vw,2.2rem);line-height:1.05}
+.v-main.good{background:var(--good-soft)} .v-main.good .v-label{color:var(--good)}
+.v-main.warn{background:var(--warn-soft)} .v-main.warn .v-label{color:var(--warn)}
+.v-main.bad{background:var(--bad-soft)} .v-main.bad .v-label{color:var(--bad)}
+.v-main.neutral{background:var(--neutral-soft)}
+.v-conf{padding:22px 24px;display:grid;gap:10px;align-content:start;border-left:1px solid var(--line)}
+.meter{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.meter i{height:10px;border-radius:3px;background:var(--grid)}
+.meter i.on{background:var(--ink)}
+.meter-l{display:grid;grid-template-columns:repeat(3,1fr);font-family:var(--mono);font-size:.7rem;color:var(--muted)}
+.conf-n{font-family:var(--display);font-weight:800;font-size:1.3rem}
+.small{font-size:.92rem;color:var(--muted)}
+
+.answer{font-size:clamp(1.15rem,2.6vw,1.35rem);line-height:1.55;border-left:4px solid var(--side-a);padding-left:18px;max-width:64ch}
+
+.sec{display:grid;gap:16px}
+.sec h2{font-size:clamp(1.3rem,3.2vw,1.65rem);font-weight:800}
+.findings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.finding{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:8px;align-content:start}
+.finding h3{font-size:1.12rem}
+.finding p{font-size:.98rem}
+.seal{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:.74rem;font-weight:500;padding:3px 9px;border-radius:99px;width:max-content;max-width:100%;border:1px solid transparent}
+.seal.good{background:var(--good-soft);color:var(--good);border-color:color-mix(in srgb,var(--good) 30%,transparent)}
+.seal.warn{background:var(--warn-soft);color:var(--warn)}
+.seal.bad{background:var(--bad-soft);color:var(--bad)}
+.seal.neutral{background:var(--neutral-soft);color:var(--ink)}
+.seal.a{background:var(--side-a-soft);color:var(--side-a)}
+.seal.b{background:var(--side-b-soft);color:var(--side-b)}
+
+.chart-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px clamp(12px,3vw,24px);display:grid;gap:12px;position:relative}
+.chart-card h3{font-size:1.15rem}
+.chart{position:relative;width:100%}
+.chart svg{width:100%;height:auto;display:block;overflow:visible}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--mono);font-size:.76rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{display:inline-block;width:22px;height:0;border-top:3px solid}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);border-radius:10px;padding:8px 10px;font-family:var(--mono);font-size:.74rem;line-height:1.45;white-space:nowrap;transform:translate(-50%,-110%);z-index:5}
+.chart-note{font-size:.84rem;color:var(--muted)}
+.verify{font-family:var(--mono);font-size:.72rem;font-weight:500;color:var(--warn);background:var(--warn-soft);padding:1px 6px;border-radius:5px;white-space:nowrap}
+
+.results{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.results li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 14px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center}
+.results .r-ef{grid-column:1/-1;font-size:.9rem;color:var(--muted)}
+.results strong{font-weight:600}
+
+.who{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.who div{border-radius:14px;padding:16px;background:var(--paper-2);display:grid;gap:6px;align-content:start}
+.who h3{font-size:1.02rem}
+.who p{font-size:.93rem}
+
+.sides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.side{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card);display:grid;gap:10px;align-content:start}
+.side h3{font-size:1.05rem}
+.side dl{margin:0;display:grid;gap:8px}
+.side dt{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.side dt.ok{color:var(--good)} .side dt.ko{color:var(--bad)}
+.side dd{margin:0;font-size:.95rem}
+
+.tension{border-radius:18px;padding:20px;background:var(--card);border:1px solid var(--line);display:grid;gap:14px}
+.t-poles{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center}
+.t-pole{font-family:var(--display);font-weight:700;font-size:1.05rem}
+.t-pole.r{text-align:right}
+.t-bar{width:clamp(60px,18vw,180px);height:8px;border-radius:99px;background:linear-gradient(90deg,var(--side-a),var(--neutral-soft) 50%,var(--side-b))}
+.t-costs{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:.92rem;color:var(--muted)}
+.t-costs div:last-child{text-align:right}
+
+.home{border-radius:22px;padding:clamp(20px,4vw,32px);background:linear-gradient(135deg,var(--side-a-soft),var(--side-b-soft));display:grid;gap:16px}
+.home .q{font-family:var(--display);font-weight:800;font-size:clamp(1.35rem,3.6vw,1.9rem);line-height:1.2}
+.tool{border-top:1px solid color-mix(in srgb,var(--ink) 18%,transparent);padding-top:14px;display:grid;gap:6px}
+.tool strong{font-family:var(--display)}
+
+.next{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;border:2px solid var(--ink);border-radius:18px;padding:18px 20px}
+.btn{font-family:var(--display);font-weight:700;border-radius:99px;padding:12px 20px;background:var(--ink);color:var(--paper);text-decoration:none;white-space:nowrap}
+.foot{font-family:var(--mono);font-size:.76rem;color:var(--muted);display:grid;gap:6px;border-top:1px solid var(--line);padding-top:16px}
+
+@media (max-width:680px){
+  .verdict,.findings,.who,.sides{grid-template-columns:1fr}
+  .v-conf{border-left:0;border-top:1px solid var(--line)}
+  .next{grid-template-columns:1fr}
+  .t-poles{grid-template-columns:1fr;text-align:left}
+  .t-pole.r{text-align:left}
+  .t-bar{width:100%}
+  .t-costs{grid-template-columns:1fr}
+  .t-costs div:last-child{text-align:left}
+}
+/* ---- Sentença Completa: sumário lateral + seções numeradas (a numeração é a do §9 do prompt) ---- */
+.page.full{max-width:1180px;grid-template-columns:240px minmax(0,1fr);column-gap:clamp(24px,4vw,56px);align-items:start}
+.page.full > .demo,.page.full > .top,.page.full > .title-block{grid-column:1/-1}
+.toc{position:sticky;top:calc(env(safe-area-inset-top, 0px) + 16px);display:grid;gap:4px;font-family:var(--mono);font-size:.78rem;max-height:calc(100vh - 32px);overflow:auto;padding-right:6px}
+.toc a{color:var(--muted);text-decoration:none;padding:5px 8px;border-radius:8px;display:grid;grid-template-columns:24px 1fr;gap:4px}
+.toc a:hover,.toc a.on{background:var(--paper-2);color:var(--ink)}
+.toc .exec{margin-bottom:10px;border:1.5px solid var(--ink);color:var(--ink);grid-template-columns:1fr;text-align:center;font-weight:500}
+.content{display:grid;gap:clamp(36px,5vw,56px);min-width:0}
+.fsec{display:grid;gap:16px;scroll-margin-top:20px;min-width:0}
+.fsec > h2{font-size:clamp(1.35rem,3vw,1.8rem);font-weight:800;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline}
+.fsec > h2 .num{font-family:var(--mono);font-size:.85rem;font-weight:500;color:var(--side-a);border:1.5px solid var(--side-a);border-radius:8px;padding:2px 7px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.tbl table{border-collapse:collapse;width:100%;min-width:620px;font-size:.92rem}
+.tbl th{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--paper-2)}
+.tbl td{padding:10px 12px;border-bottom:1px solid var(--grid);vertical-align:top}
+.tbl tr:last-child td{border-bottom:0}
+.tbl td:first-child{font-weight:600}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.facts li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:6px}
+.facts .src{font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.tag{font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.06em;padding:2px 7px;border-radius:6px;background:var(--paper-2);border:1px solid var(--line);width:max-content}
+.tag.fato{color:var(--side-b);border-color:var(--side-b)}
+.dispute{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--card);display:grid;gap:10px}
+.dispute ul{margin:0;padding-left:18px}
+.resolve{font-size:.93rem;background:var(--paper-2);border-radius:10px;padding:10px 12px}
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;display:grid;gap:16px;border-left:2px solid var(--line)}
+.timeline li{position:relative;display:grid;gap:2px}
+.timeline li::before{content:"";position:absolute;left:-30px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--card);border:3px solid var(--muted)}
+.timeline li.desenho::before{border-color:var(--side-b)} .timeline li.implementacao::before{border-color:var(--side-a)}
+.timeline li.aprovacao::before{border-color:var(--ink)} .timeline li.efeito::before{background:var(--good);border-color:var(--good)}
+.timeline li.externo::before{border-style:dashed}
+.timeline .d{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.timeline .ev{font-weight:600}
+.attrib{border-left:4px solid var(--side-b);padding-left:16px}
+.ev-badge{font-family:var(--display);font-weight:800;display:inline-grid;place-items:center;min-width:30px;height:24px;padding:0 6px;border-radius:6px;font-size:.8rem}
+.ev-I{background:var(--good-soft);color:var(--good)} .ev-II{background:var(--good-soft);color:var(--good)}
+.ev-III{background:var(--warn-soft);color:var(--warn)} .ev-IV{background:var(--neutral-soft);color:var(--muted)}
+.callout{border-radius:14px;padding:16px;background:var(--paper-2);display:grid;gap:6px}
+.conflict{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+.conflict .cv{display:grid;grid-template-columns:1fr 1fr}
+.conflict .cv div{padding:14px 16px}
+.conflict .cv div:first-child{background:var(--side-a-soft)} .conflict .cv div:last-child{background:var(--side-b-soft)}
+.conflict .cj{padding:14px 16px;border-top:1px solid var(--line);display:grid;gap:6px}
+.props{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.prop{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card);display:grid;gap:8px;align-content:start}
+.prop dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 10px;font-size:.9rem}
+.prop dt{font-family:var(--mono);font-size:.72rem;color:var(--muted);padding-top:2px}
+.prop dd{margin:0}
+details.par{border:1px solid var(--line);border-radius:14px;background:var(--card)}
+details.par summary{cursor:pointer;padding:14px 16px;font-family:var(--display);font-weight:700;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+details.par .pb{padding:0 16px 16px;display:grid;gap:8px}
+.iso{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.iso li{display:grid;grid-template-columns:110px 1fr;gap:12px;align-items:start;padding:10px 0;border-bottom:1px solid var(--grid)}
+.st{font-family:var(--mono);font-size:.72rem;font-weight:500;padding:3px 8px;border-radius:6px;text-align:center}
+.st.ok{background:var(--good-soft);color:var(--good)} .st.adj{background:var(--warn-soft);color:var(--warn)} .st.ko{background:var(--bad-soft);color:var(--bad)}
+.mobile-toc{display:none}
+@media (max-width:900px){
+  .page.full{grid-template-columns:1fr}
+  .toc{display:none}
+  .mobile-toc{display:block;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+  .mobile-toc summary{padding:12px 16px;cursor:pointer;font-family:var(--display);font-weight:700}
+  .mobile-toc nav{display:grid;padding:0 8px 10px;font-family:var(--mono);font-size:.8rem}
+  .mobile-toc a{padding:6px 8px;color:var(--ink);text-decoration:none}
+  .props{grid-template-columns:1fr}
+  .conflict .cv{grid-template-columns:1fr}
+  .iso li{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<main class="page" id="app" aria-live="polite">
+  <noscript>Este documento precisa de JavaScript para exibir a Sentença.</noscript>
+</main>
+
+<script type="application/json" id="sentenca">{
+  "exemplo": false,
+  "id": "S-001",
+  "data": "2026-10-19",
+  "modo": "Completo",
+  "objeto": "Políticas de saúde na pandemia de Covid-19 e responsabilidades pelas mortes no Brasil",
+  "objeto_curto": "covid-politicas-e-responsabilidades",
+  "sala": "sobre-as-politicas-de-saude-durante-o-covid-e-sobre-as-respo-c43c3",
+  "pergunta": "Quero entender quais políticas de saúde foram adotadas no Brasil durante a pandemia de Covid-19, por quais esferas e Poderes, o que a evidência mostra sobre o efeito delas na mortalidade, e como se distribuem as responsabilidades pelas mais de 700 mil mortes registradas — separando responsabilidade de gestão, política e processual.",
+  "esferas": [
+    "Federal",
+    "Estadual",
+    "Municipal"
+  ],
+  "poderes": [
+    "Presidência e Ministério da Saúde",
+    "Executivos estaduais e municipais",
+    "Congresso Nacional (incl. CPI da Pandemia)",
+    "STF",
+    "Anvisa",
+    "TCU, CGU, PGR e Ministérios Públicos"
+  ],
+  "periodo": "Fevereiro de 2020 a maio de 2023 (base 2015–2019 para o excesso de mortes)",
+  "data_corte": "Pesquisa feita em 19/10/2026; painel do Ministério da Saúde e bancos da OMS não abertos diretamente",
+  "documento_executivo": "2026-10-19_S-001_covid-politicas-e-responsabilidades_EXECUTIVA.html",
+  "documento_completo": "2026-10-19_S-001_covid-politicas-e-responsabilidades_COMPLETA.html",
+  "resposta_curta": "O Brasil registrou cerca de 716 mil mortes por Covid — perto de 1 em cada 280 brasileiros —, com excesso de mortes por volta de 1,7 vez a média mundial em 2020–2021, abaixo dos piores casos, como o Peru (a comparação com os vizinhos da região ainda está [A VERIFICAR]). A vacina salvou centenas de milhares de vidas, e o país passou a produzi-la porque Fiocruz e Butantan sabiam fazê-la. Houve falhas que custaram vidas, em quantidade que nenhum estudo consegue medir com precisão. No governo federal, que tinha o papel principal de comprar vacinas e coordenar o país, houve contratos atrasados, a recomendação de um remédio que os estudos mostraram não funcionar e falhas de coordenação. Na falta de oxigênio em Manaus, falharam União e estado, em proporção que os dados não permitem dividir. Em estados e na União, houve compras emergenciais pagas sem entrega ou com documentos irregulares. As escolas ficaram fechadas por muito tempo, com custo alto no aprendizado. Na Justiça, o ex-governador do RJ sofreu impeachment e responde a ação penal; nenhuma decisão do ex-presidente virou processo, e a ação de improbidade sobre Manaus foi julgada improcedente em 1ª instância. Confiança média.",
+  "veredicto": {
+    "tipo": "governo",
+    "rotulo": "SEM NOTA ÚNICA · ACERTOS E FALHAS, COM RESSALVAS",
+    "explicacao": "Quadro de boletim. Conquistas: vacinas produzidas no país e campanha do SUS, auxílio emergencial e instituições que funcionaram. Falhas com custo provável em vidas, concentradas onde a União tinha o papel principal: compra de vacinas, orientação clínica e coordenação. Também houve falhas estaduais e compras emergenciais frágeis em todas as esferas. Maré: escassez mundial de doses e variante Gama. A responsabilidade de gestão é compartilhada e desigual; nenhum estudo permite dividir as mortes entre esferas ou pessoas."
+  },
+  "confianca": {
+    "nivel": "Média",
+    "motivo": "Contagem, cronologia, ensaios clínicos e decisões do STF têm confiança alta. A atribuição de mortes a decisões específicas depende de modelos sensíveis a premissas. Faltam a comparação padronizada por idade com pares e o recorte brasileiro do relatório da OMS de 2026."
+  },
+  "convocacao": [
+    {
+      "cadeira": "Guardião do Método",
+      "status": "Convocada",
+      "origem": "Obrigatória",
+      "justificativa": "Toda sessão; montou o Dossiê de Fatos."
+    },
+    {
+      "cadeira": "O Cidadão",
+      "status": "Convocada",
+      "origem": "Obrigatória",
+      "justificativa": "Toda sessão."
+    },
+    {
+      "cadeira": "Auditor de Isonomia",
+      "status": "Convocada",
+      "origem": "Obrigatória",
+      "justificativa": "Toda sessão."
+    },
+    {
+      "cadeira": "Saúde Pública e Epidemiologia (convidada)",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Núcleo do tema: vacinas, tratamentos, distanciamento."
+    },
+    {
+      "cadeira": "Analista de Políticas Sociais",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Quem morreu mais; auxílio, escolas, acesso a leitos."
+    },
+    {
+      "cadeira": "Jurista Constitucional e Federativo",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Competências na saúde (ADI 6341) e estado processual."
+    },
+    {
+      "cadeira": "Cientista Político Institucional",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Conflito federativo, incentivos, CPI, accountability."
+    },
+    {
+      "cadeira": "Economista Empírico",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Tradeoff economia × vidas; auxílio; custo fiscal."
+    },
+    {
+      "cadeira": "Investigador de Forças e Interesses",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Compras de vacinas e insumos, tratamento precoce, desinformação."
+    },
+    {
+      "cadeira": "Geoestrategista",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Dependência de IFA, escassez mundial de vacinas, Covax."
+    },
+    {
+      "cadeira": "Filósofo Pluralista",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Liberdade × saúde coletiva; sentidos de responsabilidade."
+    },
+    {
+      "cadeira": "O Formulador",
+      "status": "Convocada",
+      "origem": "Juiz",
+      "justificativa": "Lições para a próxima emergência sanitária."
+    }
+  ],
+  "achados": [
+    {
+      "titulo": "A vacina funcionou",
+      "texto": "Ensaios com 433 mil pessoas mostram redução de doença grave. No Brasil, modelos estimam cerca de 303 mil mortes evitadas no primeiro ano. Fiocruz e Butantan permitiram vacinar a partir de 17/01/2021.",
+      "selo": "comprovado"
+    },
+    {
+      "titulo": "Contratos de vacina atrasaram",
+      "texto": "A primeira oferta da Pfizer foi em agosto de 2020 e o contrato saiu em março de 2021. O Covax foi contratado pelo piso de 10%. Houve recusa pública da CoronaVac em outubro de 2020. Um modelo estima ~47 mil idosos a mais salvos com ritmo mais rápido.",
+      "selo": "adverso"
+    },
+    {
+      "titulo": "Remédio sem eficácia foi recomendado",
+      "texto": "26 ensaios mostram que a hidroxicloroquina não reduz mortes e tem sinal de dano. A orientação federal só saiu do portal em maio de 2021.",
+      "selo": "adverso"
+    },
+    {
+      "titulo": "Parte foi maré",
+      "texto": "Faltava vacina no mundo inteiro no primeiro semestre de 2021, e a variante Gama surgiu em Manaus. Isso limitava qualquer governo, mas não explica a data dos contratos.",
+      "selo": "mare"
+    },
+    {
+      "titulo": "Ninguém consegue dividir as mortes",
+      "texto": "Os números de mortes evitáveis que circulam (47 mil, 120 mil, 391 mil) são cenários de modelo, não contagem de culpa. O excesso de mortes ficou perto dos óbitos por Covid.",
+      "selo": "indeterminado"
+    }
+  ],
+  "grafico": {
+    "titulo": "Mortes por Covid no Brasil, por ano, e excesso de mortes de todas as causas",
+    "unidade": "mil mortes",
+    "y_min": 0,
+    "y_max": 460,
+    "fonte": "Ministério da Saúde (óbitos confirmados; 2021–2023 derivados dos boletins oficiais) e estudo PMC10212149 (excesso de mortes, base 2015–2019)",
+    "marco": {
+      "ano": 2021,
+      "rotulo": "Início da vacinação (17/01/2021)"
+    },
+    "series": [
+      {
+        "nome": "Óbitos confirmados por Covid no ano",
+        "papel": "principal",
+        "pontos": [
+          [
+            2020,
+            193.9
+          ],
+          [
+            2021,
+            425,
+            "a_verificar"
+          ],
+          [
+            2022,
+            74.5,
+            "a_verificar"
+          ],
+          [
+            2023,
+            14.7,
+            "a_verificar"
+          ],
+          [
+            2024,
+            6.0
+          ]
+        ]
+      },
+      {
+        "nome": "Excesso de mortes de todas as causas",
+        "papel": "pares",
+        "pontos": [
+          [
+            2020,
+            187.8
+          ],
+          [
+            2021,
+            441.0
+          ]
+        ]
+      }
+    ],
+    "nota": "Eixo vertical começa em zero. 2020 por data de notificação. 2021 derivado do acumulado; 2022 e 2023 derivados dos percentuais de queda informados pelo Ministério da Saúde (2022 entre ~70 e 79 mil). Excesso de mortes só calculado para 2020 e 2021 nessa fonte."
+  },
+  "fatos_estabelecidos": [
+    {
+      "texto": "1º óbito em 12/03/2020; marca de 700 mil óbitos confirmados em 28/03/2023; 715.295 óbitos em 11/03/2025. Total recente ≈ 716 mil [A VERIFICAR — conferir em: painel covid.saude.gov.br], cerca de 353 por 100 mil habitantes (Censo 2022).",
+      "fonte": "Ministério da Saúde e Conass, via Agência Brasil, CartaCapital e Poder360",
+      "confianca": "Alta"
+    },
+    {
+      "texto": "Excesso de mortes de todas as causas: 187.842 em 2020 e 441.048 em 2021. OMS: ~681 mil em 2020–21 (99 e 220 por 100 mil). A razão entre excesso e óbitos oficiais do mesmo período fica entre 0,9 e 1,1.",
+      "fonte": "PMC10212149; PMC8522736; OMS (estimativas de excesso 2020–21)",
+      "confianca": "Média"
+    },
+    {
+      "texto": "Excesso médio do Brasil ≈ 160 por 100 mil por ano em 2020–21, contra ≈ 96 da média mundial e 437 do Peru (cálculo sobre estimativas da OMS; taxas não padronizadas por idade).",
+      "fonte": "OMS — estimativas de excesso de mortalidade 2020–21",
+      "confianca": "Média"
+    },
+    {
+      "texto": "O Norte teve o maior excesso (AM 38,1% em 2020; RO 66,1% em 2021). Entre hospitalizados por SRAG-Covid em 2020, morreu 1 em cada 3 negros e 1 em cada 4,4 brancos.",
+      "fonte": "PMC10212149; Ministério da Saúde via Agência Pública",
+      "confianca": "Alta"
+    },
+    {
+      "texto": "O STF (ADI 6341, abril de 2020) reconheceu a competência comum de União, estados e municípios, resguardada a atribuição de cada esfera. Não retirou competência da União.",
+      "fonte": "STF, ADI 6341 (liminar de 24/03/2020; referendo de 15/04/2020)",
+      "confianca": "Alta"
+    },
+    {
+      "texto": "Encomenda tecnológica Fiocruz/AstraZeneca em 08/09/2020; Covax com cobertura de 10% (24/09/2020); 1ª oferta da Pfizer em 15/08/2020 e contrato em mar/2021; frase \"não compraremos vacina da China\" em 21/10/2020; 1ª vacinação em 17/01/2021.",
+      "fonte": "MP 994 e MP 1.003/2020; Ministério da Saúde; CPI do Senado; Poder360",
+      "confianca": "Alta"
+    },
+    {
+      "texto": "Hidroxicloroquina: razão de chances de morte de 1,11 (IC95% 1,02–1,20) em 26 ensaios com 10.012 pacientes, sem benefício. A orientação federal para casos leves saiu do portal só em maio de 2021.",
+      "fonte": "Meta-análise, Nature Communications 2021; Ministério da Saúde",
+      "confianca": "Alta"
+    },
+    {
+      "texto": "Auxílio emergencial: R$ 429,2 bi a 68,2 milhões de pessoas (abr/2020–jan/2021). Transferências federais a estados e municípios para a pandemia em 2020: R$ 113,5 bi pagos.",
+      "fonte": "Dados do MDS em estudo acadêmico; Senado (Siafi/Siop)",
+      "confianca": "Alta"
+    },
+    {
+      "texto": "Escolas fechadas por mais de 260 dias (UNESCO). No Saeb 2021, a rede pública perdeu 12,36 pontos em matemática no 5º ano, cerca de 1 ano de aprendizado.",
+      "fonte": "UNESCO; Banco Mundial; INEP (Saeb 2021)",
+      "confianca": "Alta"
+    }
+  ],
+  "fatos_em_disputa": [
+    {
+      "questao": "Quando o governo federal soube da falta de oxigênio em Manaus?",
+      "posicoes": [
+        "Secretário estadual: avisou o ministro em 07/01/2021 e enviou ofícios em 9, 11, 12 e 13/01.",
+        "Ministério da Saúde ao STF: soube em 08/01 por e-mail da fornecedora.",
+        "Ex-ministro no Senado: 10/01; depois o Ministério citou 17/01.",
+        "Governistas na CPI atribuíram a responsabilidade ao estado e à fornecedora."
+      ],
+      "resolveria": "Protocolo oficial de recebimento dos ofícios estaduais no Ministério da Saúde."
+    },
+    {
+      "questao": "Quantas propostas da Pfizer ficaram sem resposta?",
+      "posicoes": [
+        "Vice-presidente da CPI: 81 correspondências, cerca de 90% sem resposta (antes falara em 53 e-mails).",
+        "Ex-secretário-executivo do Ministério: mensagens repetidas, algumas eram respostas a pedidos do próprio Ministério."
+      ],
+      "resolveria": "Publicação integral da correspondência, com datas, cronogramas de entrega oferecidos e respostas."
+    },
+    {
+      "questao": "Quantas mortes eram evitáveis?",
+      "posicoes": [
+        "~47 mil idosos com vacinação mais rápida (modelo, 7 meses).",
+        "391.647 com 80% vacinados até maio de 2021 (limite teórico, inviável com a oferta mundial).",
+        "~120 mil com 40% menos transmissão (sem revisão por pares).",
+        "\"400 mil\": sem fonte localizada."
+      ],
+      "resolveria": "Modelo que use como contrafactual o ritmo real de países com acesso semelhante a doses [A VERIFICAR]."
+    },
+    {
+      "questao": "Qual a contribuição das falas presidenciais para as mortes?",
+      "posicoes": [
+        "Estudo com ~60 milhões de celulares mostra queda do distanciamento em áreas pró-governo após falas que minimizavam o risco (evidência B, sobre comportamento).",
+        "Estudos municipais associam voto em 2018 a mortalidade maior, mas são ecológicos (C/D) e não provam causa."
+      ],
+      "resolveria": "Estudo que ligue mobilidade a óbitos, controlando idade, renda e momento das ondas."
+    }
+  ],
+  "resultados": [
+    {
+      "acao": "Vacinas contra Covid (eficácia em ensaios)",
+      "indicador": "Doença sintomática e grave",
+      "efeito": "Reduzem a doença sintomática; para várias delas, há evidência de alta certeza de redução de doença grave ou crítica",
+      "selo": "comprovado",
+      "evidencia": "A",
+      "confianca": "Alta"
+    },
+    {
+      "acao": "Campanha de vacinação no Brasil (2021)",
+      "indicador": "Óbitos",
+      "efeito": "~303 mil mortes evitadas no 1º ano (IC 284–322 mil); 54–63 mil idosos em jan–ago/2021",
+      "selo": "provavel",
+      "evidencia": "B–C",
+      "confianca": "Média"
+    },
+    {
+      "acao": "Encomenda tecnológica Fiocruz e parceria Butantan",
+      "indicador": "Acesso à vacina",
+      "efeito": "Duas vacinas autorizadas em 17/01/2021, com produção nacional",
+      "selo": "heranca",
+      "evidencia": "C",
+      "confianca": "Média"
+    },
+    {
+      "acao": "Atraso de contratos federais (Pfizer, Covax no piso, recusa pública da CoronaVac)",
+      "indicador": "Óbitos de idosos",
+      "efeito": "Cenário de ~47 mil vidas a mais salvas com ritmo mais rápido",
+      "selo": "adverso",
+      "evidencia": "C",
+      "confianca": "Média"
+    },
+    {
+      "acao": "Orientação federal de cloroquina e hidroxicloroquina",
+      "indicador": "Mortalidade",
+      "efeito": "Sem benefício, com sinal de dano; mantida após os ensaios de 2020; magnitude em mortes indeterminada",
+      "selo": "adverso",
+      "evidencia": "A",
+      "confianca": "Alta"
+    },
+    {
+      "acao": "Lockdowns locais (municípios de SP em 2021; São Luís e Fortaleza)",
+      "indicador": "Casos e óbitos",
+      "efeito": "Queda de mortes após ~4 semanas em SP; −33% a −38% em São Luís e Fortaleza",
+      "selo": "provavel",
+      "evidencia": "B–C",
+      "confianca": "Média"
+    },
+    {
+      "acao": "Auxílio emergencial de R$ 600",
+      "indicador": "Extrema pobreza",
+      "efeito": "Projeção do Ipea: corte para R$ 300 elevaria de 2,3% para 5%",
+      "selo": "provavel",
+      "evidencia": "C",
+      "confianca": "Média"
+    },
+    {
+      "acao": "Fechamento prolongado de escolas",
+      "indicador": "Aprendizagem",
+      "efeito": "~1 ano de aprendizado perdido na rede pública",
+      "selo": "adverso",
+      "evidencia": "C",
+      "confianca": "Média"
+    },
+    {
+      "acao": "Compras emergenciais (Hempcare/Consórcio Nordeste, OSs no RJ, Covaxin/Precisa)",
+      "indicador": "Uso do dinheiro público",
+      "efeito": "Respiradores pagos e não entregues; impeachment no RJ; contrato federal cancelado sem pagamento",
+      "selo": "adverso",
+      "evidencia": "I–II",
+      "confianca": "Alta"
+    },
+    {
+      "acao": "Escassez mundial de doses e variante Gama",
+      "indicador": "Óbitos em 2021",
+      "efeito": "Fator externo relevante, que limitava qualquer governo",
+      "selo": "mare",
+      "evidencia": "C",
+      "confianca": "Média"
+    },
+    {
+      "acao": "Divisão das mortes entre esferas ou pessoas",
+      "indicador": "Óbitos atribuíveis",
+      "efeito": "Nenhum estudo permite essa divisão",
+      "selo": "indeterminado",
+      "evidencia": "—",
+      "confianca": "—"
+    }
+  ],
+  "linha_do_tempo": [
+    {
+      "data": "fev/2020",
+      "evento": "Lei 13.979 (medidas de emergência)",
+      "ator": "União e Congresso",
+      "tipo": "aprovacao"
+    },
+    {
+      "data": "15/04/2020",
+      "evento": "STF confirma a competência comum de todas as esferas (ADI 6341)",
+      "ator": "STF",
+      "tipo": "aprovacao"
+    },
+    {
+      "data": "abr–mai/2020",
+      "evento": "Saem dois ministros da Saúde; o segundo disse ter saído após pedido do Presidente para endossar a cloroquina",
+      "ator": "Presidência",
+      "tipo": "desenho"
+    },
+    {
+      "data": "abr/2020",
+      "evento": "Auxílio emergencial de R$ 600",
+      "ator": "Congresso e União",
+      "tipo": "implementacao"
+    },
+    {
+      "data": "08/09/2020",
+      "evento": "Encomenda tecnológica com a Fiocruz",
+      "ator": "União",
+      "tipo": "desenho"
+    },
+    {
+      "data": "24/09/2020",
+      "evento": "Adesão ao Covax pela cobertura de 10%",
+      "ator": "União",
+      "tipo": "desenho"
+    },
+    {
+      "data": "20–21/10/2020",
+      "evento": "Protocolo da CoronaVac e frase \"não compraremos vacina da China\"",
+      "ator": "Ministério da Saúde e Presidência",
+      "tipo": "desenho"
+    },
+    {
+      "data": "fim de 2020",
+      "evento": "Variante Gama em Manaus",
+      "ator": "Fator externo",
+      "tipo": "externo"
+    },
+    {
+      "data": "14–15/01/2021",
+      "evento": "Falta de oxigênio em Manaus",
+      "ator": "Estado do AM, União e fornecedora",
+      "tipo": "efeito"
+    },
+    {
+      "data": "17/01/2021",
+      "evento": "Anvisa autoriza CoronaVac e AstraZeneca; começa a vacinação",
+      "ator": "Anvisa, Butantan, Fiocruz e SUS",
+      "tipo": "implementacao"
+    },
+    {
+      "data": "mar/2021",
+      "evento": "Contrato com a Pfizer; 4º ministro da Saúde",
+      "ator": "União",
+      "tipo": "implementacao"
+    },
+    {
+      "data": "2021",
+      "evento": "Ano mais letal, cerca de 425 mil óbitos",
+      "ator": "Efeito medido",
+      "tipo": "efeito"
+    },
+    {
+      "data": "26/10/2021",
+      "evento": "Relatório final da CPI da Pandemia",
+      "ator": "Senado",
+      "tipo": "aprovacao"
+    },
+    {
+      "data": "2022–2023",
+      "evento": "Cerca de 89 mil óbitos (derivado; [A VERIFICAR] no painel), já com vacina disponível; troca de governo federal em jan/2023",
+      "ator": "Efeito medido",
+      "tipo": "efeito"
+    }
+  ],
+  "atribuicao": "A capacidade de produzir vacinas é herança de décadas e de vários governos (Fiocruz, federal; Butantan, paulista), usada com acerto em 2020. A escassez mundial de doses no 1º semestre de 2021 e a variante Gama foram maré e limitavam qualquer governo. Dentro desse limite, as escolhas de contratação foram decisões domésticas do governo federal, com custo provável em vidas que só pode ser estimado por cenário: Covax no piso, Pfizer só em março de 2021 e desautorização pública da CoronaVac. As mortes de 2022–2023, com vacina disponível e atravessando duas gestões federais, ainda não foram analisadas por cobertura de reforço [A VERIFICAR].",
+  "quem_responde": [
+    {
+      "esfera": "União",
+      "papel": "Papel principal na compra e distribuição de vacinas, na orientação clínica nacional e na coordenação de insumos. Pagou o auxílio e repassou R$ 113,5 bi a estados e municípios em 2020."
+    },
+    {
+      "esfera": "Estado",
+      "papel": "Gere UTIs, hospitais e oxigênio hospitalar; decretou medidas de distanciamento; fez compras emergenciais. SP produziu a CoronaVac pelo Butantan."
+    },
+    {
+      "esfera": "Município",
+      "papel": "Atenção básica, aplicação de vacinas e medidas locais, inclusive o funcionamento das escolas municipais."
+    }
+  ],
+  "matriz_federativa": [
+    {
+      "dimensao": "Competência constitucional",
+      "uniao": "Comum (CF art. 23, II); direção nacional do SUS coordena vigilância e insumos estratégicos (Lei 8.080)",
+      "estado": "Comum; gestão da rede hospitalar regional",
+      "municipio": "Comum; atenção básica e medidas locais",
+      "obs": "A ADI 6341 confirmou a competência de todos, sem retirar a da União"
+    },
+    {
+      "dimensao": "Quem legisla",
+      "uniao": "Lei 13.979; MPs de vacinas",
+      "estado": "Decretos de distanciamento (367 de 25 estados em 2 meses)",
+      "municipio": "Decretos locais",
+      "obs": "Congresso aprovou o auxílio e a LC 173"
+    },
+    {
+      "dimensao": "Quem financia",
+      "uniao": "Auxílio (R$ 429,2 bi); transferências (R$ 113,5 bi em 2020); vacinas",
+      "estado": "Leitos, hospitais de campanha, compras",
+      "municipio": "Atenção básica e vacinação",
+      "obs": "Uso dos repasses por ente não avaliado [A VERIFICAR]"
+    },
+    {
+      "dimensao": "Quem executa",
+      "uniao": "Compra e distribuição de vacinas (PNI); orientação clínica",
+      "estado": "UTIs, oxigênio hospitalar",
+      "municipio": "Postos de vacinação",
+      "obs": "Butantan (SP) e Fiocruz (União) produziram vacinas"
+    },
+    {
+      "dimensao": "Quem regula / fiscaliza",
+      "uniao": "Anvisa; TCU; CGU; PGR",
+      "estado": "Tribunais de contas; MPs; assembleias",
+      "municipio": "Câmaras; tribunais de contas",
+      "obs": "CPI do Senado (2021)"
+    },
+    {
+      "dimensao": "Quem responde politicamente",
+      "uniao": "Presidente e ministro da Saúde",
+      "estado": "Governadores",
+      "municipio": "Prefeitos",
+      "obs": "Eleições de 2020, 2022 e 2026"
+    },
+    {
+      "dimensao": "Quem reivindica o mérito × quem fez",
+      "uniao": "Disputou a \"primeira vacina\"; financiou a Fiocruz",
+      "estado": "SP disputou a \"primeira vacina\"; Butantan",
+      "municipio": "—",
+      "obs": "As duas vacinas de 17/01/2021 vieram de duas esferas"
+    }
+  ],
+  "forcas": [
+    {
+      "ator": "Presidência da República (2019–2022)",
+      "interesse_declarado": "Proteger empregos e a economia; liberdade",
+      "interesse_provavel": "Evitar o custo político de restrições; disputa com governadores",
+      "ganha_perde": "Ganha apoio de quem rejeitava restrições; perde com o atraso vacinal",
+      "mecanismo": "Discurso público; nomeação de ministros; orientação clínica",
+      "evidencia": "I (atos) / III (motivação)",
+      "transparencia": "Média"
+    },
+    {
+      "ator": "Governo de São Paulo (Butantan)",
+      "interesse_declarado": "Vacinar cedo",
+      "interesse_provavel": "Protagonismo político na \"primeira vacina\"",
+      "ganha_perde": "Ganha visibilidade",
+      "mecanismo": "Parceria Butantan–Sinovac",
+      "evidencia": "I (contrato) / III (motivação)",
+      "transparencia": "Alta"
+    },
+    {
+      "ator": "Governadores e consórcios estaduais",
+      "interesse_declarado": "Proteger a população",
+      "interesse_provavel": "Evitar colapso e culpa",
+      "ganha_perde": "Ganham autonomia; expostos nas compras",
+      "mecanismo": "Decretos; compras com dispensa de licitação",
+      "evidencia": "I–II",
+      "transparencia": "Baixa nas compras"
+    },
+    {
+      "ator": "Fornecedora de oxigênio em Manaus (White Martins)",
+      "interesse_declarado": "Abastecer hospitais",
+      "interesse_provavel": "Proteger-se de responsabilização",
+      "ganha_perde": "Exposta à disputa sobre quem avisou quem e quando",
+      "mecanismo": "Comunicados à secretaria estadual e ao Ministério",
+      "evidencia": "I–II",
+      "transparencia": "Média"
+    },
+    {
+      "ator": "Fornecedores intermediários (Precisa, Hempcare)",
+      "interesse_declarado": "Vender insumos",
+      "interesse_provavel": "Lucro em compras emergenciais sem concorrência",
+      "ganha_perde": "Contratos de R$ 1,6 bi (cancelado sem pagamento) e R$ 48,7 mi (pago, sem entrega)",
+      "mecanismo": "Intermediação; documentos questionados",
+      "evidencia": "I–II",
+      "transparencia": "Baixa"
+    },
+    {
+      "ator": "Congresso / CPI da Pandemia",
+      "interesse_declarado": "Fiscalizar",
+      "interesse_provavel": "Também arena de disputa política (relatório aprovado por 7 × 4)",
+      "ganha_perde": "—",
+      "mecanismo": "CPI, MPs, auxílio",
+      "evidencia": "I",
+      "transparencia": "Alta"
+    },
+    {
+      "ator": "Produtores de desinformação, de qualquer lado",
+      "interesse_declarado": "—",
+      "interesse_provavel": "Audiência e engajamento",
+      "ganha_perde": "Ganham com a polarização",
+      "mecanismo": "Redes sociais",
+      "evidencia": "III–IV",
+      "transparencia": "Baixa"
+    }
+  ],
+  "hipoteses": [
+    {
+      "texto": "Ganho comercial com a venda de cloroquina e ivermectina durante a recomendação oficial.",
+      "confirmaria": "Dados de vendas na Anvisa/CMED, comparados com anos anteriores."
+    },
+    {
+      "texto": "A frase sobre a \"vacina da China\" afetou os embarques de IFA no início de 2021.",
+      "confirmaria": "Cronograma de licenças de exportação chinesas e comunicações diplomáticas."
+    }
+  ],
+  "polarizacao": "A um lado, os arquivamentos servem de prova de \"perseguição\" e as mortes viram \"culpa da natureza\". Ao outro, cenários de modelo viram \"X mortes nas costas de Y\". Os dois discursos rendem audiência, engajamento e votos, inclusive nas eleições de 2026 e em produções audiovisuais recentes sobre a CPI. Os dados não sustentam nenhuma das versões puras.",
+  "vertentes": [
+    {
+      "nome": "Quem defende a atuação do governo federal",
+      "acerta": "Houve escassez mundial; a União financiou a Fiocruz, pagou o auxílio e repassou R$ 113,5 bi; o STF não a impediu de agir.",
+      "erra": "Trata a cloroquina como opinião legítima depois da evidência de 2020; minimiza o atraso dos contratos e a falha de coordenação em Manaus."
+    },
+    {
+      "nome": "Quem atribui as mortes ao governo federal",
+      "acerta": "A União tinha o papel principal na compra de vacinas e na coordenação, e houve decisões documentadas contra a evidência.",
+      "erra": "Apresenta cenários de modelo como contagem de culpa; ignora a maré mundial e as falhas estaduais; trata pedido de indiciamento como condenação."
+    },
+    {
+      "nome": "Visão liberal / de liberdade individual",
+      "acerta": "Cobrou o custo de restrições amplas, em especial as escolas fechadas, que pesaram mais sobre os pobres.",
+      "erra": "Subestimou a capacidade hospitalar finita e o efeito do exemplo das autoridades sobre o comportamento."
+    },
+    {
+      "nome": "Visão sanitarista / solidarista",
+      "acerta": "Priorizou os vulneráveis e a vacina; os dados confirmam as desigualdades raciais e regionais.",
+      "erra": "Pouco pesou o custo educacional e a renda dos informais."
+    },
+    {
+      "nome": "Visão federalista (subsidiariedade)",
+      "acerta": "A autonomia local criou uma segunda rota para a vacina (Butantan) e respostas adaptadas.",
+      "erra": "Competência partilhada sem coordenação virou culpa difusa."
+    }
+  ],
+  "valores": [
+    {
+      "polo_a": "Restringir circulação para salvar vidas agora",
+      "polo_b": "Preservar renda, trabalho e liberdade",
+      "custo_a": "Perda de renda dos informais e liberdades suspensas",
+      "custo_b": "Mais transmissão e risco de colapso hospitalar",
+      "comentario": "A evidência mostra que esse tradeoff foi menor do que se dizia, mas não o elimina. O peso de cada valor é escolha do cidadão."
+    },
+    {
+      "polo_a": "Fechar escolas para reduzir a transmissão",
+      "polo_b": "Manter as crianças aprendendo",
+      "custo_a": "Cerca de 1 ano de aprendizado perdido na rede pública",
+      "custo_b": "Risco sanitário para famílias e professores",
+      "comentario": "Os dados mostram o custo do fechamento; quanto risco aceitar é decisão de valor."
+    },
+    {
+      "polo_a": "Coordenação nacional",
+      "polo_b": "Autonomia local",
+      "custo_a": "Um erro nacional se replica em todo o país",
+      "custo_b": "Decisões desencontradas e culpa difusa",
+      "comentario": "A Constituição prevê as duas coisas; o desenho da coordenação é escolha política."
+    }
+  ],
+  "conflitos": [
+    {
+      "tema": "Selo da vacinação",
+      "lado_1": "Guardião, Saúde Pública e Formulador: resultado comprovado.",
+      "lado_2": "Investigador, Geoestrategista e Economista: contribuição provável, porque as vidas salvas vêm de modelos.",
+      "decidiria": "Estudo com contrafactual observacional (coortes de idade elegíveis em datas diferentes).",
+      "posicao_juiz": "Dois selos: comprovado para a eficácia das vacinas (ensaios) e contribuição provável para a magnitude no Brasil (modelos B–C)."
+    },
+    {
+      "tema": "\"O lockdown matou mais que o vírus\"",
+      "lado_1": "Maioria: um estudo local não sustenta FALSO; seria CONTROVERSO ou NÃO VERIFICÁVEL.",
+      "lado_2": "O Cidadão: o FALSO se mantém pela aritmética do excesso.",
+      "decidiria": "Excesso de mortes por causa básica de óbito no SIM.",
+      "posicao_juiz": "Fica com a minoria, por outro fundamento: se as medidas tivessem matado mais que o vírus, o excesso total teria de passar de duas vezes os óbitos por Covid; ficou entre 0,9 e 1,1 vez. FALSO quanto às mortes (confiança média), com a premissa de que os óbitos de Covid não incluem, em proporção relevante, mortes por cuidado interrompido. Os custos não letais são reais."
+    },
+    {
+      "tema": "Atraso de contratos × maré mundial",
+      "lado_1": "Economista: cada mês de atraso custou vidas.",
+      "lado_2": "Geoestrategista: o teto de doses em 2021 era mundial.",
+      "decidiria": "Doses por 100 habitantes no 1º semestre de 2021 em Chile, Argentina, México e Uruguai [A VERIFICAR].",
+      "posicao_juiz": "As duas coisas são verdadeiras. A escassez limitava o ritmo; a data dos contratos definia o lugar na fila. Covax no piso e sete meses entre a oferta da Pfizer e o contrato foram decisões domésticas. Magnitude indeterminada até a comparação com os pares."
+    },
+    {
+      "tema": "\"Os dois lados buscaram ganho político na disputa da vacina\"",
+      "lado_1": "Investigador: simetria entre a recusa federal e o protagonismo paulista.",
+      "lado_2": "Filósofo e Formulador: simetria forçada.",
+      "decidiria": "—",
+      "posicao_juiz": "Acolhida a crítica. A recusa federal é ato documentado (nível I), com efeito na data do contrato. A motivação paulista é indício (nível III) e não atrasou nenhuma dose."
+    }
+  ],
+  "propostas": [
+    {
+      "titulo": "Lei de Prontidão Sanitária",
+      "origem": "Encomenda tecnológica Fiocruz (governo federal) e parceria Butantan (governo paulista), de campos opostos; compra antecipada por portfólio no Reino Unido [A VERIFICAR]",
+      "custo": "[A VERIFICAR — estimativa do Tesouro e da Fiocruz]; teto em % do PIB fixado na lei",
+      "implementacao": "Autorização legal prévia para contratos de compra antecipada de vacinas com vários fornecedores, disparada pela declaração de emergência; adesão a mecanismos multilaterais pela cobertura máxima, salvo justificativa publicada; mapa anual de dependência de insumos críticos; exercício simulado anual com três estados, um do Norte",
+      "metrica": "Dias entre a declaração de emergência e o primeiro contrato de vacina",
+      "criterio": "Rever se dois exercícios seguidos não reduzirem esse prazo"
+    },
+    {
+      "titulo": "Alerta federativo com prazo de resposta de 24 horas",
+      "origem": "Lição de Manaus (jan/2021), para todas as esferas",
+      "custo": "Baixo [A VERIFICAR]",
+      "implementacao": "Ofício de ente federado sobre risco de falta de insumo essencial respondido pela direção nacional do SUS em 24 h, com protocolo público; sala de situação tripartite (Ministério, Conass, Conasems) com atas públicas",
+      "metrica": "Tempo médio de resposta a alertas",
+      "criterio": "Rever se o prazo for descumprido em mais de 10% dos alertas"
+    },
+    {
+      "titulo": "Regra de evidência para recomendações oficiais",
+      "origem": "Prática da Conitec e diretrizes da OMS",
+      "custo": "Baixo",
+      "implementacao": "Toda nota técnica de tratamento em emergência traz o nível de evidência (GRADE), é revista pela Conitec em até 30 dias após ensaio randomizado relevante e só é revogada por ato expresso",
+      "metrica": "Tempo entre evidência nova e revisão da nota",
+      "criterio": "Rever se atrasar resposta urgente em mais de 14 dias"
+    },
+    {
+      "titulo": "Transparência e auditoria de compras emergenciais",
+      "origem": "Casos Covaxin, Hempcare e OSs no RJ",
+      "custo": "Baixo [A VERIFICAR]",
+      "implementacao": "Contrato, quadro societário do fornecedor e histórico de entregas publicados em 72 h num portal único, com auditoria concomitante do tribunal de contas, para União, estados, consórcios e municípios",
+      "metrica": "Percentual de contratos emergenciais publicados no prazo",
+      "criterio": "Rever se não houver queda de pagamentos sem entrega"
+    },
+    {
+      "titulo": "Escolas como serviço essencial e dados desagregados",
+      "origem": "Evidência sobre perdas de aprendizagem; vigilância do SUS",
+      "custo": "[A VERIFICAR]",
+      "implementacao": "Protocolo prévio de reabertura (escolas são as últimas a fechar e as primeiras a reabrir, salvo parecer técnico público) e publicação quinzenal de óbitos e hospitalizações por raça/cor, idade, município e renda",
+      "metrica": "Dias de escola fechada em emergência futura; prazo de publicação dos dados",
+      "criterio": "Rever se a reabertura elevar hospitalizações pediátricas acima do limiar técnico"
+    }
+  ],
+  "pareceres": [
+    {
+      "cadeira": "Saúde Pública e Epidemiologia",
+      "resumo": "A vacinação foi a política de maior efeito e o mérito se divide entre União, SP/Butantan, Fiocruz e municípios. A orientação de cloroquina, mantida depois dos ensaios de 2020, é efeito adverso, com magnitude em mortes indeterminada. Cenários de mortes evitáveis não podem virar contagem de culpa, por causa da escassez mundial e da variante Gama. O fechamento longo de escolas é custo real.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Analista de Políticas Sociais",
+      "resumo": "A média nacional esconde desigualdade regional e racial: Norte, negros e indígenas morreram mais. O auxílio conteve a extrema pobreza. A perda de aprendizado recaiu sobre a rede pública. Em Manaus a falha foi compartilhada, e nenhum estudo reparte as mortes entre as esferas.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Jurista Constitucional e Federativo",
+      "resumo": "Comprar vacinas e coordenar insumos críticos é atribuição primária da União; leitos e medidas locais cabem a estados e municípios. A ADI 6341 não tirou poderes do Presidente. Estado processual: nenhuma denúncia contra o ex-presidente; improbidade de Manaus improcedente, porque a nova lei exige dolo específico, o que não declara a gestão adequada; o ex-governador do RJ sofreu impeachment e é réu.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Cientista Político Institucional",
+      "resumo": "As instituições funcionaram como freio (STF, Congresso). A competência comum sem coordenação virou culpa difusa, e a troca de quatro ministros enfraqueceu a capacidade do Ministério. A accountability penal dependeu de um único órgão, a PGR. A proposta é um comitê federativo com atas públicas e prazos.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Economista Empírico",
+      "resumo": "O lockdown local em SP reduziu mortes sem efeito detectável no emprego formal, sem que isso possa ser generalizado. O auxílio foi contribuição provável contra a pobreza. As transferências a estados ainda não têm avaliação de resultado. O fechamento das escolas é custo intergeracional.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Investigador de Forças e Interesses",
+      "resumo": "A rivalidade entre União e SP gerou duas rotas de vacina. As compras emergenciais foram frágeis em todas as esferas (Covaxin, Hempcare, OSs no RJ), e o padrão comum foi a dispensa de licitação com intermediário sem histórico. A polarização rende aos dois lados. O Juiz rejeitou a simetria entre a recusa federal e o protagonismo paulista.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Geoestrategista",
+      "resumo": "A escassez mundial de doses e de IFA foi maré. Fiocruz e Butantan foram a decisão de maior valor estratégico. Contratar o Covax pelo piso e o atrito público com o fornecedor do insumo foram escolhas domésticas.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Guardião do Método",
+      "resumo": "Com os períodos alinhados, a razão entre excesso e óbitos oficiais fica entre 0,9 e 1,1. As 303 mil mortes evitadas pela vacina não se somam aos cenários de evitáveis; os 391 mil são limite teórico e os 400 mil não têm fonte. Os estudos de voto × mortalidade são ecológicos (C/D) e as taxas não são padronizadas por idade.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "Filósofo Pluralista",
+      "resumo": "Separa fato (cloroquina sem efeito; vacina eficaz), previsão (cenários) e valor (renda, escola e liberdade × risco). Responsabilidade tem três sentidos: moral, política e jurídica. A régua de Weber vale para o tratamento precoce e para as escolas fechadas.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "O Cidadão",
+      "resumo": "Responde às frases do WhatsApp com selos de checagem, pede glossário para os termos técnicos e um texto de 30 segundos para levar à mesa. Alerta que os números de mortes evitáveis vão circular sem as premissas.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    },
+    {
+      "cadeira": "O Formulador",
+      "resumo": "A capacidade produtiva nacional foi o ativo que funcionou. Propõe Lei de Prontidão Sanitária, alerta tripartite com resposta em 24 h, regra de evidência para recomendações e gatilho automático de renda pelo CadÚnico, com métrica e critério de revisão.",
+      "confianca": "Média",
+      "sinal_invertido": "Feito. Nada mudou."
+    }
+  ],
+  "isonomia": [
+    {
+      "item": "Teste do sinal invertido",
+      "status": "APROVADO",
+      "nota": "Refeito pelo Auditor: a conclusão se apoia em competência e atos documentados, não no espectro."
+    },
+    {
+      "item": "Vocabulário carregado",
+      "status": "AJUSTADO",
+      "nota": "\"Desvios\" e \"fraude\" nas compras estaduais trocados por descrição neutra, igual para todas as esferas. Rótulos só entre aspas."
+    },
+    {
+      "item": "Rigor simétrico",
+      "status": "AJUSTADO",
+      "nota": "A Covaxin entrou ao lado das compras estaduais. Manaus passou a constar como falha compartilhada. A contagem de e-mails da Pfizer foi marcada como contestada."
+    },
+    {
+      "item": "Janela e base",
+      "status": "APROVADO",
+      "nota": "Série inteira de 2020 a 2024; comparação regional marcada [A VERIFICAR]."
+    },
+    {
+      "item": "Fontes",
+      "status": "AJUSTADO",
+      "nota": "Retiradas afirmações fora do Dossiê. Eficácia vacinal agora cita a revisão Cochrane de 2022. Derivados etiquetados."
+    },
+    {
+      "item": "Omissão",
+      "status": "AJUSTADO",
+      "nota": "Corrigido \"nenhuma decisão federal virou processo\" para \"decisões do ex-presidente\". Incluídos a fornecedora de oxigênio, a testagem e as mortes de 2022–23."
+    },
+    {
+      "item": "Falso equilíbrio",
+      "status": "APROVADO",
+      "nota": "Rejeitada a simetria forçada na disputa da vacina."
+    },
+    {
+      "item": "Neutralidade covarde",
+      "status": "APROVADO",
+      "nota": "A Sentença conclui onde a evidência permite; o FALSO sobre o lockdown traz a premissa declarada."
+    },
+    {
+      "item": "Adesão ao usuário",
+      "status": "APROVADO",
+      "nota": "Nada na análise reflete preferência de quem perguntou."
+    },
+    {
+      "item": "P13 — estado processual",
+      "status": "AJUSTADO",
+      "nota": "\"A PGR arquivou\" corrigido para \"a PGR pediu\"; escolas passaram de falha a custo assumido."
+    },
+    {
+      "item": "Convocação isenta",
+      "status": "APROVADO",
+      "nota": "Todas as cadeiras permanentes mais a de Saúde Pública convocadas."
+    }
+  ],
+  "precedentes": [],
+  "ferramenta": {
+    "nome": "Causa única (e a palavra \"só\")",
+    "como_reconhecer": "Mortes em massa têm várias causas ao mesmo tempo. Desconfie de frases com \"só\", \"tudo\" e \"culpa de\" e pergunte: que outros fatores agiram ao mesmo tempo, e o que aconteceu, no mesmo período, com quem não tomou essa decisão?",
+    "exemplos": [
+      "\"As 700 mil mortes são culpa só do Presidente\" ignora a maré mundial e as falhas estaduais.",
+      "\"Foi culpa só do vírus (ou do STF, ou dos governadores)\" ignora decisões federais documentadas contra a evidência e o papel da União na compra de vacinas."
+    ]
+  },
+  "pergunta_mesa": "Se uma nova pandemia começasse amanhã, que decisões vocês gostariam que já estivessem escritas em lei — e quem vocês querem que tome cada uma: o governo federal, o governador ou o prefeito?",
+  "proximo_passo": "Pergunte ao seu deputado federal se ele apoia uma lei que obrigue o governo a contratar vacinas com antecedência e a responder em 24 horas a alertas de falta de insumos em qualquer estado — e acompanhe o voto.",
+  "gatilho_revisao": "Recorte brasileiro do excesso de mortes 2020–2023 da OMS (World Health Statistics 2026); decisão formal da PGR sobre o desarquivamento dos pedidos da CPI; julgamento do recurso da improbidade sobre Manaus; ou estudo com contrafactual observacional sobre o ritmo da vacinação no Brasil comparado a pares.",
+  "fontes": [
+    {
+      "nome": "Ministério da Saúde e Conass",
+      "detalhe": "Óbitos confirmados; marcos de 700 mil (28/03/2023) e 715.295 (11/03/2025); 5.959 óbitos em 2024",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "OMS — estimativas de excesso de mortalidade",
+      "detalhe": "2020–21 (14,9 mi no mundo; Brasil 99 e 220 por 100 mil) e World Health Statistics 2026",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "Excesso de mortes no Brasil (PMC10212149; Rev. Saúde Pública, PMC8522736)",
+      "detalhe": "2020 e 2021, base 2015–2019",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "Cochrane — Graña et al., 2022",
+      "detalhe": "Eficácia e segurança das vacinas contra Covid-19 (41 ensaios)",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "Lancet Regional Health Americas 17:100397 e 17:100418",
+      "detalhe": "Mortes evitadas pela vacinação e cenários de ritmo mais rápido",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "Revista Brasileira de Epidemiologia, 2023 (Machado et al.)",
+      "detalhe": "Cenários de mortes evitáveis (modelo SEIRS)",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "Nature Communications, 2021",
+      "detalhe": "Meta-análise da hidroxicloroquina e cloroquina",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "AEJ: Economic Policy 15(3), 2023; Nova Economia 33(1), 2023",
+      "detalhe": "Falas presidenciais e distanciamento; voto e mortalidade",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "STF",
+      "detalhe": "ADI 6341; INQ 4875 (Covaxin); arquivamento da investigação do cartão de vacina (2025)",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "Senado Federal",
+      "detalhe": "CPI da Pandemia; transferências federais em 2020 (Siafi/Siop)",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "Imprensa e pesquisa",
+      "detalhe": "Agência Brasil, Poder360, Agência Pública (set/2025), Cepedisa/USP, Metrópoles, Aos Fatos — como pista, conferida quando possível",
+      "consulta": "19/10/2026"
+    },
+    {
+      "nome": "INEP, UNESCO e Banco Mundial",
+      "detalhe": "Saeb 2021; tempo de escolas fechadas",
+      "consulta": "19/10/2026"
+    }
+  ]
+}</script>
+
+<script>
+(function(){
+  var S; try{ S = JSON.parse(document.getElementById('sentenca').textContent); }catch(e){ document.getElementById('app').textContent='Não foi possível ler os dados da Sentença.'; return; }
+  var SEALS = {
+    comprovado:{i:'✅',t:'Resultado comprovado',c:'good'}, inversao:{i:'🔄',t:'Inversão de tendência',c:'good'},
+    provavel:{i:'➕',t:'Contribuição provável',c:'a'}, sem_efeito:{i:'➖',t:'Sem efeito detectável',c:'neutral'},
+    adverso:{i:'⚠️',t:'Efeito adverso',c:'bad'}, indeterminado:{i:'❓',t:'Indeterminado',c:'neutral'},
+    heranca:{i:'🧾',t:'Herança',c:'b'}, mare:{i:'🌍',t:'Maré',c:'b'}
+  };
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function verif(s){return esc(s).replace(/\[A VERIFICAR[^\]]*\]/g,function(m){return '<span class="verify">'+m+'</span>'})}
+  function seal(k){var s=SEALS[k]||SEALS.indeterminado;return '<span class="seal '+s.c+'"><span aria-hidden="true">'+s.i+'</span>'+s.t+'</span>'}
+  function tone(r){r=(r||'').toUpperCase();
+    if(/INEFICAZ|CONTRAPRODUCENTE|CONTRÁRIA|FALSO|ENGANOSO/.test(r))return 'bad';
+    if(/RESSALVAS|LACUNAS|INCOMPLETO|EXAGERADO|CONTEXTO/.test(r))return 'warn';
+    if(/INCONCLUSIV|INDETERMIN|VERIFICÁVEL|CONTROVERSO|SEM BASE/.test(r))return 'neutral';
+    return 'good';}
+  function fmtDate(d){var p=(d||'').split('-');return p.length===3?p[2]+'/'+p[1]+'/'+p[0]:d}
+  var lvl={'Baixa':1,'Média':2,'Alta':3}[S.confianca&&S.confianca.nivel]||0;
+
+  var SECS=[["1","Enquadramento"],["2","Resposta curta"],["3","Fatos estabelecidos"],["4","Fatos em disputa"],["5","Resultados"],["6","Atribuição"],["7","Matriz federativa"],["8","Forças e interesses"],["9","O que cada vertente acerta"],["10","Divergências de valor"],["11","Conflitos no Conselho"],["12","Propostas"],["13","Veredicto"],["14","Relatório de Isonomia"],["15","Ferramenta de pensamento"],["16","Pergunta para a mesa"],["17","Próximo passo"],["18","Gatilho de revisão"],["P","Pareceres das cadeiras"],["F","Fontes"]];
+  function sec(n,body){var t=SECS.filter(function(s){return s[0]===n})[0][1];return '<section class="fsec" id="s'+n+'"><h2><span class="num">'+n+'</span><span>'+t+'</span></h2>'+body+'</section>';}
+  function table(cols,rows){return '<div class="tbl"><table><thead><tr>'+cols.map(function(c){return '<th>'+esc(c[1])+'</th>'}).join('')+'</tr></thead><tbody>'+rows.map(function(r){return '<tr>'+cols.map(function(c){var v=r[c[0]];return '<td>'+(c[2]?c[2](v,r):verif(v))+'</td>'}).join('')+'</tr>'}).join('')+'</tbody></table></div>';}
+  var t=tone(S.veredicto&&S.veredicto.rotulo);
+  var h='';
+  if(S.exemplo) h+='<div class="demo" role="note">EXEMPLO FICTÍCIO · município, programa e números inventados para demonstrar o modelo</div>';
+  h+='<header class="top"><span class="brand">O Pacificador de Famílias</span><span class="meta"><span>Sentença '+esc(S.id)+'</span><span>'+fmtDate(S.data)+'</span><span>Modo '+esc(S.modo)+'</span><span>Versão completa</span></span></header>';
+  h+='<section class="title-block"><span class="eyebrow">Objeto</span><h1>'+esc(S.objeto)+'</h1><p class="question">'+esc(S.pergunta)+'</p></section>';
+  var toc='<nav class="toc" aria-label="Sumário">'+(S.documento_executivo?'<a class="exec" href="'+esc(S.documento_executivo)+'">← Resumo executivo</a>':'')+SECS.map(function(s){return '<a href="#s'+s[0]+'"><span>'+s[0]+'</span><span>'+s[1]+'</span></a>'}).join('')+'</nav>';
+  var c='<details class="mobile-toc"><summary>Sumário</summary><nav>'+(S.documento_executivo?'<a href="'+esc(S.documento_executivo)+'">← Resumo executivo</a>':'')+SECS.map(function(s){return '<a href="#s'+s[0]+'">'+s[0]+' · '+s[1]+'</a>'}).join('')+'</nav></details>';
+
+  c+=sec('1','<div class="chips">'+(S.esferas||[]).map(function(e){return '<span class="chip">'+esc(e)+'</span>'}).join('')+(S.poderes||[]).map(function(e){return '<span class="chip">'+esc(e)+'</span>'}).join('')+'<span class="chip">'+esc(S.periodo)+'</span></div><p class="small">'+esc(S.data_corte)+'</p>'+
+    '<h3>Quadro de Convocação</h3>'+table([['cadeira','Cadeira'],['status','Status',function(v){return '<span class="tag">'+esc(v)+'</span>'}],['origem','Origem'],['justificativa','Justificativa']],S.convocacao||[]));
+  c+=sec('2','<p class="answer">'+verif(S.resposta_curta)+'</p>');
+  c+=sec('3','<ul class="facts">'+(S.fatos_estabelecidos||[]).map(function(f){return '<li><span class="tag fato">FATO · confiança '+esc(f.confianca).toLowerCase()+'</span><span>'+verif(f.texto)+'</span><span class="src">Fonte: '+esc(f.fonte)+'</span></li>'}).join('')+'</ul>');
+  c+=sec('4',(S.fatos_em_disputa||[]).map(function(d){return '<div class="dispute"><strong>'+esc(d.questao)+'</strong><ul>'+(d.posicoes||[]).map(function(p){return '<li>'+esc(p)+'</li>'}).join('')+'</ul><div class="resolve"><strong>O que resolve:</strong> '+verif(d.resolveria)+'</div></div>'}).join(''));
+  c+=sec('5',(S.grafico?'<div class="chart-card"><h3>'+esc(S.grafico.titulo)+' <span class="small">('+esc(S.grafico.unidade)+')</span></h3><div class="legend" id="lg"></div><div class="chart" id="ch"></div><p class="chart-note">Fonte: '+esc(S.grafico.fonte)+(S.grafico.nota?' · '+esc(S.grafico.nota):'')+'</p></div>':'')+
+    table([['acao','Ação'],['indicador','Indicador'],['efeito','Efeito'],['selo','Selo',function(v){return seal(v)}],['evidencia','Evidência',function(v){return '<span class="tag">'+esc(v)+'</span>'}],['confianca','Confiança']],S.resultados||[]));
+  c+=sec('6','<ol class="timeline">'+(S.linha_do_tempo||[]).map(function(e){return '<li class="'+esc(e.tipo)+'"><span class="d">'+esc(e.data)+' · '+esc(e.tipo)+'</span><span class="ev">'+esc(e.evento)+'</span><span class="small">'+esc(e.ator)+'</span></li>'}).join('')+'</ol><p class="attrib">'+verif(S.atribuicao)+'</p>');
+  c+=sec('7',table([['dimensao','Dimensão'],['uniao','União'],['estado','Estado'],['municipio','Município'],['obs','Observação']],S.matriz_federativa||[]));
+  c+=sec('8',table([['ator','Ator'],['interesse_declarado','Interesse declarado'],['interesse_provavel','Interesse provável'],['ganha_perde','Ganha / perde'],['mecanismo','Mecanismo'],['evidencia','Evidência',function(v){return '<span class="ev-badge ev-'+esc(v)+'">'+esc(v)+'</span>'}],['transparencia','Transparência']],S.forcas||[])+
+    '<p class="small">Escala de evidência: I documento público ou decisão definitiva · II investigação corroborada · III indício estrutural · IV hipótese.</p>'+
+    ((S.hipoteses||[]).length?'<div class="callout"><span class="eyebrow">Hipóteses a investigar (nível IV)</span>'+S.hipoteses.map(function(x){return '<p>'+esc(x.texto)+' <span class="small">O que confirmaria: '+esc(x.confirmaria)+'</span></p>'}).join('')+'</div>':'')+
+    (S.polarizacao?'<div class="callout"><span class="eyebrow">A quem interessa a polarização deste tema</span><p>'+esc(S.polarizacao)+'</p></div>':''));
+  c+=sec('9','<div class="sides">'+(S.vertentes||[]).map(function(v){return '<div class="side"><h3>'+esc(v.nome)+'</h3><dl><dt class="ok">Acerta</dt><dd>'+esc(v.acerta)+'</dd><dt class="ko">Erra</dt><dd>'+esc(v.erra)+'</dd></dl></div>'}).join('')+'</div>');
+  c+=sec('10',(S.valores||[]).map(function(v){return '<div class="tension"><div class="t-poles"><span class="t-pole">'+esc(v.polo_a)+'</span><span class="t-bar" aria-hidden="true"></span><span class="t-pole r">'+esc(v.polo_b)+'</span></div><div class="t-costs"><div><strong>Custo:</strong> '+esc(v.custo_a)+'</div><div><strong>Custo:</strong> '+esc(v.custo_b)+'</div></div><p class="small">'+esc(v.comentario)+'</p></div>'}).join(''));
+  c+=sec('11',(S.conflitos||[]).length?S.conflitos.map(function(k){return '<div class="conflict"><div class="cj" style="border-top:0"><strong>'+esc(k.tema)+'</strong></div><div class="cv"><div>'+esc(k.lado_1)+'</div><div>'+esc(k.lado_2)+'</div></div><div class="cj"><span class="small"><strong>O que decidiria:</strong> '+esc(k.decidiria)+'</span><span><strong>Posição do Juiz:</strong> '+esc(k.posicao_juiz)+'</span></div></div>'}).join(''):'<p class="small">Sem conflitos abertos entre as cadeiras.</p>');
+  c+=sec('12','<div class="props">'+(S.propostas||[]).map(function(p){return '<div class="prop"><h3>'+esc(p.titulo)+'</h3><dl><dt>Origem</dt><dd>'+esc(p.origem)+'</dd><dt>Custo</dt><dd>'+verif(p.custo)+'</dd><dt>Como</dt><dd>'+esc(p.implementacao)+'</dd><dt>Métrica</dt><dd>'+esc(p.metrica)+'</dd><dt>Revisar se</dt><dd>'+esc(p.criterio)+'</dd></dl></div>'}).join('')+'</div>');
+  var lvl={'Baixa':1,'Média':2,'Alta':3}[S.confianca&&S.confianca.nivel]||0;
+  c+=sec('13','<div class="verdict"><div class="v-main '+t+'"><span class="eyebrow">Veredicto</span><span class="v-label">'+esc(S.veredicto.rotulo)+'</span><p class="small" style="color:var(--ink)">'+esc(S.veredicto.explicacao)+'</p></div><div class="v-conf"><span class="eyebrow">Confiança geral</span><span class="conf-n">'+esc(S.confianca.nivel)+'</span><div class="meter" aria-hidden="true"><i class="'+(lvl>=1?'on':'')+'"></i><i class="'+(lvl>=2?'on':'')+'"></i><i class="'+(lvl>=3?'on':'')+'"></i></div><p class="small">'+esc(S.confianca.motivo)+'</p></div></div>');
+  c+=sec('14','<ul class="iso">'+(S.isonomia||[]).map(function(i){var cl=/APROV/.test(i.status)?'ok':(/AJUST/.test(i.status)?'adj':'ko');return '<li><span class="st '+cl+'">'+esc(i.status)+'</span><span><strong>'+esc(i.item)+'.</strong> '+esc(i.nota)+'</span></li>'}).join('')+'</ul>'+
+    '<p class="small">Precedentes aplicados: '+((S.precedentes||[]).length?S.precedentes.map(esc).join('; '):'nenhum caso análogo no registro.')+'</p>');
+  c+=sec('15','<div class="callout"><strong style="font-family:var(--display);font-size:1.15rem">'+esc(S.ferramenta.nome)+'</strong><p>'+esc(S.ferramenta.como_reconhecer)+'</p>'+((S.ferramenta.exemplos||[]).length?'<ul>'+S.ferramenta.exemplos.map(function(e){return '<li>'+esc(e)+'</li>'}).join('')+'</ul>':'')+'</div>');
+  c+=sec('16','<div class="home"><p class="q">'+esc(S.pergunta_mesa)+'</p></div>');
+  c+=sec('17','<p>'+esc(S.proximo_passo)+'</p>');
+  c+=sec('18','<p>'+esc(S.gatilho_revisao)+'</p>');
+  c+=sec('P',(S.pareceres||[]).map(function(p){return '<details class="par"><summary><span>'+esc(p.cadeira)+'</span><span class="small">confiança '+esc(p.confianca).toLowerCase()+'</span></summary><div class="pb"><p>'+verif(p.resumo)+'</p><p class="small">Teste do sinal invertido: '+esc(p.sinal_invertido)+'</p></div></details>'}).join(''));
+  c+=sec('F',table([['nome','Fonte'],['detalhe','Detalhe'],['consulta','Consulta']],S.fontes||[]));
+  c+='<footer class="foot"><span>Esta Sentença avalia atos e resultados. Não indica voto.</span><span>O Pacificador de Famílias · '+esc(S.id)+'</span></footer>';
+  document.getElementById('app').className='page full';
+  document.getElementById('app').innerHTML=h+toc+'<div class="content">'+c+'</div>';
+  var links=[].slice.call(document.querySelectorAll('.toc a[href^="#"]'));
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'0px 0px -70% 0px'});
+    [].slice.call(document.querySelectorAll('.fsec')).forEach(function(s){io.observe(s)});}
+
+  /* ---------- Gráfico ---------- */
+  function chart(G, host, legendHost){
+    if(!host) return;
+    var W=640,H=300,m={l:44,r:16,t:22,b:34};
+    var xs=[],ys=[];G.series.forEach(function(s){s.pontos.forEach(function(p){xs.push(p[0]);ys.push(p[1])})});
+    var x0=Math.min.apply(null,xs),x1=Math.max.apply(null,xs);
+    var y0=G.y_min!=null?G.y_min:0, y1=G.y_max!=null?G.y_max:Math.ceil(Math.max.apply(null,ys)*1.1);
+    function X(v){return m.l+(v-x0)/(x1-x0)*(W-m.l-m.r)} function Y(v){return H-m.b-(v-y0)/(y1-y0)*(H-m.t-m.b)}
+    var COL={principal:'var(--side-a)',pares:'var(--side-b)',contrafactual:'var(--muted)'};
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(G.titulo)+'">';
+    var step=(y1-y0)/4;
+    for(var i=0;i<=4;i++){var v=y0+step*i;s+='<line x1="'+m.l+'" x2="'+(W-m.r)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="var(--grid)" stroke-width="1"/><text x="'+(m.l-8)+'" y="'+(Y(v)+4)+'" text-anchor="end" font-family="var(--mono)" font-size="11" fill="var(--muted)">'+Math.round(v)+'</text>';}
+    var span=x1-x0, every=span>12?Math.ceil(span/8):(span>8?2:1);
+    for(var yr=x0;yr<=x1;yr++){ if((yr-x0)%every===0||yr===x1) s+='<text x="'+X(yr)+'" y="'+(H-m.b+20)+'" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--muted)">'+yr+'</text>'; }
+    if(G.marco){var mx=X(G.marco.ano);s+='<line x1="'+mx+'" x2="'+mx+'" y1="'+m.t+'" y2="'+(H-m.b)+'" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="4 4"/><text x="'+(mx+6)+'" y="'+(m.t+4)+'" font-family="var(--mono)" font-size="11" fill="var(--ink)">'+esc(G.marco.rotulo)+'</text>';}
+    G.series.forEach(function(se){var c=COL[se.papel]||'var(--ink)';var d=se.pontos.map(function(p,k){return (k?'L':'M')+X(p[0]).toFixed(1)+' '+Y(p[1]).toFixed(1)}).join(' ');
+      s+='<path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="'+(se.papel==='principal'?2.5:2)+'" stroke-linecap="round" stroke-linejoin="round"'+(se.papel==='contrafactual'?' stroke-dasharray="6 5"':'')+'/>';
+      if(se.papel!=='contrafactual'){var last=se.pontos[se.pontos.length-1];
+        se.pontos.forEach(function(p){if(p[2]==='a_verificar'){s+='<circle cx="'+X(p[0])+'" cy="'+Y(p[1])+'" r="5" fill="var(--card)" stroke="'+c+'" stroke-width="2"/>';}});
+        if(last[2]!=='a_verificar') s+='<circle cx="'+X(last[0])+'" cy="'+Y(last[1])+'" r="4.5" fill="'+c+'" stroke="var(--card)" stroke-width="2"/>';
+        s+='<text x="'+(X(last[0])-8)+'" y="'+(Y(last[1])-10)+'" text-anchor="end" font-family="var(--display)" font-weight="700" font-size="13" fill="var(--ink)">'+last[1]+(G.unidade==='%'?'%':'')+(last[2]==='a_verificar'?' *':'')+'</text>';}
+    });
+    s+='<line id="xh" x1="0" x2="0" y1="'+m.t+'" y2="'+(H-m.b)+'" stroke="var(--muted)" stroke-width="1" opacity="0"/>';
+    s+='<rect id="hit" x="'+m.l+'" y="'+m.t+'" width="'+(W-m.l-m.r)+'" height="'+(H-m.t-m.b)+'" fill="transparent"/></svg>';
+    host.innerHTML=s+'<div class="tip" hidden></div>';
+    if(legendHost) legendHost.innerHTML=G.series.map(function(se){return '<span><i style="border-top-color:'+(COL[se.papel]||'var(--ink)')+';'+(se.papel==='contrafactual'?'border-top-style:dashed':'')+'"></i>'+esc(se.nome)+'</span>'}).join('')+(G.series.some(function(se){return se.pontos.some(function(p){return p[2]==='a_verificar'})})?'<span>* <span class="verify">[A VERIFICAR]</span></span>':'');
+    var svgEl=host.querySelector('svg'),hit=host.querySelector('#hit'),xh=host.querySelector('#xh'),tip=host.querySelector('.tip');
+    function move(ev){var r=svgEl.getBoundingClientRect();var px=(ev.clientX-r.left)/r.width*W;var yr=Math.round(x0+(px-m.l)/(W-m.l-m.r)*(x1-x0));yr=Math.max(x0,Math.min(x1,yr));
+      xh.setAttribute('x1',X(yr));xh.setAttribute('x2',X(yr));xh.setAttribute('opacity','1');
+      var rows=G.series.map(function(se){var p=se.pontos.filter(function(q){return q[0]===yr})[0];return p?esc(se.nome)+': <b>'+p[1]+(G.unidade==='%'?'%':' '+esc(G.unidade))+'</b>'+(p[2]==='a_verificar'?' [A VERIFICAR]':''):null}).filter(Boolean);
+      tip.innerHTML='<b>'+yr+'</b><br>'+rows.join('<br>');tip.hidden=false;
+      var tx=X(yr)/W*r.width, cw=host.clientWidth; tip.style.left=Math.max(90,Math.min(cw-90,tx))+'px';tip.style.top=(m.t/H*r.height+10)+'px';}
+    hit.addEventListener('pointermove',move);hit.addEventListener('pointerdown',move);
+    hit.addEventListener('pointerleave',function(){tip.hidden=true;xh.setAttribute('opacity','0')});
+  }
+  if(S.grafico) chart(S.grafico, document.getElementById('ch'), document.getElementById('lg'));
+})();
+</script>
+
+</body>
+</html>

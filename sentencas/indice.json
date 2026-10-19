@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "S-001",
+    "base": "2026-10-19_S-001_covid-politicas-e-responsabilidades",
+    "data": "2026-10-19",
+    "objeto": "Políticas de saúde na pandemia de Covid-19 e responsabilidades pelas mortes no Brasil",
+    "sala": "sobre-as-politicas-de-saude-durante-o-covid-e-sobre-as-respo-c43c3",
+    "veredicto": "SEM NOTA ÚNICA · ACERTOS E FALHAS, COM RESSALVAS",
+    "confianca": "Média",
+    "resposta_curta": "O Brasil registrou cerca de 716 mil mortes por Covid — perto de 1 em cada 280 brasileiros —, com excesso de mortes por volta de 1,7 vez a média mundial em 2020–2021, abaixo dos piores casos, como o Peru (a comparação com os vizinhos da região ainda está [A VERIFICAR]). A vacina salvou centenas de milhares de vidas, e o país passou a produzi-la porque Fiocruz e Butantan sabiam fazê-la. Houve falhas que custaram vidas, em quantidade que nenhum estudo consegue medir com precisão. No governo federal, que tinha o papel principal de comprar vacinas e coordenar o país, houve contratos atrasados, a recomendação de um remédio que os estudos mostraram não funcionar e falhas de coordenação. Na falta de oxigênio em Manaus, falharam União e estado, em proporção que os dados não permitem dividir. Em estados e na União, houve compras emergenciais pagas sem entrega ou com documentos irregulares. As escolas ficaram fechadas por muito tempo, com custo alto no aprendizado. Na Justiça, o ex-governador do RJ sofreu impeachment e responde a ação penal; nenhuma decisão do ex-presidente virou processo, e a ação de improbidade sobre Manaus foi julgada improcedente em 1ª instância. Confiança média.",
+    "executiva": "2026-10-19_S-001_covid-politicas-e-responsabilidades_EXECUTIVA.html",
+    "completa": "2026-10-19_S-001_covid-politicas-e-responsabilidades_COMPLETA.html"
+  }
+]
