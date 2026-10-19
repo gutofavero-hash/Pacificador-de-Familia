@@ -1,0 +1,225 @@
+{
+  "exemplo": false,
+  "id": "S-001",
+  "data": "2026-10-19",
+  "modo": "Completo",
+  "objeto": "Políticas de saúde na pandemia de Covid-19 e responsabilidades pelas mortes no Brasil",
+  "objeto_curto": "covid-politicas-e-responsabilidades",
+  "sala": "sobre-as-politicas-de-saude-durante-o-covid-e-sobre-as-respo-c43c3",
+  "pergunta": "Quero entender quais políticas de saúde foram adotadas no Brasil durante a pandemia de Covid-19, por quais esferas e Poderes, o que a evidência mostra sobre o efeito delas na mortalidade, e como se distribuem as responsabilidades pelas mais de 700 mil mortes registradas — separando responsabilidade de gestão, política e processual.",
+  "esferas": ["Federal", "Estadual", "Municipal"],
+  "poderes": ["Presidência e Ministério da Saúde", "Executivos estaduais e municipais", "Congresso Nacional (incl. CPI da Pandemia)", "STF", "Anvisa", "TCU, CGU, PGR e Ministérios Públicos"],
+  "periodo": "Fevereiro de 2020 a maio de 2023 (base 2015–2019 para o excesso de mortes)",
+  "data_corte": "Pesquisa feita em 19/10/2026; painel do Ministério da Saúde e bancos da OMS não abertos diretamente",
+  "documento_executivo": "2026-10-19_S-001_covid-politicas-e-responsabilidades_EXECUTIVA.html",
+  "documento_completo": "2026-10-19_S-001_covid-politicas-e-responsabilidades_COMPLETA.html",
+
+  "resposta_curta": "O Brasil registrou cerca de 716 mil mortes por Covid — perto de 1 em cada 280 brasileiros —, com excesso de mortes por volta de 1,7 vez a média mundial em 2020–2021, abaixo dos piores casos, como o Peru (a comparação com os vizinhos da região ainda está [A VERIFICAR]). A vacina salvou centenas de milhares de vidas, e o país passou a produzi-la porque Fiocruz e Butantan sabiam fazê-la. Houve falhas que custaram vidas, em quantidade que nenhum estudo consegue medir com precisão. No governo federal, que tinha o papel principal de comprar vacinas e coordenar o país, houve contratos atrasados, a recomendação de um remédio que os estudos mostraram não funcionar e falhas de coordenação. Na falta de oxigênio em Manaus, falharam União e estado, em proporção que os dados não permitem dividir. Em estados e na União, houve compras emergenciais pagas sem entrega ou com documentos irregulares. As escolas ficaram fechadas por muito tempo, com custo alto no aprendizado. Na Justiça, o ex-governador do RJ sofreu impeachment e responde a ação penal; nenhuma decisão do ex-presidente virou processo, e a ação de improbidade sobre Manaus foi julgada improcedente em 1ª instância. Confiança média.",
+
+  "veredicto": {
+    "tipo": "governo",
+    "rotulo": "SEM NOTA ÚNICA · ACERTOS E FALHAS, COM RESSALVAS",
+    "explicacao": "Quadro de boletim. Conquistas: vacinas produzidas no país e campanha do SUS, auxílio emergencial e instituições que funcionaram. Falhas com custo provável em vidas, concentradas onde a União tinha o papel principal: compra de vacinas, orientação clínica e coordenação. Também houve falhas estaduais e compras emergenciais frágeis em todas as esferas. Maré: escassez mundial de doses e variante Gama. A responsabilidade de gestão é compartilhada e desigual; nenhum estudo permite dividir as mortes entre esferas ou pessoas."
+  },
+  "confianca": { "nivel": "Média", "motivo": "Contagem, cronologia, ensaios clínicos e decisões do STF têm confiança alta. A atribuição de mortes a decisões específicas depende de modelos sensíveis a premissas. Faltam a comparação padronizada por idade com pares e o recorte brasileiro do relatório da OMS de 2026." },
+
+  "convocacao": [
+    { "cadeira": "Guardião do Método", "status": "Convocada", "origem": "Obrigatória", "justificativa": "Toda sessão; montou o Dossiê de Fatos." },
+    { "cadeira": "O Cidadão", "status": "Convocada", "origem": "Obrigatória", "justificativa": "Toda sessão." },
+    { "cadeira": "Auditor de Isonomia", "status": "Convocada", "origem": "Obrigatória", "justificativa": "Toda sessão." },
+    { "cadeira": "Saúde Pública e Epidemiologia (convidada)", "status": "Convocada", "origem": "Juiz", "justificativa": "Núcleo do tema: vacinas, tratamentos, distanciamento." },
+    { "cadeira": "Analista de Políticas Sociais", "status": "Convocada", "origem": "Juiz", "justificativa": "Quem morreu mais; auxílio, escolas, acesso a leitos." },
+    { "cadeira": "Jurista Constitucional e Federativo", "status": "Convocada", "origem": "Juiz", "justificativa": "Competências na saúde (ADI 6341) e estado processual." },
+    { "cadeira": "Cientista Político Institucional", "status": "Convocada", "origem": "Juiz", "justificativa": "Conflito federativo, incentivos, CPI, accountability." },
+    { "cadeira": "Economista Empírico", "status": "Convocada", "origem": "Juiz", "justificativa": "Tradeoff economia × vidas; auxílio; custo fiscal." },
+    { "cadeira": "Investigador de Forças e Interesses", "status": "Convocada", "origem": "Juiz", "justificativa": "Compras de vacinas e insumos, tratamento precoce, desinformação." },
+    { "cadeira": "Geoestrategista", "status": "Convocada", "origem": "Juiz", "justificativa": "Dependência de IFA, escassez mundial de vacinas, Covax." },
+    { "cadeira": "Filósofo Pluralista", "status": "Convocada", "origem": "Juiz", "justificativa": "Liberdade × saúde coletiva; sentidos de responsabilidade." },
+    { "cadeira": "O Formulador", "status": "Convocada", "origem": "Juiz", "justificativa": "Lições para a próxima emergência sanitária." }
+  ],
+
+  "achados": [
+    { "titulo": "A vacina funcionou", "texto": "Ensaios com 433 mil pessoas mostram redução de doença grave. No Brasil, modelos estimam cerca de 303 mil mortes evitadas no primeiro ano. Fiocruz e Butantan permitiram vacinar a partir de 17/01/2021.", "selo": "comprovado" },
+    { "titulo": "Contratos de vacina atrasaram", "texto": "A primeira oferta da Pfizer foi em agosto de 2020 e o contrato saiu em março de 2021. O Covax foi contratado pelo piso de 10%. Houve recusa pública da CoronaVac em outubro de 2020. Um modelo estima ~47 mil idosos a mais salvos com ritmo mais rápido.", "selo": "adverso" },
+    { "titulo": "Remédio sem eficácia foi recomendado", "texto": "26 ensaios mostram que a hidroxicloroquina não reduz mortes e tem sinal de dano. A orientação federal só saiu do portal em maio de 2021.", "selo": "adverso" },
+    { "titulo": "Parte foi maré", "texto": "Faltava vacina no mundo inteiro no primeiro semestre de 2021, e a variante Gama surgiu em Manaus. Isso limitava qualquer governo, mas não explica a data dos contratos.", "selo": "mare" },
+    { "titulo": "Ninguém consegue dividir as mortes", "texto": "Os números de mortes evitáveis que circulam (47 mil, 120 mil, 391 mil) são cenários de modelo, não contagem de culpa. O excesso de mortes ficou perto dos óbitos por Covid.", "selo": "indeterminado" }
+  ],
+
+  "grafico": {
+    "titulo": "Mortes por Covid no Brasil, por ano, e excesso de mortes de todas as causas",
+    "unidade": "mil mortes",
+    "y_min": 0,
+    "y_max": 460,
+    "fonte": "Ministério da Saúde (óbitos confirmados; 2021–2023 derivados dos boletins oficiais) e estudo PMC10212149 (excesso de mortes, base 2015–2019)",
+    "marco": { "ano": 2021, "rotulo": "Início da vacinação (17/01/2021)" },
+    "series": [
+      { "nome": "Óbitos confirmados por Covid no ano", "papel": "principal", "pontos": [[2020,193.9],[2021,425,"a_verificar"],[2022,74.5,"a_verificar"],[2023,14.7,"a_verificar"],[2024,6.0]] },
+      { "nome": "Excesso de mortes de todas as causas", "papel": "pares", "pontos": [[2020,187.8],[2021,441.0]] }
+    ],
+    "nota": "Eixo vertical começa em zero. 2020 por data de notificação. 2021 derivado do acumulado; 2022 e 2023 derivados dos percentuais de queda informados pelo Ministério da Saúde (2022 entre ~70 e 79 mil). Excesso de mortes só calculado para 2020 e 2021 nessa fonte."
+  },
+
+  "fatos_estabelecidos": [
+    { "texto": "1º óbito em 12/03/2020; marca de 700 mil óbitos confirmados em 28/03/2023; 715.295 óbitos em 11/03/2025. Total recente ≈ 716 mil [A VERIFICAR — conferir em: painel covid.saude.gov.br], cerca de 353 por 100 mil habitantes (Censo 2022).", "fonte": "Ministério da Saúde e Conass, via Agência Brasil, CartaCapital e Poder360", "confianca": "Alta" },
+    { "texto": "Excesso de mortes de todas as causas: 187.842 em 2020 e 441.048 em 2021. OMS: ~681 mil em 2020–21 (99 e 220 por 100 mil). A razão entre excesso e óbitos oficiais do mesmo período fica entre 0,9 e 1,1.", "fonte": "PMC10212149; PMC8522736; OMS (estimativas de excesso 2020–21)", "confianca": "Média" },
+    { "texto": "Excesso médio do Brasil ≈ 160 por 100 mil por ano em 2020–21, contra ≈ 96 da média mundial e 437 do Peru (cálculo sobre estimativas da OMS; taxas não padronizadas por idade).", "fonte": "OMS — estimativas de excesso de mortalidade 2020–21", "confianca": "Média" },
+    { "texto": "O Norte teve o maior excesso (AM 38,1% em 2020; RO 66,1% em 2021). Entre hospitalizados por SRAG-Covid em 2020, morreu 1 em cada 3 negros e 1 em cada 4,4 brancos.", "fonte": "PMC10212149; Ministério da Saúde via Agência Pública", "confianca": "Alta" },
+    { "texto": "O STF (ADI 6341, abril de 2020) reconheceu a competência comum de União, estados e municípios, resguardada a atribuição de cada esfera. Não retirou competência da União.", "fonte": "STF, ADI 6341 (liminar de 24/03/2020; referendo de 15/04/2020)", "confianca": "Alta" },
+    { "texto": "Encomenda tecnológica Fiocruz/AstraZeneca em 08/09/2020; Covax com cobertura de 10% (24/09/2020); 1ª oferta da Pfizer em 15/08/2020 e contrato em mar/2021; frase \"não compraremos vacina da China\" em 21/10/2020; 1ª vacinação em 17/01/2021.", "fonte": "MP 994 e MP 1.003/2020; Ministério da Saúde; CPI do Senado; Poder360", "confianca": "Alta" },
+    { "texto": "Hidroxicloroquina: razão de chances de morte de 1,11 (IC95% 1,02–1,20) em 26 ensaios com 10.012 pacientes, sem benefício. A orientação federal para casos leves saiu do portal só em maio de 2021.", "fonte": "Meta-análise, Nature Communications 2021; Ministério da Saúde", "confianca": "Alta" },
+    { "texto": "Auxílio emergencial: R$ 429,2 bi a 68,2 milhões de pessoas (abr/2020–jan/2021). Transferências federais a estados e municípios para a pandemia em 2020: R$ 113,5 bi pagos.", "fonte": "Dados do MDS em estudo acadêmico; Senado (Siafi/Siop)", "confianca": "Alta" },
+    { "texto": "Escolas fechadas por mais de 260 dias (UNESCO). No Saeb 2021, a rede pública perdeu 12,36 pontos em matemática no 5º ano, cerca de 1 ano de aprendizado.", "fonte": "UNESCO; Banco Mundial; INEP (Saeb 2021)", "confianca": "Alta" }
+  ],
+
+  "fatos_em_disputa": [
+    { "questao": "Quando o governo federal soube da falta de oxigênio em Manaus?", "posicoes": ["Secretário estadual: avisou o ministro em 07/01/2021 e enviou ofícios em 9, 11, 12 e 13/01.", "Ministério da Saúde ao STF: soube em 08/01 por e-mail da fornecedora.", "Ex-ministro no Senado: 10/01; depois o Ministério citou 17/01.", "Governistas na CPI atribuíram a responsabilidade ao estado e à fornecedora."], "resolveria": "Protocolo oficial de recebimento dos ofícios estaduais no Ministério da Saúde." },
+    { "questao": "Quantas propostas da Pfizer ficaram sem resposta?", "posicoes": ["Vice-presidente da CPI: 81 correspondências, cerca de 90% sem resposta (antes falara em 53 e-mails).", "Ex-secretário-executivo do Ministério: mensagens repetidas, algumas eram respostas a pedidos do próprio Ministério."], "resolveria": "Publicação integral da correspondência, com datas, cronogramas de entrega oferecidos e respostas." },
+    { "questao": "Quantas mortes eram evitáveis?", "posicoes": ["~47 mil idosos com vacinação mais rápida (modelo, 7 meses).", "391.647 com 80% vacinados até maio de 2021 (limite teórico, inviável com a oferta mundial).", "~120 mil com 40% menos transmissão (sem revisão por pares).", "\"400 mil\": sem fonte localizada."], "resolveria": "Modelo que use como contrafactual o ritmo real de países com acesso semelhante a doses [A VERIFICAR]." },
+    { "questao": "Qual a contribuição das falas presidenciais para as mortes?", "posicoes": ["Estudo com ~60 milhões de celulares mostra queda do distanciamento em áreas pró-governo após falas que minimizavam o risco (evidência B, sobre comportamento).", "Estudos municipais associam voto em 2018 a mortalidade maior, mas são ecológicos (C/D) e não provam causa."], "resolveria": "Estudo que ligue mobilidade a óbitos, controlando idade, renda e momento das ondas." }
+  ],
+
+  "resultados": [
+    { "acao": "Vacinas contra Covid (eficácia em ensaios)", "indicador": "Doença sintomática e grave", "efeito": "Reduzem a doença sintomática; para várias delas, há evidência de alta certeza de redução de doença grave ou crítica", "selo": "comprovado", "evidencia": "A", "confianca": "Alta" },
+    { "acao": "Campanha de vacinação no Brasil (2021)", "indicador": "Óbitos", "efeito": "~303 mil mortes evitadas no 1º ano (IC 284–322 mil); 54–63 mil idosos em jan–ago/2021", "selo": "provavel", "evidencia": "B–C", "confianca": "Média" },
+    { "acao": "Encomenda tecnológica Fiocruz e parceria Butantan", "indicador": "Acesso à vacina", "efeito": "Duas vacinas autorizadas em 17/01/2021, com produção nacional", "selo": "heranca", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Atraso de contratos federais (Pfizer, Covax no piso, recusa pública da CoronaVac)", "indicador": "Óbitos de idosos", "efeito": "Cenário de ~47 mil vidas a mais salvas com ritmo mais rápido", "selo": "adverso", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Orientação federal de cloroquina e hidroxicloroquina", "indicador": "Mortalidade", "efeito": "Sem benefício, com sinal de dano; mantida após os ensaios de 2020; magnitude em mortes indeterminada", "selo": "adverso", "evidencia": "A", "confianca": "Alta" },
+    { "acao": "Lockdowns locais (municípios de SP em 2021; São Luís e Fortaleza)", "indicador": "Casos e óbitos", "efeito": "Queda de mortes após ~4 semanas em SP; −33% a −38% em São Luís e Fortaleza", "selo": "provavel", "evidencia": "B–C", "confianca": "Média" },
+    { "acao": "Auxílio emergencial de R$ 600", "indicador": "Extrema pobreza", "efeito": "Projeção do Ipea: corte para R$ 300 elevaria de 2,3% para 5%", "selo": "provavel", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Fechamento prolongado de escolas", "indicador": "Aprendizagem", "efeito": "~1 ano de aprendizado perdido na rede pública", "selo": "adverso", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Compras emergenciais (Hempcare/Consórcio Nordeste, OSs no RJ, Covaxin/Precisa)", "indicador": "Uso do dinheiro público", "efeito": "Respiradores pagos e não entregues; impeachment no RJ; contrato federal cancelado sem pagamento", "selo": "adverso", "evidencia": "I–II", "confianca": "Alta" },
+    { "acao": "Escassez mundial de doses e variante Gama", "indicador": "Óbitos em 2021", "efeito": "Fator externo relevante, que limitava qualquer governo", "selo": "mare", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Divisão das mortes entre esferas ou pessoas", "indicador": "Óbitos atribuíveis", "efeito": "Nenhum estudo permite essa divisão", "selo": "indeterminado", "evidencia": "—", "confianca": "—" }
+  ],
+
+  "linha_do_tempo": [
+    { "data": "fev/2020", "evento": "Lei 13.979 (medidas de emergência)", "ator": "União e Congresso", "tipo": "aprovacao" },
+    { "data": "15/04/2020", "evento": "STF confirma a competência comum de todas as esferas (ADI 6341)", "ator": "STF", "tipo": "aprovacao" },
+    { "data": "abr–mai/2020", "evento": "Saem dois ministros da Saúde; o segundo disse ter saído após pedido do Presidente para endossar a cloroquina", "ator": "Presidência", "tipo": "desenho" },
+    { "data": "abr/2020", "evento": "Auxílio emergencial de R$ 600", "ator": "Congresso e União", "tipo": "implementacao" },
+    { "data": "08/09/2020", "evento": "Encomenda tecnológica com a Fiocruz", "ator": "União", "tipo": "desenho" },
+    { "data": "24/09/2020", "evento": "Adesão ao Covax pela cobertura de 10%", "ator": "União", "tipo": "desenho" },
+    { "data": "20–21/10/2020", "evento": "Protocolo da CoronaVac e frase \"não compraremos vacina da China\"", "ator": "Ministério da Saúde e Presidência", "tipo": "desenho" },
+    { "data": "fim de 2020", "evento": "Variante Gama em Manaus", "ator": "Fator externo", "tipo": "externo" },
+    { "data": "14–15/01/2021", "evento": "Falta de oxigênio em Manaus", "ator": "Estado do AM, União e fornecedora", "tipo": "efeito" },
+    { "data": "17/01/2021", "evento": "Anvisa autoriza CoronaVac e AstraZeneca; começa a vacinação", "ator": "Anvisa, Butantan, Fiocruz e SUS", "tipo": "implementacao" },
+    { "data": "mar/2021", "evento": "Contrato com a Pfizer; 4º ministro da Saúde", "ator": "União", "tipo": "implementacao" },
+    { "data": "2021", "evento": "Ano mais letal, cerca de 425 mil óbitos", "ator": "Efeito medido", "tipo": "efeito" },
+    { "data": "26/10/2021", "evento": "Relatório final da CPI da Pandemia", "ator": "Senado", "tipo": "aprovacao" },
+    { "data": "2022–2023", "evento": "Cerca de 89 mil óbitos (derivado; [A VERIFICAR] no painel), já com vacina disponível; troca de governo federal em jan/2023", "ator": "Efeito medido", "tipo": "efeito" }
+  ],
+  "atribuicao": "A capacidade de produzir vacinas é herança de décadas e de vários governos (Fiocruz, federal; Butantan, paulista), usada com acerto em 2020. A escassez mundial de doses no 1º semestre de 2021 e a variante Gama foram maré e limitavam qualquer governo. Dentro desse limite, as escolhas de contratação foram decisões domésticas do governo federal, com custo provável em vidas que só pode ser estimado por cenário: Covax no piso, Pfizer só em março de 2021 e desautorização pública da CoronaVac. As mortes de 2022–2023, com vacina disponível e atravessando duas gestões federais, ainda não foram analisadas por cobertura de reforço [A VERIFICAR].",
+
+  "quem_responde": [
+    { "esfera": "União", "papel": "Papel principal na compra e distribuição de vacinas, na orientação clínica nacional e na coordenação de insumos. Pagou o auxílio e repassou R$ 113,5 bi a estados e municípios em 2020." },
+    { "esfera": "Estado", "papel": "Gere UTIs, hospitais e oxigênio hospitalar; decretou medidas de distanciamento; fez compras emergenciais. SP produziu a CoronaVac pelo Butantan." },
+    { "esfera": "Município", "papel": "Atenção básica, aplicação de vacinas e medidas locais, inclusive o funcionamento das escolas municipais." }
+  ],
+  "matriz_federativa": [
+    { "dimensao": "Competência constitucional", "uniao": "Comum (CF art. 23, II); direção nacional do SUS coordena vigilância e insumos estratégicos (Lei 8.080)", "estado": "Comum; gestão da rede hospitalar regional", "municipio": "Comum; atenção básica e medidas locais", "obs": "A ADI 6341 confirmou a competência de todos, sem retirar a da União" },
+    { "dimensao": "Quem legisla", "uniao": "Lei 13.979; MPs de vacinas", "estado": "Decretos de distanciamento (367 de 25 estados em 2 meses)", "municipio": "Decretos locais", "obs": "Congresso aprovou o auxílio e a LC 173" },
+    { "dimensao": "Quem financia", "uniao": "Auxílio (R$ 429,2 bi); transferências (R$ 113,5 bi em 2020); vacinas", "estado": "Leitos, hospitais de campanha, compras", "municipio": "Atenção básica e vacinação", "obs": "Uso dos repasses por ente não avaliado [A VERIFICAR]" },
+    { "dimensao": "Quem executa", "uniao": "Compra e distribuição de vacinas (PNI); orientação clínica", "estado": "UTIs, oxigênio hospitalar", "municipio": "Postos de vacinação", "obs": "Butantan (SP) e Fiocruz (União) produziram vacinas" },
+    { "dimensao": "Quem regula / fiscaliza", "uniao": "Anvisa; TCU; CGU; PGR", "estado": "Tribunais de contas; MPs; assembleias", "municipio": "Câmaras; tribunais de contas", "obs": "CPI do Senado (2021)" },
+    { "dimensao": "Quem responde politicamente", "uniao": "Presidente e ministro da Saúde", "estado": "Governadores", "municipio": "Prefeitos", "obs": "Eleições de 2020, 2022 e 2026" },
+    { "dimensao": "Quem reivindica o mérito × quem fez", "uniao": "Disputou a \"primeira vacina\"; financiou a Fiocruz", "estado": "SP disputou a \"primeira vacina\"; Butantan", "municipio": "—", "obs": "As duas vacinas de 17/01/2021 vieram de duas esferas" }
+  ],
+
+  "forcas": [
+    { "ator": "Presidência da República (2019–2022)", "interesse_declarado": "Proteger empregos e a economia; liberdade", "interesse_provavel": "Evitar o custo político de restrições; disputa com governadores", "ganha_perde": "Ganha apoio de quem rejeitava restrições; perde com o atraso vacinal", "mecanismo": "Discurso público; nomeação de ministros; orientação clínica", "evidencia": "I (atos) / III (motivação)", "transparencia": "Média" },
+    { "ator": "Governo de São Paulo (Butantan)", "interesse_declarado": "Vacinar cedo", "interesse_provavel": "Protagonismo político na \"primeira vacina\"", "ganha_perde": "Ganha visibilidade", "mecanismo": "Parceria Butantan–Sinovac", "evidencia": "I (contrato) / III (motivação)", "transparencia": "Alta" },
+    { "ator": "Governadores e consórcios estaduais", "interesse_declarado": "Proteger a população", "interesse_provavel": "Evitar colapso e culpa", "ganha_perde": "Ganham autonomia; expostos nas compras", "mecanismo": "Decretos; compras com dispensa de licitação", "evidencia": "I–II", "transparencia": "Baixa nas compras" },
+    { "ator": "Fornecedora de oxigênio em Manaus (White Martins)", "interesse_declarado": "Abastecer hospitais", "interesse_provavel": "Proteger-se de responsabilização", "ganha_perde": "Exposta à disputa sobre quem avisou quem e quando", "mecanismo": "Comunicados à secretaria estadual e ao Ministério", "evidencia": "I–II", "transparencia": "Média" },
+    { "ator": "Fornecedores intermediários (Precisa, Hempcare)", "interesse_declarado": "Vender insumos", "interesse_provavel": "Lucro em compras emergenciais sem concorrência", "ganha_perde": "Contratos de R$ 1,6 bi (cancelado sem pagamento) e R$ 48,7 mi (pago, sem entrega)", "mecanismo": "Intermediação; documentos questionados", "evidencia": "I–II", "transparencia": "Baixa" },
+    { "ator": "Congresso / CPI da Pandemia", "interesse_declarado": "Fiscalizar", "interesse_provavel": "Também arena de disputa política (relatório aprovado por 7 × 4)", "ganha_perde": "—", "mecanismo": "CPI, MPs, auxílio", "evidencia": "I", "transparencia": "Alta" },
+    { "ator": "Produtores de desinformação, de qualquer lado", "interesse_declarado": "—", "interesse_provavel": "Audiência e engajamento", "ganha_perde": "Ganham com a polarização", "mecanismo": "Redes sociais", "evidencia": "III–IV", "transparencia": "Baixa" }
+  ],
+  "hipoteses": [
+    { "texto": "Ganho comercial com a venda de cloroquina e ivermectina durante a recomendação oficial.", "confirmaria": "Dados de vendas na Anvisa/CMED, comparados com anos anteriores." },
+    { "texto": "A frase sobre a \"vacina da China\" afetou os embarques de IFA no início de 2021.", "confirmaria": "Cronograma de licenças de exportação chinesas e comunicações diplomáticas." }
+  ],
+  "polarizacao": "A um lado, os arquivamentos servem de prova de \"perseguição\" e as mortes viram \"culpa da natureza\". Ao outro, cenários de modelo viram \"X mortes nas costas de Y\". Os dois discursos rendem audiência, engajamento e votos, inclusive nas eleições de 2026 e em produções audiovisuais recentes sobre a CPI. Os dados não sustentam nenhuma das versões puras.",
+
+  "vertentes": [
+    { "nome": "Quem defende a atuação do governo federal", "acerta": "Houve escassez mundial; a União financiou a Fiocruz, pagou o auxílio e repassou R$ 113,5 bi; o STF não a impediu de agir.", "erra": "Trata a cloroquina como opinião legítima depois da evidência de 2020; minimiza o atraso dos contratos e a falha de coordenação em Manaus." },
+    { "nome": "Quem atribui as mortes ao governo federal", "acerta": "A União tinha o papel principal na compra de vacinas e na coordenação, e houve decisões documentadas contra a evidência.", "erra": "Apresenta cenários de modelo como contagem de culpa; ignora a maré mundial e as falhas estaduais; trata pedido de indiciamento como condenação." },
+    { "nome": "Visão liberal / de liberdade individual", "acerta": "Cobrou o custo de restrições amplas, em especial as escolas fechadas, que pesaram mais sobre os pobres.", "erra": "Subestimou a capacidade hospitalar finita e o efeito do exemplo das autoridades sobre o comportamento." },
+    { "nome": "Visão sanitarista / solidarista", "acerta": "Priorizou os vulneráveis e a vacina; os dados confirmam as desigualdades raciais e regionais.", "erra": "Pouco pesou o custo educacional e a renda dos informais." },
+    { "nome": "Visão federalista (subsidiariedade)", "acerta": "A autonomia local criou uma segunda rota para a vacina (Butantan) e respostas adaptadas.", "erra": "Competência partilhada sem coordenação virou culpa difusa." }
+  ],
+
+  "valores": [
+    { "polo_a": "Restringir circulação para salvar vidas agora", "polo_b": "Preservar renda, trabalho e liberdade", "custo_a": "Perda de renda dos informais e liberdades suspensas", "custo_b": "Mais transmissão e risco de colapso hospitalar", "comentario": "A evidência mostra que esse tradeoff foi menor do que se dizia, mas não o elimina. O peso de cada valor é escolha do cidadão." },
+    { "polo_a": "Fechar escolas para reduzir a transmissão", "polo_b": "Manter as crianças aprendendo", "custo_a": "Cerca de 1 ano de aprendizado perdido na rede pública", "custo_b": "Risco sanitário para famílias e professores", "comentario": "Os dados mostram o custo do fechamento; quanto risco aceitar é decisão de valor." },
+    { "polo_a": "Coordenação nacional", "polo_b": "Autonomia local", "custo_a": "Um erro nacional se replica em todo o país", "custo_b": "Decisões desencontradas e culpa difusa", "comentario": "A Constituição prevê as duas coisas; o desenho da coordenação é escolha política." }
+  ],
+
+  "conflitos": [
+    { "tema": "Selo da vacinação", "lado_1": "Guardião, Saúde Pública e Formulador: resultado comprovado.", "lado_2": "Investigador, Geoestrategista e Economista: contribuição provável, porque as vidas salvas vêm de modelos.", "decidiria": "Estudo com contrafactual observacional (coortes de idade elegíveis em datas diferentes).", "posicao_juiz": "Dois selos: comprovado para a eficácia das vacinas (ensaios) e contribuição provável para a magnitude no Brasil (modelos B–C)." },
+    { "tema": "\"O lockdown matou mais que o vírus\"", "lado_1": "Maioria: um estudo local não sustenta FALSO; seria CONTROVERSO ou NÃO VERIFICÁVEL.", "lado_2": "O Cidadão: o FALSO se mantém pela aritmética do excesso.", "decidiria": "Excesso de mortes por causa básica de óbito no SIM.", "posicao_juiz": "Fica com a minoria, por outro fundamento: se as medidas tivessem matado mais que o vírus, o excesso total teria de passar de duas vezes os óbitos por Covid; ficou entre 0,9 e 1,1 vez. FALSO quanto às mortes (confiança média), com a premissa de que os óbitos de Covid não incluem, em proporção relevante, mortes por cuidado interrompido. Os custos não letais são reais." },
+    { "tema": "Atraso de contratos × maré mundial", "lado_1": "Economista: cada mês de atraso custou vidas.", "lado_2": "Geoestrategista: o teto de doses em 2021 era mundial.", "decidiria": "Doses por 100 habitantes no 1º semestre de 2021 em Chile, Argentina, México e Uruguai [A VERIFICAR].", "posicao_juiz": "As duas coisas são verdadeiras. A escassez limitava o ritmo; a data dos contratos definia o lugar na fila. Covax no piso e sete meses entre a oferta da Pfizer e o contrato foram decisões domésticas. Magnitude indeterminada até a comparação com os pares." },
+    { "tema": "\"Os dois lados buscaram ganho político na disputa da vacina\"", "lado_1": "Investigador: simetria entre a recusa federal e o protagonismo paulista.", "lado_2": "Filósofo e Formulador: simetria forçada.", "decidiria": "—", "posicao_juiz": "Acolhida a crítica. A recusa federal é ato documentado (nível I), com efeito na data do contrato. A motivação paulista é indício (nível III) e não atrasou nenhuma dose." }
+  ],
+
+  "propostas": [
+    { "titulo": "Lei de Prontidão Sanitária", "origem": "Encomenda tecnológica Fiocruz (governo federal) e parceria Butantan (governo paulista), de campos opostos; compra antecipada por portfólio no Reino Unido [A VERIFICAR]", "custo": "[A VERIFICAR — estimativa do Tesouro e da Fiocruz]; teto em % do PIB fixado na lei", "implementacao": "Autorização legal prévia para contratos de compra antecipada de vacinas com vários fornecedores, disparada pela declaração de emergência; adesão a mecanismos multilaterais pela cobertura máxima, salvo justificativa publicada; mapa anual de dependência de insumos críticos; exercício simulado anual com três estados, um do Norte", "metrica": "Dias entre a declaração de emergência e o primeiro contrato de vacina", "criterio": "Rever se dois exercícios seguidos não reduzirem esse prazo" },
+    { "titulo": "Alerta federativo com prazo de resposta de 24 horas", "origem": "Lição de Manaus (jan/2021), para todas as esferas", "custo": "Baixo [A VERIFICAR]", "implementacao": "Ofício de ente federado sobre risco de falta de insumo essencial respondido pela direção nacional do SUS em 24 h, com protocolo público; sala de situação tripartite (Ministério, Conass, Conasems) com atas públicas", "metrica": "Tempo médio de resposta a alertas", "criterio": "Rever se o prazo for descumprido em mais de 10% dos alertas" },
+    { "titulo": "Regra de evidência para recomendações oficiais", "origem": "Prática da Conitec e diretrizes da OMS", "custo": "Baixo", "implementacao": "Toda nota técnica de tratamento em emergência traz o nível de evidência (GRADE), é revista pela Conitec em até 30 dias após ensaio randomizado relevante e só é revogada por ato expresso", "metrica": "Tempo entre evidência nova e revisão da nota", "criterio": "Rever se atrasar resposta urgente em mais de 14 dias" },
+    { "titulo": "Transparência e auditoria de compras emergenciais", "origem": "Casos Covaxin, Hempcare e OSs no RJ", "custo": "Baixo [A VERIFICAR]", "implementacao": "Contrato, quadro societário do fornecedor e histórico de entregas publicados em 72 h num portal único, com auditoria concomitante do tribunal de contas, para União, estados, consórcios e municípios", "metrica": "Percentual de contratos emergenciais publicados no prazo", "criterio": "Rever se não houver queda de pagamentos sem entrega" },
+    { "titulo": "Escolas como serviço essencial e dados desagregados", "origem": "Evidência sobre perdas de aprendizagem; vigilância do SUS", "custo": "[A VERIFICAR]", "implementacao": "Protocolo prévio de reabertura (escolas são as últimas a fechar e as primeiras a reabrir, salvo parecer técnico público) e publicação quinzenal de óbitos e hospitalizações por raça/cor, idade, município e renda", "metrica": "Dias de escola fechada em emergência futura; prazo de publicação dos dados", "criterio": "Rever se a reabertura elevar hospitalizações pediátricas acima do limiar técnico" }
+  ],
+
+  "pareceres": [
+    { "cadeira": "Saúde Pública e Epidemiologia", "resumo": "A vacinação foi a política de maior efeito e o mérito se divide entre União, SP/Butantan, Fiocruz e municípios. A orientação de cloroquina, mantida depois dos ensaios de 2020, é efeito adverso, com magnitude em mortes indeterminada. Cenários de mortes evitáveis não podem virar contagem de culpa, por causa da escassez mundial e da variante Gama. O fechamento longo de escolas é custo real.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Analista de Políticas Sociais", "resumo": "A média nacional esconde desigualdade regional e racial: Norte, negros e indígenas morreram mais. O auxílio conteve a extrema pobreza. A perda de aprendizado recaiu sobre a rede pública. Em Manaus a falha foi compartilhada, e nenhum estudo reparte as mortes entre as esferas.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Jurista Constitucional e Federativo", "resumo": "Comprar vacinas e coordenar insumos críticos é atribuição primária da União; leitos e medidas locais cabem a estados e municípios. A ADI 6341 não tirou poderes do Presidente. Estado processual: nenhuma denúncia contra o ex-presidente; improbidade de Manaus improcedente, porque a nova lei exige dolo específico, o que não declara a gestão adequada; o ex-governador do RJ sofreu impeachment e é réu.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Cientista Político Institucional", "resumo": "As instituições funcionaram como freio (STF, Congresso). A competência comum sem coordenação virou culpa difusa, e a troca de quatro ministros enfraqueceu a capacidade do Ministério. A accountability penal dependeu de um único órgão, a PGR. A proposta é um comitê federativo com atas públicas e prazos.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Economista Empírico", "resumo": "O lockdown local em SP reduziu mortes sem efeito detectável no emprego formal, sem que isso possa ser generalizado. O auxílio foi contribuição provável contra a pobreza. As transferências a estados ainda não têm avaliação de resultado. O fechamento das escolas é custo intergeracional.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Investigador de Forças e Interesses", "resumo": "A rivalidade entre União e SP gerou duas rotas de vacina. As compras emergenciais foram frágeis em todas as esferas (Covaxin, Hempcare, OSs no RJ), e o padrão comum foi a dispensa de licitação com intermediário sem histórico. A polarização rende aos dois lados. O Juiz rejeitou a simetria entre a recusa federal e o protagonismo paulista.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Geoestrategista", "resumo": "A escassez mundial de doses e de IFA foi maré. Fiocruz e Butantan foram a decisão de maior valor estratégico. Contratar o Covax pelo piso e o atrito público com o fornecedor do insumo foram escolhas domésticas.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Guardião do Método", "resumo": "Com os períodos alinhados, a razão entre excesso e óbitos oficiais fica entre 0,9 e 1,1. As 303 mil mortes evitadas pela vacina não se somam aos cenários de evitáveis; os 391 mil são limite teórico e os 400 mil não têm fonte. Os estudos de voto × mortalidade são ecológicos (C/D) e as taxas não são padronizadas por idade.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Filósofo Pluralista", "resumo": "Separa fato (cloroquina sem efeito; vacina eficaz), previsão (cenários) e valor (renda, escola e liberdade × risco). Responsabilidade tem três sentidos: moral, política e jurídica. A régua de Weber vale para o tratamento precoce e para as escolas fechadas.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "O Cidadão", "resumo": "Responde às frases do WhatsApp com selos de checagem, pede glossário para os termos técnicos e um texto de 30 segundos para levar à mesa. Alerta que os números de mortes evitáveis vão circular sem as premissas.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "O Formulador", "resumo": "A capacidade produtiva nacional foi o ativo que funcionou. Propõe Lei de Prontidão Sanitária, alerta tripartite com resposta em 24 h, regra de evidência para recomendações e gatilho automático de renda pelo CadÚnico, com métrica e critério de revisão.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." }
+  ],
+
+  "isonomia": [
+    { "item": "Teste do sinal invertido", "status": "APROVADO", "nota": "Refeito pelo Auditor: a conclusão se apoia em competência e atos documentados, não no espectro." },
+    { "item": "Vocabulário carregado", "status": "AJUSTADO", "nota": "\"Desvios\" e \"fraude\" nas compras estaduais trocados por descrição neutra, igual para todas as esferas. Rótulos só entre aspas." },
+    { "item": "Rigor simétrico", "status": "AJUSTADO", "nota": "A Covaxin entrou ao lado das compras estaduais. Manaus passou a constar como falha compartilhada. A contagem de e-mails da Pfizer foi marcada como contestada." },
+    { "item": "Janela e base", "status": "APROVADO", "nota": "Série inteira de 2020 a 2024; comparação regional marcada [A VERIFICAR]." },
+    { "item": "Fontes", "status": "AJUSTADO", "nota": "Retiradas afirmações fora do Dossiê. Eficácia vacinal agora cita a revisão Cochrane de 2022. Derivados etiquetados." },
+    { "item": "Omissão", "status": "AJUSTADO", "nota": "Corrigido \"nenhuma decisão federal virou processo\" para \"decisões do ex-presidente\". Incluídos a fornecedora de oxigênio, a testagem e as mortes de 2022–23." },
+    { "item": "Falso equilíbrio", "status": "APROVADO", "nota": "Rejeitada a simetria forçada na disputa da vacina." },
+    { "item": "Neutralidade covarde", "status": "APROVADO", "nota": "A Sentença conclui onde a evidência permite; o FALSO sobre o lockdown traz a premissa declarada." },
+    { "item": "Adesão ao usuário", "status": "APROVADO", "nota": "Nada na análise reflete preferência de quem perguntou." },
+    { "item": "P13 — estado processual", "status": "AJUSTADO", "nota": "\"A PGR arquivou\" corrigido para \"a PGR pediu\"; escolas passaram de falha a custo assumido." },
+    { "item": "Convocação isenta", "status": "APROVADO", "nota": "Todas as cadeiras permanentes mais a de Saúde Pública convocadas." }
+  ],
+  "precedentes": [],
+
+  "ferramenta": {
+    "nome": "Causa única (e a palavra \"só\")",
+    "como_reconhecer": "Mortes em massa têm várias causas ao mesmo tempo. Desconfie de frases com \"só\", \"tudo\" e \"culpa de\" e pergunte: que outros fatores agiram ao mesmo tempo, e o que aconteceu, no mesmo período, com quem não tomou essa decisão?",
+    "exemplos": ["\"As 700 mil mortes são culpa só do Presidente\" ignora a maré mundial e as falhas estaduais.", "\"Foi culpa só do vírus (ou do STF, ou dos governadores)\" ignora decisões federais documentadas contra a evidência e o papel da União na compra de vacinas."]
+  },
+  "pergunta_mesa": "Se uma nova pandemia começasse amanhã, que decisões vocês gostariam que já estivessem escritas em lei — e quem vocês querem que tome cada uma: o governo federal, o governador ou o prefeito?",
+  "proximo_passo": "Pergunte ao seu deputado federal se ele apoia uma lei que obrigue o governo a contratar vacinas com antecedência e a responder em 24 horas a alertas de falta de insumos em qualquer estado — e acompanhe o voto.",
+  "gatilho_revisao": "Recorte brasileiro do excesso de mortes 2020–2023 da OMS (World Health Statistics 2026); decisão formal da PGR sobre o desarquivamento dos pedidos da CPI; julgamento do recurso da improbidade sobre Manaus; ou estudo com contrafactual observacional sobre o ritmo da vacinação no Brasil comparado a pares.",
+
+  "fontes": [
+    { "nome": "Ministério da Saúde e Conass", "detalhe": "Óbitos confirmados; marcos de 700 mil (28/03/2023) e 715.295 (11/03/2025); 5.959 óbitos em 2024", "consulta": "19/10/2026" },
+    { "nome": "OMS — estimativas de excesso de mortalidade", "detalhe": "2020–21 (14,9 mi no mundo; Brasil 99 e 220 por 100 mil) e World Health Statistics 2026", "consulta": "19/10/2026" },
+    { "nome": "Excesso de mortes no Brasil (PMC10212149; Rev. Saúde Pública, PMC8522736)", "detalhe": "2020 e 2021, base 2015–2019", "consulta": "19/10/2026" },
+    { "nome": "Cochrane — Graña et al., 2022", "detalhe": "Eficácia e segurança das vacinas contra Covid-19 (41 ensaios)", "consulta": "19/10/2026" },
+    { "nome": "Lancet Regional Health Americas 17:100397 e 17:100418", "detalhe": "Mortes evitadas pela vacinação e cenários de ritmo mais rápido", "consulta": "19/10/2026" },
+    { "nome": "Revista Brasileira de Epidemiologia, 2023 (Machado et al.)", "detalhe": "Cenários de mortes evitáveis (modelo SEIRS)", "consulta": "19/10/2026" },
+    { "nome": "Nature Communications, 2021", "detalhe": "Meta-análise da hidroxicloroquina e cloroquina", "consulta": "19/10/2026" },
+    { "nome": "AEJ: Economic Policy 15(3), 2023; Nova Economia 33(1), 2023", "detalhe": "Falas presidenciais e distanciamento; voto e mortalidade", "consulta": "19/10/2026" },
+    { "nome": "STF", "detalhe": "ADI 6341; INQ 4875 (Covaxin); arquivamento da investigação do cartão de vacina (2025)", "consulta": "19/10/2026" },
+    { "nome": "Senado Federal", "detalhe": "CPI da Pandemia; transferências federais em 2020 (Siafi/Siop)", "consulta": "19/10/2026" },
+    { "nome": "Imprensa e pesquisa", "detalhe": "Agência Brasil, Poder360, Agência Pública (set/2025), Cepedisa/USP, Metrópoles, Aos Fatos — como pista, conferida quando possível", "consulta": "19/10/2026" },
+    { "nome": "INEP, UNESCO e Banco Mundial", "detalhe": "Saeb 2021; tempo de escolas fechadas", "consulta": "19/10/2026" }
+  ]
+}
