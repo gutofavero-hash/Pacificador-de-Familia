@@ -6,5 +6,5 @@
    NUNCA coloque aqui a chave "service_role" ou "secret". */
 window.PACIFICADOR_CONFIG = {
   supabaseUrl: "https://lmcibeovrivhhncvrdzt.supabase.co",
-  supabaseAnonKey: ""
+  supabaseAnonKey: "sb_publishable_Isb0lgJfA8bcYfyuIjAf3A_dczIXm48"
 };
