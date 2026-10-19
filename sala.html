@@ -149,7 +149,8 @@
       ]));
       sPanel.appendChild(el("div", { class: "btnrow" }, [
         el("a", { class: "btn primary", href: "sentencas/" + sentenca.executiva, text: "Ler o resumo executivo" }),
-        el("a", { class: "btn", href: "sentencas/" + sentenca.completa, text: "Ler a Sentença completa" })
+        el("a", { class: "btn", href: "sentencas/" + sentenca.completa, text: "Ler a Sentença completa" }),
+        el("a", { class: "btn", href: "cartao.html?tipo=sentenca&b=" + encodeURIComponent(sentenca.base), text: "Cartão para o Status" })
       ]));
     } else {
       sPanel.appendChild(el("p", { class: "small", text: {
@@ -211,7 +212,7 @@
     direita.appendChild(el("section", { class: "panel", "aria-labelledby": "tConv" }, [
       el("h2", { id: "tConv", style: "font-size:1.15rem", text: "Convidar para esta sala" }),
       el("p", { class: "small", text: "Achou o tema importante? Chame alguém que pensa diferente de você." }),
-      P.caixaConvite(P.conviteSala(sala))
+      P.caixaConvite(P.conviteSala(sala), null, "cartao.html?tipo=sala&s=" + encodeURIComponent(sala.slug))
     ]));
 
     main.appendChild(el("div", { class: "grid" }, [esquerda, direita]));

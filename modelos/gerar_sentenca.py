@@ -91,6 +91,7 @@ def atualizar_indice(pasta: Path, dados: dict) -> Path:
         "veredicto": (dados.get("veredicto") or {}).get("rotulo"),
         "confianca": (dados.get("confianca") or {}).get("nivel"),
         "resposta_curta": dados.get("resposta_curta"),
+        "pergunta_mesa": dados.get("pergunta_mesa"),
         "executiva": dados.get("documento_executivo"),
         "completa": dados.get("documento_completo"),
     }

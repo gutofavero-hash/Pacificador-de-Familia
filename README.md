@@ -26,6 +26,8 @@ Criado em 18/10/2026 por Augusto Silveira Fávero. Projeto independente e públi
 | `DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html` | Apresentação e convite: motivação, Regras da Mesa (com a Regra de Ouro), os 12 artigos, mesa redonda interativa, travas de isonomia, teste do sinal invertido, compromisso de entrada e convites prontos para o WhatsApp | Sim |
 | `MOTOR_DO_CONSELHO.html` | O motor às claras: engrenagem, convocação, 15 princípios, cadeiras e mandatos, auditoria de isonomia, escalas, instrumentos, conduta, falhas, comandos e texto integral do prompt | Sim |
 | `salas.html`, `sala.html` | Salas de debate: propor tema, inscrever-se, Sentença da sala, reações da missão, anexos | Sim |
+| `cartao.html` | Cartões em imagem para o Status do WhatsApp (convite, sala ou Sentença), com QR code | Sim |
+| `cartaz.html` | Cartaz A4 com QR code para imprimir ou mostrar no celular | Sim |
 | `privacidade.html` | Política de Privacidade e Termos de Uso das salas | Sim |
 | `curadoria.html` | Fila da curadoria: validar, mudar estado, copiar comandos do Conselho, anexar arquivos, aprovar curadores | Não (área restrita) |
 | `config.js`, `assets/app.css`, `assets/salas-app.js` | Configuração pública e código das salas | — |
@@ -82,6 +84,8 @@ O site é publicado direto deste repositório, sem domínio próprio. Para ativa
 |---|---|
 | `/` | Abre a Declaração Universal |
 | `/salas.html` | Salas de debate |
+| `/cartao.html` | Cartão para o Status do WhatsApp |
+| `/cartaz.html` | Cartaz para imprimir |
 | `/DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html` | Declaração Universal e Regras da Mesa |
 | `/MOTOR_DO_CONSELHO.html` | Motor do Conselho |
 | `/sentencas/…` | Cada Sentença, com resumo executivo e versão completa |

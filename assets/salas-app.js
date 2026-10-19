@@ -233,8 +233,26 @@
       "A regra é começar por \"quero entender...\", sem rótulos e sem \"o outro lado também\".\n\nEntra na sala comigo?\n" + link;
   }
   function urlWhatsApp(txt) { return "https://wa.me/?text=" + encodeURIComponent(txt); }
+  function ultimoLink(txt) { var m = String(txt).match(/https?:\/\/\S+/g); return m ? m[m.length - 1] : LINK_CONVITE; }
+  // QR code do link do convite (biblioteca carregada só quando alguém pede)
+  function mostrarQR(link) {
+    var alvo = el("div", { style: "background:#FFFFFF;padding:16px;border-radius:16px;justify-self:center;width:min(280px,100%)" });
+    modal("QR code do convite", [
+      el("p", { text: "Mostre esta tela para a pessoa apontar a câmera do celular." }), alvo,
+      el("p", { class: "small", style: "word-break:break-all", text: link })
+    ], [{ t: "Fechar", primary: true }]);
+    function desenhar() {
+      new window.QRCode(alvo, { text: link, width: 248, height: 248, colorDark: "#1A1D38", colorLight: "#FFFFFF", correctLevel: window.QRCode.CorrectLevel.M });
+      [].forEach.call(alvo.querySelectorAll("img,canvas"), function (n) { n.style.width = "100%"; n.style.height = "auto"; });
+    }
+    if (window.QRCode) { desenhar(); return; }
+    var sc = document.createElement("script");
+    sc.src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js";
+    sc.onload = desenhar; sc.onerror = function () { alvo.textContent = "Não foi possível gerar o QR code agora."; };
+    document.head.appendChild(sc);
+  }
   // Caixa de convite: texto editável, enviar pelo WhatsApp, copiar e (no celular) outras formas
-  function caixaConvite(textoInicial, abas) {
+  function caixaConvite(textoInicial, abas, cartao) {
     var ta = el("textarea", { "aria-label": "Texto do convite", rows: "9" }); ta.value = textoInicial;
     var wa = el("a", { class: "btn primary", href: urlWhatsApp(textoInicial), target: "_blank", rel: "noopener" }, ["Enviar pelo WhatsApp"]);
     ta.addEventListener("input", function () { wa.href = urlWhatsApp(ta.value); });
@@ -243,7 +261,9 @@
       el("button", { type: "button", class: "btn", text: "Copiar", onclick: function () { copiar(ta.value, "Convite copiado."); } }),
       navigator.share ? el("button", { type: "button", class: "btn", text: "Outras formas", onclick: function () {
         navigator.share({ text: ta.value }).catch(function () {});
-      } }) : null
+      } }) : null,
+      el("button", { type: "button", class: "btn", text: "QR code", onclick: function () { mostrarQR(ultimoLink(ta.value)); } }),
+      el("a", { class: "btn", href: cartao || "cartao.html?tipo=convite", text: "Cartão para o Status" })
     ]);
     var topo = null;
     if (abas) {
@@ -312,7 +332,7 @@
     el: el, limpar: limpar, toast: toast, copiar: copiar, modal: modal, dataBR: dataBR, chipEstado: chipEstado,
     rotulosEm: rotulosEm, param: param, ESTADOS: ESTADOS, ETAPAS: ETAPAS, ESFERAS: ESFERAS, REACOES: REACOES,
     indiceSentencas: indiceSentencas, sentencaDaSala: sentencaDaSala,
-    convidar: convidar, caixaConvite: caixaConvite, conviteSala: conviteSala, urlWhatsApp: urlWhatsApp,
+    convidar: convidar, caixaConvite: caixaConvite, mostrarQR: mostrarQR, conviteSala: conviteSala, urlWhatsApp: urlWhatsApp,
     SITE: "https://gutofavero-hash.github.io/Pacificador-de-Familia/"
   };
 })();

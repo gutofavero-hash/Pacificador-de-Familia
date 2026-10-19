@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cartaz do Pacificador</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Cartaz com QR code para convidar pessoalmente para o Pacificador de Famílias.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+/* Cartaz A4 para imprimir ou mostrar na tela do celular. Na impressão, só o cartaz aparece. */
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-block:18px}
+.sheet{background:#FFFFFF;color:#1A1D38;max-width:794px;margin:0 auto 40px;aspect-ratio:210/297;border-radius:6px;box-shadow:0 8px 30px rgba(26,29,56,.18);
+  padding:clamp(22px,6vw,64px);display:grid;grid-template-rows:auto auto 1fr auto;gap:clamp(14px,3vw,28px);position:relative;overflow:hidden}
+.sheet::before{content:"";position:absolute;inset:0 0 auto;height:12px;background:linear-gradient(90deg,#5A45C8,#0B7480)}
+.sheet .eb{font-family:var(--mono);font-size:clamp(.7rem,1.6vw,.95rem);letter-spacing:.16em;text-transform:uppercase;color:#585D7A}
+.sheet h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,7vw,4rem);line-height:1.02;margin:0;color:#1A1D38}
+.sheet h1 em{font-style:normal;color:#5A45C8}
+.sheet .lead2{font-size:clamp(.95rem,2.2vw,1.3rem);color:#3A3F5C;max-width:52ch}
+.rules{display:grid;gap:10px;align-content:start;font-size:clamp(.85rem,2vw,1.12rem)}
+.rules div{display:grid;grid-template-columns:clamp(30px,5vw,44px) 1fr;gap:12px;align-items:start}
+.rules b{font-family:var(--display);display:grid;place-items:center;width:clamp(28px,5vw,40px);height:clamp(28px,5vw,40px);border-radius:10px;background:#E6E2FB;color:#5A45C8}
+.rules div:nth-child(even) b{background:#DDF0F1;color:#0B7480}
+.qrrow{display:grid;grid-template-columns:auto 1fr;gap:clamp(14px,3vw,28px);align-items:center;border-top:2px dashed #CDD0E0;padding-top:clamp(14px,3vw,24px)}
+#qr{width:clamp(120px,24vw,200px);height:clamp(120px,24vw,200px)}
+#qr img,#qr canvas{width:100%!important;height:auto!important}
+.qrrow strong{font-family:var(--display);font-size:clamp(1.1rem,3vw,1.8rem);line-height:1.15;display:block}
+.qrrow .url{font-family:var(--mono);font-size:clamp(.62rem,1.4vw,.82rem);color:#585D7A;word-break:break-all;margin-top:8px}
+@media print{
+  @page{size:A4;margin:0}
+  body{background:#FFFFFF!important;padding:0!important}
+  .topbar,.tools,footer{display:none!important}
+  .wrap{max-width:none;padding:0;display:block}
+  .sheet{box-shadow:none;border-radius:0;margin:0;max-width:none;width:210mm;height:297mm;aspect-ratio:auto;padding:18mm}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="topbar">
+    <a class="brand" href="salas.html">O Pacificador de Famílias</a>
+    <nav class="nav" aria-label="Navegação"><a href="salas.html">Salas</a><a href="DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html">Declaração</a><a href="cartao.html">Cartão para o Status</a></nav>
+  </header>
+  <div class="tools">
+    <button type="button" class="btn primary" onclick="window.print()">Imprimir ou salvar em PDF</button>
+    <span class="small">Imprima e leve ao almoço de família, ou mostre esta tela no celular para alguém apontar a câmera.</span>
+  </div>
+
+  <article class="sheet" aria-label="Cartaz do Pacificador de Famílias">
+    <span class="eb">O Pacificador de Famílias</span>
+    <div style="display:grid;gap:14px">
+      <h1>Antes de escolher um lado, <em>escolha os fatos.</em></h1>
+      <p class="lead2">Um conselho sem partido que avalia governos, leis e propostas com a mesma régua para todos os lados, e um lugar para voltar a conversar com quem pensa diferente.</p>
+    </div>
+    <div class="rules" aria-label="Regras da Mesa, em resumo">
+      <div><b>1</b><span><strong>Comece pelo entendimento:</strong> "Quero entender…", nunca uma acusação.</span></div>
+      <div><b>2</b><span><strong>Sem rótulos,</strong> de nenhum lado.</span></div>
+      <div><b>3</b><span><strong>Um erro não justifica o outro:</strong> cada caso tem a sua vez.</span></div>
+      <div><b>4</b><span><strong>Fato tem fonte e data.</strong></span></div>
+      <div><b>5</b><span><strong>Mudar de ideia é vitória.</strong></span></div>
+    </div>
+    <div class="qrrow">
+      <div id="qr" role="img" aria-label="QR code para entrar no Pacificador de Famílias"></div>
+      <div>
+        <strong>Venha em dupla: traga alguém que pensa diferente de você.</strong>
+        <div class="small" style="color:#3A3F5C;margin-top:8px">Aponte a câmera do celular para o código.</div>
+        <div class="url" id="url"></div>
+      </div>
+    </div>
+  </article>
+  <footer class="foot"><a href="salas.html">← Salas</a><a href="cartao.html">Cartão para o Status do WhatsApp</a></footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+(function () {
+  var link = "https://gutofavero-hash.github.io/Pacificador-de-Familia/salas.html?convite=1";
+  document.getElementById("url").textContent = link.replace("https://", "");
+  if (window.QRCode) new QRCode(document.getElementById("qr"), { text: link, width: 400, height: 400, colorDark: "#1A1D38", colorLight: "#FFFFFF", correctLevel: QRCode.CorrectLevel.M });
+  else document.getElementById("qr").textContent = "QR code indisponível sem internet.";
+})();
+</script>
+</body>
+</html>
