@@ -5,6 +5,6 @@
    As duas são públicas por natureza; a proteção dos dados está nas regras do banco (supabase/schema.sql).
    NUNCA coloque aqui a chave "service_role" ou "secret". */
 window.PACIFICADOR_CONFIG = {
-  supabaseUrl: "",
+  supabaseUrl: "https://lmcibeovrivhhncvrdzt.supabase.co",
   supabaseAnonKey: ""
 };
