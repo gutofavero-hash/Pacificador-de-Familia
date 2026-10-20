@@ -58,10 +58,10 @@ Não houve convocação extraordinária.
 
 ### 2. Resposta curta
 
-**Ciência:** cinco anos depois, nenhum dos dois lados da briga saiu inteiro.
-- **Vacinas:** protegeram muito contra morrer e pouco, e por pouco tempo, contra pegar o vírus. A frase "vacinado não transmite" caiu com a variante Delta. Há efeitos graves reais e raros (miocardite em rapazes; trombose com as vacinas de vetor viral).
+**Ciência:** cinco anos depois, nenhum dos dois lados da briga saiu inteiro, mas os erros não têm o mesmo peso de evidência. Nas perguntas que decidem quem vive (vacina contra morte, cloroquina, ivermectina, corticoide) há ensaios grandes e concordantes (nível A), e eles contrariam os críticos. Os acertos dos críticos estão em pontos de evidência mais fraca ou de comunicação: máscara de pano, transmissão por vacinados, máscara em crianças, regra dos 6 pés, custo das escolas fechadas e opacidade.
+- **Vacinas:** protegeram muito contra morrer e pouco, e por pouco tempo, contra pegar o vírus. A frase "vacinados não carregam o vírus" (diretora do CDC, Walensky, 29/03/2021) caiu com a variante Delta. Há efeitos graves reais e raros (miocardite em rapazes; trombose com as vacinas de vetor viral).
 - **Cloroquina e ivermectina:** ensaios grandes mostraram que não funcionaram.
-- **Máscaras e lockdowns:** máscara de pano não mostrou efeito nos ensaios, e o tamanho do efeito dos lockdowns segue em disputa. Fechar escolas por mais de 280 dias custou caro aos alunos de escola pública.
+- **Máscaras e lockdowns:** máscara de pano não mostrou efeito no ensaio grande que a testou (Bangladesh), e o tamanho do efeito dos lockdowns segue em disputa. Fechar escolas por mais de 280 dias custou caro aos alunos de escola pública.
 - **Origem do vírus:** ninguém provou de onde veio.
 
 **Fauci:** não é réu e nunca foi acusado formalmente.
@@ -109,15 +109,15 @@ Não houve convocação extraordinária.
 - [FATO] **Alegações sobre vacinas que não se sustentaram.** Mortes súbitas: estudo do Oregon e da AIIMS (Índia) sem associação. Excesso de mortes atribuído às vacinas: artigo da *BMJ Public Health* retratado. "Turbo câncer": razão de risco ≈1,01, sem prova de causa.
 - [FATO] **Reanálise crítica que resiste.** Fraiman 2022: cerca de 1 evento grave de interesse especial a mais por 800 vacinados. É reanálise de ensaio, não retratada, e mede um sinal, não um balanço de risco e benefício.
 - [FATO] **Máscaras.**
-  - Bangladesh (*Science* 2022): máscara cirúrgica reduziu cerca de 11%; pano, sem efeito significativo.
+  - Bangladesh (*Science* 2022): máscara cirúrgica reduziu cerca de 11%; pano, sem efeito significativo (nível B; pano 0,94). Crítica: cerca de 9% mais inscritos no braço das máscaras (Chikina, Pegden e Recht, *Trials* 2022); os autores respondem que essa análise não é a pré-registrada.
   - DANMASK-19: inconclusivo.
   - Noruega (*BMJ* 2024): menos sintomas respiratórios, sem efeito sobre Covid confirmada.
   - Cochrane 2023: incerteza sobre o efeito de *promover* o uso, não sobre a máscara individual.
   - Crianças: não há ensaio randomizado.
 - [FATO] **Escolas e medidas.**
   - Escolas suecas abertas: o risco dos professores dobrou (OR 2,01) e o dos pais subiu pouco (OR 1,17).
-  - Herby, Hanke e Jonung: redução de mortalidade de 0,2% a 3,2% (método contestado). Flaxman: milhões de mortes evitadas, por modelo.
-  - Lockdown municipal em São Paulo (2021): reduziu mortes sem efeito detectável no emprego formal (nível B, local).
+  - Herby, Hanke e Jonung: 0,2% a 3,2% (meta-análise com seleção e definição de "lockdown" contestadas). Flaxman (*Nature* 2020): cerca de 3,1 milhões de mortes evitadas em 11 países [A VERIFICAR — Nature 584:257], por modelo que atribui quase toda a queda às intervenções por construção (crítica de Soltész et al., *Nature* 2020).
+  - Lockdown municipal em São Paulo (2021): reduziu mortes sem efeito detectável no emprego formal (nível B, local; Dossiê da S-001).
   - Escolas públicas brasileiras ficaram fechadas 287,4 dias, em média.
 - [FATO] **Cloroquina e ivermectina.**
   - Hidroxicloroquina: sem benefício (RECOVERY 1,09; SOLIDARITY 1,19; Coalizão Covid-19 Brasil I). O estudo de Raoult foi retratado em 2024. A estimativa de "17 mil mortes" (Pradelle) também foi retratada.
@@ -132,6 +132,7 @@ Não houve convocação extraordinária.
   - Avaliações de agências de inteligência, sem dados públicos (nível E): FBI, laboratório, confiança moderada; Departamento de Energia e CIA, laboratório, confiança baixa (a CIA diz que os dois cenários "seguem plausíveis"); BND alemão, 80–95% para laboratório, sem prova definitiva; a maioria das demais agências dos EUA, origem natural com confiança baixa.
   - Grupo SAGO da OMS (jun/2025): o peso da evidência favorece a origem zoonótica, o vazamento não pode ser excluído, e a China não entregou dados-chave.
   - Estudos a favor do mercado de Wuhan (Worobey, Pekar, Crits-Christoph): nível D, com críticas. Na errata de Pekar, o fator de Bayes caiu de cerca de 60 para cerca de 4.
+  - Academia Nacional de Medicina da França (abr/2025): "convicção" de fuga acidental de laboratório, sem dado novo. Academia de Ciências da França (jun/2025): a informação disponível não permite decidir. No SAGO, 1 membro renunciou e 3 retiraram o nome do relatório.
   - A proposta DEFUSE (2018) foi recusada pela DARPA.
   - O artigo "Proximal Origin" não foi retratado.
 
@@ -140,35 +141,43 @@ Não houve convocação extraordinária.
 - [FATO] **Perdão preventivo de Biden** (documento datado de 19/01/2025): cobre crimes federais de 2014 até essa data, ligados às funções. Não cobre crimes estaduais nem atos posteriores. A validade do perdão assinado por "autopen" nunca foi testada em tribunal. Em jul/2026, Trump disse que "respeita" o perdão.
 - [FATO] **Prazo de prescrição:** venceu em 11/05/2026 para eventual acusação de falso testemunho sobre o depoimento de 11/05/2021. Não houve acusação.
 - [FATO] **Senado:** em 29/07/2026 Fauci invocou a 5ª Emenda (direito de não se incriminar) mais de 100 vezes. Em 06/08/2026 uma comissão do Senado enviou ao DOJ um pedido de processo por desacato, sem voto em plenário. O DOJ está "revisando".
-- [FATO] **Investigações:** segundo o *New York Times* (set/2026), o FBI e o DOJ investigam cerca de 8 cientistas, entre eles Fauci. Flórida, Louisiana e Alabama anunciaram investigações estaduais. Não há grand jury nem denúncia reportados.
+- [FATO] **Investigações:** segundo o *New York Times* (set/2026), o FBI e o DOJ investigam pelo menos 8 cientistas, entre eles Fauci; o estágio e as provas não são conhecidos, e muitos cientistas veem o caso como perseguição política (NYT). Flórida, Louisiana e Alabama anunciaram investigações estaduais. Não há grand jury nem denúncia reportados.
 - [FATO] **David Morens**, ex-assessor de Fauci, **confessou culpa** em 18/08/2026 numa das 5 acusações: conspiração para ocultar registros federais de pedidos de acesso à informação (FOIA). A sentença está marcada para 12/11/2026. Fauci não é citado na acusação.
 - [FATO] **EcoHealth Alliance e Peter Daszak:** proibidos por 5 anos de receber recursos federais (sanção administrativa, jan/2025).
 
 **Bloco D — Corrupção**
 - [FATO] **Brasil, governo federal (2019–2022):**
-  - Covaxin: inquérito contra o então presidente arquivado pelo STF em abr/2022; caso de Ricardo Barros também arquivado. O MPF denunciou 11 pessoas da Precisa/FIB Bank, mas o TRF-1 suspendeu a ação antes de decidir se a recebia: são **denunciados, não réus**.
+  - Covaxin (governo Bolsonaro): inquérito contra o então presidente arquivado pelo STF em abr/2022, a pedido da PGR, depois de a PF concluir que não houve prevaricação; caso de Ricardo Barros (PP) também arquivado, porque a prova era de "ouvir dizer". O MPF denunciou 11 pessoas da Precisa/FIB Bank, mas o TRF-1 suspendeu a ação antes de decidir se a recebia: são **denunciados, não réus**.
   - Roberto Dias: o flagrante por falso testemunho foi anulado; ele é **investigado** pelo MPF-DF (caso "US$ 1 por dose").
   - Cloroquina do Exército: o TCU viu "indícios robustos" de fraude nas licitações do insumo; o acórdão está [A VERIFICAR].
 - [FATO] **Estados:**
   - Witzel (RJ, PSC à época): perdeu o cargo no impeachment (2021) e é **réu** no STJ, sem sentença.
-  - Wilson Lima (AM): **réu** no STJ (respiradores comprados de loja de vinhos), em fase de instrução.
-  - Consórcio Nordeste/Hempcare: R$ 48,7 mi pagos antecipadamente e nenhum respirador entregue. A delatora devolveu R$ 10 mi. Rui Costa, que presidia o Consórcio, é **investigado**, sem denúncia, e o TCU afastou a responsabilidade dele.
-  - Carlos Moisés (SC): absolvido no impeachment; inquérito penal arquivado. Na ação civil, sentença de 1º grau condenou outros réus a devolver R$ 33 mi.
-  - Helder Barbalho (PA): inquérito arquivado, segundo **fonte única** [A VERIFICAR].
-  - Distrito Federal: 15 réus absolvidos sumariamente porque a prova foi anulada; o TCU inabilitou três deles para cargo público por 8 anos.
+  - Wilson Lima (AM, PSC à época): **réu** no STJ (respiradores comprados de loja de vinhos), em fase de instrução.
+  - Consórcio Nordeste/Hempcare: R$ 48,7 mi pagos antecipadamente e nenhum respirador entregue. A delatora devolveu R$ 10 mi. Rui Costa (PT), que presidia o Consórcio, é **investigado**, sem denúncia, e o TCU afastou a responsabilidade dele.
+  - Carlos Moisés (SC, PSL à época): absolvido no impeachment; inquérito penal (Inq 1.427, STJ) arquivado a pedido da PGR por falta de indícios de que ele soubesse do pagamento antecipado. Na ação civil, sentença de 1º grau condenou outros réus a devolver R$ 33 mi.
+  - Helder Barbalho (PA, MDB): inquérito arquivado, segundo **fonte única** [A VERIFICAR].
+  - Distrito Federal (governo Ibaneis, MDB): 15 réus absolvidos sumariamente porque a prova foi anulada; o TCU inabilitou três deles para cargo público por 8 anos.
+  - São Paulo (Doria, PSDB): cerca de R$ 242 mi pagos antecipadamente por 3.000 respiradores, com cerca de 30% entregues; **investigação** do MP e do TCE-SP, sem ação penal localizada.
+  - Roraima: o senador Chico Rodrigues (DEM à época) foi **indiciado** pela PF em 2021; o caso foi **arquivado** pelo STF em 02/02/2026, a pedido da PGR, porque não se provou a origem ilícita do dinheiro.
+- [FATO] **Municípios:**
+  - Recife (Geraldo Julio, PSB): 6 pessoas, entre elas o ex-secretário de Saúde, são **rés** na Justiça Federal (respiradores de empresa veterinária); o prefeito não foi denunciado.
+  - Fortaleza (Roberto Cláudio, PDT): **alvos de busca**; o TCU arquivou por falta de verba federal.
 - [FATO] **Balanço do Brasil:**
   - A PF fez 102 operações até jul/2021, sobre R$ 3,2 bi em **contratos investigados**.
   - A CGU estimou prejuízo potencial de R$ 126 mi a R$ 309 mi e confirmou prejuízo efetivo de R$ 39,1 mi (mar/2021).
   - Não há balanço oficial depois de 2021 nem taxa oficial de responsabilização.
 - [FATO] **Exterior:**
-  - Espanha: os ex-ministro Ábalos e o assessor Koldo García têm condenação definitiva (24 e 19 anos, PSOE).
-  - Equador: o empresário Daniel Salcedo foi condenado (13 anos).
-  - Itália: Arcuri foi absolvido porque o crime de abuso de ofício foi abolido.
-  - Alemanha: o tribunal superior (BGH) entendeu que os deputados Nüßlein e Sauter (CSU) não cometeram corrupção de parlamentar.
-  - Reino Unido: a empresa PPE Medpro foi condenada no cível a devolver £122 mi e não pagou (insolvência). Michelle Mone e Doug Barrowman não foram acusados criminalmente. A "VIP lane" foi declarada ilegal; o inquérito oficial (Módulo 5) estimou cerca de £10 bi desperdiçados em equipamentos de proteção, "sem evidência de cronyism".
-  - Argentina: o ex-ministro Ginés González García morreu em 2024, quando já era processado.
+  - Espanha: o ex-ministro Ábalos e o ex-assessor Koldo García (governo PSOE) têm condenação definitiva no Tribunal Supremo (24 e 19 anos; cabe recurso de amparo ao Constitucional). O caso do irmão de Ayuso (Madri, PP) foi **arquivado** em 2022 e em 2023.
+  - Equador (governo Lenín Moreno): o empresário Daniel Salcedo foi condenado (13 anos).
+  - Itália (governo Conte II, M5S–PD): Arcuri foi absolvido porque o crime de abuso de ofício foi abolido.
+  - Alemanha: o tribunal superior (BGH) entendeu que os deputados Nüßlein e Sauter (CSU) não cometeram corrupção de parlamentar. O tribunal de contas federal atribui a Spahn (CDU) €517 mi de dano nas compras de máscaras, sem imputação penal.
+  - Reino Unido (governo conservador): a empresa PPE Medpro foi condenada no cível a devolver £122 mi e não pagou (insolvência). Michelle Mone e Doug Barrowman não foram acusados criminalmente; a NCA investiga a PPE Medpro desde 2021, sem acusação formal. A "VIP lane" foi declarada ilegal; o inquérito oficial (Módulo 5) estimou cerca de £10 bi desperdiçados em equipamentos de proteção, "sem evidência de cronyism".
+  - Argentina (governo Alberto Fernández): o ex-ministro Ginés González García morreu em 2024, quando já era processado.
   - Peru: Vizcarra é investigado no "Vacunagate". A condenação dele a 14 anos é de outro caso, de quando era governador de Moquegua.
   - EUA: mais de 3.500 réus por fraudes de particulares contra programas de auxílio.
+  - Bolívia (governo Áñez): o ex-ministro da Saúde Navajas foi **acusado formalmente**, sem sentença localizada.
+  - África do Sul (ANC): o SIU achou 2.803 contratos irregulares e enviou 38 casos à promotoria, com desfecho [A VERIFICAR].
+  - Filipinas (Duterte): as ações do caso Pharmally foram **retiradas para reinvestigação**; não houve absolvição.
 
 ### 4. Fatos em disputa
 
@@ -192,18 +201,19 @@ Não houve convocação extraordinária.
 |---|---|---|---|---|---|
 | Vacinas contra Covid | Doença grave e morte | Proteção alta, que diminui com o tempo | ✅ | A | Alta |
 | Vacinas contra Covid | Infecção e transmissão | Proteção modesta e de curta duração | ➕ | C | Média |
-| Vacinas de mRNA | Miocardite em homens jovens | Rara (dezenas a ~180 casos por milhão) | ⚠️ | C robusta | Alta |
+| Vacinas de mRNA | Miocardite em homens jovens | Rara (cerca de 56 por milhão com Pfizer e 184 com Moderna, homens de 16–24 anos, 2ª dose) | ⚠️ | C, replicada em vários países e reconhecida pela FDA | Alta (coortes nacionais convergentes) |
 | Vacinas de vetor viral (AstraZeneca, Janssen) | Trombose com plaquetas baixas | Rara, mas grave | ⚠️ | C | Média |
 | Máscara cirúrgica na comunidade | Infecção | Efeito pequeno (~11%) | ➕ | B | Média |
 | Máscara de pano na comunidade | Infecção | Sem efeito detectável | ➖ | B | Média |
 | Máscara em crianças nas escolas | Transmissão | Sem ensaio randomizado | ❓ | C/D | Baixa |
 | Lockdown estrito × medidas leves | Mortalidade | Efeito incremental em disputa | ❓ | C/modelo | Baixa |
-| Fechamento prolongado de escolas (Brasil) | Aprendizagem | ~1 ano perdido em 2021; recuperação média até 2025 | ⚠️ | C | Média |
-| Hidroxicloroquina | Mortalidade | Sem benefício; sinal de dano | ⚠️ | A | Alta |
+| Fechamento prolongado de escolas (Brasil) | Aprendizagem | ~1 ano de aprendizado perdido na rede pública em 2021 (Saeb: −12,36 pontos; Dossiê da S-001); recuperação média até 2025 | ⚠️ | C | Média |
+| Hidroxicloroquina | Mortalidade; segurança | Sem benefício na mortalidade (➖); mais progressão para ventilação ou morte no RECOVERY (30,7% × 26,9%) e mais alterações de QT e de fígado na Coalizão I (⚠️) | ➖ / ⚠️ | A / B | Alta / Média |
 | Ivermectina | Internação e morte | Sem benefício clinicamente relevante | ➖ | A | Alta |
 | Dexametasona, tocilizumabe, baricitinibe | Mortalidade em internados com oxigênio | Redução de mortes | ✅ | A | Alta |
 | CPAP e prona com paciente acordado | Intubação; morte | Menos intubação; mortalidade sem diferença | ➕ | A−/B | Média |
-| Recomendação federal de tratamento precoce (MS e TrateCov) | Mortalidade | Promoveu remédios sem eficácia; magnitude do dano não medida | ⚠️ | A (sobre os remédios) | Alta / Baixa |
+| Recomendação federal de tratamento precoce (MS e TrateCov, 2020–21) | Qualidade da orientação oficial; uso de recursos do SUS | Promoveu remédios que ensaios grandes mostraram sem eficácia; efeito sobre mortes não medido (❓) | ⚠️ | A (sobre os remédios) / I (atos) | Alta |
+| Mudança de recomendação sem o ACIP e contra os técnicos do FDA (HHS/Kennedy, 2025) | Processo técnico de decisão | Decisão suspensa por liminar (*AAP v. Kennedy*, 16/03/2026); efeito sobre a cobertura não medido (❓) | ⚠️ (institucional) | I (atos) | Alta |
 | Vacina Covid no Calendário Nacional infantil (2024) | Cobertura | Esquema completo em 6,3% das crianças de 6 meses a 2 anos | ⚠️ | D | Média |
 | Doses vencidas (2021–2022 e 2023–2024) | Uso de recursos | ~R$ 1,2 bi (TCU); 4,2 mi doses XBB | ⚠️ | I | Alta / Média |
 | Transferências de renda (2022 e 2023–2024) | Pobreza | Quedas da pobreza dependentes de transferência | ➕ | C | Média |
@@ -215,25 +225,25 @@ Não houve convocação extraordinária.
 
 **Linha do tempo (2022–2026)**
 - **jan–fev/2022:** IFA nacional da Fiocruz registrado (acordo de 2021, governo Bolsonaro).
-- **jul/2022:** a PGR pede o arquivamento de 7 de 10 apurações derivadas da CPI.
+- **jul/2022:** a PGR pede o arquivamento de 7 das apurações derivadas da CPI (as fontes falam em 9 ou 10 no total).
 - **jan/2023:** troca de governo federal.
 - **out/2023:** o TCU aponta 28 milhões de doses vencidas (contratos de 2021–2022).
 - **jan/2024:** vacina Covid entra no Calendário infantil.
 - **2024:** doses XBB vencem; estudo de Raoult retratado.
-- **mar/2025:** cartão de vacina arquivado para o ex-presidente.
 - **jan/2025:** perdão a Fauci; CIA divulga avaliação; EcoHealth sofre sanção.
+- **mar/2025:** cartão de vacina arquivado para o ex-presidente.
 - **mai/2025:** a gestão Kennedy muda recomendações sem o ACIP.
 - **jun/2025:** o SAGO divulga o relatório sobre a origem.
 - **set/2025:** inquérito da PF sobre a CPI (Pet 10.064).
 - **2025:** Saeb e alfabetização em recuperação.
 - **mar/2026:** liminar suspende o novo calendário de vacinas e o novo ACIP nos EUA.
-- **mai/2026:** prescreve o prazo para acusar Fauci pelo depoimento de 2021; Lei 15.406 (Dia das Vítimas).
-- **ago/2026:** Morens confessa; o Senado vota o desacato de Fauci.
+- **mai/2026:** vence o prazo para acusar Fauci pelo depoimento de 11/05/2021, sem que tenha havido acusação; Lei 15.406 (Dia das Vítimas).
+- **ago/2026:** Morens confessa culpa (sentença em 12/11/2026); uma comissão do Senado aprova, em votação partidária, o encaminhamento de Fauci ao DOJ por desacato, sem voto em plenário.
 - **out/2026:** Fachin consulta a PGR; condenação de Ábalos fica definitiva na Espanha.
 
 **Atribuição**
 - **Maré:** a queda dos óbitos por Covid depois de 2022 acompanha a Ômicron e a imunidade híbrida no mundo inteiro. Nenhuma gestão leva o crédito sozinha.
-- **Herança dividida:** as doses vencidas são falha das duas gestões federais, que compraram acima da adesão real, e dos municípios, que concentraram as perdas de 2021–2022. A recuperação da aprendizagem e da vacinação infantil de rotina é sobretudo de redes estaduais e municipais. A queda de pobreza de 2022 e a de 2023–2024 dependem de transferências dos dois governos.
+- **Herança dividida:** as doses vencidas são falha das duas gestões federais, que compraram acima da adesão real, e dos municípios, que concentraram as perdas de 2021–2022. [INFERÊNCIA] A recuperação da aprendizagem é medida em redes estaduais e municipais (Saeb e ICA), com destaque para PR, CE e GO; a atribuição de mérito a cada gestão está [A VERIFICAR]. A recuperação da vacinação infantil de rotina é compartilhada: a União compra e faz campanha, e os municípios aplicam; nenhum estudo separa a parte de cada um. A queda de pobreza de 2022 e a de 2023–2024 dependem de transferências dos dois governos.
 - **Órfãos:** a ausência de pensão é omissão do Congresso e dos Executivos desde 2021.
 
 ### 7. Matriz federativa e de Poderes
@@ -244,7 +254,7 @@ Não houve convocação extraordinária.
 | Recuperação educacional | Avaliações (INEP) e programas | Redes estaduais (ensino médio, anos finais) | Redes municipais (anos iniciais, alfabetização) | Destaques do Ideb 2025: PR, CE, GO |
 | Compras emergenciais (2020–21) | Covaxin (cancelada), cloroquina do Exército | Respiradores (AM, PA, SC, BA/Consórcio, SP), OS no RJ, testes no DF | Respiradores (Recife, Fortaleza) | Lei 13.979, art. 4º |
 | Investigação e punição | PF, MPF, PGR, CGU, TCU, STF, STJ | Polícia Civil, MPs, TCEs, TJs, assembleias (impeachment) | Câmaras, tribunais de contas municipais | Troca de foro e prova anulada atrasam |
-| Responsabilização política | Eleições de 2022 e 2026 | Impeachment (RJ condenado; SC absolvido) | Eleições de 2024 | — |
+| Responsabilização política | Eleições de 2022 e 2026 | Impeachment (RJ: governador afastado em definitivo pelo Tribunal Especial Misto, 2021; SC: governador absolvido, 2021) | Eleições de 2024 | — |
 
 ### 8. Mapa de forças e interesses
 
@@ -273,10 +283,12 @@ Não houve convocação extraordinária.
 - **Quem criticou as medidas e as autoridades.**
   - *Acerta:* sobre máscaras de pano e em crianças; sobre o custo das escolas; sobre a transmissão por vacinados; sobre o vazamento ser plausível; sobre a opacidade (ganho de função, FOIA, royalties).
   - *Erra:* defendeu cloroquina e ivermectina contra ensaios grandes; espalhou "turbo câncer", "mortes súbitas" e "vacina mata em massa" com estudos retratados; trata "laboratório" como provado; trata Fauci como autor do vírus e comandante de políticas que não eram dele.
+*Peso:* os erros do primeiro grupo foram sobretudo de excesso de certeza e de comunicação; os do segundo, sobre a eficácia de tratamentos e a segurança das vacinas, contra evidência de nível A.
+
 - **Garantistas.**
   - *Acertam:* prova anulada, prescrição e devido processo protegem todos.
   - *Erram:* não respondem ao custo de impunidade quando quase nenhum caso chega ao fim.
-- **Lavajatistas / anticorrupção.**
+- **Quem prioriza a punição rápida da corrupção** (que se descreve como "anticorrupção" e é chamado de "lavajatista" por críticos).
   - *Acertam:* as compras emergenciais repetiram fraude em todos os partidos.
   - *Erram:* tratam arquivamento como blindagem e denúncia como condenação.
 
@@ -298,7 +310,7 @@ Não houve convocação extraordinária.
 1. **Excesso de mortes.**
    - Lado 1 (Guardião): corrigir a S-001 para uma razão de cerca de 1,6 pelo painel do Conass.
    - Lado 2 (10 revisores): o número não fecha com o próprio Dossiê.
-   - **Posição do Juiz:** fica com os revisores. A razão de 2020–2021 (cerca de 1,0) segue documentada. A da janela longa vai como faixa de 1,0 a 1,6 [A VERIFICAR]. O selo **FALSO** para "o lockdown matou mais que o vírus" se mantém pela conta de 2020–2021: o excesso que não foi atribuído à Covid é um teto para as mortes causadas pelas medidas, e não uma contagem delas. Esse teto ficou muito abaixo dos óbitos por Covid.
+   - **Posição do Juiz:** fica com os revisores. A razão de 2020–2021 (cerca de 1,0) segue documentada. A da janela longa vai como faixa de 1,0 a 1,6 [A VERIFICAR]. O selo **FALSO** para "o lockdown matou mais que o vírus" se mantém pela conta de 2020–2021: o excesso que não foi atribuído à Covid é um teto para o **efeito líquido** das medidas sobre as mortes, e não uma contagem delas. Esse teto ficou muito abaixo dos óbitos por Covid.
 2. **A fala de Fauci sobre máscaras.**
    - Lado 1 (Saúde Pública): o conteúdo ficou perto dos ensaios.
    - Lado 2 (Filósofo): engano bem-intencionado.
@@ -306,7 +318,7 @@ Não houve convocação extraordinária.
      - Conteúdo: **VERDADEIRO, MAS INCOMPLETO** (alinhado ao guia da época e próximo da evidência posterior para a máscara comum).
      - Franqueza: o motivo de escassez não foi declarado na fala pública. Isso é falha de comunicação, **não verificável como intenção de enganar** até a leitura da fonte primária.
      - Mesma linguagem para todos os casos de autoridade que apresentou como científico um juízo de outra natureza: Fauci, CDC, Walensky, o Ministério da Saúde brasileiro com a cloroquina e Kennedy sem o ACIP.
-3. **"Fauci é inocente, tudo perseguição" × "foi perdoado porque é culpado".** Os revisores apontaram selos desiguais num dos pareceres. **Posição do Juiz:** as duas frases recebem **NÃO VERIFICÁVEL**, porque nenhum juízo declarou culpa ou inocência. "Tudo perseguição" é desmentida em parte pela confissão de Morens. "Culpado" não tem acusação formal.
+3. **"Fauci é inocente, tudo perseguição" × "foi perdoado porque é culpado".** Os revisores apontaram selos desiguais num dos pareceres. **Posição do Juiz:** as duas frases recebem **NÃO VERIFICÁVEL**, porque nenhum juízo declarou culpa ou inocência. "Tudo perseguição" é desmentida em parte: a apuração em torno do NIAID produziu a confissão de Morens, num caso em que Fauci não é citado. "Culpado" não tem acusação formal.
 4. **Doses vencidas no governo Lula.**
    - Lado 1: ⚠️ pelos 58,7 milhões.
    - Lado 2: fonte com viés.
@@ -333,7 +345,7 @@ As propostas 1 e 2 da S-001 seguem. A 3 e a 4 foram ampliadas, e há três novas
    - *Métrica:* valor recuperado sobre prejuízo apurado.
 5. **Escolas** (mantida). Escolas são as últimas a fechar e as primeiras a reabrir, com metas de recomposição e avaliação com grupo de comparação.
 6. **Compensação sem culpa por evento adverso grave de vacina** (nova).
-   - Tabela de eventos (VITT, miocardite), decisão em até 6 meses e valor proporcional ao dano. Evita os defeitos dos programas dos EUA (1,6% de pedidos deferidos) e do Reino Unido (valor fixo, com exigência de 60% de incapacidade).
+   - Tabela de eventos (VITT, miocardite), decisão em até 6 meses e valor proporcional ao dano. Evita os defeitos dos programas dos EUA (1,6% dos pedidos já decididos foram indenizados) e do Reino Unido (valor fixo, com exigência de 60% de incapacidade).
    - Antes, é preciso conferir se a Lei 14.125/2021 já cobre isso [A VERIFICAR].
    - *Métrica:* tempo até a decisão.
 7. **Pesquisa de risco e transparência** (nova).
@@ -349,11 +361,11 @@ As propostas 1 e 2 da S-001 seguem. A 3 e a 4 foram ampliadas, e há três novas
 
 **Bloco A — Brasil 2022–2026.**
 - **Quadro sem nota única:** queda das mortes por maré mundial; recuperação da aprendizagem e da vacinação de rotina, sobretudo pelas redes subnacionais; pobreza em queda com transferências dos dois governos.
-- **Falhas das duas gestões federais:**
-  - doses vencidas;
-  - vacina Covid infantil incluída no calendário sem cobertura (6,3%);
-  - nenhuma pensão para órfãos;
-  - nenhum dado público de óbitos por situação vacinal.
+- **Falhas federais:**
+  - doses vencidas (as duas gestões, e os municípios nas perdas de 2021–22);
+  - vacina Covid infantil incluída no calendário em 2024 (gestão atual), com esquema completo em 6,3% das crianças de 6 meses a 2 anos, numa aplicação que é municipal;
+  - nenhuma pensão para órfãos (Congresso e os dois Executivos, desde 2021);
+  - nenhum dado público de óbitos por situação vacinal (as duas gestões).
 
 **Bloco B — Ciência.**
 - **Mantêm-se:** eficácia das vacinas contra morte; ineficácia da cloroquina e da ivermectina; benefício da dexametasona.
@@ -363,14 +375,17 @@ As propostas 1 e 2 da S-001 seguem. A 3 e a 4 foram ampliadas, e há três novas
 - **Não sustentadas:** as alegações de dano em massa das vacinas.
 
 **Bloco C — Fauci.**
-- **Estado processual:** não indiciado, não denunciado, não réu. Perdão vigente e nunca testado. Prazo para acusação do depoimento de 2021 prescrito. Desacato aguardando o DOJ. Investigações federal (segundo a imprensa) e estaduais (anunciadas). Ex-assessor confessou ocultar registros.
+- **Estado processual:** não indiciado, não denunciado, não réu. Perdão vigente e nunca testado. Prazo para acusação do depoimento de 11/05/2021 vencido sem acusação (o de 20/07/2021: [A VERIFICAR]). Desacato aguardando o DOJ. Investigações federal (segundo a imprensa) e estaduais (anunciadas). Ex-assessor confessou ocultar registros.
 - **Afirmações:**
   - negativa sobre ganho de função em Wuhan: **ENGANOSO**;
-  - origem "very, very strongly leaning" à natural (mai/2020): **EXAGERADO** para a evidência da época;
+  - origem (04/05/2020): a parte "very, very strongly leaning" contra manipulação deliberada segue compatível com a avaliação da maioria das agências; a parte "evolved in nature and then jumped species", afirmada como forte indicação, foi **EXAGERADA** para a evidência da época;
   - máscaras (mar/2020): **VERDADEIRO, MAS INCOMPLETO**;
   - imunidade natural (2021): **VERDADEIRO**;
   - "criou o vírus": **FALSO**;
-  - "decidia os lockdowns": **ENGANOSO**.
+  - "decidia os lockdowns": **ENGANOSO**;
+  - metas de imunidade de rebanho (2020): os números são **CONTROVERSOS ENTRE ESPECIALISTAS**; a crítica de que ele subiu a meta também pela leitura do que o público estava pronto para ouvir é **VERDADEIRA** (ele admitiu ao NYT, 24/12/2020);
+  - "ataques a mim são ataques à ciência" (09/06/2021): citação **VERDADEIRA**; como argumento, confunde crítica à pessoa com crítica à ciência (juízo de valor, sem selo factual);
+  - "lucrou com as vacinas": **NÃO VERIFICÁVEL**; a falta de transparência do NIH sobre royalties é **VERDADEIRA**.
 
 **Bloco D — Corrupção.**
 - O padrão se repetiu em todos os partidos e países: dispensa de licitação, intermediário sem histórico e pagamento antecipado sem garantia.
@@ -378,7 +393,7 @@ As propostas 1 e 2 da S-001 seguem. A 3 e a 4 foram ampliadas, e há três novas
 - **O resultado concreto veio por outras vias:** impeachment, ações civis e tribunais de contas.
 
 **Revisão da S-001 — o que muda:**
-1. A ação de improbidade sobre o oxigênio em Manaus foi encerrada em 1ª instância sem condenação, pela nova Lei de Improbidade. As fontes divergem entre "rejeitada" e "julgada improcedente", e a S-001 usou só "julgada improcedente".
+1. **A S-001 errou** ao dizer que a ação de improbidade sobre o oxigênio em Manaus foi "julgada improcedente". Ela foi **rejeitada sem julgamento de mérito** pela Justiça Federal no Amazonas, por causa da nova Lei de Improbidade (Lei 14.230/2021). É um degrau a menos: não houve juízo sobre a conduta. O recurso ao TRF-1 está [A VERIFICAR].
 2. A S-001 omitiu o inquérito da PF aberto em 18/09/2025 (Pet 10.064), em que o ex-presidente é **investigado**, e a denúncia contra 11 pessoas da Precisa, suspensa antes do recebimento.
 3. A razão entre excesso de mortes e óbitos oficiais vale para 2020–2021. Em janelas mais longas, os números estão em disputa.
 4. A S-001 deu ✅ à eficácia das vacinas sem registrar os ⚠️ dos eventos adversos raros. Agora estão registrados.
@@ -391,7 +406,48 @@ As propostas 1 e 2 da S-001 seguem. A 3 e a 4 foram ampliadas, e há três novas
 
 ### 14. Relatório de Isonomia
 
-*(preenchido após o Auditor)*
+O Auditor refez o teste do sinal invertido nas conclusões centrais dos quatro blocos. Os selos centrais se mantêm:
+- vacinas contra a morte;
+- cloroquina e ivermectina sem benefício;
+- alegações de dano em massa das vacinas não sustentadas;
+- negativa sobre ganho de função ENGANOSO;
+- "Fauci criou o vírus" FALSO;
+- perdão nunca testado na Justiça.
+
+As premissas do usuário sobre Fauci foram corrigidas sem concessão e sem hostilidade.
+
+**Devolvido em 8 dos 12 itens.** Todos foram corrigidos com 29 reescritas.
+1. **Falso equilíbrio:** a resposta curta passou a dizer que os erros dos dois lados não têm o mesmo peso de evidência.
+2. **Rigor simétrico:**
+   - Flaxman ganhou a crítica de método, como Herby; Bangladesh ganhou a crítica de Chikina.
+   - Hidroxicloroquina e tratamento precoce saíram do ⚠️ "em mortalidade", porque o dano em mortes não foi medido.
+   - A decisão da gestão Kennedy sem o ACIP ganhou linha própria na tabela.
+3. **Atribuição federativa:** mérito e falha da vacinação infantil passaram a ser compartilhados entre União e municípios.
+4. **Omissões supridas:**
+   - afirmações desfavoráveis a Fauci (meta de imunidade de rebanho, royalties);
+   - casos de corrupção ligados a PSB, PDT, PSDB, DEM, CDU, PP, ao governo Áñez, ao ANC e a Duterte;
+   - as academias francesas e o dissenso no SAGO.
+5. **Partido do governante:** passou a constar para todos.
+6. **Precedente:** a S-002 agora diz que a S-001 errou sobre Manaus.
+7. **P13:**
+   - "comissão do Senado" no lugar de "o Senado";
+   - data exata do depoimento;
+   - a confissão de Morens com a ressalva de que Fauci não é citado no caso;
+   - "afastado em definitivo" no lugar de "condenado" para o impeachment.
+8. **Vocabulário:** "lavajatista" apresentado com as duas nomenclaturas.
+
+**Também acolhido da revisão cruzada:**
+- O painel do Conass entra como dado em disputa, não como correção.
+- "Perdoado porque é culpado" e "é inocente, tudo perseguição" recebem o mesmo selo.
+- A mesma janela de tempo vale para as omissões dos dois governos.
+- O ⚠️ do governo Lula nas doses vencidas se apoia só no dado confirmado.
+- A recuperação da aprendizagem é atribuída às redes que a medem.
+
+**Checklist após os ajustes:** todos os itens **APROVADOS**.
+
+**Precedente:** a S-001 foi aplicada e corrigida nos pontos listados no §13.
+
+**Limite declarado:** 15 estados e México, Colômbia e Índia ficaram sem pesquisa sobre corrupção. A conclusão "nenhuma condenação definitiva localizada" vale para a busca feita.
 
 ### 15. Ferramenta de pensamento
 
