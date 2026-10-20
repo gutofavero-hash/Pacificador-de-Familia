@@ -114,3 +114,5 @@ Antes de cada sessão, o Juiz consulta este registro. Havendo caso análogo, a n
 - Gatilho de revisão: os da S-003, mais a fonte do “75%”, a replicação multicêntrica do simbiótico e a publicação do estudo de spike persistente.
 - Revisa a sentença: S-003.
 - Caminho ou link da Sentença completa: `sentencas/2026-10-20_S-004_covid-consolidada-ampliada.md` · `sentencas/2026-10-20_S-004_covid-consolidada-ampliada_COMPLETA.html`
+
+> **Nota (20/10/2026):** a **S-004** é a Sentença final e única da sala de discussão “sobre as políticas de saúde durante o Covid…”. As Sentenças S-001, S-002 e S-003, acima, foram integralmente consolidadas nela e arquivadas, sem alteração, em `historico/sentencas/` (os caminhos citados nas entradas S-001 a S-003 passam a ser `historico/sentencas/...`). Só a S-004 consta em `sentencas/indice.json` e aparece no site.

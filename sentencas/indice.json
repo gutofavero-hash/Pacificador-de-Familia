@@ -11,42 +11,5 @@
     "pergunta_mesa": "Se uma nova pandemia começasse amanhã, que decisões vocês gostariam que já estivessem escritas em lei, e quem vocês querem que tome cada uma: o governo federal, o governador ou o prefeito? Complemento, olhando para trás: que afirmação vocês fizeram com certeza durante a pandemia e que hoje, olhando os dados, fariam com menos certeza? Qual mantêm?",
     "executiva": "2026-10-20_S-004_covid-consolidada-ampliada_EXECUTIVA.html",
     "completa": "2026-10-20_S-004_covid-consolidada-ampliada_COMPLETA.html"
-  },
-  {
-    "id": "S-003",
-    "base": "2026-10-20_S-003_covid-consolidada",
-    "data": "2026-10-20",
-    "objeto": "Covid-19: políticas de saúde, responsabilidades pelas mortes, ciência revisitada, Anthony Fauci e corrupção nas compras (versão consolidada)",
-    "sala": "sobre-as-politicas-de-saude-durante-o-covid-e-sobre-as-respo-c43c3",
-    "veredicto": "QUADRO CONSOLIDADO · ACERTOS E FALHAS, COM RESSALVAS",
-    "confianca": "Média",
-    "resposta_curta": "POLÍTICAS: vacinação em massa pelo SUS (com vacinas de Fiocruz e Butantan), auxílio emergencial, distanciamento decretado por estados e municípios, escolas fechadas por muito tempo e, no governo federal, um “tratamento precoce” sem eficácia. · MORTES: 715.295 confirmadas até 11/03/2025 (último total confirmado), perto de 1 em cada 284 brasileiros; a vacina salvou centenas de milhares de vidas (estimativa de modelos). · RESPONSABILIDADE: o vírus é a causa; a gestão falhou nas três esferas, em proporção que nenhum estudo mede; [INFERÊNCIA pela competência] as falhas documentadas de maior alcance nacional estão onde a União tinha o papel principal (vacinas, orientação clínica, coordenação). · CIÊNCIA: os erros dos dois lados não têm o mesmo peso de evidência. Vacina contra morrer e corticoide funcionaram; cloroquina e ivermectina não; os críticos acertaram em pontos mais fracos ou de comunicação (máscara de pano, regra dos 6 pés, custo das escolas, opacidade). · FAUCI: não é réu e não decidia as políticas do Brasil. · CORRUPÇÃO: o mesmo padrão de risco em governos de todos os partidos, com pouca condenação penal no Brasil e fora. · Confiança: média.",
-    "pergunta_mesa": "Se uma nova pandemia começasse amanhã, que decisões vocês gostariam que já estivessem escritas em lei, e quem vocês querem que tome cada uma: o governo federal, o governador ou o prefeito? Complemento, olhando para trás: que afirmação vocês fizeram com certeza durante a pandemia e que hoje, olhando os dados, fariam com menos certeza? Qual mantêm?",
-    "executiva": "2026-10-20_S-003_covid-consolidada_EXECUTIVA.html",
-    "completa": "2026-10-20_S-003_covid-consolidada_COMPLETA.html"
-  },
-  {
-    "id": "S-002",
-    "base": "2026-10-19_S-002_covid-revisao-ciencia-fauci-corrupcao",
-    "data": "2026-10-19",
-    "objeto": "Covid-19 depois da pandemia: ciência revisitada, Anthony Fauci e corrupção nas compras",
-    "sala": "sobre-as-politicas-de-saude-durante-o-covid-e-sobre-as-respo-c43c3",
-    "veredicto": "QUADRO POR BLOCO · ACERTOS E FALHAS, COM RESSALVAS",
-    "confianca": "Média",
-    "resposta_curta": "Ciência: cinco anos depois, nenhum dos dois lados da briga saiu inteiro, mas os erros não têm o mesmo peso de evidência. Nas perguntas que decidem quem vive, ensaios grandes e concordantes mostram que a vacina protegeu muito contra morrer e que cloroquina e ivermectina não funcionaram. Os críticos acertaram em pontos de evidência mais fraca ou de comunicação: a vacina protege pouco e por pouco tempo contra pegar o vírus (\"vacinados não carregam o vírus\" caiu com a Delta), máscara de pano não mostrou efeito, a regra dos 6 pés e a máscara em crianças não tinham ensaio, e as escolas fechadas por mais de 280 dias custaram caro. Há efeitos graves raros das vacinas (miocardite em rapazes, trombose). Ninguém provou de onde veio o vírus. Fauci não é réu nem foi acusado formalmente; tem perdão presidencial preventivo nunca testado na Justiça e é investigado, segundo a imprensa; algumas falas dele não resistiram, como a negativa sobre \"ganho de função\" em Wuhan, mas ele não decidia lockdowns nem políticas de outros países. Corrupção: houve compras com fraude ou suspeita em governos de quase todos os partidos, no Brasil e fora; no Brasil, nenhuma condenação penal definitiva foi localizada, e o que voltou aos cofres veio por ações civis e tribunais de contas. Confiança média.",
-    "executiva": "2026-10-19_S-002_covid-revisao-ciencia-fauci-corrupcao_EXECUTIVA.html",
-    "completa": "2026-10-19_S-002_covid-revisao-ciencia-fauci-corrupcao_COMPLETA.html"
-  },
-  {
-    "id": "S-001",
-    "base": "2026-10-19_S-001_covid-politicas-e-responsabilidades",
-    "data": "2026-10-19",
-    "objeto": "Políticas de saúde na pandemia de Covid-19 e responsabilidades pelas mortes no Brasil",
-    "sala": "sobre-as-politicas-de-saude-durante-o-covid-e-sobre-as-respo-c43c3",
-    "veredicto": "SEM NOTA ÚNICA · ACERTOS E FALHAS, COM RESSALVAS",
-    "confianca": "Média",
-    "resposta_curta": "O Brasil registrou cerca de 716 mil mortes por Covid — perto de 1 em cada 280 brasileiros —, com excesso de mortes por volta de 1,7 vez a média mundial em 2020–2021, abaixo dos piores casos, como o Peru (a comparação com os vizinhos da região ainda está [A VERIFICAR]). A vacina salvou centenas de milhares de vidas, e o país passou a produzi-la porque Fiocruz e Butantan sabiam fazê-la. Houve falhas que custaram vidas, em quantidade que nenhum estudo consegue medir com precisão. No governo federal, que tinha o papel principal de comprar vacinas e coordenar o país, houve contratos atrasados, a recomendação de um remédio que os estudos mostraram não funcionar e falhas de coordenação. Na falta de oxigênio em Manaus, falharam União e estado, em proporção que os dados não permitem dividir. Em estados e na União, houve compras emergenciais pagas sem entrega ou com documentos irregulares. As escolas ficaram fechadas por muito tempo, com custo alto no aprendizado. Na Justiça, o ex-governador do RJ sofreu impeachment e responde a ação penal; nenhuma decisão do ex-presidente virou processo, e a ação de improbidade sobre Manaus foi julgada improcedente em 1ª instância. Confiança média.",
-    "executiva": "2026-10-19_S-001_covid-politicas-e-responsabilidades_EXECUTIVA.html",
-    "completa": "2026-10-19_S-001_covid-politicas-e-responsabilidades_COMPLETA.html"
   }
 ]
