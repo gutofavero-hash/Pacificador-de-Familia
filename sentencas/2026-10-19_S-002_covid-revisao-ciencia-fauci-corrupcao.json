@@ -1,0 +1,239 @@
+{
+  "exemplo": false,
+  "id": "S-002",
+  "data": "2026-10-19",
+  "modo": "Revisão (revisa a S-001)",
+  "objeto": "Covid-19 depois da pandemia: ciência revisitada, Anthony Fauci e corrupção nas compras",
+  "objeto_curto": "covid-revisao-ciencia-fauci-corrupcao",
+  "sala": "sobre-as-politicas-de-saude-durante-o-covid-e-sobre-as-respo-c43c3",
+  "pergunta": "Quero entender (A) o que aconteceu no Brasil depois da fase aguda da pandemia (2022–2026) e o que os novos dados mudam na avaliação de governos e políticos; (B) o que a ciência publicada até 2026 mostra sobre vacinas, máscaras, distanciamento e escolas, cloroquina, ivermectina, intubação e origem do vírus; (C) quais afirmações de Anthony Fauci se mantiveram, foram corrigidas ou derrubadas, e o estado exato das acusações que ele enfrenta; e (D) quais casos de corrupção e desvio em compras da pandemia foram apurados, em qualquer esfera, partido ou país, e em que estado processual estão.",
+  "esferas": ["Federal", "Estadual", "Municipal", "Internacional"],
+  "poderes": ["União, estados e municípios (Brasil)", "Congresso, STF, STJ, PGR, PF, TCU, CGU", "NIH/NIAID, CDC, FDA, Congresso e DOJ (EUA)", "Governos e tribunais do Reino Unido, Alemanha, Espanha, Itália, Argentina, Peru, Bolívia, Equador, África do Sul e Filipinas", "OMS"],
+  "periodo": "2020 a 2026, com foco em 2022–2026",
+  "data_corte": "Pesquisa feita em 19/10/2026, só por ferramenta de busca; cota de buscas esgotada em parte dos blocos e complementada",
+  "documento_executivo": "2026-10-19_S-002_covid-revisao-ciencia-fauci-corrupcao_EXECUTIVA.html",
+  "documento_completo": "2026-10-19_S-002_covid-revisao-ciencia-fauci-corrupcao_COMPLETA.html",
+
+  "resposta_curta": "Ciência: cinco anos depois, nenhum dos dois lados da briga saiu inteiro, mas os erros não têm o mesmo peso de evidência. Nas perguntas que decidem quem vive, ensaios grandes e concordantes mostram que a vacina protegeu muito contra morrer e que cloroquina e ivermectina não funcionaram. Os críticos acertaram em pontos de evidência mais fraca ou de comunicação: a vacina protege pouco e por pouco tempo contra pegar o vírus (\"vacinados não carregam o vírus\" caiu com a Delta), máscara de pano não mostrou efeito, a regra dos 6 pés e a máscara em crianças não tinham ensaio, e as escolas fechadas por mais de 280 dias custaram caro. Há efeitos graves raros das vacinas (miocardite em rapazes, trombose). Ninguém provou de onde veio o vírus. Fauci não é réu nem foi acusado formalmente; tem perdão presidencial preventivo nunca testado na Justiça e é investigado, segundo a imprensa; algumas falas dele não resistiram, como a negativa sobre \"ganho de função\" em Wuhan, mas ele não decidia lockdowns nem políticas de outros países. Corrupção: houve compras com fraude ou suspeita em governos de quase todos os partidos, no Brasil e fora; no Brasil, nenhuma condenação penal definitiva foi localizada, e o que voltou aos cofres veio por ações civis e tribunais de contas. Confiança média.",
+
+  "veredicto": {
+    "tipo": "governo",
+    "rotulo": "QUADRO POR BLOCO · ACERTOS E FALHAS, COM RESSALVAS",
+    "explicacao": "A — Brasil 2022–2026: mortes em queda por maré mundial; recuperação da aprendizagem e da vacinação de rotina medida nas redes subnacionais; pobreza em queda com transferências dos dois governos; falhas federais nas doses vencidas (as duas gestões e os municípios), na baixa cobertura da vacina infantil, na falta de pensão para órfãos e de dados por situação vacinal. B — Ciência: mantêm-se a eficácia das vacinas contra morte e a ineficácia da cloroquina e da ivermectina; corrigidas a proteção contra infecção e transmissão e a segurança absoluta; sem base de ensaio os 6 pés e a máscara em crianças; em aberto o efeito dos lockdowns e a origem do vírus; não sustentadas as alegações de dano em massa. C — Fauci: não indiciado, perdão vigente, investigado segundo a imprensa; negativa sobre ganho de função ENGANOSO; \"criou o vírus\" FALSO. D — Corrupção: padrão repetido em todos os partidos e países; responsabilização penal rara; resultado por vias civil, de contas e de impeachment."
+  },
+  "confianca": { "nivel": "Média", "motivo": "Alta nos ensaios clínicos e nos estados processuais documentados; baixa na origem do vírus, no excesso de mortes de longo prazo (fontes em conflito) e na cobertura dos casos de corrupção (15 estados e 3 países sem pesquisa)." },
+
+  "convocacao": [
+    { "cadeira": "Guardião do Método", "status": "Convocada", "origem": "Obrigatória", "justificativa": "Toda sessão; auditou os estudos dos dois lados." },
+    { "cadeira": "O Cidadão", "status": "Convocada", "origem": "Obrigatória", "justificativa": "Toda sessão; frases do grupo de família." },
+    { "cadeira": "Auditor de Isonomia", "status": "Convocada", "origem": "Obrigatória", "justificativa": "Toda sessão." },
+    { "cadeira": "Saúde Pública e Epidemiologia (convidada)", "status": "Convocada", "origem": "Juiz + Usuário (convocação de todas)", "justificativa": "Bloco B inteiro." },
+    { "cadeira": "Analista de Políticas Sociais", "status": "Convocada", "origem": "Juiz + Usuário", "justificativa": "Bloco A; efeitos distributivos." },
+    { "cadeira": "Jurista Constitucional e Federativo", "status": "Convocada", "origem": "Juiz + Usuário", "justificativa": "Estado processual dos blocos C e D." },
+    { "cadeira": "Cientista Político Institucional", "status": "Convocada", "origem": "Juiz + Usuário", "justificativa": "Responsabilização; agências técnicas." },
+    { "cadeira": "Economista Empírico", "status": "Convocada", "origem": "Juiz + Usuário", "justificativa": "Custos; contratado × desviado × recuperado." },
+    { "cadeira": "Investigador de Forças e Interesses", "status": "Convocada", "origem": "Juiz + Usuário", "justificativa": "Bloco D; conflitos de interesse nos dois lados." },
+    { "cadeira": "Geoestrategista", "status": "Convocada", "origem": "Juiz + Usuário", "justificativa": "Origem do vírus; NIH no exterior; comparação internacional." },
+    { "cadeira": "Filósofo Pluralista", "status": "Convocada", "origem": "Juiz + Usuário", "justificativa": "Autoridade científica sob incerteza." },
+    { "cadeira": "O Formulador", "status": "Convocada", "origem": "Juiz + Usuário", "justificativa": "Revisão das propostas da S-001." }
+  ],
+
+  "achados": [
+    { "titulo": "A vacina protegeu contra morrer", "texto": "Contra doença grave e morte, proteção alta, que cai com o tempo (meta-análise, nível A). Contra pegar e transmitir, proteção modesta e curta: \"vacinados não carregam o vírus\" caiu com a Delta.", "selo": "comprovado" },
+    { "titulo": "Efeitos graves raros são reais", "texto": "Miocardite após mRNA em rapazes (cerca de 56 por milhão com Pfizer e 184 com Moderna) e trombose com AstraZeneca e Janssen. As alegações de mortes em massa e \"turbo câncer\" não se sustentaram.", "selo": "adverso" },
+    { "titulo": "Cloroquina e ivermectina não funcionaram", "texto": "Ensaios grandes e concordantes, inclusive brasileiros, sem benefício. Estudos retratados houve dos dois lados, mas quem decide são os ensaios.", "selo": "sem_efeito" },
+    { "titulo": "Origem do vírus segue em aberto", "texto": "Agências dos EUA e o BND pendem para laboratório, com confiança baixa ou moderada; a OMS pende para o animal. A China não entregou dados-chave.", "selo": "indeterminado" },
+    { "titulo": "Fauci: investigado, não réu", "texto": "Perdão preventivo nunca testado; prazo para acusar o depoimento de 11/05/2021 vencido sem acusação; desacato com o DOJ. A negativa sobre \"ganho de função\" foi ENGANOSA; \"criou o vírus\" é FALSO.", "selo": "indeterminado" },
+    { "titulo": "Corrupção: o mesmo padrão em todos os partidos", "texto": "Dispensa de licitação, intermediário sem histórico e pagamento antecipado sem garantia. No Brasil, nenhuma condenação penal definitiva localizada; o resultado veio por ações civis, tribunais de contas e impeachment.", "selo": "adverso" }
+  ],
+
+  "grafico": {
+    "titulo": "Mortes por Covid no Brasil, por ano (2020–2024)",
+    "unidade": "mil mortes",
+    "y_min": 0,
+    "y_max": 450,
+    "fonte": "Ministério da Saúde (óbitos notificados; 2021 derivado do acumulado). Em 2025, a série passou para a vigilância de SRAG (~1,7 mil) e não é comparável.",
+    "marco": { "ano": 2023, "rotulo": "Troca de governo federal" },
+    "series": [
+      { "nome": "Óbitos por Covid notificados no ano", "papel": "principal", "pontos": [[2020,193.9],[2021,425,"a_verificar"],[2022,74.8],[2023,14.8],[2024,6.0]] }
+    ],
+    "nota": "Eixo vertical começa em zero. A queda depois de 2022 acompanha a tendência mundial (Ômicron e imunidade híbrida). O excesso de mortes de longo prazo está em disputa entre fontes."
+  },
+
+  "fatos_estabelecidos": [
+    { "texto": "Óbitos por Covid notificados: 74.797 (2022), 14.785 (2023), 5.959 (2024); cerca de 1.700 em 2025 pela vigilância de SRAG, com quebra de série em set/2025. Total acumulado ≈716 mil [A VERIFICAR — painel do Ministério da Saúde].", "fonte": "Ministério da Saúde/Agência Gov; InfoGripe/Fiocruz; Poder360", "confianca": "Alta" },
+    { "texto": "Adultos com 4 doses: 14,9% (início de 2024). Esquema completo de 6 meses a 2 anos: 6,3% (fev/2024), depois da entrada no Calendário Nacional (01/01/2024). 15 de 16 vacinas infantis de rotina subiram em 2024 (preliminar).", "fonte": "Fiocruz/Observa Infância; Ministério da Saúde", "confianca": "Alta" },
+    { "texto": "Doses vencidas: mais de 28 milhões dos contratos de 2021–2022, cerca de R$ 1,2 bi, 23,7 milhões nos municípios (TCU, out/2023); cerca de 4,2 milhões de 12,5 milhões de doses Moderna XBB (2024). Os 58,7 milhões atribuídos a 2023–2024 estão [A VERIFICAR].", "fonte": "TCU via Agência Brasil; Jornal de Brasília", "confianca": "Alta" },
+    { "texto": "Pobreza: 36,7% (2021), 31,6% (2022), 23,1% (2024); extrema pobreza de 9,0% para 3,5%. Saeb 2025: anos iniciais acima de 2019; Criança Alfabetizada de 56% (2023) para 66% (2025).", "fonte": "IBGE/SIS; INEP", "confianca": "Alta" },
+    { "texto": "Vacinas contra doença grave: efetividade acima de 70% na maioria das estimativas, com queda no tempo (nível A). Contra infecção: de 92% para 23% após 7 meses (nível C). Transmissão domiciliar na era Delta: 25% a partir de vacinados × 38% de não vacinados.", "fonte": "Feikin, Lancet 2022; Nordström, Lancet 2022; Singanayagam, Lancet ID 2021", "confianca": "Alta" },
+    { "texto": "Miocardite após mRNA em homens de 16–24 anos: cerca de 56 casos a mais por milhão (Pfizer) e 184 (Moderna); FDA ampliou o alerta em 2025. VITT: 3,2–16,1 por milhão de doses (AstraZeneca), 1,7–3,7 (Janssen).", "fonte": "Karlstad, JAMA Cardiology 2022; FDA 2025; revisões de vigilância", "confianca": "Alta" },
+    { "texto": "Hidroxicloroquina sem benefício (RECOVERY 1,09; SOLIDARITY 1,19; Coalizão I). Ivermectina sem benefício relevante (TOGETHER, ACTIV-6, COVID-OUT, PRINCIPLE); sem estudos suspeitos, RR 0,96 (0,56–1,66). Dexametasona (0,64 em ventilados), tocilizumabe (0,85) e baricitinibe (0,87) reduziram mortes.", "fonte": "NEJM, Lancet, OFID (Hill revisado)", "confianca": "Alta" },
+    { "texto": "Máscara cirúrgica reduziu cerca de 11% (Bangladesh, nível B, com crítica de amostragem); pano sem efeito significativo; sem ensaio randomizado em crianças. Escolas suecas abertas: risco de professores dobrou (OR 2,01).", "fonte": "Abaluck, Science 2022; Vlachos, PNAS 2021; Sandlund/Høeg 2024", "confianca": "Média" },
+    { "texto": "Fauci: perdão preventivo de Biden (19/01/2025) para crimes federais de 2014 até essa data, nunca testado na Justiça; prazo para acusar o depoimento de 11/05/2021 venceu em 11/05/2026 sem acusação; invocou a 5ª Emenda em 29/07/2026; uma comissão do Senado enviou o desacato ao DOJ em 06/08/2026; investigado pelo FBI/DOJ segundo o NYT e por FL, LA e AL (anúncios). Ex-assessor David Morens confessou culpa (18/08/2026), sentença em 12/11/2026; Fauci não é citado.", "fonte": "presidency.ucsb.edu; DOJ; HSGAC; CNN, NBC, CBS, NPR, Science, NYT", "confianca": "Alta" },
+    { "texto": "Brasil: Witzel (PSC à época) e Wilson Lima (PSC à época) são réus no STJ sem sentença; denúncia contra 11 pessoas da Precisa (Covaxin) suspensa antes do recebimento; Rui Costa (PT) investigado, sem denúncia; casos do então presidente (Covaxin, cartão de vacina), de Ricardo Barros (PP), Carlos Moisés (PSL à época) e Chico Rodrigues (DEM à época) arquivados. Nenhuma condenação penal definitiva localizada.", "fonte": "STF, STJ, TRF-1, PF, MPF; imprensa", "confianca": "Média" },
+    { "texto": "Exterior: Ábalos e Koldo García (governo PSOE, Espanha) com condenação definitiva; Arcuri (Itália) absolvido porque o crime foi abolido; PPE Medpro (Reino Unido) condenada no cível a £122 mi e não pagou; Inquiry britânico estima ~£10 bi desperdiçados em EPI, sem evidência de cronyism.", "fonte": "Tribunal Supremo; GUP de Roma; High Court; UK Covid Inquiry, Módulo 5", "confianca": "Alta" }
+  ],
+
+  "fatos_em_disputa": [
+    { "questao": "Qual o excesso de mortes no Brasil em janelas longas?", "posicoes": ["Estudo com dados do MS: ~629 mil em 2020–2021, razão ~1,0 sobre os óbitos oficiais.", "Painel Conass/Vital Strategies: ~1,14 milhão até jan/2023 (~443 mil acima do oficial).", "As duas não fecham: o Registro Civil de 2022 ficou só ~210 mil óbitos acima de 2019, no bruto."], "resolveria": "Excesso por causa básica no SIM com linha de base padronizada por idade, o método do painel, ou o recorte brasileiro da OMS 2020–2023 [A VERIFICAR]." },
+    { "questao": "A fala de Fauci sobre máscaras (08/03/2020) foi correta ou omitiu o motivo?", "posicoes": ["Conteúdo alinhado ao guia da época e próximo dos ensaios posteriores para a máscara comum.", "Omitiu publicamente a escassez como motivo real."], "resolveria": "Transcrição da justificativa de jun/2020 (TheStreet, não lida) e os e-mails de fev/2020 completos." },
+    { "questao": "Qual governo deixou vencer mais vacinas?", "posicoes": ["TCU: 28 milhões de doses dos contratos de 2021–2022.", "Imprensa com viés declarado: 58,7 milhões em 2023–2024, sem saber se inclui só Covid."], "resolveria": "Auditoria do TCU de 2023–2024 com o mesmo universo de vacinas e em valores reais." },
+    { "questao": "De onde veio o vírus?", "posicoes": ["Laboratório: FBI (moderada), DOE, CIA e BND (baixa ou sem prova); Academia de Medicina francesa.", "Zoonose: SAGO/OMS e maioria das agências dos EUA (baixa); estudos do mercado (nível D, com críticas)."], "resolveria": "Sequências virais dos primeiros casos, registros dos laboratórios de Wuhan e dados do mercado, que a China não entregou." },
+    { "questao": "Quanto os lockdowns estritos reduziram mortes?", "posicoes": ["Flaxman: milhões de mortes evitadas (modelo).", "Herby, Hanke e Jonung: 0,2% a 3,2% (meta-análise contestada)."], "resolveria": "Mesma grade de risco de viés (GRADE) aplicada aos estudos, lado a lado." }
+  ],
+
+  "resultados": [
+    { "acao": "Vacinas contra Covid", "indicador": "Doença grave e morte", "efeito": "Proteção alta, que diminui com o tempo", "selo": "comprovado", "evidencia": "A", "confianca": "Alta" },
+    { "acao": "Vacinas contra Covid", "indicador": "Infecção e transmissão", "efeito": "Proteção modesta e de curta duração", "selo": "provavel", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Vacinas de mRNA", "indicador": "Miocardite em homens jovens", "efeito": "Rara (cerca de 56 por milhão com Pfizer e 184 com Moderna, homens de 16–24 anos, 2ª dose)", "selo": "adverso", "evidencia": "C, replicada e reconhecida pela FDA", "confianca": "Alta" },
+    { "acao": "Vacinas de vetor viral (AstraZeneca, Janssen)", "indicador": "Trombose com plaquetas baixas", "efeito": "Rara, mas grave", "selo": "adverso", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Máscara cirúrgica na comunidade", "indicador": "Infecção", "efeito": "Efeito pequeno (~11%)", "selo": "provavel", "evidencia": "B", "confianca": "Média" },
+    { "acao": "Máscara de pano na comunidade", "indicador": "Infecção", "efeito": "Sem efeito detectável", "selo": "sem_efeito", "evidencia": "B", "confianca": "Média" },
+    { "acao": "Máscara em crianças nas escolas", "indicador": "Transmissão", "efeito": "Sem ensaio randomizado", "selo": "indeterminado", "evidencia": "C/D", "confianca": "Baixa" },
+    { "acao": "Lockdown estrito × medidas leves", "indicador": "Mortalidade", "efeito": "Efeito incremental em disputa", "selo": "indeterminado", "evidencia": "C/modelo", "confianca": "Baixa" },
+    { "acao": "Fechamento prolongado de escolas (Brasil)", "indicador": "Aprendizagem", "efeito": "~1 ano de aprendizado perdido na rede pública em 2021; recuperação média até 2025", "selo": "adverso", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Hidroxicloroquina", "indicador": "Mortalidade; segurança", "efeito": "Sem benefício na mortalidade; mais progressão para ventilação ou morte no RECOVERY e mais alterações de QT e fígado na Coalizão I", "selo": "sem_efeito", "evidencia": "A / B", "confianca": "Alta / Média" },
+    { "acao": "Ivermectina", "indicador": "Internação e morte", "efeito": "Sem benefício clinicamente relevante", "selo": "sem_efeito", "evidencia": "A", "confianca": "Alta" },
+    { "acao": "Dexametasona, tocilizumabe, baricitinibe", "indicador": "Mortalidade em internados com oxigênio", "efeito": "Redução de mortes", "selo": "comprovado", "evidencia": "A", "confianca": "Alta" },
+    { "acao": "CPAP e prona com paciente acordado", "indicador": "Intubação; morte", "efeito": "Menos intubação; mortalidade sem diferença", "selo": "provavel", "evidencia": "A−/B", "confianca": "Média" },
+    { "acao": "Recomendação federal de tratamento precoce (MS e TrateCov, 2020–21)", "indicador": "Qualidade da orientação oficial; uso de recursos do SUS", "efeito": "Promoveu remédios sem eficácia; efeito sobre mortes não medido", "selo": "adverso", "evidencia": "A (remédios) / I (atos)", "confianca": "Alta" },
+    { "acao": "Mudança de recomendação sem o ACIP e contra os técnicos do FDA (HHS/Kennedy, 2025)", "indicador": "Processo técnico de decisão", "efeito": "Suspensa por liminar (AAP v. Kennedy, 16/03/2026); efeito sobre a cobertura não medido", "selo": "adverso", "evidencia": "I (atos)", "confianca": "Alta" },
+    { "acao": "Vacina Covid no Calendário infantil (2024)", "indicador": "Cobertura", "efeito": "Esquema completo em 6,3% das crianças de 6 meses a 2 anos", "selo": "adverso", "evidencia": "D", "confianca": "Média" },
+    { "acao": "Doses vencidas (2021–2022 e 2023–2024)", "indicador": "Uso de recursos", "efeito": "~R$ 1,2 bi (TCU); 4,2 mi doses XBB", "selo": "adverso", "evidencia": "I", "confianca": "Alta / Média" },
+    { "acao": "Transferências de renda (2022 e 2023–2024)", "indicador": "Pobreza", "efeito": "Quedas da pobreza dependentes de transferência, nos dois governos", "selo": "provavel", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Queda de óbitos por Covid (2023–2025)", "indicador": "Mortalidade", "efeito": "Acompanha a tendência mundial", "selo": "mare", "evidencia": "C", "confianca": "Média" },
+    { "acao": "Compras emergenciais (todos os entes e países)", "indicador": "Uso de recursos", "efeito": "Pagamentos sem entrega; intermediários; pouca recuperação", "selo": "adverso", "evidencia": "I–II", "confianca": "Alta" },
+    { "acao": "Divisão de mortes ou culpa entre esferas e pessoas", "indicador": "—", "efeito": "Nenhum estudo permite", "selo": "indeterminado", "evidencia": "—", "confianca": "—" }
+  ],
+
+  "linha_do_tempo": [
+    { "data": "jan–fev/2022", "evento": "IFA nacional da Fiocruz registrado (acordo de 2021)", "ator": "Governo Bolsonaro, Fiocruz", "tipo": "implementacao" },
+    { "data": "jul/2022", "evento": "PGR pede arquivamento de 7 das apurações derivadas da CPI", "ator": "PGR (gestão Aras)", "tipo": "aprovacao" },
+    { "data": "jan/2023", "evento": "Troca de governo federal", "ator": "Eleições de 2022", "tipo": "externo" },
+    { "data": "out/2023", "evento": "TCU aponta 28 milhões de doses vencidas (contratos de 2021–2022)", "ator": "TCU", "tipo": "efeito" },
+    { "data": "jan/2024", "evento": "Vacina Covid entra no Calendário infantil", "ator": "Governo Lula", "tipo": "implementacao" },
+    { "data": "2024", "evento": "Doses XBB vencem; estudo de Raoult retratado", "ator": "Ministério da Saúde; Elsevier", "tipo": "efeito" },
+    { "data": "jan/2025", "evento": "Perdão a Fauci; CIA divulga avaliação; EcoHealth sofre sanção", "ator": "Presidência dos EUA; CIA; HHS", "tipo": "externo" },
+    { "data": "mar/2025", "evento": "Cartão de vacina arquivado para o ex-presidente", "ator": "STF, a pedido da PGR", "tipo": "aprovacao" },
+    { "data": "mai/2025", "evento": "Gestão Kennedy muda recomendações sem o ACIP", "ator": "HHS (EUA)", "tipo": "externo" },
+    { "data": "jun/2025", "evento": "Relatório do SAGO sobre a origem", "ator": "OMS", "tipo": "externo" },
+    { "data": "set/2025", "evento": "Inquérito da PF sobre as conclusões da CPI (Pet 10.064)", "ator": "STF (Min. Dino)", "tipo": "aprovacao" },
+    { "data": "mar/2026", "evento": "Liminar suspende novo calendário e novo ACIP nos EUA", "ator": "Justiça Federal (EUA)", "tipo": "externo" },
+    { "data": "mai/2026", "evento": "Vence o prazo para acusar Fauci pelo depoimento de 11/05/2021, sem acusação; Lei 15.406 (Dia das Vítimas)", "ator": "DOJ; Congresso", "tipo": "efeito" },
+    { "data": "ago/2026", "evento": "Morens confessa culpa; comissão do Senado envia desacato de Fauci ao DOJ", "ator": "Justiça Federal (MD); HSGAC", "tipo": "efeito" },
+    { "data": "out/2026", "evento": "Fachin consulta a PGR; condenação de Ábalos fica definitiva na Espanha", "ator": "STF; Tribunal Supremo", "tipo": "efeito" }
+  ],
+  "atribuicao": "A queda dos óbitos por Covid depois de 2022 é maré mundial. As doses vencidas são falha das duas gestões federais e dos municípios. A recuperação da aprendizagem é medida nas redes estaduais e municipais, com mérito por gestão [A VERIFICAR]; a da vacinação de rotina é compartilhada entre União e municípios. As quedas de pobreza dependem de transferências dos dois governos. A falta de pensão para órfãos é omissão do Congresso e dos Executivos desde 2021.",
+
+  "quem_responde": [
+    { "esfera": "União", "papel": "Compra de vacinas e Calendário Nacional; doses vencidas no almoxarifado; orientação clínica; investigação (PF, PGR, CGU, TCU)." },
+    { "esfera": "Estado", "papel": "Redes de ensino médio; distribuição de vacinas; compras emergenciais de 2020–21 com casos em todos os partidos." },
+    { "esfera": "Município", "papel": "Aplicação de vacinas (23,7 milhões de doses vencidas em 2021–22); redes de anos iniciais e alfabetização." }
+  ],
+  "matriz_federativa": [
+    { "dimensao": "Vacinação pós-2022", "uniao": "Compra, Calendário Nacional, doses vencidas no almoxarifado", "estado": "Distribuição; 2,3 mi doses vencidas (2021–22)", "municipio": "Aplicação; 23,7 mi doses vencidas (2021–22)", "obs": "TCU, out/2023" },
+    { "dimensao": "Recuperação educacional", "uniao": "Avaliações (INEP) e programas", "estado": "Redes estaduais", "municipio": "Redes municipais (anos iniciais, alfabetização)", "obs": "Destaques do Ideb 2025: PR, CE, GO" },
+    { "dimensao": "Compras emergenciais (2020–21)", "uniao": "Covaxin (cancelada), cloroquina do Exército", "estado": "Respiradores (AM, PA, SC, BA/Consórcio, SP), OS no RJ, testes no DF", "municipio": "Respiradores (Recife, Fortaleza)", "obs": "Lei 13.979, art. 4º" },
+    { "dimensao": "Investigação e punição", "uniao": "PF, MPF, PGR, CGU, TCU, STF, STJ", "estado": "Polícia Civil, MPs, TCEs, TJs, assembleias (impeachment)", "municipio": "Câmaras, tribunais de contas municipais", "obs": "Troca de foro e prova anulada atrasam" },
+    { "dimensao": "Responsabilização política", "uniao": "Eleições de 2022 e 2026", "estado": "Impeachment (RJ: governador afastado em definitivo, 2021; SC: absolvido, 2021)", "municipio": "Eleições de 2024", "obs": "" }
+  ],
+
+  "forcas": [
+    { "ator": "Intermediários de compras (Hempcare, Precisa, PPE Medpro, comissionados na Alemanha)", "interesse_declarado": "Fornecer insumos", "interesse_provavel": "Lucro em compra sem concorrência", "ganha_perde": "Comissões (~R$ 12 mi na Hempcare; €660 mil e €1,2 mi na Alemanha)", "mecanismo": "Dispensa de licitação; pagamento antecipado", "evidencia": "I–II", "transparencia": "Baixa" },
+    { "ator": "Farmacêuticas", "interesse_declarado": "Vender vacinas e remédios", "interesse_provavel": "Contratos e preço", "ganha_perde": "Contratos bilionários", "mecanismo": "Negociação; estudos financiados", "evidencia": "I", "transparencia": "Média" },
+    { "ator": "Autores de estudos pró-tratamento precoce", "interesse_declarado": "Ciência", "interesse_provavel": "Também reputação e ganho", "ganha_perde": "—", "mecanismo": "Publicação; conflito omitido em Itajaí", "evidencia": "II", "transparencia": "Baixa" },
+    { "ator": "NIH/NIAID e EcoHealth", "interesse_declarado": "Pesquisa", "interesse_provavel": "Financiamento de pesquisa de risco com pouca supervisão", "ganha_perde": "EcoHealth punida; Morens confessou", "mecanismo": "Bolsas e subcontratos (Wuhan)", "evidencia": "I", "transparencia": "Baixa (royalties do NIH opacos)" },
+    { "ator": "Governo dos EUA (2025–26)", "interesse_declarado": "Transparência sobre a origem; segurança", "interesse_provavel": "Também disputa com a China e com adversários internos", "ganha_perde": "—", "mecanismo": "Página \"Lab Leak\"; EO 14292; investigações", "evidencia": "I (atos) / III (motivo)", "transparencia": "Média" },
+    { "ator": "Governo da China", "interesse_declarado": "Soberania", "interesse_provavel": "Evitar responsabilização", "ganha_perde": "—", "mecanismo": "Reteve dados; livro branco sem prova sobre os EUA", "evidencia": "I (retenção) / V (alegação)", "transparencia": "Baixa" },
+    { "ator": "Campos políticos no Brasil (2026)", "interesse_declarado": "Memória; liberdade", "interesse_provavel": "Voto", "ganha_perde": "—", "mecanismo": "Filme grátis em período eleitoral e Lei 15.406, de um lado; PL 1978/2026 e PDLs contra a vacina infantil, de outro", "evidencia": "I (atos) / III (motivo)", "transparencia": "Média" }
+  ],
+  "hipoteses": [
+    { "texto": "Ganho comercial com cloroquina e ivermectina durante a recomendação oficial.", "confirmaria": "Dados de vendas na Anvisa/CMED." },
+    { "texto": "Experimentos da DEFUSE feitos com outro dinheiro.", "confirmaria": "Registros do Instituto de Virologia de Wuhan." },
+    { "texto": "Financiamento de produtores de desinformação e de contra-desinformação.", "confirmaria": "Registros de doadores." }
+  ],
+  "polarizacao": "Nos dois países, os dois campos transformam a pandemia em voto. Um lado transforma perdão, arquivamento e cenários de modelo em \"prova de culpa\"; o outro transforma perdão e arquivamento em \"prova de perseguição\". Nenhum dos dois é o que o processo diz.",
+
+  "vertentes": [
+    { "nome": "Quem defendeu as medidas e as autoridades sanitárias", "acerta": "Vacinas, corticoide e ensaios grandes salvaram vidas; o sistema científico se corrigiu em público.", "erra": "Vendeu convenções sem ensaio como \"ciência\" e promessas que caíram; minimizou eventos raros e o custo das escolas; tratou o vazamento como \"teoria da conspiração\"." },
+    { "nome": "Quem criticou as medidas e as autoridades", "acerta": "Máscaras de pano e em crianças, custo das escolas, transmissão por vacinados, vazamento plausível, opacidade.", "erra": "Defendeu cloroquina e ivermectina contra ensaios grandes; espalhou dano em massa das vacinas com estudos retratados; trata laboratório como provado e Fauci como autor do vírus. Peso: esses erros foram contra evidência de nível A." },
+    { "nome": "Garantistas", "acerta": "Prova anulada, prescrição e devido processo protegem todos.", "erra": "Não respondem ao custo de impunidade quando quase nenhum caso chega ao fim." },
+    { "nome": "Quem prioriza a punição rápida da corrupção", "acerta": "As compras emergenciais repetiram fraude em todos os partidos.", "erra": "Trata arquivamento como blindagem e denúncia como condenação." }
+  ],
+
+  "valores": [
+    { "polo_a": "Comunicar com franqueza total", "polo_b": "Simplificar para obter adesão", "custo_a": "Confusão e menor adesão no curto prazo", "custo_b": "Quando a simplificação cai, a desconfiança contamina também o que era verdadeiro", "comentario": "Os dados não decidem; é escolha de valor." },
+    { "polo_a": "Proteção coletiva (mandato, multa da vacina infantil)", "polo_b": "Autonomia individual", "custo_a": "Coerção sobre famílias e perda de confiança", "custo_b": "Cobertura baixa (6,3%) e mais exposição de crianças e idosos", "comentario": "" },
+    { "polo_a": "Punir rápido", "polo_b": "Garantir o processo", "custo_a": "Condenar inocentes e anular processos", "custo_b": "Impunidade de fato", "comentario": "" },
+    { "polo_a": "Perdão preventivo como proteção contra perseguição", "polo_b": "Perdão preventivo como obstáculo à apuração", "custo_a": "Fecha a apuração antes do juízo", "custo_b": "Expõe a investigações dirigidas", "comentario": "" }
+  ],
+
+  "conflitos": [
+    { "tema": "Excesso de mortes", "lado_1": "Guardião: corrigir a S-001 para razão ~1,6 pelo painel do Conass.", "lado_2": "Dez revisores: o número não fecha com o próprio Dossiê.", "decidiria": "Excesso por causa básica no SIM com linha de base padronizada.", "posicao_juiz": "Fica com os revisores. Razão de 2020–2021 (~1,0) documentada; janela longa como faixa de 1,0 a 1,6 [A VERIFICAR]. O FALSO para \"o lockdown matou mais que o vírus\" se mantém: o excesso não atribuído à Covid é um teto para o efeito líquido das medidas, muito abaixo dos óbitos por Covid." },
+    { "tema": "Fala de Fauci sobre máscaras", "lado_1": "Saúde Pública: o conteúdo ficou perto dos ensaios.", "lado_2": "Filósofo: engano bem-intencionado.", "decidiria": "Fonte primária de jun/2020 e e-mails de fev/2020.", "posicao_juiz": "Dois selos: conteúdo VERDADEIRO, MAS INCOMPLETO; franqueza com falha de comunicação, intenção de enganar não verificável. Mesma linguagem para Fauci, CDC, o Ministério da Saúde brasileiro com a cloroquina e Kennedy sem o ACIP." },
+    { "tema": "\"Fauci é inocente, tudo perseguição\" × \"foi perdoado porque é culpado\"", "lado_1": "Um parecer deu selos diferentes às duas frases.", "lado_2": "Revisores: mesma régua.", "decidiria": "—", "posicao_juiz": "As duas recebem NÃO VERIFICÁVEL: nenhum juízo declarou culpa ou inocência." },
+    { "tema": "Doses vencidas no governo Lula", "lado_1": "⚠️ pelos 58,7 milhões.", "lado_2": "Fonte com viés declarado.", "decidiria": "Auditoria do TCU de 2023–2024.", "posicao_juiz": "⚠️ apoiado só no lote XBB (fato); os 58,7 milhões ficam [A VERIFICAR]." },
+    { "tema": "Herby × Flaxman", "lado_1": "Pôr os dois em pé de igualdade.", "lado_2": "Rebaixar Herby a nível C.", "decidiria": "GRADE aplicado aos dois.", "posicao_juiz": "Os dois são frágeis; o efeito do lockdown estrito fica indeterminado. Vínculo ideológico não substitui crítica de método." }
+  ],
+
+  "propostas": [
+    { "titulo": "Lei de Prontidão Sanitária, com cláusula de troca de doses", "origem": "Encomenda tecnológica Fiocruz e parceria Butantan; troca de lotes que recuperou R$ 252 mi (afirmação oficial); perdas apuradas pelo TCU", "custo": "[A VERIFICAR — Tesouro]", "implementacao": "Autorização prévia para compra antecipada em carteira; cláusula obrigatória de troca perto do vencimento", "metrica": "Percentual de doses vencidas por ano", "criterio": "Rever se a perda não cair em 2 anos" },
+    { "titulo": "Alerta federativo com resposta em 24 horas", "origem": "Lição de Manaus (jan/2021)", "custo": "Baixo [A VERIFICAR]", "implementacao": "Protocolo público de resposta da direção nacional do SUS", "metrica": "Tempo médio de resposta a alertas", "criterio": "Rever se o prazo for descumprido em mais de 10% dos alertas" },
+    { "titulo": "Regra de evidência e registro público de mudanças", "origem": "GRADE e Conitec; liminar AAP v. Kennedy; correções do CDC e da OMS", "custo": "Baixo", "implementacao": "Toda orientação declara nível de evidência, o que não se sabe, o motivo (sem apresentar razão logística como científica) e quando será revista; mudanças em registro público datado", "metrica": "Dias entre evidência nova e revisão", "criterio": "Rever se atrasar resposta urgente em mais de 14 dias" },
+    { "titulo": "Compras emergenciais com garantia e recuperação", "origem": "SIU (governo ANC, África do Sul); ações cíveis britânicas (governo conservador)", "custo": "[A VERIFICAR]", "implementacao": "Antecipação só com garantia ou conta vinculada; intermediário só com mandato do fabricante; unidade de recuperação civil na AGU/CGU; painel trimestral CNJ/CNMP com degrau, esfera, valor e recuperação de cada caso", "metrica": "Valor recuperado sobre prejuízo apurado", "criterio": "Rever se o prazo de compra subir mais de 30% sem queda de perdas" },
+    { "titulo": "Escolas como serviço essencial, com recomposição", "origem": "Evidência sobre perdas de aprendizagem", "custo": "[A VERIFICAR]", "implementacao": "Últimas a fechar e primeiras a reabrir; metas de recomposição com grupo de comparação", "metrica": "Indicador Criança Alfabetizada por rede", "criterio": "Rever se estagnar por dois ciclos" },
+    { "titulo": "Compensação sem culpa por evento adverso grave de vacina", "origem": "VDPS (Reino Unido) e CICP (EUA), evitando seus defeitos; conferir se a Lei 14.125/2021 já cobre [A VERIFICAR]", "custo": "[A VERIFICAR], com teto baixo (eventos raros)", "implementacao": "Tabela de eventos (VITT, miocardite), decisão em até 6 meses, valor proporcional ao dano", "metrica": "Tempo até a decisão", "criterio": "Rever se passar de 12 meses" },
+    { "titulo": "Pesquisa de risco e transparência", "origem": "Falhas do P3CO (EcoHealth fora do painel); caso Morens", "custo": "Baixo", "implementacao": "Registro público de projetos com patógeno pandêmico, inclusive subcontratos no exterior; comitê externo; royalties e conflitos publicados; e-mail pessoal proibido para assunto oficial", "metrica": "Percentual de projetos registrados; pedidos de LAI no prazo", "criterio": "Rever se a carga burocrática fizer cair projetos legítimos" },
+    { "titulo": "Pensão para órfãos da Covid", "origem": "Proposta da transição de 2022; projetos de 2021 parados", "custo": "Estimativa da IFI antes da votação [A VERIFICAR]", "implementacao": "Benefício a órfãos inscritos no CadÚnico, identificados de ofício (SIM × Registro Civil × CadÚnico)", "metrica": "Frequência escolar, trabalho infantil, insegurança alimentar (grupo de comparação)", "criterio": "Avaliação independente em 3 anos" }
+  ],
+
+  "pareceres": [
+    { "cadeira": "Saúde Pública e Epidemiologia", "resumo": "Vacinas: ✅ contra doença grave, proteção modesta contra infecção, ⚠️ para miocardite e VITT; alegações de dano em massa não demonstradas. Cloroquina e ivermectina sem benefício (A). Dexametasona, tocilizumabe e baricitinibe reduziram mortes. Pede dados de óbitos por situação vacinal.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Analista de Políticas Sociais", "resumo": "Óbitos em queda por maré; cobertura infantil baixa; doses vencidas nos dois governos; recuperação educacional nas redes subnacionais; pobreza em queda com transferências dos dois governos; escola pública fechada por mais tempo que a privada; nenhuma pensão para órfãos.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Jurista Constitucional e Federativo", "resumo": "Separa impeachment, improbidade, contas e penal, com o motivo de cada arquivamento. Corrige a S-001 sobre Manaus e acrescenta a denúncia suspensa da Precisa e os inquéritos contra o ex-presidente. Fauci: perdão vigente, prazo vencido, desacato pendente.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Cientista Político Institucional", "resumo": "Poucas condenações por foro, lei mudada, delação sem corroboração e PGR como porteiro, em todos os partidos. Perdão preventivo e investigação dirigida corroem a mesma norma de contenção. O freio às mudanças sem o ACIP veio do Judiciário.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Economista Empírico", "resumo": "Separa contratado, prejuízo e recuperado. O custo dominante é desperdício e sobrepreço de emergência, mais que desvio provado. Quedas da pobreza dependem de transferências nos dois governos.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Investigador de Forças e Interesses", "resumo": "Mesmo padrão de compras em governos de quase todos os partidos e países; quem mais lucrou foi o intermediário. Conflitos de interesse dos dois lados nas controvérsias científicas. Os dois campos convertem a pandemia em voto.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Geoestrategista", "resumo": "Origem indeterminada: avaliações de Estado sem dados, estudos com falhas, e a China retém o dado decisivo. Influência de Fauci sobre o Brasil não verificável. Baixa punição penal é padrão mundial.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Guardião do Método", "resumo": "Retratações dos dois lados; o que decide são os ensaios. Lista o que resiste e o que não resiste, de críticos e de autoridades. Confirma 2022 (74.797) e 2023 (14.785). A correção do excesso que propôs foi rejeitada pelos revisores por conflito de fontes.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "Filósofo Pluralista", "resumo": "Errar sob incerteza não é enganar; certeza acima da prova foi vício dos dois lados. A justificativa posterior sobre máscaras não passou no teste de publicidade. Perdão preventivo não é inocência nem culpa.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "O Cidadão", "resumo": "Frases do grupo de família com selo e espelho; o que cada família precisa ouvir da outra; glossário; texto de 30 segundos.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." },
+    { "cadeira": "O Formulador", "resumo": "Mantém três propostas da S-001, amplia duas e cria compensação sem culpa por evento adverso e regras para pesquisa de risco e conflito de interesse.", "confianca": "Média", "sinal_invertido": "Feito. Nada mudou." }
+  ],
+
+  "isonomia": [
+    { "item": "Teste do sinal invertido", "status": "APROVADO", "nota": "Refeito pelo Auditor nos quatro blocos; selos centrais mantidos." },
+    { "item": "Vocabulário carregado", "status": "AJUSTADO", "nota": "\"Lavajatista\" com as duas nomenclaturas; \"condenado\" trocado por \"afastado em definitivo\" no impeachment." },
+    { "item": "Rigor simétrico", "status": "AJUSTADO", "nota": "Crítica de método também para Flaxman e Bangladesh; Kennedy sem o ACIP ganhou linha própria; dano da cloroquina em mortes como não medido." },
+    { "item": "Janela e base", "status": "AJUSTADO", "nota": "Omissão sobre órfãos desde 2021 para os dois Executivos e o Congresso." },
+    { "item": "Fontes", "status": "AJUSTADO", "nota": "Painel do Conass como dado em disputa; 58,7 milhões de doses como [A VERIFICAR]." },
+    { "item": "Omissão", "status": "AJUSTADO", "nota": "Incluídos casos de PSB, PDT, PSDB, DEM, CDU, PP, Áñez, ANC e Duterte; afirmações desfavoráveis a Fauci; academias francesas e dissenso do SAGO." },
+    { "item": "Falso equilíbrio", "status": "AJUSTADO", "nota": "A resposta curta diz que os erros dos dois lados não têm o mesmo peso de evidência." },
+    { "item": "Neutralidade covarde", "status": "APROVADO", "nota": "A Sentença conclui onde a evidência permite." },
+    { "item": "Adesão ao usuário", "status": "APROVADO", "nota": "Premissas sobre Fauci corrigidas sem concessão e sem hostilidade." },
+    { "item": "Precedente", "status": "AJUSTADO", "nota": "A S-002 diz que a S-001 errou sobre Manaus e lista o que muda." },
+    { "item": "P13 — estado processual", "status": "AJUSTADO", "nota": "Comissão do Senado (não o Senado); data exata do depoimento; Morens com ressalva de que Fauci não é citado." },
+    { "item": "Convocação isenta", "status": "APROVADO", "nota": "Todas as cadeiras convocadas, a pedido do usuário." }
+  ],
+  "precedentes": ["S-001 (19/10/2026) — aplicada e corrigida: Manaus foi rejeitada sem mérito, não julgada improcedente; omitidos o inquérito da Pet 10.064 e a denúncia da Precisa; razão de excesso válida só para 2020–2021; ⚠️ dos eventos raros acrescentados; conclusão central mantida."],
+
+  "ferramenta": {
+    "nome": "Placar de retratações (e \"o processo prova o que eu já pensava\")",
+    "como_reconhecer": "Retratação mede a integridade de um estudo, não o efeito do tratamento; arquivamento, perdão ou prescrição medem o processo, não a culpa nem a inocência. Pergunte: o que decide a questão é o melhor ensaio ou o estudo que caiu? O processo terminou com juízo de mérito ou parou antes?",
+    "exemplos": ["\"O estudo dos 17 mil mortos por cloroquina foi retratado, então a cloroquina funcionava\": não, os ensaios RECOVERY e SOLIDARITY decidem.", "\"Fauci foi perdoado, então é culpado\" e \"o caso foi arquivado, então era perseguição\": nenhum dos dois é o que o processo diz."]
+  },
+  "pergunta_mesa": "Que afirmação vocês fizeram com certeza durante a pandemia e que hoje, olhando os dados, fariam com menos certeza? E qual mantêm?",
+  "proximo_passo": "Peça ao Ministério da Saúde, pela Lei de Acesso à Informação, os óbitos por Covid de 2023 a 2025 por situação vacinal e idade: é o dado que falta para encerrar boa parte da discussão de hoje.",
+  "gatilho_revisao": "Recorte brasileiro do excesso 2020–2023 da OMS; resposta da PGR a Fachin; conclusão do inquérito da Pet 10.064; decisão do DOJ sobre o desacato de Fauci; sentença de Morens (12/11/2026); decisão do 1º Circuito em AAP v. Kennedy; sentença de Witzel ou Wilson Lima; auditoria do TCU sobre doses vencidas em 2023–2024; dados da China sobre os primeiros casos.",
+
+  "fontes": [
+    { "nome": "Ministério da Saúde, Agência Gov, Fiocruz/InfoGripe", "detalhe": "Óbitos 2022–2026; cobertura vacinal; Calendário Nacional", "consulta": "19/10/2026" },
+    { "nome": "TCU, IBGE/SIS, INEP", "detalhe": "Doses vencidas; pobreza; Saeb e Criança Alfabetizada", "consulta": "19/10/2026" },
+    { "nome": "Lancet, NEJM, JAMA, Science, Cell, BMJ, Cochrane, PNAS", "detalhe": "Ensaios e estudos sobre vacinas, máscaras, medidas, tratamentos, UTI e origem", "consulta": "19/10/2026" },
+    { "nome": "OMS/SAGO, FDA, CDC, ODNI/CIA, BND (via Die Zeit/SZ), Academias francesas", "detalhe": "Origem do vírus e decisões regulatórias", "consulta": "19/10/2026" },
+    { "nome": "presidency.ucsb.edu, DOJ, Senado e Câmara dos EUA", "detalhe": "Perdão, caso Morens, desacato, relatórios da Câmara", "consulta": "19/10/2026" },
+    { "nome": "STF, STJ, TRF-1, PF, CGU, Senado", "detalhe": "Estado processual dos casos brasileiros", "consulta": "19/10/2026" },
+    { "nome": "UK Covid Inquiry, High Court, BGH, Tribunal Supremo, SIU, Sandiganbayan", "detalhe": "Casos internacionais de compras", "consulta": "19/10/2026" },
+    { "nome": "Imprensa e checagem (AP, Reuters, NYT, CNN, CBS, NPR, STAT, Poder360, Agência Brasil, Metrópoles, Folha, Snopes, PolitiFact, FactCheck.org)", "detalhe": "Usadas como pista e conferidas quando possível", "consulta": "19/10/2026" }
+  ]
+}
