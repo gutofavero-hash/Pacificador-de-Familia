@@ -101,3 +101,18 @@ Antes de cada sessão, o Juiz consulta este registro. Havendo caso análogo, a n
 - Gatilho de revisão: recorte brasileiro da OMS 2020–2023; resposta da PGR a Fachin; Pet 10.064; improbidade de Manaus; DOJ e desacato de Fauci; sentença de Morens (12/11/2026); AAP v. Kennedy; sentenças de Witzel e Wilson Lima; auditoria do TCU de 2023–2024.
 - Revisa a sentença: S-001 e S-002 (consolida e substitui para leitura; permanecem no histórico).
 - Caminho ou link da Sentença completa: `sentencas/2026-10-20_S-003_covid-consolidada.md` · `sentencas/2026-10-20_S-003_covid-consolidada_COMPLETA.html`
+
+### 2026-10-20 · Covid-19: versão consolidada ampliada (inclui alegações de um vídeo sobre mortes, vacinação e Covid longa) · modo Consolidação ampliada · S-004
+
+- Enquadramento neutro: o da S-003 mais a 3ª etapa: alegações de um vídeo de médico (resumo gerado por IA; vídeo não visto pelo Conselho; autor não nomeado) sobre mortes “inflacionadas”, ranking por milhão, vacinação cedo, Covid longa e intestino, proteína Spike, ivermectina e referências citadas.
+- Esfera(s) e Poder(es), período, indicadores-alvo, fontes e veredicto: os da S-003; bloco novo pesquisado em 20/10/2026 (checagens, ensaios e Poder360).
+- Selos de resultado atribuídos (§3.2) e níveis de evidência (§3.1) no bloco novo: “75% inflado” FALSO; “vacinou cedo” ENGANOSO; “17º” NÃO VERIFICÁVEL; Covid longa e intestino ➕ (B, centro único, mecanismo não provado); spike persistente ❓ (C–D); ivermectina para prevenir Covid longa sem benefício demonstrado (A–B); relatos clínicos ❓ (E).
+- Conflitos abertos no Conselho e posição do Juiz: relato clínico × ensaio e dado agregado (régua única: o relato levanta hipótese, não estima número nacional).
+- Relatório de Isonomia (resumo): revisão parcial do bloco novo por Saúde Pública, Guardião, Investigador e Auditor (todos “aprova com ajustes”; ajustes aplicados: selo da ivermectina, ENGANOSO em vez de FALSO para vacinação cedo, autor e palestrantes não nomeados, linhas de interesse de fabricantes de simbióticos, espelho do argumento do ranking). As outras 8 cadeiras não foram reconvocadas nesta etapa.
+- Precedentes aplicados ou distinguidos: S-003 consolidada e substituída; S-001 e S-002 seguem no histórico.
+- Confiança geral: Média.
+- Gatilho de revisão: os da S-003, mais a fonte do “75%”, a replicação multicêntrica do simbiótico e a publicação do estudo de spike persistente.
+- Revisa a sentença: S-003.
+- Caminho ou link da Sentença completa: `sentencas/2026-10-20_S-004_covid-consolidada-ampliada.md` · `sentencas/2026-10-20_S-004_covid-consolidada-ampliada_COMPLETA.html`
+
+> **Nota (20/10/2026):** a **S-004** é a Sentença final e única da sala de discussão “sobre as políticas de saúde durante o Covid…”. As Sentenças S-001, S-002 e S-003, acima, foram integralmente consolidadas nela e arquivadas, sem alteração, em `historico/sentencas/` (os caminhos citados nas entradas S-001 a S-003 passam a ser `historico/sentencas/...`). Só a S-004 consta em `sentencas/indice.json` e aparece no site.

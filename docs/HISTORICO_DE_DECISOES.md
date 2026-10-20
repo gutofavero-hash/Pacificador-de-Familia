@@ -150,3 +150,23 @@ Além disso: todo convidado deve conhecer a mecânica, a dinâmica e o prompt do
 - Modelo da Sentença Completa ganhou o campo opcional `tabelas` (tabelas extras por seção); `modelos/exemplo_sentenca.json` atualizado.
 
 **Pendente.** Revisão humana de isonomia antes de divulgar; “Sentença publicada” na curadoria; os itens do inventário do §14 da S-003; o Auditor e as cadeiras revisaram a minuta com o mesmo material de busca, não com acesso a fontes oficiais. A S-001 e a S-002 seguem no histórico sem alteração; o site mostra a S-003 na sala.
+
+---
+
+## 20/10/2026 · Rodada 12 — Alegações de um vídeo incluídas nas análises (S-004)
+
+**Pedido do fundador.** Incluir nas análises do Conselho os tópicos de uma avaliação do Gemini sobre vídeos de um médico (mortes “inflacionadas”, ranking, vacinação cedo, Covid longa, intestino, Spike, ivermectina, referências).
+
+**Feito.** O link do Gemini não pôde ser aberto (acesso bloqueado); o fundador colou o resumo. Cada afirmação foi testada como afirmação, sem nomear o autor, pela mesma régua. Resultado na S-004 (consolida a S-003): bloco “Alegações do vídeo” no §3, linhas no §5, tabela de selos de frases, conflito, valor, vertente, forças e inventário. Revisão do bloco por Saúde Pública, Guardião, Investigador e Auditor de Isonomia; ajustes aplicados.
+
+**Pendente.** As outras 8 cadeiras não revisaram o bloco novo; a fonte do “75%” e a transcrição do vídeo; replicação do ensaio de simbióticos; revisão humana de isonomia; “Sentença publicada” na curadoria.
+
+---
+
+## 20/10/2026 · Rodada 13 — Uma única Sentença final por sala
+
+**Pedido do fundador.** Ter apenas 1 documento como a Sentença final da sala de discussão, com tudo consolidado numa única versão.
+
+**Feito.** A S-004 (que já reunia S-001, S-002, S-003 e as alegações do vídeo) ficou como a única Sentença da sala: S-001 a S-003 foram movidas, sem alteração, para `historico/sentencas/` e retiradas de `sentencas/indice.json`, de modo que o site mostra só a S-004. Itens menores que a auditoria de fidelidade deixara como baixos foram incorporados (EO 14407, referência de Flaxman, deputado no arquivamento do cartão de vacina).
+
+**Pendente.** Revisão humana de isonomia; “Sentença publicada” na curadoria; as outras 8 cadeiras não revisaram o bloco do vídeo.
