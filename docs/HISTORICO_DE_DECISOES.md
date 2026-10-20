@@ -136,3 +136,17 @@ Além disso: todo convidado deve conhecer a mecânica, a dinâmica e o prompt do
 - Nos convites do site: botões **QR code** e **Cartão para o Status**. Na sala, cartão da sala e cartão da Sentença. Na Declaração, links para o cartão e o cartaz. O índice de Sentenças passou a guardar a pergunta para a mesa, usada no cartão.
 - Os QR codes foram conferidos decodificando as imagens geradas.
 - README, CLAUDE.md, proposta de estrutura e skill de rodada (texto dos Avisos com o link do cartão) atualizados.
+
+---
+
+## 20/10/2026 · Rodada 11 — Sentenças S-001, S-002 e a versão consolidada S-003 (Covid-19)
+
+**Pedidos do fundador.** (1) 19/10: entender as políticas de saúde na Covid e as responsabilidades pelas ~700 mil mortes (S-001). (2) 19/10: extrapolar para depois da pandemia; avaliar estudos contra e a favor de vacinas, máscaras, distanciamento, cloroquina, ivermectina, intubação e demais controvérsias; todas as discussões e acusações sobre Anthony Fauci; o que atenua ou agrava políticos e governos; todos os casos de corrupção e desvio em compras, de qualquer esfera, partido ou governo; reenviar a todas as cadeiras (S-002, que revisa a S-001). (3) 20/10: uma versão única, que consolide tudo, com a pergunta original explícita, tudo da S-001 que não está na S-002, tudo o que foi contestado com a versão validada por último e tudo o que só estava na S-002 (S-003).
+
+**Feito.**
+- S-001 e S-002 geradas e publicadas (Executiva, Completa, md, json) e registradas.
+- Verificação final de 20/10 em 4 frentes (Brasil, processos, Fauci e ciência, corrupção e lacunas) para reduzir os [A VERIFICAR]; ela corrigiu pontos da S-002 (Manaus, Lei 14.125, doses vencidas, I-TECH, desacato 8–5).
+- S-003: uma única Sentença com pergunta original no topo, tabela “parte da pergunta → resposta”, 47 linhas de casos de corrupção (Brasil por esfera e 15 países), 20 afirmações de Fauci julgadas, estado processual de cada pessoa, tabela do que agrava e do que atenua por ator, 20 selos de frases, quadro de reconciliação S-001 × S-002 × S-003, 11 propostas e inventário do que nenhuma busca fechou. Auditada pela fidelidade contra as duas anteriores, por 11 cadeiras e pelo Auditor de Isonomia; correções aplicadas.
+- Modelo da Sentença Completa ganhou o campo opcional `tabelas` (tabelas extras por seção); `modelos/exemplo_sentenca.json` atualizado.
+
+**Pendente.** Revisão humana de isonomia antes de divulgar; “Sentença publicada” na curadoria; os itens do inventário do §14 da S-003; o Auditor e as cadeiras revisaram a minuta com o mesmo material de busca, não com acesso a fontes oficiais. A S-001 e a S-002 seguem no histórico sem alteração; o site mostra a S-003 na sala.

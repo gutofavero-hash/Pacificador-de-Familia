@@ -821,6 +821,7 @@ details.par .pb{padding:0 16px 16px;display:grid;gap:8px}
     }
   ],
   "precedentes": [],
+  "tabelas": [],
   "ferramenta": {
     "nome": "Post hoc: depois disso, logo por causa disso",
     "como_reconhecer": "Quando alguém diz que algo melhorou porque um governo fez X, pergunte: o que aconteceu, no mesmo período, com quem não fez X?",
@@ -872,7 +873,8 @@ details.par .pb{padding:0 16px 16px;display:grid;gap:8px}
   var lvl={'Baixa':1,'Média':2,'Alta':3}[S.confianca&&S.confianca.nivel]||0;
 
   var SECS=[["1","Enquadramento"],["2","Resposta curta"],["3","Fatos estabelecidos"],["4","Fatos em disputa"],["5","Resultados"],["6","Atribuição"],["7","Matriz federativa"],["8","Forças e interesses"],["9","O que cada vertente acerta"],["10","Divergências de valor"],["11","Conflitos no Conselho"],["12","Propostas"],["13","Veredicto"],["14","Relatório de Isonomia"],["15","Ferramenta de pensamento"],["16","Pergunta para a mesa"],["17","Próximo passo"],["18","Gatilho de revisão"],["P","Pareceres das cadeiras"],["F","Fontes"]];
-  function sec(n,body){var t=SECS.filter(function(s){return s[0]===n})[0][1];return '<section class="fsec" id="s'+n+'"><h2><span class="num">'+n+'</span><span>'+t+'</span></h2>'+body+'</section>';}
+  function extra(n){return (S.tabelas||[]).filter(function(x){return x.secao===n}).map(function(x){return '<h3>'+esc(x.titulo)+'</h3>'+(x.nota?'<p class="small">'+verif(x.nota)+'</p>':'')+'<div class="tbl"><table><thead><tr>'+(x.colunas||[]).map(function(c){return '<th>'+esc(c)+'</th>'}).join('')+'</tr></thead><tbody>'+(x.linhas||[]).map(function(r){return '<tr>'+r.map(function(v){return '<td>'+verif(v)+'</td>'}).join('')+'</tr>'}).join('')+'</tbody></table></div>'}).join('')}
+  function sec(n,body){var t=SECS.filter(function(s){return s[0]===n})[0][1];return '<section class="fsec" id="s'+n+'"><h2><span class="num">'+n+'</span><span>'+t+'</span></h2>'+body+extra(n)+'</section>';}
   function table(cols,rows){return '<div class="tbl"><table><thead><tr>'+cols.map(function(c){return '<th>'+esc(c[1])+'</th>'}).join('')+'</tr></thead><tbody>'+rows.map(function(r){return '<tr>'+cols.map(function(c){var v=r[c[0]];return '<td>'+(c[2]?c[2](v,r):verif(v))+'</td>'}).join('')+'</tr>'}).join('')+'</tbody></table></div>';}
   var t=tone(S.veredicto&&S.veredicto.rotulo);
   var h='';

@@ -78,3 +78,26 @@ Antes de cada sessão, o Juiz consulta este registro. Havendo caso análogo, a n
 - Gatilho de revisão: recorte brasileiro da OMS 2020–2023; resposta da PGR a Fachin; conclusão da Pet 10.064; decisão do DOJ sobre o desacato de Fauci; sentença de Morens (12/11/2026); decisão do 1º Circuito em AAP v. Kennedy; sentenças de Witzel ou Wilson Lima; auditoria do TCU de 2023–2024; dados da China.
 - Revisa a sentença: S-001 — o que mudou e por quê está no §13 da S-002 ("Revisão da S-001 — o que muda").
 - Caminho ou link da Sentença completa: `sentencas/2026-10-19_S-002_covid-revisao-ciencia-fauci-corrupcao.md` · `sentencas/2026-10-19_S-002_covid-revisao-ciencia-fauci-corrupcao_COMPLETA.html`
+
+### 2026-10-20 · Covid-19: políticas de saúde, responsabilidades pelas mortes, ciência revisitada, Anthony Fauci e corrupção nas compras (versão consolidada) · modo Consolidação · S-003
+
+- Enquadramento neutro: pergunta original do usuário (“Quero entender sobre as políticas de saúde durante o Covid, e sobre as responsabilidades pelas 700 mil mortes que o Brasil teve durante esse período”), ampliada na 2ª sessão para o período posterior, as controvérsias científicas, Anthony Fauci e a corrupção nas compras, com o que atenua ou agrava cada político e governo. Versão única que reúne S-001 e S-002.
+- Esfera(s) e Poder(es): União, estados e municípios; Congresso, STF, STJ, PGR, PF, TCU, CGU; EUA (NIH/NIAID, CDC, FDA, Congresso, DOJ); 13 outros países; OMS.
+- Período analisado: fevereiro de 2020 a outubro de 2026.
+- Indicadores-alvo (definidos antes dos resultados): os das duas sessões, reunidos na tabela do §1 da Sentença.
+- Fontes primárias consultadas (com data de consulta): as das duas sessões e da verificação final de 20/10/2026 (só por ferramenta de busca; o ambiente não abriu páginas oficiais).
+- Veredicto: quadro consolidado, sem nota única (“QUADRO CONSOLIDADO · ACERTOS E FALHAS, COM RESSALVAS”).
+- Selos de resultado atribuídos (§3.2) e níveis de evidência (§3.1): vacinas ✅ contra doença grave (A) e contra morte (B–C), ➕ contra infecção; cloroquina e ivermectina ➖ (A); corticoide ✅ (A); máscara cirúrgica ➕ e de pano ❓ (B); lockdown estrito ❓; escolas ⚠️; compras emergenciais ⚠️ (I–II); 20 afirmações de Fauci e 20 frases correntes com selos de checagem.
+- Principais conquistas / inversões de tendência reconhecidas: vacinas de Fiocruz e Butantan e campanha do SUS; auxílio; ensaios que responderam sobre tratamentos; recuperação da aprendizagem e da vacinação de rotina; pobreza em queda.
+- Efeitos adversos / custos ocultos: contratos de vacina atrasados; orientação de remédio sem eficácia mantida; Manaus; escolas fechadas; doses vencidas; compras emergenciais com pagamento sem entrega em governos de todos os partidos; eventos adversos raros das vacinas.
+- Heranças e marés: herança — capacidade de Fiocruz e Butantan, SUS; maré — escassez mundial de doses, variante Gama, Ômicron e imunidade híbrida.
+- Forças e interesses relevantes (nível I–III): os das duas sessões, mais Prevent Senior, saída dos EUA da OMS e campos políticos (2026).
+- Hipóteses a investigar (nível IV): vendas de cloroquina e ivermectina; embarques de IFA e a frase sobre a vacina da China; DEFUSE com outro dinheiro; financiamento de desinformação.
+- Divergências de valor mapeadas: restringir × preservar renda; escolas; coordenação × autonomia; franqueza × simplificação; proteção coletiva × autonomia; punir rápido × garantir o processo; perdão preventivo.
+- Conflitos abertos no Conselho e posição do Juiz: 10, incluindo o selo da vacinação (dois selos), o lockdown (FALSO quanto às mortes), atraso × maré (as duas coisas; Chile e Uruguai à frente), o excesso de mortes (faixa em disputa), a fala de Fauci sobre máscaras (dois selos) e Manaus (as fontes não permitem escolher entre “improcedente” e “rejeitada sem mérito”).
+- Relatório de Isonomia (resumo): 11 cadeiras revalidaram (todas “aprova com ajustes”); auditoria de fidelidade contra S-001 e S-002; Auditor de Isonomia: AJUSTAR, com 8 correções aplicadas (vocabulário, rigor simétrico, fontes únicas, P13, omissões); todos os itens aprovados ou ajustados.
+- Precedentes aplicados ou distinguidos: S-001 e S-002, consolidadas; a correção da S-002 sobre Manaus não se sustentou e foi corrigida; a Lei 14.125/2021 está revogada desde 16/11/2022.
+- Confiança geral: Média.
+- Gatilho de revisão: recorte brasileiro da OMS 2020–2023; resposta da PGR a Fachin; Pet 10.064; improbidade de Manaus; DOJ e desacato de Fauci; sentença de Morens (12/11/2026); AAP v. Kennedy; sentenças de Witzel e Wilson Lima; auditoria do TCU de 2023–2024.
+- Revisa a sentença: S-001 e S-002 (consolida e substitui para leitura; permanecem no histórico).
+- Caminho ou link da Sentença completa: `sentencas/2026-10-20_S-003_covid-consolidada.md` · `sentencas/2026-10-20_S-003_covid-consolidada_COMPLETA.html`

@@ -150,6 +150,7 @@
     { "item": "Convocação isenta", "status": "APROVADO", "nota": "Dispensa do Filósofo a pedido não altera a conclusão; divergência de valor mapeada pelo Juiz." }
   ],
   "precedentes": [],
+  "tabelas": [],
 
   "ferramenta": {
     "nome": "Post hoc: depois disso, logo por causa disso",
