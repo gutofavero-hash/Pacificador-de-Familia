@@ -1,5 +1,18 @@
 [
   {
+    "id": "S-004",
+    "base": "2026-10-20_S-004_covid-consolidada-ampliada",
+    "data": "2026-10-20",
+    "objeto": "Covid-19: políticas de saúde, responsabilidades pelas mortes, ciência revisitada, Anthony Fauci, corrupção nas compras e alegações de um vídeo sobre mortes, vacinação e Covid longa (versão consolidada ampliada)",
+    "sala": "sobre-as-politicas-de-saude-durante-o-covid-e-sobre-as-respo-c43c3",
+    "veredicto": "QUADRO CONSOLIDADO · ACERTOS E FALHAS, COM RESSALVAS",
+    "confianca": "Média",
+    "resposta_curta": "POLÍTICAS: vacinação em massa pelo SUS (com vacinas de Fiocruz e Butantan), auxílio emergencial, distanciamento decretado por estados e municípios, escolas fechadas por muito tempo e, no governo federal, um “tratamento precoce” sem eficácia. · MORTES: 715.295 confirmadas até 11/03/2025 (último total confirmado), perto de 1 em cada 284 brasileiros; a vacina salvou centenas de milhares de vidas (estimativa de modelos). · RESPONSABILIDADE: o vírus é a causa; a gestão falhou nas três esferas, em proporção que nenhum estudo mede; [INFERÊNCIA pela competência] as falhas documentadas de maior alcance nacional estão onde a União tinha o papel principal (vacinas, orientação clínica, coordenação). · CIÊNCIA: os erros dos dois lados não têm o mesmo peso de evidência. Vacina contra morrer e corticoide funcionaram; cloroquina e ivermectina não; os críticos acertaram em pontos mais fracos ou de comunicação (máscara de pano, regra dos 6 pés, custo das escolas, opacidade). · FAUCI: não é réu e não decidia as políticas do Brasil. · CORRUPÇÃO: o mesmo padrão de risco em governos de todos os partidos, com pouca condenação penal no Brasil e fora. · ALEGAÇÕES DO VÍDEO: “75% das mortes foram inflacionadas” é FALSO (o excesso de mortes iguala ou supera o total oficial); “vacinou cedo” é ENGANOSO (o Brasil começou em 17/01/2021, mas Chile e Uruguai chegaram bem à frente); Covid longa pelo intestino é hipótese plausível com 1 ensaio positivo, não provada; ivermectina: sem benefício demonstrado na prevenção de Covid longa. · Confiança: média.",
+    "pergunta_mesa": "Se uma nova pandemia começasse amanhã, que decisões vocês gostariam que já estivessem escritas em lei, e quem vocês querem que tome cada uma: o governo federal, o governador ou o prefeito? Complemento, olhando para trás: que afirmação vocês fizeram com certeza durante a pandemia e que hoje, olhando os dados, fariam com menos certeza? Qual mantêm?",
+    "executiva": "2026-10-20_S-004_covid-consolidada-ampliada_EXECUTIVA.html",
+    "completa": "2026-10-20_S-004_covid-consolidada-ampliada_COMPLETA.html"
+  },
+  {
     "id": "S-003",
     "base": "2026-10-20_S-003_covid-consolidada",
     "data": "2026-10-20",

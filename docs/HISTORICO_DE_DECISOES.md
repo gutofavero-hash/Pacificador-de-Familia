@@ -150,3 +150,13 @@ Além disso: todo convidado deve conhecer a mecânica, a dinâmica e o prompt do
 - Modelo da Sentença Completa ganhou o campo opcional `tabelas` (tabelas extras por seção); `modelos/exemplo_sentenca.json` atualizado.
 
 **Pendente.** Revisão humana de isonomia antes de divulgar; “Sentença publicada” na curadoria; os itens do inventário do §14 da S-003; o Auditor e as cadeiras revisaram a minuta com o mesmo material de busca, não com acesso a fontes oficiais. A S-001 e a S-002 seguem no histórico sem alteração; o site mostra a S-003 na sala.
+
+---
+
+## 20/10/2026 · Rodada 12 — Alegações de um vídeo incluídas nas análises (S-004)
+
+**Pedido do fundador.** Incluir nas análises do Conselho os tópicos de uma avaliação do Gemini sobre vídeos de um médico (mortes “inflacionadas”, ranking, vacinação cedo, Covid longa, intestino, Spike, ivermectina, referências).
+
+**Feito.** O link do Gemini não pôde ser aberto (acesso bloqueado); o fundador colou o resumo. Cada afirmação foi testada como afirmação, sem nomear o autor, pela mesma régua. Resultado na S-004 (consolida a S-003): bloco “Alegações do vídeo” no §3, linhas no §5, tabela de selos de frases, conflito, valor, vertente, forças e inventário. Revisão do bloco por Saúde Pública, Guardião, Investigador e Auditor de Isonomia; ajustes aplicados.
+
+**Pendente.** As outras 8 cadeiras não revisaram o bloco novo; a fonte do “75%” e a transcrição do vídeo; replicação do ensaio de simbióticos; revisão humana de isonomia; “Sentença publicada” na curadoria.
