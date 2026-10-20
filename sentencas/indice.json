@@ -1,5 +1,18 @@
 [
   {
+    "id": "S-003",
+    "base": "2026-10-20_S-003_covid-consolidada",
+    "data": "2026-10-20",
+    "objeto": "Covid-19: políticas de saúde, responsabilidades pelas mortes, ciência revisitada, Anthony Fauci e corrupção nas compras (versão consolidada)",
+    "sala": "sobre-as-politicas-de-saude-durante-o-covid-e-sobre-as-respo-c43c3",
+    "veredicto": "QUADRO CONSOLIDADO · ACERTOS E FALHAS, COM RESSALVAS",
+    "confianca": "Média",
+    "resposta_curta": "POLÍTICAS: vacinação em massa pelo SUS (com vacinas de Fiocruz e Butantan), auxílio emergencial, distanciamento decretado por estados e municípios, escolas fechadas por muito tempo e, no governo federal, um “tratamento precoce” sem eficácia. · MORTES: 715.295 confirmadas até 11/03/2025 (último total confirmado), perto de 1 em cada 284 brasileiros; a vacina salvou centenas de milhares de vidas (estimativa de modelos). · RESPONSABILIDADE: o vírus é a causa; a gestão falhou nas três esferas, em proporção que nenhum estudo mede; [INFERÊNCIA pela competência] as falhas documentadas de maior alcance nacional estão onde a União tinha o papel principal (vacinas, orientação clínica, coordenação). · CIÊNCIA: os erros dos dois lados não têm o mesmo peso de evidência. Vacina contra morrer e corticoide funcionaram; cloroquina e ivermectina não; os críticos acertaram em pontos mais fracos ou de comunicação (máscara de pano, regra dos 6 pés, custo das escolas, opacidade). · FAUCI: não é réu e não decidia as políticas do Brasil. · CORRUPÇÃO: o mesmo padrão de risco em governos de todos os partidos, com pouca condenação penal no Brasil e fora. · Confiança: média.",
+    "pergunta_mesa": "Se uma nova pandemia começasse amanhã, que decisões vocês gostariam que já estivessem escritas em lei, e quem vocês querem que tome cada uma: o governo federal, o governador ou o prefeito? Complemento, olhando para trás: que afirmação vocês fizeram com certeza durante a pandemia e que hoje, olhando os dados, fariam com menos certeza? Qual mantêm?",
+    "executiva": "2026-10-20_S-003_covid-consolidada_EXECUTIVA.html",
+    "completa": "2026-10-20_S-003_covid-consolidada_COMPLETA.html"
+  },
+  {
     "id": "S-002",
     "base": "2026-10-19_S-002_covid-revisao-ciencia-fauci-corrupcao",
     "data": "2026-10-19",
