@@ -95,6 +95,18 @@ Antes de publicar, toda Sentença passa por um **Comitê de Isonomia humano**: d
 4. **Cartões para o Status do WhatsApp:** uma imagem vertical por Sentença, com o veredicto, um achado e a pergunta para a mesa. É o formato que mais circula entre famílias. Pode ser gerado automaticamente a partir do mesmo JSON (próximo passo técnico).
 5. **Começar pequeno e de propósito:** 5 a 10 famílias convidadas por você, de perfis diferentes, por 4 semanas. Só depois abrir. Uma comunidade que começa com a cultura certa a mantém.
 
+### 4.1 O que já está pronto no site (19/10/2026)
+
+| Meio | Onde |
+|---|---|
+| Botão **Convidar**: convite para o grupo ou para uma pessoa, enviado pelo WhatsApp com o texto pronto e o link de cadastro; copiar; QR code; outras formas | Topo das páginas das salas |
+| Convite de uma sala específica | Painel "Convidar para esta sala" |
+| Cartões para o Status do WhatsApp (convite, sala, Sentença), com QR code | `cartao.html` |
+| Cartaz A4 com QR code | `cartaz.html` |
+| Convites da Declaração com botão do WhatsApp | Seção "Como participar" |
+| Acolhida de quem chega por convite, com as Regras da Mesa | `salas.html?convite=1` e salas com `&convite=1` |
+| Prévias de link com imagem | Declaração, Motor, salas e Sentenças |
+
 ## 5. Como tornar fácil participar
 
 - **Zero cadastro, zero aplicativo novo.** Basta entrar na Comunidade do WhatsApp e abrir links.

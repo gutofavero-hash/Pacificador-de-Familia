@@ -109,3 +109,30 @@ Além disso: todo convidado deve conhecer a mecânica, a dinâmica e o prompt do
 - `supabase/GUIA_DE_CONFIGURACAO.md` com o passo a passo completo; links para as salas na Declaração; README, CLAUDE.md, guia de convocação e skill de rodada atualizados.
 
 **Pendente (fundador):** seguir o guia de configuração e enviar o Project URL e a chave pública; preencher o e-mail de contato da política de privacidade; revisão da política por profissional de proteção de dados antes da abertura ampla; e-mail próprio (SMTP) antes de convidar muita gente.
+
+---
+
+## 19/10/2026 · Rodada 9 — Convite pelo WhatsApp a partir do site
+
+**Pedido do fundador.** Relembrar todos os meios de convite e inserir no site um botão para convidar novos membros, que já abra o WhatsApp com o convite pronto e o link de cadastro; o mesmo botão dentro de cada sala, para que um participante convide alguém para aquele tema.
+
+**Feito.**
+- Botão **Convidar** no topo de salas, sala e curadoria: janela com dois convites (grupo da família e uma pessoa), texto editável, **Enviar pelo WhatsApp** (link `wa.me` com o texto pronto), **Copiar** e, no celular, **Outras formas** (compartilhamento do aparelho).
+- Em cada sala, o painel **Convidar para esta sala**, com convite que cita a pergunta da sala e leva direto a ela.
+- Os convites levam a `salas.html?convite=1` (ou à sala com `&convite=1`), que mostra uma acolhida com as Regras da Mesa e o botão de entrar.
+- Na Declaração, os dois convites passaram a incluir o link de cadastro e ganharam o botão **Enviar pelo WhatsApp**.
+
+**Concluído no mesmo dia (rodada 10):** cartões para o Status e QR code.
+
+---
+
+## 19/10/2026 · Rodada 10 — Cartões para o Status, QR code e cartaz
+
+**Pedido do fundador.** Implementar tudo o que estava proposto para convites e atualizar toda a documentação.
+
+**Feito.**
+- `cartao.html`: gera no próprio navegador uma imagem vertical (1080 × 1920) para o Status do WhatsApp, em três versões: convite, sala (`?tipo=sala&s=...`) e Sentença (`?tipo=sentenca&b=...`), cada uma com QR code para o endereço certo. Botões para baixar, compartilhar a imagem (no celular) e copiar a legenda, com instruções de como publicar no Status.
+- `cartaz.html`: cartaz A4 com a frase do projeto, as Regras da Mesa em resumo e QR code, pronto para imprimir ou salvar em PDF.
+- Nos convites do site: botões **QR code** e **Cartão para o Status**. Na sala, cartão da sala e cartão da Sentença. Na Declaração, links para o cartão e o cartaz. O índice de Sentenças passou a guardar a pergunta para a mesa, usada no cartão.
+- Os QR codes foram conferidos decodificando as imagens geradas.
+- README, CLAUDE.md, proposta de estrutura e skill de rodada (texto dos Avisos com o link do cartão) atualizados.

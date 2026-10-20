@@ -219,6 +219,71 @@
     });
   }
 
+
+  /* ---------- convites ---------- */
+  var LINK_CONVITE = "https://gutofavero-hash.github.io/Pacificador-de-Familia/salas.html?convite=1";
+  var CONVITES = {
+    grupo: { t: "Para o grupo da família", txt: function () { return "Família, quero propor uma coisa diferente.\n\nEm vez de brigar por política no grupo, que tal colocarmos os fatos na mesa?\n\nConheci o \"Pacificador de Famílias\": um conselho sem partido que avalia governos, leis e propostas com a mesma régua para todos os lados, mostrando o que funcionou, o que não funcionou e quem responde por cada coisa. As regras e o funcionamento do Conselho são abertos para todos.\n\nA Regra de Ouro é simples: toda conversa começa por \"quero entender...\", nunca por uma crítica ao outro lado. Sem rótulos e sem \"mas o seu lado também fez\".\n\nNinguém precisa mudar de lado. Só precisa estar disposto a ouvir e a reconhecer quando o outro lado acertar.\n\nTopa tentar comigo? Cada um traz alguém que pensa diferente. É só entrar por aqui:\n" + LINK_CONVITE; } },
+    pessoa: { t: "Para uma pessoa", txt: function () { return "Oi! Sei que a gente pensa diferente sobre política, e é justamente por isso que estou te chamando.\n\nEstou entrando num grupo chamado \"Pacificador de Famílias\". A ideia é conversar sobre governos, leis e propostas olhando para os fatos, com a mesma régua para todos os lados, e com regras claras: toda conversa começa por \"quero entender...\", ninguém usa rótulos e ninguém responde a um erro apontando o erro do outro lado.\n\nA única condição é estar aberto a ouvir e a reconhecer, quando for o caso, que o outro lado acertou. Vale para mim também.\n\nQuer entrar comigo? Seria importante ter você lá justamente porque você enxerga coisas que eu não enxergo. O cadastro é por aqui:\n" + LINK_CONVITE; } }
+  };
+  function conviteSala(sala) {
+    var link = "https://gutofavero-hash.github.io/Pacificador-de-Familia/sala.html?s=" + encodeURIComponent(sala.slug) + "&convite=1";
+    return "Quero te chamar para uma conversa diferente sobre um tema que importa para nós dois:\n\n\"" + sala.pergunta +
+      "\"\n\nNo Pacificador de Famílias, um conselho sem partido analisa a pergunta com a mesma régua para todos os lados, e a gente conversa a partir dos fatos. " +
+      "A regra é começar por \"quero entender...\", sem rótulos e sem \"o outro lado também\".\n\nEntra na sala comigo?\n" + link;
+  }
+  function urlWhatsApp(txt) { return "https://wa.me/?text=" + encodeURIComponent(txt); }
+  function ultimoLink(txt) { var m = String(txt).match(/https?:\/\/\S+/g); return m ? m[m.length - 1] : LINK_CONVITE; }
+  // QR code do link do convite (biblioteca carregada só quando alguém pede)
+  function mostrarQR(link) {
+    var alvo = el("div", { style: "background:#FFFFFF;padding:16px;border-radius:16px;justify-self:center;width:min(280px,100%)" });
+    modal("QR code do convite", [
+      el("p", { text: "Mostre esta tela para a pessoa apontar a câmera do celular." }), alvo,
+      el("p", { class: "small", style: "word-break:break-all", text: link })
+    ], [{ t: "Fechar", primary: true }]);
+    function desenhar() {
+      new window.QRCode(alvo, { text: link, width: 248, height: 248, colorDark: "#1A1D38", colorLight: "#FFFFFF", correctLevel: window.QRCode.CorrectLevel.M });
+      [].forEach.call(alvo.querySelectorAll("img,canvas"), function (n) { n.style.width = "100%"; n.style.height = "auto"; });
+    }
+    if (window.QRCode) { desenhar(); return; }
+    var sc = document.createElement("script");
+    sc.src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js";
+    sc.onload = desenhar; sc.onerror = function () { alvo.textContent = "Não foi possível gerar o QR code agora."; };
+    document.head.appendChild(sc);
+  }
+  // Caixa de convite: texto editável, enviar pelo WhatsApp, copiar e (no celular) outras formas
+  function caixaConvite(textoInicial, abas, cartao) {
+    var ta = el("textarea", { "aria-label": "Texto do convite", rows: "9" }); ta.value = textoInicial;
+    var wa = el("a", { class: "btn primary", href: urlWhatsApp(textoInicial), target: "_blank", rel: "noopener" }, ["Enviar pelo WhatsApp"]);
+    ta.addEventListener("input", function () { wa.href = urlWhatsApp(ta.value); });
+    var linha = el("div", { class: "btnrow", style: "display:flex;flex-wrap:wrap;gap:8px" }, [
+      wa,
+      el("button", { type: "button", class: "btn", text: "Copiar", onclick: function () { copiar(ta.value, "Convite copiado."); } }),
+      navigator.share ? el("button", { type: "button", class: "btn", text: "Outras formas", onclick: function () {
+        navigator.share({ text: ta.value }).catch(function () {});
+      } }) : null,
+      el("button", { type: "button", class: "btn", text: "QR code", onclick: function () { mostrarQR(ultimoLink(ta.value)); } }),
+      el("a", { class: "btn", href: cartao || "cartao.html?tipo=convite", text: "Cartão para o Status" })
+    ]);
+    var topo = null;
+    if (abas) {
+      topo = el("div", { class: "filters", role: "group", "aria-label": "Versão do convite" }, Object.keys(abas).map(function (k, i) {
+        return el("button", { type: "button", "aria-pressed": i === 0 ? "true" : "false", text: abas[k].t, onclick: function (ev) {
+          [].forEach.call(topo.querySelectorAll("button"), function (b) { b.setAttribute("aria-pressed", b === ev.target ? "true" : "false"); });
+          ta.value = abas[k].txt(); wa.href = urlWhatsApp(ta.value);
+        } });
+      }));
+    }
+    return el("div", { class: "form" }, [topo, ta, linha,
+      el("p", { class: "small", text: "Você pode editar o texto antes de enviar. No WhatsApp, escolha a conversa ou o grupo." })]);
+  }
+  function convidar() {
+    modal("Convidar para o Pacificador", [
+      el("p", { text: "A regra de entrada é trazer alguém que pensa diferente de você." }),
+      caixaConvite(CONVITES.grupo.txt(), CONVITES)
+    ], [{ t: "Fechar", primary: true }]);
+  }
+
   /* ---------- cabeçalho comum ---------- */
   function cabecalho(paginaAtual) {
     var slot = el("div", { class: "auth-slot" });
@@ -228,7 +293,9 @@
     }));
     var curLink = el("a", { href: "curadoria.html", text: "Curadoria", hidden: true, "aria-current": paginaAtual === "curadoria.html" ? "page" : null });
     nav.appendChild(curLink);
-    var top = el("header", { class: "topbar" }, [el("a", { class: "brand", href: "salas.html", text: "O Pacificador de Famílias" }), nav, slot]);
+    var conv = el("button", { type: "button", class: "btn small", onclick: convidar }, ["Convidar"]);
+    var top = el("header", { class: "topbar" }, [el("a", { class: "brand", href: "salas.html", text: "O Pacificador de Famílias" }), nav,
+      el("div", { class: "auth-slot" }, [conv, slot])]);
     aoMudar(function (s) {
       limpar(slot);
       curLink.hidden = !s.curador;
@@ -265,6 +332,7 @@
     el: el, limpar: limpar, toast: toast, copiar: copiar, modal: modal, dataBR: dataBR, chipEstado: chipEstado,
     rotulosEm: rotulosEm, param: param, ESTADOS: ESTADOS, ETAPAS: ETAPAS, ESFERAS: ESFERAS, REACOES: REACOES,
     indiceSentencas: indiceSentencas, sentencaDaSala: sentencaDaSala,
+    convidar: convidar, caixaConvite: caixaConvite, mostrarQR: mostrarQR, conviteSala: conviteSala, urlWhatsApp: urlWhatsApp,
     SITE: "https://gutofavero-hash.github.io/Pacificador-de-Familia/"
   };
 })();

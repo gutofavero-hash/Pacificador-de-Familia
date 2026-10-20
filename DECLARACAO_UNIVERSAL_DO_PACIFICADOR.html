@@ -666,8 +666,9 @@ footer small{font-family:var(--mono);color:var(--muted)}
         <button type="button" role="tab" aria-selected="false" data-inv="pessoal">Para uma pessoa</button>
       </div>
       <pre id="inviteText"></pre>
-      <div class="cta-row"><button type="button" class="btn primary" id="copyBtn">Copiar convite</button></div>
+      <div class="cta-row"><a class="btn primary" id="waBtn" href="https://wa.me/" target="_blank" rel="noopener">Enviar pelo WhatsApp</a><button type="button" class="btn" id="copyBtn">Copiar convite</button></div>
       <span class="copied" id="copyMsg" aria-live="polite"></span>
+      <p class="small" style="color:var(--muted)">Outros jeitos de convidar: <a href="cartao.html?tipo=convite">cartão com QR code para o Status do WhatsApp</a> · <a href="cartaz.html">cartaz para imprimir e levar ao almoço de família</a> · o botão <b>Convidar</b> no topo das <a href="salas.html">salas</a>.</p>
     </div>
   </div>
 </section>
@@ -791,11 +792,11 @@ footer small{font-family:var(--mono);color:var(--muted)}
 
   /* ---------- Convites ---------- */
   var INV={
-    curto:"Família, quero propor uma coisa diferente.\n\nEm vez de brigar por política no grupo, que tal colocarmos os fatos na mesa?\n\nConheci o \"Pacificador de Famílias\": um conselho sem partido que avalia governos, leis e propostas com a mesma régua para todos os lados, mostrando o que funcionou, o que não funcionou e quem responde por cada coisa. As regras e o funcionamento do Conselho são abertos para todos.\n\nA Regra de Ouro é simples: toda conversa começa por \"quero entender...\", nunca por uma crítica ao outro lado. Sem rótulos e sem \"mas o seu lado também fez\".\n\nNinguém precisa mudar de lado. Só precisa estar disposto a ouvir e a reconhecer quando o outro lado acertar.\n\nTopa tentar comigo? Cada um traz alguém que pensa diferente.",
-    pessoal:"Oi! Sei que a gente pensa diferente sobre política, e é justamente por isso que estou te chamando.\n\nEstou entrando num grupo chamado \"Pacificador de Famílias\". A ideia é conversar sobre governos, leis e propostas olhando para os fatos, com a mesma régua para todos os lados, e com regras claras: toda conversa começa por \"quero entender...\", ninguém usa rótulos e ninguém responde a um erro apontando o erro do outro lado.\n\nA única condição é estar aberto a ouvir e a reconhecer, quando for o caso, que o outro lado acertou. Vale para mim também.\n\nQuer entrar comigo? Seria importante ter você lá justamente porque você enxerga coisas que eu não enxergo."
+    curto:"Família, quero propor uma coisa diferente.\n\nEm vez de brigar por política no grupo, que tal colocarmos os fatos na mesa?\n\nConheci o \"Pacificador de Famílias\": um conselho sem partido que avalia governos, leis e propostas com a mesma régua para todos os lados, mostrando o que funcionou, o que não funcionou e quem responde por cada coisa. As regras e o funcionamento do Conselho são abertos para todos.\n\nA Regra de Ouro é simples: toda conversa começa por \"quero entender...\", nunca por uma crítica ao outro lado. Sem rótulos e sem \"mas o seu lado também fez\".\n\nNinguém precisa mudar de lado. Só precisa estar disposto a ouvir e a reconhecer quando o outro lado acertar.\n\nTopa tentar comigo? Cada um traz alguém que pensa diferente. É só entrar por aqui:\nhttps://gutofavero-hash.github.io/Pacificador-de-Familia/salas.html?convite=1",
+    pessoal:"Oi! Sei que a gente pensa diferente sobre política, e é justamente por isso que estou te chamando.\n\nEstou entrando num grupo chamado \"Pacificador de Famílias\". A ideia é conversar sobre governos, leis e propostas olhando para os fatos, com a mesma régua para todos os lados, e com regras claras: toda conversa começa por \"quero entender...\", ninguém usa rótulos e ninguém responde a um erro apontando o erro do outro lado.\n\nA única condição é estar aberto a ouvir e a reconhecer, quando for o caso, que o outro lado acertou. Vale para mim também.\n\nQuer entrar comigo? Seria importante ter você lá justamente porque você enxerga coisas que eu não enxergo. O cadastro é por aqui:\nhttps://gutofavero-hash.github.io/Pacificador-de-Familia/salas.html?convite=1"
   };
   var invPre=document.getElementById('inviteText'), invTabs=[].slice.call(document.querySelectorAll('.inv-tabs button'));
-  function setInv(k){invPre.textContent=INV[k];invTabs.forEach(function(x){x.setAttribute('aria-selected',x.dataset.inv===k?'true':'false')});var m=document.getElementById('copyMsg');if(m)m.textContent='';}
+  function setInv(k){invPre.textContent=INV[k];document.getElementById('waBtn').href='https://wa.me/?text='+encodeURIComponent(INV[k]);invTabs.forEach(function(x){x.setAttribute('aria-selected',x.dataset.inv===k?'true':'false')});var m=document.getElementById('copyMsg');if(m)m.textContent='';}
   invTabs.forEach(function(b){b.addEventListener('click',function(){setInv(b.dataset.inv)})});
   setInv('curto');
 

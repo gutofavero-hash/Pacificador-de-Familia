@@ -61,6 +61,7 @@ Responda com:
   Resumo: https://gutofavero-hash.github.io/Pacificador-de-Familia/sentencas/<base>_EXECUTIVA.html
   Completa: https://gutofavero-hash.github.io/Pacificador-de-Familia/sentencas/<base>_COMPLETA.html
   Pergunta para a mesa: [pergunta]
+  Cartão para o Status: https://gutofavero-hash.github.io/Pacificador-de-Familia/cartao.html?tipo=sentenca&b=<base>
   ```
 - o lembrete de que a Sentença ainda precisa da **revisão humana de isonomia** antes de publicar, e de que, depois de publicada, a curadoria muda a sala para "Sentença publicada" em `curadoria.html` (isso abre as reações).
 

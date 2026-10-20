@@ -42,6 +42,17 @@
 
   <div id="aviso"></div>
 
+  <section class="panel" id="boasVindas" hidden aria-labelledby="tBV" style="border:2px solid var(--side-a);background:var(--side-a-soft)">
+    <span class="eyebrow">Você foi convidado</span>
+    <h2 id="tBV" style="font-size:1.4rem">Bem-vindo à mesa.</h2>
+    <p>Aqui, toda conversa começa por "quero entender…", com os fatos na mesa e a mesma régua para todos os lados. Antes de entrar, leia as Regras da Mesa: é o compromisso de quem participa.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <button type="button" class="btn primary" id="bvEntrar">Entrar e participar</button>
+      <a class="btn" href="DECLARACAO_UNIVERSAL_DO_PACIFICADOR.html#regras">Ler as Regras da Mesa</a>
+      <a class="btn" href="MOTOR_DO_CONSELHO.html">Como o Conselho funciona</a>
+    </div>
+  </section>
+
   <div class="two">
     <section class="panel" aria-labelledby="tSalas">
       <h2 id="tSalas" style="font-size:1.35rem">Salas</h2>
@@ -206,6 +217,12 @@
     carregar();
   });
 
+  var bv = document.getElementById("boasVindas");
+  document.getElementById("bvEntrar").addEventListener("click", function () {
+    if (!P.configurado) { P.toast("As salas ainda estão sendo configuradas."); return; }
+    if (!P.estado.sessao) P.entrar(); else if (!P.estado.perfil) P.pedirConsentimento(); else bv.hidden = true;
+  });
+  P.aoMudar(function (s) { bv.hidden = !(P.param("convite") && !(s.sessao && s.perfil)); });
   P.aoMudar(function () { carregar(); });
   P.iniciar();
 })();
